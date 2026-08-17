@@ -9,7 +9,7 @@ def main() -> int:
     path = Path(sys.argv[1] if len(sys.argv) > 1 else "data/latest.json")
     payload = json.loads(path.read_text(encoding="utf-8"))
     assert payload.get("schema_version") == 1
-    assert payload.get("profile") == "ai-cad"
+    assert isinstance(payload.get("profile"), str) and payload.get("profile")
     candidates = payload.get("candidates")
     assert isinstance(candidates, list)
     stable_ids: set[str] = set()

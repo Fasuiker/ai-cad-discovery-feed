@@ -1,6 +1,8 @@
-# AI + CAD Discovery Feed
+# Research Workspace Discovery Feeds
 
-Machine-readable candidate-paper feed for the **科研工作台 / Research Workspace**.
+Machine-readable candidate-paper feeds for the **科研工作台 / Research Workspace**.
+The default starter profile covers **large language models and agents**; the
+original AI+CAD profile remains available for specialist use.
 
 The repository searches public scholarly metadata every day, normalizes and
 deduplicates candidates, then publishes `data/latest.json`. It stores metadata
@@ -23,9 +25,10 @@ Manual workflow runs may specify a custom start and end date.
 
 ## Files
 
-- `config/ai-cad.json` — public baseline terms, exclusions, categories, enabled
-  sources and collection window
-- `data/latest.json` — current candidate feed consumed by the workbench
+- `config/llm.json` — default large-model and agent discovery profile
+- `data/archive/llm/latest.json` — default candidate feed consumed by new workspaces
+- `config/ai-cad.json` — specialist AI+CAD profile and multi-profile job entry
+- `data/latest.json` — legacy AI+CAD candidate feed
 - `data/manifest.json` — lightweight feed metadata
 - `scripts/discover.py` — standard-library discovery pipeline
 
@@ -39,8 +42,10 @@ candidates, then keeps a human confirmation step before download and cataloguing
 1. Fork this repository without renaming it.
 2. Open the fork's **Actions** tab and enable `Daily AI+CAD discovery` (GitHub
    disables scheduled workflows in new public forks by default).
-3. Edit `config/ai-cad.json` on the default branch. The next workflow run writes
-   both the candidates and the public configuration snapshot to `data/latest.json`.
+3. Edit `config/llm.json` on the default branch. The next workflow run writes
+   both the candidates and the public configuration snapshot to
+   `data/archive/llm/latest.json`. AI+CAD users can instead edit
+   `config/ai-cad.json` and use `data/latest.json` as a custom feed.
 4. In Research Workspace, open `文献 → 文献发现 → 每日发现 → 设置`, select
    `我的 GitHub Fork`, enter the GitHub username, test the connection, and enable
    `跟随候选源中的公开配置` if the fork should be the source of truth.

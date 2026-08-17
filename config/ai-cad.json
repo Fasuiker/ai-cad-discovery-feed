@@ -3,6 +3,13 @@
   "display_name": "AI + CAD",
   "daily_search_days": 30,
   "sources": ["arxiv", "openalex", "crossref", "upstream_awesome"],
+  "additional_profiles": [
+    {
+      "config": "config/llm.json",
+      "output": "data/archive/llm/latest.json",
+      "archive_dir": "data/archive/llm/history"
+    }
+  ],
   "max_results_per_source": 300,
   "relevance_threshold": 5,
   "keywords": [

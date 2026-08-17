@@ -49,6 +49,21 @@ class DiscoveryTests(unittest.TestCase):
         self.assertTrue(health["arxiv"]["skipped"])
         self.assertIsInstance(candidates, list)
 
+    def test_llm_profile_uses_general_language_model_signals(self):
+        config = {
+            "profile": "llm",
+            "keywords": ["large language model", "retrieval augmented generation"],
+            "domain_boost_keywords": ["retrieval augmented generation"],
+            "negative_keywords": [],
+        }
+        score, reasons = discover.relevance(
+            {"title": "Retrieval Augmented Generation for Long Documents", "abstract": "A large language model retrieves grounded evidence."},
+            config,
+        )
+        self.assertGreaterEqual(score, 5)
+        self.assertTrue(reasons)
+        self.assertEqual(discover.relevance({"title": "Graph optimization", "abstract": "A numerical solver."}, config)[0], 0)
+
 
 if __name__ == "__main__":
     unittest.main()

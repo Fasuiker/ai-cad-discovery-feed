@@ -1,0 +1,75 @@
+{
+  "profile": "llm",
+  "display_name": "Large Language Models & Agents",
+  "daily_search_days": 30,
+  "sources": ["arxiv", "openalex", "crossref"],
+  "max_results_per_source": 250,
+  "relevance_threshold": 5,
+  "keywords": [
+    "large language model",
+    "foundation model",
+    "language model agent",
+    "agentic AI",
+    "retrieval augmented generation",
+    "RAG",
+    "reasoning model",
+    "multimodal language model",
+    "vision language model",
+    "post-training",
+    "instruction tuning",
+    "preference optimization",
+    "efficient inference",
+    "long context",
+    "tool use",
+    "model evaluation"
+  ],
+  "domain_boost_keywords": [
+    "large language model",
+    "language model agent",
+    "retrieval augmented generation",
+    "reasoning model",
+    "post-training",
+    "vision language model"
+  ],
+  "negative_keywords": [],
+  "arxiv_categories": ["cs.CL", "cs.AI", "cs.LG", "cs.IR"],
+  "arxiv_query_terms": [
+    "large language model",
+    "language model agent",
+    "retrieval augmented generation",
+    "reasoning language model",
+    "multimodal language model",
+    "post-training",
+    "efficient LLM inference",
+    "long context language model"
+  ],
+  "openalex_queries": [
+    "large language model",
+    "language model agents",
+    "retrieval augmented generation",
+    "reasoning language models",
+    "multimodal large language models",
+    "post-training language models",
+    "efficient LLM inference",
+    "long context language models"
+  ],
+  "crossref_queries": [
+    "large language model",
+    "language model agents",
+    "retrieval augmented generation",
+    "reasoning language model",
+    "multimodal language model",
+    "post-training language model",
+    "efficient language model inference"
+  ],
+  "category_rules": [
+    {"label": "Surveys & Roadmaps", "terms": ["survey", "review", "roadmap", "taxonomy"]},
+    {"label": "Agents & Tool Use", "terms": ["agent", "tool use", "multi-agent"]},
+    {"label": "RAG & Knowledge", "terms": ["retrieval augmented", "rag", "grounding", "citation"]},
+    {"label": "Reasoning & Long Context", "terms": ["reasoning", "chain-of-thought", "long context"]},
+    {"label": "Post-training & Alignment", "terms": ["post-training", "instruction tuning", "preference optimization", "alignment", "rlhf"]},
+    {"label": "Efficient Training & Inference", "terms": ["efficient inference", "quantization", "serving", "kv cache", "distillation"]},
+    {"label": "Multimodal Models", "terms": ["multimodal", "vision language", "vlm"]},
+    {"label": "Evaluation, Safety & Reliability", "terms": ["benchmark", "evaluation", "safety", "hallucination", "robustness"]}
+  ]
+}

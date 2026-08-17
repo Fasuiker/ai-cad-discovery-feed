@@ -118,6 +118,32 @@ def relevance(candidate: dict[str, Any], config: dict[str, Any]) -> tuple[int, l
     if negative:
         return -10, [f"排除：{word}" for word in negative[:3]]
 
+    if config.get("profile") == "llm":
+        hits: list[str] = []
+        for word in config.get("keywords", []):
+            term = clean_text(word).lower()
+            if term and term in haystack:
+                hits.append(word)
+        if not hits:
+            return 0, []
+        score, reasons = 2, []
+        for word in hits:
+            term = clean_text(word).lower()
+            if term in title:
+                score += 3
+                reasons.append(f"标题命中 {word}")
+            elif term in abstract:
+                score += 1
+                reasons.append(f"摘要命中 {word}")
+        for word in config.get("domain_boost_keywords", []):
+            term = clean_text(word).lower()
+            if term and term in title:
+                score += 2
+            elif term and term in abstract:
+                score += 1
+        score += min(3, len(hits))
+        return score, list(dict.fromkeys(reasons))[:8]
+
     strong_cad = bool(re.search(r"\bcad(?:/cam)?\b|\bb-?rep\b|computer-aided design|boundary representation|sketch extrusion|constructive solid geometry", haystack))
     parametric_design = "parametric" in haystack and any(
         signal in haystack
@@ -157,8 +183,12 @@ def relevance(candidate: dict[str, Any], config: dict[str, Any]) -> tuple[int, l
     return score, list(dict.fromkeys(reasons))[:8]
 
 
-def suggested_category(candidate: dict[str, Any]) -> str:
+def suggested_category(candidate: dict[str, Any], config: dict[str, Any] | None = None) -> str:
     text = f"{candidate.get('title', '')} {candidate.get('abstract', '')}".lower()
+    configured = (config or {}).get("category_rules") or []
+    for rule in configured:
+        if isinstance(rule, dict) and any(clean_text(term).lower() in text for term in rule.get("terms", [])):
+            return clean_text(rule.get("label")) or "Other"
     rules = [
         ("Surveys & Roadmaps", ["survey", "review", "roadmap", "taxonomy"]),
         ("LLM, VLM & CAD Agents", ["language model", "llm", "vlm", "agent"]),
@@ -195,7 +225,7 @@ def canonical_candidate(row: dict[str, Any], config: dict[str, Any]) -> dict[str
         "pdf_url": clean_text(row.get("pdf_url")),
         "oa_status": clean_text(row.get("oa_status")),
         "license": clean_text(row.get("license")),
-        "suggested_category": clean_text(row.get("suggested_category")) or suggested_category(row),
+        "suggested_category": clean_text(row.get("suggested_category")) or suggested_category(row, config),
         "matched_terms": reasons,
         "source_names": list(dict.fromkeys(row.get("source_names") or [])),
         "relevance_score": score,
@@ -229,10 +259,19 @@ def merge_candidates(rows: Iterable[dict[str, Any]], config: dict[str, Any] | No
 
 def discover_arxiv(config: dict[str, Any], start: date, end: date) -> list[dict[str, Any]]:
     categories = [f"cat:{category}" for category in config.get("arxiv_categories", [])]
-    cad_terms = ['all:CAD', 'all:"computer-aided design"', 'all:"B-Rep"', 'all:"boundary representation"', 'all:"parametric design"']
-    ai_terms = ['all:neural', 'all:"machine learning"', 'all:generative', 'all:diffusion', 'all:transformer', 'all:"language model"', 'all:agent']
     date_range = f"submittedDate:[{start:%Y%m%d}0000 TO {end:%Y%m%d}2359]"
-    query = f"({' OR '.join(cad_terms)}) AND ({' OR '.join(ai_terms)}) AND ({' OR '.join(categories)}) AND {date_range}"
+    configured_terms = [clean_text(term) for term in config.get("arxiv_query_terms", []) if clean_text(term)]
+    if configured_terms:
+        terms = [f'all:"{term.replace(chr(34), "")}"' for term in configured_terms]
+        clauses = [f"({' OR '.join(terms)})"]
+        if categories:
+            clauses.append(f"({' OR '.join(categories)})")
+        clauses.append(date_range)
+        query = " AND ".join(clauses)
+    else:
+        cad_terms = ['all:CAD', 'all:"computer-aided design"', 'all:"B-Rep"', 'all:"boundary representation"', 'all:"parametric design"']
+        ai_terms = ['all:neural', 'all:"machine learning"', 'all:generative', 'all:diffusion', 'all:transformer', 'all:"language model"', 'all:agent']
+        query = f"({' OR '.join(cad_terms)}) AND ({' OR '.join(ai_terms)}) AND ({' OR '.join(categories)}) AND {date_range}"
     params = urllib.parse.urlencode(
         {
             "search_query": query,
@@ -491,7 +530,18 @@ def cli() -> int:
 
     candidates, health = run(config, start, end)
     write_feed(Path(args.output), Path(args.archive_dir) if args.archive_dir else None, config, start, end, candidates, health)
-    print(json.dumps({"from": start.isoformat(), "to": end.isoformat(), "count": len(candidates), "source_health": health}, ensure_ascii=False))
+    additional_results = []
+    for extra in config.get("additional_profiles", []):
+        if not isinstance(extra, dict) or not extra.get("config") or not extra.get("output"):
+            continue
+        extra_config = json.loads(Path(extra["config"]).read_text(encoding="utf-8"))
+        extra_end = date.fromisoformat(args.to_date) if args.to_date else utcnow().date()
+        extra_days = args.search_days or int(extra_config.get("daily_search_days", 3))
+        extra_start = date.fromisoformat(args.from_date) if args.from_date else extra_end - timedelta(days=max(1, extra_days) - 1)
+        extra_candidates, extra_health = run(extra_config, extra_start, extra_end)
+        write_feed(Path(extra["output"]), Path(extra["archive_dir"]) if extra.get("archive_dir") else None, extra_config, extra_start, extra_end, extra_candidates, extra_health)
+        additional_results.append({"profile": extra_config.get("profile"), "count": len(extra_candidates), "from": extra_start.isoformat(), "to": extra_end.isoformat()})
+    print(json.dumps({"from": start.isoformat(), "to": end.isoformat(), "count": len(candidates), "source_health": health, "additional_profiles": additional_results}, ensure_ascii=False))
     return 0
 
 
