@@ -1,0 +1,69 @@
+{
+  "profile": "ai-cad",
+  "display_name": "AI + CAD",
+  "daily_search_days": 3,
+  "max_results_per_source": 300,
+  "relevance_threshold": 5,
+  "keywords": [
+    "AI for CAD",
+    "computer-aided design",
+    "neural CAD",
+    "generative CAD",
+    "parametric CAD",
+    "B-Rep",
+    "boundary representation",
+    "constructive solid geometry",
+    "sketch extrusion",
+    "CAD generation",
+    "CAD reconstruction",
+    "text-to-CAD",
+    "image-to-CAD",
+    "point cloud to CAD",
+    "CAD program",
+    "CAD agent"
+  ],
+  "domain_boost_keywords": [
+    "neural cad",
+    "generative cad",
+    "text-to-cad",
+    "image-to-cad",
+    "b-rep",
+    "boundary representation",
+    "parametric design",
+    "sketch extrusion",
+    "cad program"
+  ],
+  "negative_keywords": [
+    "medical imaging",
+    "drug discovery",
+    "protein folding",
+    "autonomous driving",
+    "robot manipulation",
+    "financial forecasting",
+    "weather forecasting",
+    "scene reconstruction",
+    "gaussian splatting for scene",
+    "human pose"
+  ],
+  "arxiv_categories": ["cs.CV", "cs.GR", "cs.LG", "cs.AI"],
+  "openalex_queries": [
+    "generative CAD",
+    "neural computer aided design",
+    "B-Rep machine learning",
+    "CAD reconstruction artificial intelligence",
+    "parametric CAD large language model"
+  ],
+  "crossref_queries": [
+    "generative CAD",
+    "neural computer aided design",
+    "B-Rep deep learning",
+    "CAD reconstruction",
+    "text to CAD"
+  ],
+  "upstream_readmes": {
+    "Awesome-CAD": "https://raw.githubusercontent.com/bertjiazheng/Awesome-CAD/master/README.md",
+    "Awesome-Neural-CAD": "https://raw.githubusercontent.com/BunnySoCrazy/Awesome-Neural-CAD/main/README.md",
+    "awesome-ai4cad": "https://raw.githubusercontent.com/gudo7208/awesome-ai4cad/main/README.md",
+    "awesome-AI4CAD-hub": "https://raw.githubusercontent.com/jin-s13/awesome-AI4CAD-hub/main/AWESOME.md"
+  }
+}

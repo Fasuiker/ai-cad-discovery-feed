@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "profile": "ai-cad",
+  "generated_at": "2026-08-17T01:50:06.220845+00:00",
+  "range": {
+    "from": "2026-08-15",
+    "to": "2026-08-17"
+  },
+  "count": 2,
+  "source_health": {
+    "arxiv": {
+      "ok": false,
+      "count": 0,
+      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202608150000+TO+202608172359%5D&start=0&",
+      "seconds": 54.27
+    },
+    "openalex": {
+      "ok": true,
+      "count": 29,
+      "seconds": 5.08
+    },
+    "crossref": {
+      "ok": true,
+      "count": 299,
+      "seconds": 8.81
+    },
+    "upstream_awesome": {
+      "ok": true,
+      "count": 0,
+      "seconds": 0.89
+    }
+  },
+  "candidates": [
+    {
+      "stable_id": "doi:10.1007/s12008-026-02671-w",
+      "title": "Automated parametric design framework for patient-customized wearable devices",
+      "authors": [
+        "Mariana Hernandez Rocha",
+        "Aytac Teker",
+        "Andy Li",
+        "Biruk Gebre",
+        "Damiano Zanotto",
+        "Kishore Pochiraju"
+      ],
+      "abstract": "Abstract This paper presents a design automation framework that integrates geometric reconstruction, constraint modeling, and manufacturable solid generation for irregular, unstructured geometries. The paper also evaluates the use of AI/ML methods to assist with image-to-point cloud conversion and point cloud-to-surface reconstruction. The framework addresses a key gap in design automation: translating geometric data obtained from 3-D scans into parameterized, constraint-satisfying CAD models that can be fabricated using additive manufacturing. Our approach combines data-driven surface reconstruction with constraint-aware generative modeling to ensure that the resulting designs perform well in form, fit, and function. Quantitative evaluations compare analytical and hybrid reconstruction methods based on curvature-derived smoothness and manufacturability metrics, demonstrating the impact of constraint integration on geometric fidelity and design efficiency. The proposed methodology generalizes to diverse domains that require customized geometries, such as wearables, tooling, and adaptive interfaces, and is validated through an anatomically inspired case study. By bridging geometric data processing, computational modeling, and design synthesis, this work advances the development of constraint-integrated generative design frameworks within engineering design automation.",
+      "year": 2026,
+      "published_at": "2026-08-16",
+      "venue": "International Journal on Interactive Design and Manufacturing (IJIDeM)",
+      "doi": "10.1007/s12008-026-02671-w",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.1007/s12008-026-02671-w",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12008-026-02671-w.pdf",
+      "oa_status": "open",
+      "license": "https://creativecommons.org/licenses/by/4.0",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [
+        "标题命中 parametric design"
+      ],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 10,
+      "discovered_at": "2026-08-17T01:50:06.182633+00:00"
+    },
+    {
+      "stable_id": "doi:10.17559/tv-20250922003005",
+      "title": "A Comprehensive Review on Generative and Parametric Approaches in Cloud – Based CAD/CAM Platforms for 3D Printing Applications",
+      "authors": [],
+      "abstract": "",
+      "year": 2026,
+      "published_at": "2026-08-15",
+      "venue": "Tehnicki vjesnik - Technical Gazette",
+      "doi": "10.17559/tv-20250922003005",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.17559/tv-20250922003005",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-08-17T01:50:06.164831+00:00"
+    }
+  ]
+}
