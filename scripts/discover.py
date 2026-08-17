@@ -161,11 +161,11 @@ def suggested_category(candidate: dict[str, Any]) -> str:
     text = f"{candidate.get('title', '')} {candidate.get('abstract', '')}".lower()
     rules = [
         ("Surveys & Roadmaps", ["survey", "review", "roadmap", "taxonomy"]),
-        ("Datasets, Benchmarks & Evaluation", ["dataset", "benchmark", "evaluation", "metric"]),
         ("LLM, VLM & CAD Agents", ["language model", "llm", "vlm", "agent"]),
         ("CAD Editing, Constraints & Verification", ["editing", "constraint", "verification", "repair"]),
         ("CAD Reconstruction & Reverse Engineering", ["reconstruction", "reverse engineering", "point cloud to cad", "image-to-cad"]),
         ("CAD Representations & Understanding", ["representation", "segmentation", "recognition", "understanding", "retrieval"]),
+        ("Datasets, Benchmarks & Evaluation", ["dataset", "benchmark", "evaluation", "metric"]),
         ("Open-source Systems & Tools", ["system", "toolkit", "plugin", "platform"]),
     ]
     for label, terms in rules:
