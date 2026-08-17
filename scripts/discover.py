@@ -49,6 +49,16 @@ def normalized_title(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", clean_text(value).lower()).strip()
 
 
+def term_matches(term: str, text: str) -> bool:
+    normalized_term = normalized_title(term)
+    normalized_text = normalized_title(text)
+    if not normalized_term:
+        return False
+    if " " not in normalized_term and len(normalized_term) <= 4:
+        return bool(re.search(rf"\b{re.escape(normalized_term)}\b", normalized_text))
+    return normalized_term in normalized_text
+
+
 def stable_id(candidate: dict[str, Any]) -> str:
     doi = normalize_doi(candidate.get("doi", ""))
     if doi:
@@ -122,17 +132,17 @@ def relevance(candidate: dict[str, Any], config: dict[str, Any]) -> tuple[int, l
         hits: list[str] = []
         for word in config.get("keywords", []):
             term = clean_text(word).lower()
-            if term and term in haystack:
+            if term and term_matches(term, haystack):
                 hits.append(word)
         if not hits:
             return 0, []
         score, reasons = 2, []
         for word in hits:
             term = clean_text(word).lower()
-            if term in title:
+            if term_matches(term, title):
                 score += 3
                 reasons.append(f"标题命中 {word}")
-            elif term in abstract:
+            elif term_matches(term, abstract):
                 score += 1
                 reasons.append(f"摘要命中 {word}")
         for word in config.get("domain_boost_keywords", []):
