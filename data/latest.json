@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-08-17T01:50:06.220845+00:00",
+  "generated_at": "2026-08-17T01:59:23.711466+00:00",
   "range": {
     "from": "2026-08-15",
     "to": "2026-08-17"
@@ -12,22 +12,22 @@
       "ok": false,
       "count": 0,
       "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202608150000+TO+202608172359%5D&start=0&",
-      "seconds": 54.27
+      "seconds": 73.41
     },
     "openalex": {
       "ok": true,
       "count": 29,
-      "seconds": 5.08
+      "seconds": 1.79
     },
     "crossref": {
       "ok": true,
       "count": 299,
-      "seconds": 8.81
+      "seconds": 5.06
     },
     "upstream_awesome": {
       "ok": true,
       "count": 0,
-      "seconds": 0.89
+      "seconds": 0.66
     }
   },
   "candidates": [
@@ -61,7 +61,7 @@
         "Crossref"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-08-17T01:50:06.182633+00:00"
+      "discovered_at": "2026-08-17T01:59:23.679464+00:00"
     },
     {
       "stable_id": "doi:10.17559/tv-20250922003005",
@@ -84,7 +84,7 @@
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-08-17T01:50:06.164831+00:00"
+      "discovered_at": "2026-08-17T01:59:23.668526+00:00"
     }
   ]
 }
