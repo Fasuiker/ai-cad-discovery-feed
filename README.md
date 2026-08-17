@@ -9,8 +9,9 @@ uploaded.
 
 ## Schedule
 
-GitHub Actions runs every day at **00:00 UTC / 08:00 Asia/Shanghai**. The daily
-job searches a rolling three-day window so indexing delays do not cause gaps.
+GitHub Actions runs every day at **00:00 UTC / 08:00 Asia/Shanghai**. The public
+job maintains a rolling 30-day candidate pool so individual workbench users can
+choose a 1–30 day local lookback without uploading their private preferences.
 Manual workflow runs may specify a custom start and end date.
 
 ## Sources
@@ -22,10 +23,13 @@ Manual workflow runs may specify a custom start and end date.
 
 ## Files
 
-- `config/ai-cad.json` — search terms, exclusions, categories and source list
+- `config/ai-cad.json` — public baseline terms, exclusions, categories, enabled
+  sources and collection window
 - `data/latest.json` — current candidate feed consumed by the workbench
 - `data/manifest.json` — lightweight feed metadata
 - `scripts/discover.py` — standard-library discovery pipeline
 
-The feed is a discovery aid, not a claim that every returned paper is relevant.
-The workbench keeps a human confirmation step before download and cataloguing.
+The feed is a broad discovery aid, not a claim that every returned paper is
+relevant. The workbench applies each user's local keywords, exclusions, source
+selection, arXiv categories and lookback window before presenting new daily
+candidates, then keeps a human confirmation step before download and cataloguing.

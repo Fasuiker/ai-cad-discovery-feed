@@ -29,6 +29,26 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(discover.relevance({"title": "Generative AI in education", "abstract": "non-parametric comparisons"}, config)[0], 0)
         self.assertLess(discover.relevance({"title": "CAD learning video for fashion students", "abstract": "classroom teaching"}, config)[0], 5)
 
+    def test_disabled_source_is_skipped(self):
+        original = discover.discover_arxiv
+        discover.discover_arxiv = lambda *_args: self.fail("disabled source should not run")
+        try:
+            candidates, health = discover.run(
+                {
+                    "sources": ["disabled-for-test"],
+                    "keywords": [],
+                    "negative_keywords": [],
+                    "domain_boost_keywords": [],
+                    "relevance_threshold": 0,
+                },
+                discover.date(2026, 8, 1),
+                discover.date(2026, 8, 2),
+            )
+        finally:
+            discover.discover_arxiv = original
+        self.assertTrue(health["arxiv"]["skipped"])
+        self.assertIsInstance(candidates, list)
+
 
 if __name__ == "__main__":
     unittest.main()

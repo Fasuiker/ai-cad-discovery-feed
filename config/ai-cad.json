@@ -1,7 +1,8 @@
 {
   "profile": "ai-cad",
   "display_name": "AI + CAD",
-  "daily_search_days": 3,
+  "daily_search_days": 30,
+  "sources": ["arxiv", "openalex", "crossref", "upstream_awesome"],
   "max_results_per_source": 300,
   "relevance_threshold": 5,
   "keywords": [

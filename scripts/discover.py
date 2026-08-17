@@ -412,7 +412,11 @@ def run(config: dict[str, Any], start: date, end: date) -> tuple[list[dict[str, 
         ("crossref", discover_crossref),
         ("upstream_awesome", discover_upstreams),
     ]
+    enabled_sources = set(config.get("sources") or [name for name, _ in sources])
     for name, discoverer in sources:
+        if name not in enabled_sources:
+            health[name] = {"ok": True, "count": 0, "skipped": True, "seconds": 0}
+            continue
         started = time.monotonic()
         try:
             rows = discoverer(config, start, end)
@@ -434,6 +438,13 @@ def write_feed(output: Path, archive_dir: Path | None, config: dict[str, Any], s
         "range": {"from": start.isoformat(), "to": end.isoformat()},
         "count": len(candidates),
         "source_health": health,
+        "public_profile": {
+            "keywords": config.get("keywords", []),
+            "negative_keywords": config.get("negative_keywords", []),
+            "arxiv_categories": config.get("arxiv_categories", []),
+            "sources": config.get("sources", []),
+            "collection_window_days": int(config.get("daily_search_days", 3)),
+        },
         "candidates": candidates,
     }
     output.parent.mkdir(parents=True, exist_ok=True)
