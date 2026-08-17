@@ -33,3 +33,18 @@ The feed is a broad discovery aid, not a claim that every returned paper is
 relevant. The workbench applies each user's local keywords, exclusions, source
 selection, arXiv categories and lookback window before presenting new daily
 candidates, then keeps a human confirmation step before download and cataloguing.
+
+## Use your own fork / 使用自己的检索源
+
+1. Fork this repository without renaming it.
+2. Open the fork's **Actions** tab and enable `Daily AI+CAD discovery` (GitHub
+   disables scheduled workflows in new public forks by default).
+3. Edit `config/ai-cad.json` on the default branch. The next workflow run writes
+   both the candidates and the public configuration snapshot to `data/latest.json`.
+4. In Research Workspace, open `文献 → 文献发现 → 每日发现 → 设置`, select
+   `我的 GitHub Fork`, enter the GitHub username, test the connection, and enable
+   `跟随候选源中的公开配置` if the fork should be the source of truth.
+
+Local-only preferences remain available: leave the follow switch off to use the
+fork as a broad candidate pool while filtering it with settings stored only on
+the current device.

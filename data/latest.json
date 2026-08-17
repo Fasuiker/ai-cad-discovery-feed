@@ -30,6 +30,41 @@
       "seconds": 0.66
     }
   },
+  "public_profile": {
+    "keywords": [
+      "AI for CAD",
+      "computer-aided design",
+      "neural CAD",
+      "generative CAD",
+      "parametric CAD",
+      "B-Rep",
+      "boundary representation",
+      "constructive solid geometry",
+      "sketch extrusion",
+      "CAD generation",
+      "CAD reconstruction",
+      "text-to-CAD",
+      "image-to-CAD",
+      "point cloud to CAD",
+      "CAD program",
+      "CAD agent"
+    ],
+    "negative_keywords": [
+      "medical imaging",
+      "drug discovery",
+      "protein folding",
+      "autonomous driving",
+      "robot manipulation",
+      "financial forecasting",
+      "weather forecasting",
+      "scene reconstruction",
+      "gaussian splatting for scene",
+      "human pose"
+    ],
+    "arxiv_categories": ["cs.CV", "cs.GR", "cs.LG", "cs.AI"],
+    "sources": ["arxiv", "openalex", "crossref", "upstream_awesome"],
+    "collection_window_days": 30
+  },
   "candidates": [
     {
       "stable_id": "doi:10.1007/s12008-026-02671-w",
