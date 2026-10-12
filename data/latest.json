@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-10-11T04:56:01.769945+00:00",
+  "generated_at": "2026-10-12T05:10:27.625859+00:00",
   "range": {
-    "from": "2026-09-12",
-    "to": "2026-10-11"
+    "from": "2026-09-13",
+    "to": "2026-10-12"
   },
-  "count": 93,
+  "count": 94,
   "source_health": {
     "arxiv": {
       "ok": true,
-      "count": 43,
-      "seconds": 1.84
+      "count": 44,
+      "seconds": 1.83
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 6.68
+      "seconds": 4.99
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 6.8
+      "seconds": 6.02
     },
     "upstream_awesome": {
       "ok": true,
       "count": 0,
-      "seconds": 1.23
+      "seconds": 0.52
     }
   },
   "public_profile": {
@@ -76,6 +76,31 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.5281/zenodo.23286370",
+      "title": "Artificial Intelligence for Mechanical CAD Automation and Generative Design: A Critical Review of Geometric Validity, Parametric Editability, and Manufacturing Readiness",
+      "authors": [
+        "Timileyin Opeyemi Akande"
+      ],
+      "abstract": "Supplementary materialManuscript: \"Artificial Intelligence for Mechanical CAD Automation and Generative Design:A Critical Review of Geometric Validity, Parametric Editability, and Manufacturing Readiness\" Contents- `scripts/stress_test.py` Section 8 stress test (seed 20261009) -> data/stress_results.json, data/stress_rows.npz- `scripts/audit_and_figures.py` Section 7 audit statistics + Figs. 1-6 (PNG) -> data/audit_*.{csv,json}, figures/- `scripts/scopus_pipeline.py` Appendix A: prep / stats / kappa on a Scopus CSV export- `scripts/build_bibliography.py` Crossref/arXiv lookup and DOI check (needs internet)- `data/audit_coding.csv` Evidence levels (0 none, 1 proxy, 2 direct) for the 13 audited studies- `data/stress_results.json` Numerical results of Section 8- `data/audit_summary.json` Audit prevalence and Wilson 95% intervals- `data/candidates.csv` Unverified candidate titles for bibliography expansion- `figures/` PNG figures and editable Draw.io sources of Figs. 1-3 (manuscript numbering: Fig. 1 protocol, Fig. 2 framework, Fig. 3 taxonomy) Reproduce pip install -r requirements.txt cd scripts python stress_test.py # about 1-3 minutes python audit_and_figures.py Tested with Python 3, NumPy 2.4.4, SciPy 1.17.1, pandas 3.0.2, Matplotlib 3.10.8. Notes- Stress-test thresholds are illustrative configuration values, not standards.- Audit coding is abstract-level, single coder; see manuscript Section 2.4.- PNG names: fig1_framework / fig2_taxonomy / fig3_protocol are script names and differ from manuscript numbers (script fig3_protocol = manuscript Fig. 1, script fig1_framework = Fig. 2, script fig2_taxonomy = Fig. 3).- Repository DOI and licence: [to be added after deposit].",
+      "year": 2026,
+      "published_at": "2026-10-10",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "doi": "10.5281/zenodo.23286370",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7221323040",
+      "source_url": "https://doi.org/10.5281/zenodo.23286370",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-12T05:10:27.363826+00:00"
+    },
+    {
       "stable_id": "doi:10.3390/diagnostics16203266",
       "title": "Real-World Validation of the AI-Enabled Vectorcardiographic CSG-Index for Obstructive Coronary Artery Disease: The VECTOR-CAD Study",
       "authors": [
@@ -99,7 +124,7 @@
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.718928+00:00"
+      "discovered_at": "2026-10-12T05:10:27.596224+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1909068",
@@ -108,7 +133,7 @@
         "Haorong Rong",
         "Xiyi Huang",
         "Xinjie Chen",
-        "Lizhu Ouyang",
+        "欧阳丽珠",
         "Yuelu Li",
         "Xin Lin",
         "Jialing Pan",
@@ -124,18 +149,19 @@
       "venue": "Frontiers in Cardiovascular Medicine",
       "doi": "10.3389/fcvm.2026.1909068",
       "arxiv_id": "",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/W7221147015",
       "source_url": "https://doi.org/10.3389/fcvm.2026.1909068",
-      "pdf_url": "",
+      "pdf_url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2026.1909068/pdf",
       "oa_status": "unknown",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "suggested_category": "LLM, VLM & CAD Agents",
       "matched_terms": [],
       "source_names": [
+        "OpenAlex",
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.712874+00:00"
+      "discovered_at": "2026-10-12T05:10:27.365956+00:00"
     },
     {
       "stable_id": "doi:10.58830/ozgur.pub1444.c5845",
@@ -150,18 +176,19 @@
       "venue": "Biodigital Transformation in Dentistry: From Diagnosis and Biological Preservation to Multidisciplinary Rehabilitation",
       "doi": "10.58830/ozgur.pub1444.c5845",
       "arxiv_id": "",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/W7221077065",
       "source_url": "https://doi.org/10.58830/ozgur.pub1444.c5845",
       "pdf_url": "",
       "oa_status": "unknown",
-      "license": "",
+      "license": "cc-by",
       "suggested_category": "Surveys & Roadmaps",
       "matched_terms": [],
       "source_names": [
+        "OpenAlex",
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.714405+00:00"
+      "discovered_at": "2026-10-12T05:10:27.374098+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmsy.2026.09.026",
@@ -192,7 +219,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-11T04:56:01.657535+00:00"
+      "discovered_at": "2026-10-12T05:10:27.417498+00:00"
     },
     {
       "stable_id": "arxiv:2610.11954",
@@ -225,7 +252,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-11T04:56:01.616429+00:00"
+      "discovered_at": "2026-10-12T05:10:27.350174+00:00"
     },
     {
       "stable_id": "arxiv:2610.12147",
@@ -254,7 +281,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.616195+00:00"
+      "discovered_at": "2026-10-12T05:10:27.349813+00:00"
     },
     {
       "stable_id": "arxiv:2610.11896",
@@ -284,37 +311,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.616631+00:00"
-    },
-    {
-      "stable_id": "doi:10.1145/3841172",
-      "title": "“ <i>I Don’t Want to Engineer Prompts, I Want to Engineer Products</i> ”: 3D CAD Designers’ Views on Futuristic GenAI Concepts",
-      "authors": [
-        "Emily Kuang",
-        "Jo Vermeulen",
-        "George Fitzmaurice",
-        "Justin Matejka"
-      ],
-      "abstract": "Despite skepticism surrounding the integration of Generative AI (GenAI) into creative domains, its potential to transform Computer-Aided Design (CAD) workflows remains largely underexplored. In this study, we investigate how professional 3D CAD designers envision and evaluate GenAI-supported design processes. Using a “design concepts” approach, we produced videos that illustrated futuristic GenAI capabilities, ranging from modifying existing models to generating intricate models from text prompts. Our mixed-methods study, involving an international survey of 106 CAD designers and interviews with eight participants, reveals a surprising openness to adopting GenAI. Contrary to common narratives of creative resistance, participants prioritized efficiency gains and sought AI features that support functionality and creativity. Moreover, we found that no single metaphor fully captures GenAI’s role in CAD: participants alternately positioned it as a tool, a creative partner, and a skilled mentor. This framing advances HCI theory on human–AI collaboration and has implications for designing future GenAI systems for CAD workflows.",
-      "year": 2026,
-      "published_at": "2026-10-07",
-      "venue": "ACM Transactions on Computer-Human Interaction",
-      "doi": "10.1145/3841172",
-      "arxiv_id": "",
-      "openalex_id": "",
-      "source_url": "https://doi.org/10.1145/3841172",
-      "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [
-        "摘要命中 computer-aided design"
-      ],
-      "source_names": [
-        "Crossref"
-      ],
-      "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.767241+00:00"
+      "discovered_at": "2026-10-12T05:10:27.350490+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -345,7 +342,32 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.625457+00:00"
+      "discovered_at": "2026-10-12T05:10:27.365353+00:00"
+    },
+    {
+      "stable_id": "doi:10.5281/zenodo.23208825",
+      "title": "Technical Description of Domain-Specific Modular Agent System (D-MAS)",
+      "authors": [
+        "Hung-Chih Lu"
+      ],
+      "abstract": "D-MAS Technical Description 1. System Positioning & Core Philosophy System Title: Domain-Specific Modular Agent System (D-MAS), platform alias V-OS (Vertical Operating System). Core Philosophy: Narrowing the Context, Maximizing the Precision. Target Problem: Solves monolithic LLM issues such as diminishing returns from parameter scaling, high inference costs, and domain hallucinations. 2. Four-Layer Architecture & Chip Design Workflow (IC Design Case) Step 1. Layer 1: Unified Modular Client & Dynamic Entry Point Functionality: Replaces empty prompt bars with a matrix of domain-iconic entry points (e.g., Electronics, Optics, Mechanical, Materials, Architecture, Digital Art). Chip Design Example: The user selects the \"Electronics\" icon. Technical Mechanism: Initializes domain-specific UI elements and parameters while discarding generic knowledge overhead. Step 2. Layer 2: Granular Licensing & Context Boundary Dispatcher Pay-per-Domain Model: Users only subscribe to and pay for the specialized electronic design sub-module. Cost-Optimization Router: Directs compute tasks to parameter-efficient Small Language Models (SLMs). Noise Elimination: Sets strict boundaries to constrain prompts and data retrieval strictly within related engineering scope. Step 3. Layer 3: Domain-Specific Micro-Agents & Execution Pipelines Agent Swarm Collaboration: Execution is handed over to specialized micro-agents upon entering the workflow. SPICE Netlist Agent: Responsible for generating SPICE netlists and correcting circuit functionality. Chip Layout Agent: Handles physical GDSII layout design. Step 4. Layer 4: Infrastructure, Domain Knowledge & Verification Sandboxes Domain SLMs: Utilizes 3B–14B parameter models fine-tuned on semiconductor datasets, delivering sub-second response times. Domain RAG: Integrates vector databases containing ISO/IEEE standard specifications and technical datasheets. Verification Sandbox: Connects directly with EDA software APIs (e.g., Cadence) to verify logic and design rules. Final Output: Delivers an optimized, high-precision chip design ready for downstream engineering. 3. Brief Summary of Other Domain Applications Optics & Photonics: Micro-agents for Ray Tracing and Photonic Network design. Mechanical & Materials Science: FEM Structural Solvers, CAD STEP Parametric Agents, and Crystal Structure Modelers. Architecture & Interior Design: BIM / IFC Schema Generators and spatial modeling. Digital Art & Sculpting: Procedural 3D Mesh Engines and photorealistic shaders.",
+      "year": 2026,
+      "published_at": "2026-10-07",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "doi": "10.5281/zenodo.23208825",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7220963908",
+      "source_url": "https://doi.org/10.5281/zenodo.23208825",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "cc-by-nc",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-12T05:10:27.490537+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1963643",
@@ -371,7 +393,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.633928+00:00"
+      "discovered_at": "2026-10-12T05:10:27.380962+00:00"
     },
     {
       "stable_id": "arxiv:2610.09781",
@@ -398,32 +420,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.616839+00:00"
-    },
-    {
-      "stable_id": "doi:10.5281/zenodo.23208825",
-      "title": "D-MAS Technical Specification",
-      "authors": [
-        "Hung-Chih Lu"
-      ],
-      "abstract": "D-MAS Technical Specification 1. System Positioning & Core Philosophy System Title: Domain-Specific Modular Agent System (D-MAS), platform alias V-OS (Vertical Operating System). Core Philosophy: Narrowing the Context, Maximizing the Precision. Target Problem: Solves monolithic LLM issues such as diminishing returns from parameter scaling, high inference costs, and domain hallucinations. 2. Four-Layer Architecture & Chip Design Workflow (IC Design Case) Step 1. Layer 1: Unified Modular Client & Dynamic Entry Point Functionality: Replaces empty prompt bars with a matrix of domain-iconic entry points (e.g., Electronics, Optics, Mechanical, Materials, Architecture, Digital Art). Chip Design Example: The user selects the \"Electronics\" icon. Technical Mechanism: Initializes domain-specific UI elements and parameters while discarding generic knowledge overhead. Step 2. Layer 2: Granular Licensing & Context Boundary Dispatcher Pay-per-Domain Model: Users only subscribe to and pay for the specialized electronic design sub-module. Cost-Optimization Router: Directs compute tasks to parameter-efficient Small Language Models (SLMs). Noise Elimination: Sets strict boundaries to constrain prompts and data retrieval strictly within related engineering scope. Step 3. Layer 3: Domain-Specific Micro-Agents & Execution Pipelines Agent Swarm Collaboration: Execution is handed over to specialized micro-agents upon entering the workflow. SPICE Netlist Agent: Responsible for generating SPICE netlists and correcting circuit functionality. Chip Layout Agent: Handles physical GDSII layout design. Step 4. Layer 4: Infrastructure, Domain Knowledge & Verification Sandboxes Domain SLMs: Utilizes 3B–14B parameter models fine-tuned on semiconductor datasets, delivering sub-second response times. Domain RAG: Integrates vector databases containing ISO/IEEE standard specifications and technical datasheets. Verification Sandbox: Connects directly with EDA software APIs (e.g., Cadence) to verify logic and design rules. Final Output: Delivers an optimized, high-precision chip design ready for downstream engineering. 3. Brief Summary of Other Domain Applications Optics & Photonics: Micro-agents for Ray Tracing and Photonic Network design. Mechanical & Materials Science: FEM Structural Solvers, CAD STEP Parametric Agents, and Crystal Structure Modelers. Architecture & Interior Design: BIM / IFC Schema Generators and spatial modeling. Digital Art & Sculpting: Procedural 3D Mesh Engines and photorealistic shaders.",
-      "year": 2026,
-      "published_at": "2026-10-07",
-      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
-      "doi": "10.5281/zenodo.23208825",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7220963908",
-      "source_url": "https://doi.org/10.5281/zenodo.23208825",
-      "pdf_url": "",
-      "oa_status": "green",
-      "license": "cc-by-nc",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.699404+00:00"
+      "discovered_at": "2026-10-12T05:10:27.350841+00:00"
     },
     {
       "stable_id": "doi:10.3389/fonc.2026.1819986",
@@ -451,7 +448,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-11T04:56:01.638020+00:00"
+      "discovered_at": "2026-10-12T05:10:27.387974+00:00"
     },
     {
       "stable_id": "arxiv:2610.09127",
@@ -489,7 +486,7 @@
         "arXiv"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-11T04:56:01.617039+00:00"
+      "discovered_at": "2026-10-12T05:10:27.351164+00:00"
     },
     {
       "stable_id": "arxiv:2610.08698",
@@ -521,7 +518,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-11T04:56:01.617229+00:00"
+      "discovered_at": "2026-10-12T05:10:27.351487+00:00"
     },
     {
       "stable_id": "arxiv:2610.07062",
@@ -553,7 +550,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.617749+00:00"
+      "discovered_at": "2026-10-12T05:10:27.352393+00:00"
     },
     {
       "stable_id": "doi:10.1080/00207543.2026.2741386",
@@ -584,7 +581,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-11T04:56:01.657747+00:00"
+      "discovered_at": "2026-10-12T05:10:27.417846+00:00"
     },
     {
       "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
@@ -615,7 +612,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.626863+00:00"
+      "discovered_at": "2026-10-12T05:10:27.368177+00:00"
     },
     {
       "stable_id": "arxiv:2610.04262",
@@ -648,7 +645,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-11T04:56:01.618166+00:00"
+      "discovered_at": "2026-10-12T05:10:27.353114+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04262",
@@ -681,7 +678,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-11T04:56:01.628391+00:00"
+      "discovered_at": "2026-10-12T05:10:27.370970+00:00"
     },
     {
       "stable_id": "arxiv:2610.04292",
@@ -717,7 +714,43 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.617985+00:00"
+      "discovered_at": "2026-10-12T05:10:27.352812+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2610.04292",
+      "title": "LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures",
+      "authors": [
+        "Jiateng Liu",
+        "Rushi Wang",
+        "Cheng Qian",
+        "Xuejun Zhang",
+        "Sun Li",
+        "Jiayu Liu",
+        "Yifan Shen",
+        "Xu Cao",
+        "Jiarui Yao",
+        "Bingxuan Li",
+        "Ruhi Sarikaya",
+        "Heng Ji"
+      ],
+      "abstract": "LLM-based agents are increasingly capable of generating complex 3D structures, with the potential to reshape how objects are designed and realized in the physical world. Yet, producing elegant geometry is fundamentally different from producing objects that can be built and perform their intended functions. Existing evaluations largely focus on geometric quality while overlooking physical realizability. We introduce LMBuild, a benchmark for evaluating LLM agents on generating buildable and functional structures. LMBuild represents generated objects as assembled structures comprising part decompositions, joints, materials, and sequences. To support reproducible evaluation, we provide a unified framework consisting of: (1) an interactive environment in which agents can use tools to retrieve, create, and place components to construct objects; (2) a curated benchmark that repurposes established CAD datasets and augments them with knowledge from Wikipedia; and (3) a evaluation framework covering structural soundness, functional affordance, design quality, and physical realization. Evaluations across 30 systems reveal several intriguing findings: (a) Soundness and alignment are no longer the primary bottlenecks for frontier closed-source models, while functional affordance and physical operability remain substantially more challenging; (b) stronger models more effectively create new components, whereas weaker models tend to rely on retrieval; and (c) providing functional specifications substantially improves part completeness, kinematics, and physical operability. These results show that generating real-world structures requires deeper reasoning about functional affordances, mechanics, and designing and creating novel components. We expect LMBuild to provide a foundation for measuring progress and incentivizing research toward agents that generate buildable and functional structures.",
+      "year": 2026,
+      "published_at": "2026-10-03",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2610.04292",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7220677559",
+      "source_url": "https://arxiv.org/abs/2610.04292",
+      "pdf_url": "https://arxiv.org/pdf/2610.04292",
+      "oa_status": "green",
+      "license": "cc-by-nc-sa",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-12T05:10:27.493391+00:00"
     },
     {
       "stable_id": "arxiv:2610.04084",
@@ -744,7 +777,34 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.618764+00:00"
+      "discovered_at": "2026-10-12T05:10:27.354126+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2610.04084",
+      "title": "Dependable AI-Assisted Engineering: A Formal Framework for AI Participation and Assurance in Safety-Critical Workflows",
+      "authors": [
+        "Puxue Tan"
+      ],
+      "abstract": "Generative AI can produce engineering artefacts, but generation alone does not determine whether or how those artefacts should enter safety-critical workflows. This paper develops a formal framework for assigning AI participation and assurance at the level of individual workflow units. Each unit has a participation and assurance record covering its engineering requirement, an approved operational formalization where applicable, the applicable mechanism, fallback where applicable, evidence obligations and the applicable guarantee, plus a deployment-readiness status. The framework distinguishes deterministic verification, statistically calibrated admission, authorized human judgement supported by AI advice, authorized human adjudication of AI-produced artefacts, retained deterministic tool paths and explicit non-participation; these arrangements carry different kinds of guarantee rather than levels on a common scale. The framework also separates formalization fidelity from verifier soundness, provides a staged classification and readiness procedure, and derives conditions for comparing a gated AI-assisted unit with an incumbent process under recurring-population assumptions. We instantiate and apply the framework in an executed 17-unit wing-spar structural-analysis workflow combining deterministically gated AI-generated CAD, retained deterministic computation and human judgement. The AI-generated CAD program passed all 23 deterministic checks and was admitted at the first attempt. Favourable stress magnitudes did not suffice to pass the stress criteria where the predeclared mesh-convergence evidence was insufficient; those criteria were instead referred to engineering judgement. The case demonstrates selective AI participation and explicit evidence handling at unit level; no claim is made of workflow-level dependability, certification, structural safety or productivity.",
+      "year": 2026,
+      "published_at": "2026-10-02",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2610.04084",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7220723858",
+      "source_url": "https://arxiv.org/abs/2610.04084",
+      "pdf_url": "https://arxiv.org/pdf/2610.04084",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "CAD Editing, Constraints & Verification",
+      "matched_terms": [
+        "摘要命中 cad program"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 8,
+      "discovered_at": "2026-10-12T05:10:27.471250+00:00"
     },
     {
       "stable_id": "arxiv:2610.04116",
@@ -776,7 +836,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.618403+00:00"
+      "discovered_at": "2026-10-12T05:10:27.353519+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.mfglet.2026.07.025",
@@ -807,7 +867,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-11T04:56:01.699062+00:00"
+      "discovered_at": "2026-10-12T05:10:27.489953+00:00"
     },
     {
       "stable_id": "arxiv:2610.03799",
@@ -836,7 +896,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-11T04:56:01.618949+00:00"
+      "discovered_at": "2026-10-12T05:10:27.354431+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.03799",
@@ -865,7 +925,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-11T04:56:01.625936+00:00"
+      "discovered_at": "2026-10-12T05:10:27.366579+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00158-026-04429-0",
@@ -894,7 +954,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.636350+00:00"
+      "discovered_at": "2026-10-12T05:10:27.385171+00:00"
     },
     {
       "stable_id": "doi:10.33103/2617-3352.1528",
@@ -919,7 +979,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.625175+00:00"
+      "discovered_at": "2026-10-12T05:10:27.364879+00:00"
     },
     {
       "stable_id": "doi:10.31399/asm.cp.istfa2026p0027",
@@ -949,7 +1009,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.650098+00:00"
+      "discovered_at": "2026-10-12T05:10:27.405162+00:00"
     },
     {
       "stable_id": "doi:10.3390/mi17101154",
@@ -982,7 +1042,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.645905+00:00"
+      "discovered_at": "2026-10-12T05:10:27.398286+00:00"
     },
     {
       "stable_id": "arxiv:2609.39150",
@@ -1014,7 +1074,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.619251+00:00"
+      "discovered_at": "2026-10-12T05:10:27.354952+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.39150",
@@ -1046,7 +1106,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.629815+00:00"
+      "discovered_at": "2026-10-12T05:10:27.373671+00:00"
     },
     {
       "stable_id": "doi:10.6026/973206300225558",
@@ -1071,7 +1131,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.628972+00:00"
+      "discovered_at": "2026-10-12T05:10:27.371967+00:00"
     },
     {
       "stable_id": "arxiv:2609.36806",
@@ -1108,7 +1168,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.619883+00:00"
+      "discovered_at": "2026-10-12T05:10:27.356109+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.36806",
@@ -1145,7 +1205,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.627885+00:00"
+      "discovered_at": "2026-10-12T05:10:27.370118+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23062597",
@@ -1174,7 +1234,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.704480+00:00"
+      "discovered_at": "2026-10-12T05:10:27.500534+00:00"
     },
     {
       "stable_id": "doi:10.2118/231957-ms",
@@ -1206,7 +1266,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.684816+00:00"
+      "discovered_at": "2026-10-12T05:10:27.466572+00:00"
     },
     {
       "stable_id": "arxiv:2609.37686",
@@ -1235,15 +1295,15 @@
         "Olive Huang",
         "Zeqiang Wang"
       ],
-      "abstract": "Autonomous agents have made rapid progress in general-purpose computer use, but reliable automation of professional industrial engineering remains out of reach, as engineering workflows demand reasoning over geometric and physical constraints and dependencies preserved across software and design stages. We present EngiWorld, the first benchmark structured around the complete design loop: 1,301 expert-curated tasks spanning 6 engineering domains (CAD, CAE, CAM, BIM, EDA, and 3D visualization) and 26 professional software platforms, with both GUI and CLI interfaces and 6 task types ranging from software-selection to open-ended tasks. We further introduce an artifact-centric evaluation methodology built on a unified domain-verifier suite, which programmatically checks the geometric validity, physical feasibility, and rule compliance of final and intermediate artifacts, and scores quantitative design tasks continuously by specification attainment rather than binary success. Evaluation of seven frontier models reveals a substantial capability gap: the strongest model achieves an EngiScore of only 44.3, and just 3.6% of multi-software attempts succeed. EngiWorld provides the first rigorous foundation for measuring progress toward agents that operate professional engineering software end to end.",
+      "abstract": "Autonomous agents have made rapid progress in general-purpose computer use, yet reliable automation of professional industrial engineering remains out of reach. Engineering workflows require reasoning over geometric and physical constraints and keeping dependencies consistent across software and design stages. We present EngiWorld, a benchmark designed around the capabilities that real engineering projects require, from operating a single application to solving engineering problems end to end. It contains 1,301 expert-curated tasks spanning six engineering domains (CAD, CAE, CAM, BIM, EDA, and DCC) and 26 professional software applications, with both GUI and CLI interfaces. The tasks are organized into six types, corresponding to capabilities that real engineering projects require. We further introduce an artifact-centric evaluation methodology built on a unified suite of domain verifiers. The verifiers programmatically check whether final and intermediate artifacts are geometrically valid, physically feasible, and compliant with design rules. Beyond binary success, they also score how well optimized designs meet their specifications. Evaluation of seven frontier models reveals a substantial capability gap: the strongest model scores only 44.7/100, and just 3.6% of runs on tasks that require cross-software coordination succeed. EngiWorld provides a rigorous foundation for measuring progress toward agents that operate professional engineering software end to end.",
       "year": 2026,
       "published_at": "2026-09-29",
       "venue": "arXiv",
       "doi": "",
       "arxiv_id": "2609.37686",
       "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2609.37686v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.37686v1",
+      "source_url": "https://arxiv.org/abs/2609.37686v2",
+      "pdf_url": "https://arxiv.org/pdf/2609.37686v2",
       "oa_status": "green",
       "license": "arXiv",
       "suggested_category": "LLM, VLM & CAD Agents",
@@ -1252,7 +1312,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.619675+00:00"
+      "discovered_at": "2026-10-12T05:10:27.355757+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.37686",
@@ -1298,7 +1358,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.635850+00:00"
+      "discovered_at": "2026-10-12T05:10:27.384315+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.09.28.26364159",
@@ -1332,7 +1392,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.634699+00:00"
+      "discovered_at": "2026-10-12T05:10:27.382005+00:00"
     },
     {
       "stable_id": "doi:10.2174/0126667797467407260912093229",
@@ -1364,7 +1424,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.681040+00:00"
+      "discovered_at": "2026-10-12T05:10:27.459423+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jcomc.2026.100821",
@@ -1396,7 +1456,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.643491+00:00"
+      "discovered_at": "2026-10-12T05:10:27.395497+00:00"
     },
     {
       "stable_id": "arxiv:2609.35035",
@@ -1426,7 +1486,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.620542+00:00"
+      "discovered_at": "2026-10-12T05:10:27.357122+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35035",
@@ -1456,7 +1516,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.639201+00:00"
+      "discovered_at": "2026-10-12T05:10:27.390735+00:00"
     },
     {
       "stable_id": "doi:10.2346/tst-25-029",
@@ -1486,7 +1546,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.646539+00:00"
+      "discovered_at": "2026-10-12T05:10:27.398996+00:00"
     },
     {
       "stable_id": "doi:10.17816/transsyst716698",
@@ -1513,7 +1573,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.690235+00:00"
+      "discovered_at": "2026-10-12T05:10:27.474069+00:00"
     },
     {
       "stable_id": "arxiv:2609.34976",
@@ -1544,7 +1604,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.620713+00:00"
+      "discovered_at": "2026-10-12T05:10:27.357400+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.34976",
@@ -1575,7 +1635,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.637725+00:00"
+      "discovered_at": "2026-10-12T05:10:27.387480+00:00"
     },
     {
       "stable_id": "arxiv:2609.35242",
@@ -1605,7 +1665,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.620359+00:00"
+      "discovered_at": "2026-10-12T05:10:27.356828+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35242",
@@ -1635,7 +1695,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.634107+00:00"
+      "discovered_at": "2026-10-12T05:10:27.381261+00:00"
     },
     {
       "stable_id": "doi:10.5194/isprs-archives-l-4-w2-2026-221-2026",
@@ -1664,7 +1724,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.626467+00:00"
+      "discovered_at": "2026-10-12T05:10:27.367475+00:00"
     },
     {
       "stable_id": "arxiv:2609.36161",
@@ -1692,7 +1752,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.620181+00:00"
+      "discovered_at": "2026-10-12T05:10:27.356522+00:00"
     },
     {
       "stable_id": "doi:10.65520/erciyesfen.1925750",
@@ -1719,7 +1779,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.636102+00:00"
+      "discovered_at": "2026-10-12T05:10:27.384754+00:00"
     },
     {
       "stable_id": "doi:10.47760/ijcsmc.2026.v15i09.006",
@@ -1745,7 +1805,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.654997+00:00"
+      "discovered_at": "2026-10-12T05:10:27.414226+00:00"
     },
     {
       "stable_id": "arxiv:2609.32773",
@@ -1772,7 +1832,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.621120+00:00"
+      "discovered_at": "2026-10-12T05:10:27.358100+00:00"
     },
     {
       "stable_id": "doi:10.67440/ahj.vi.2380",
@@ -1802,7 +1862,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.700512+00:00"
+      "discovered_at": "2026-10-12T05:10:27.492672+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.22925097",
@@ -1829,7 +1889,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.624932+00:00"
+      "discovered_at": "2026-10-12T05:10:27.364466+00:00"
     },
     {
       "stable_id": "doi:10.5772/intechopen.1018046",
@@ -1859,7 +1919,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.677593+00:00"
+      "discovered_at": "2026-10-12T05:10:27.452734+00:00"
     },
     {
       "stable_id": "doi:10.1177/10692509261488309",
@@ -1888,7 +1948,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.642470+00:00"
+      "discovered_at": "2026-10-12T05:10:27.393800+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.22924498",
@@ -1914,7 +1974,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.632910+00:00"
+      "discovered_at": "2026-10-12T05:10:27.379492+00:00"
     },
     {
       "stable_id": "doi:10.1038/s41598-026-71324-5",
@@ -1952,35 +2012,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.637517+00:00"
-    },
-    {
-      "stable_id": "doi:10.3389/fvets.2026.1891073",
-      "title": "Surgical management of an unstable occipital condyle fracture in a dog using a patient-specific CNC-milled titanium implant: a case report",
-      "authors": [
-        "Narae Jeong",
-        "Hyunkyoung Kim",
-        "Cheongwoon Cho",
-        "Joohyun Jung"
-      ],
-      "abstract": "A 10-year-old castrated male Pomeranian was evaluated after a fall and presented with tetraparesis, dysphagia, and headturn. Magnetic resonance imaging (MRI) revealed a right occipital condyle fracture that caused brainstem compression and cerebellar infarction from a displaced bony fragment. According to the Anderson and Montesano classification in human medicine, this case was presumed to be Type 3, indicating instability, and surgical correction was considered. A bone fragment located in the medulla oblongata was left in situ owing to the potential risk of severe complications from removal. Occipitocervical stabilization surgery was performed to prevent further damage from instability. A patient-specific titanium implant was designed by CAD and fabricated by CNC milling, and screws were applied to the occiput and C1 vertebra using standard techniques, whereas a screw was inserted transversely into the C2 spinous process to minimize the risk of implant failure from neck flexion. Postoperative computed tomography (CT) confirmed proper implant placement without neural injury. Over time, the patient showed improvements in hypoglossal dysfunction and gait, and was discharged on postoperative day five. Occipital condyle fractures are rare in both veterinary and human medicine, with most cases classified as type 1 or 2, and typically do not require surgical intervention. To the best of our knowledge, this is the first peer-reviewed description of surgical stabilization of an occipital condyle fracture in a dog using a patient-specific, CNC-milled titanium implant. Conservative management of occipital condyle fracture and surgical stabilization of craniocervical junction fractures have been described previously, and the contribution of the present report lies in the implant design and fabrication workflow rather than in the surgical management of craniocervical injury per se .",
-      "year": 2026,
-      "published_at": "2026-09-22",
-      "venue": "Frontiers in Veterinary Science",
-      "doi": "10.3389/fvets.2026.1891073",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7214044716",
-      "source_url": "https://doi.org/10.3389/fvets.2026.1891073",
-      "pdf_url": "https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2026.1891073/pdf",
-      "oa_status": "gold",
-      "license": "cc-by",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.688664+00:00"
+      "discovered_at": "2026-10-12T05:10:27.387140+00:00"
     },
     {
       "stable_id": "doi:10.1177/14780771261488679",
@@ -2005,7 +2037,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.626236+00:00"
+      "discovered_at": "2026-10-12T05:10:27.367100+00:00"
     },
     {
       "stable_id": "doi:10.1177/14644207261487416",
@@ -2035,7 +2067,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.627119+00:00"
+      "discovered_at": "2026-10-12T05:10:27.368608+00:00"
     },
     {
       "stable_id": "arxiv:2609.23425",
@@ -2065,7 +2097,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.621691+00:00"
+      "discovered_at": "2026-10-12T05:10:27.359082+00:00"
     },
     {
       "stable_id": "doi:10.6084/m9.figshare.33944528",
@@ -2095,7 +2127,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.624375+00:00"
+      "discovered_at": "2026-10-12T05:10:27.363141+00:00"
     },
     {
       "stable_id": "arxiv:2609.22688",
@@ -2127,7 +2159,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.621865+00:00"
+      "discovered_at": "2026-10-12T05:10:27.359377+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.22688",
@@ -2159,7 +2191,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.631255+00:00"
+      "discovered_at": "2026-10-12T05:10:27.376321+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.aei.2026.105276",
@@ -2187,7 +2219,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.633363+00:00"
+      "discovered_at": "2026-10-12T05:10:27.380031+00:00"
     },
     {
       "stable_id": "doi:10.36948/ijfmr.2026.v08i05.87962",
@@ -2215,7 +2247,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.627562+00:00"
+      "discovered_at": "2026-10-12T05:10:27.369373+00:00"
     },
     {
       "stable_id": "doi:10.1080/17543266.2026.2730340",
@@ -2245,7 +2277,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.624575+00:00"
+      "discovered_at": "2026-10-12T05:10:27.363470+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.cad.2026.104175",
@@ -2277,7 +2309,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-10-11T04:56:01.657996+00:00"
+      "discovered_at": "2026-10-12T05:10:27.418253+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jag.2026.105583",
@@ -2308,7 +2340,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.630841+00:00"
+      "discovered_at": "2026-10-12T05:10:27.375847+00:00"
     },
     {
       "stable_id": "openalex:w7213686910",
@@ -2336,7 +2368,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.624787+00:00"
+      "discovered_at": "2026-10-12T05:10:27.364180+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1860391",
@@ -2364,7 +2396,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.631841+00:00"
+      "discovered_at": "2026-10-12T05:10:27.377457+00:00"
     },
     {
       "stable_id": "doi:10.1007/s11263-026-03024-6",
@@ -2393,7 +2425,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-11T04:56:01.650867+00:00"
+      "discovered_at": "2026-10-12T05:10:27.406452+00:00"
     },
     {
       "stable_id": "arxiv:2609.20323",
@@ -2424,7 +2456,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.622260+00:00"
+      "discovered_at": "2026-10-12T05:10:27.360041+00:00"
     },
     {
       "stable_id": "doi:10.1109/qsw72780.2026.00033",
@@ -2456,7 +2488,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.622062+00:00"
+      "discovered_at": "2026-10-12T05:10:27.359698+00:00"
     },
     {
       "stable_id": "doi:10.1922/ejprd.v34i13s.2216",
@@ -2487,7 +2519,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.683813+00:00"
+      "discovered_at": "2026-10-12T05:10:27.464922+00:00"
     },
     {
       "stable_id": "doi:10.4018/979-8-3373-9089-5.ch005",
@@ -2513,7 +2545,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.625749+00:00"
+      "discovered_at": "2026-10-12T05:10:27.366273+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.22325",
@@ -2548,7 +2580,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-11T04:56:01.628211+00:00"
+      "discovered_at": "2026-10-12T05:10:27.370661+00:00"
     },
     {
       "stable_id": "doi:10.3389/fpubh.2026.1929290",
@@ -2578,7 +2610,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.637061+00:00"
+      "discovered_at": "2026-10-12T05:10:27.386091+00:00"
     },
     {
       "stable_id": "arxiv:2609.16727",
@@ -2608,7 +2640,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.622621+00:00"
+      "discovered_at": "2026-10-12T05:10:27.360640+00:00"
     },
     {
       "stable_id": "doi:10.33619/2414-2948/130/18",
@@ -2634,7 +2666,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.680250+00:00"
+      "discovered_at": "2026-10-12T05:10:27.457733+00:00"
     },
     {
       "stable_id": "doi:10.1922/ejprd.v34i4.2106",
@@ -2665,7 +2697,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.680030+00:00"
+      "discovered_at": "2026-10-12T05:10:27.457382+00:00"
     },
     {
       "stable_id": "arxiv:2609.15122",
@@ -2695,7 +2727,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.623489+00:00"
+      "discovered_at": "2026-10-12T05:10:27.362113+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.15122",
@@ -2725,7 +2757,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.630037+00:00"
+      "discovered_at": "2026-10-12T05:10:27.374461+00:00"
     },
     {
       "stable_id": "arxiv:2609.16251",
@@ -2758,7 +2790,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-11T04:56:01.622817+00:00"
+      "discovered_at": "2026-10-12T05:10:27.360981+00:00"
     },
     {
       "stable_id": "doi:10.3390/jmse14181707",
@@ -2790,7 +2822,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-11T04:56:01.639014+00:00"
+      "discovered_at": "2026-10-12T05:10:27.390137+00:00"
     },
     {
       "stable_id": "arxiv:2609.15659",
@@ -2826,7 +2858,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.623041+00:00"
+      "discovered_at": "2026-10-12T05:10:27.361364+00:00"
     },
     {
       "stable_id": "arxiv:2609.35788",
@@ -2852,7 +2884,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.623257+00:00"
+      "discovered_at": "2026-10-12T05:10:27.361730+00:00"
     },
     {
       "stable_id": "doi:10.21227/f2km-kr19",
@@ -2883,7 +2915,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.628578+00:00"
+      "discovered_at": "2026-10-12T05:10:27.371271+00:00"
     },
     {
       "stable_id": "arxiv:2609.14521",
@@ -2914,7 +2946,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-11T04:56:01.623715+00:00"
+      "discovered_at": "2026-10-12T05:10:27.362467+00:00"
     }
   ]
 }
