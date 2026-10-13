@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-10-12T05:10:27.625859+00:00",
+  "generated_at": "2026-10-13T06:09:37.294689+00:00",
   "range": {
-    "from": "2026-09-13",
-    "to": "2026-10-12"
+    "from": "2026-09-14",
+    "to": "2026-10-13"
   },
-  "count": 94,
+  "count": 95,
   "source_health": {
     "arxiv": {
       "ok": true,
-      "count": 44,
-      "seconds": 1.83
+      "count": 43,
+      "seconds": 1.61
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 4.99
+      "seconds": 6.6
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 6.02
+      "seconds": 6.3
     },
     "upstream_awesome": {
       "ok": true,
       "count": 0,
-      "seconds": 0.52
+      "seconds": 0.72
     }
   },
   "public_profile": {
@@ -76,6 +76,32 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.37128/2306-8744-2026-3-6",
+      "title": "USE OF GENERATIVE ARTIFICIAL INTELLIGENCE FOR DESIGNING ROBOTIC MODELS USING ENGINEERING GRAPHICS",
+      "authors": [
+        "Olena Solona",
+        "Olena Dzhedzhula"
+      ],
+      "abstract": "The article examines the possibilities of using generative artificial intelligence in teaching the discipline “Engineering and Computer Graphics” in the design of robotic models for the processing industry. The feasibility of integrating generative artificial intelligence models into the design process of robotic systems as a means of developing spatial thinking, graphic competence, design skills, and digital skills of agricultural university students is substantiated. It is established that modern generative systems (ChatGPT, Microsoft Copilot, Gemini, Claude, DALL·E, etc.) support all stages of educational design, from developing technical specifications and generating product concepts to creating drawings and three-dimensional models, visualizing designs, preparing technical documentation, and analyzing possible design solutions. A methodology for using generative artificial intelligence in the educational project “Design of a Robotic Manipulator” is proposed. The methodology is based on the principles of project-based learning, STEM education, the competency-based approach, and the use of CAD systems. A structural model for integrating generative artificial intelligence into the process of graphic training has been developed. It includes the stages of problem formulation, concept generation, sketch creation, three-dimensional modeling, preparation of design documentation, and expert evaluation of the finished product. It is demonstrated that the use of generative AI contributes to increasing students’ motivation, developing engineering thinking, fostering digital literacy, and reducing the time required for routine operations in the design of robotic models.",
+      "year": 2026,
+      "published_at": "2026-10-12",
+      "venue": "Vibrations in engineering and technology",
+      "doi": "10.37128/2306-8744-2026-3-6",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.37128/2306-8744-2026-3-6",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "https://creativecommons.org/licenses/by/4.0/deed.en",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-13T06:09:37.237848+00:00"
+    },
+    {
       "stable_id": "doi:10.5281/zenodo.23286370",
       "title": "Artificial Intelligence for Mechanical CAD Automation and Generative Design: A Critical Review of Geometric Validity, Parametric Editability, and Manufacturing Readiness",
       "authors": [
@@ -98,33 +124,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.363826+00:00"
-    },
-    {
-      "stable_id": "doi:10.3390/diagnostics16203266",
-      "title": "Real-World Validation of the AI-Enabled Vectorcardiographic CSG-Index for Obstructive Coronary Artery Disease: The VECTOR-CAD Study",
-      "authors": [
-        "Muhammed Esad Çekin",
-        "Halil Gökkuş"
-      ],
-      "abstract": "Background/Objectives: Cardisiography is an artificial intelligence-enabled resting vectorcardiography (AI-VCG) system, but evidence for its accuracy in coronary artery disease (CAD) remains limited. We evaluated the AI-VCG-derived CSG-index for obstructive CAD detection, association with stenosis severity, incremental discrimination beyond clinical variables, and concordance with exercise electrocardiography (ECG). Methods: In this two-centre retrospective diagnostic-accuracy study, 721 Cardisiography records from January 2023–December 2025 were screened and 224 patients were included. Invasive coronary angiography (ICA) was the primary reference (n = 172); coronary computed tomography angiography (CCTA) contributed only reference-negative cases (n = 52) to the hierarchical cohort. Obstructive CAD was defined as ≥50% stenosis and CSG-index ≥ −0.27 as positive. Primary analysis assessed obstructive CAD discrimination in the ICA cohort; secondary analyses assessed severe CAD (≥70%), hierarchical-cohort performance, stenosis severity, incremental value beyond available clinical variables and exercise ECG concordance. Results: Obstructive CAD was present in 76/172 patients. In the ICA cohort, CSG-index area under the curve (AUC) was 0.820, with 80.3% sensitivity and 78.1% specificity; AUCs were 0.843 in the hierarchical cohort and 0.785 for severe CAD. CSG-index increased across stenosis classes. After adjustment for available clinical variables, it remained independently associated with obstructive CAD and increased model AUC from 0.806 to 0.886. In the exploratory exercise ECG subgroup (n = 83), agreement was 66.3%, with fewer false-positive CSG-index classifications. Conclusions: The locked CSG-index showed balanced performance for obstructive CAD, provided graded information across stenosis classes, and added discrimination beyond available clinical variables. These findings support prospective multicentre evaluation as a complementary non-invasive resting test.",
-      "year": 2026,
-      "published_at": "2026-10-09",
-      "venue": "Diagnostics",
-      "doi": "10.3390/diagnostics16203266",
-      "arxiv_id": "",
-      "openalex_id": "",
-      "source_url": "https://doi.org/10.3390/diagnostics16203266",
-      "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "Crossref"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.596224+00:00"
+      "discovered_at": "2026-10-13T06:09:37.151067+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1909068",
@@ -161,7 +161,7 @@
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.365956+00:00"
+      "discovered_at": "2026-10-13T06:09:37.152234+00:00"
     },
     {
       "stable_id": "doi:10.58830/ozgur.pub1444.c5845",
@@ -178,9 +178,9 @@
       "arxiv_id": "",
       "openalex_id": "https://openalex.org/W7221077065",
       "source_url": "https://doi.org/10.58830/ozgur.pub1444.c5845",
-      "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "cc-by",
+      "pdf_url": "https://www.ozguryayinlari.com/site/catalog/download/1444/8158/23072",
+      "oa_status": "hybrid",
+      "license": "https://creativecommons.org/licenses/by/4.0",
       "suggested_category": "Surveys & Roadmaps",
       "matched_terms": [],
       "source_names": [
@@ -188,7 +188,7 @@
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.374098+00:00"
+      "discovered_at": "2026-10-13T06:09:37.157450+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmsy.2026.09.026",
@@ -219,7 +219,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-12T05:10:27.417498+00:00"
+      "discovered_at": "2026-10-13T06:09:37.182805+00:00"
     },
     {
       "stable_id": "arxiv:2610.11954",
@@ -252,7 +252,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-12T05:10:27.350174+00:00"
+      "discovered_at": "2026-10-13T06:09:37.142966+00:00"
     },
     {
       "stable_id": "arxiv:2610.12147",
@@ -281,7 +281,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.349813+00:00"
+      "discovered_at": "2026-10-13T06:09:37.142737+00:00"
     },
     {
       "stable_id": "arxiv:2610.11896",
@@ -311,7 +311,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.350490+00:00"
+      "discovered_at": "2026-10-13T06:09:37.143160+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -342,7 +342,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.365353+00:00"
+      "discovered_at": "2026-10-13T06:09:37.151965+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23208825",
@@ -367,14 +367,14 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.490537+00:00"
+      "discovered_at": "2026-10-13T06:09:37.224752+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1963643",
       "title": "Retinal and coronary imaging in type 1 diabetes: links between retinopathy and subclinical cardiovascular disease",
       "authors": [
-        "Lucie Lyskova",
-        "David Karasek"
+        "Lucie Lysková",
+        "David Karásek"
       ],
       "abstract": "Cardiovascular disease (CVD) remains the leading cause of premature morbidity and mortality in individuals with type 1 diabetes mellitus (T1DM), despite advances in glycemic management and cardiovascular prevention. Conventional cardiovascular risk assessment may underestimate risk in T1DM, particularly among younger asymptomatic individuals, highlighting the need for markers of early vascular injury. Diabetic retinopathy (DR), a microvascular complication of T1DM, is increasingly recognized as a marker of systemic vascular dysfunction rather than an isolated ocular disorder. Non-invasive retinal visualization may provide insight into vascular and atherosclerotic disease. This mini-review summarizes evidence linking DR with subclinical coronary artery disease (CAD) and cardiovascular outcomes in T1DM, focusing on coronary artery calcium (CAC) and coronary computed tomography angiography (CCTA). Observational and longitudinal studies consistently link DR severity with CAC burden, coronary plaque burden, silent CAD, and cardiovascular outcomes, independent of traditional risk factors. Albuminuria and diabetic kidney disease may provide complementary evidence of a broader microvascular phenotype associated with cardiovascular risk. Advances in retinal imaging, including optical coherence tomography angiography and artificial intelligence-based oculomics, support the role of retinal biomarkers in cardiovascular risk prediction. CAC scoring remains valuable for detecting subclinical coronary atherosclerosis, while CCTA characterizes calcified and non-calcified plaque. Emerging evidence suggests that integrating retinal and microvascular markers with coronary imaging may improve identification of asymptomatic individuals at increased cardiovascular risk and support intervention. Although data are observational and prospective validation is required, multimodal strategies combining clinical risk factors, retinal biomarkers, albuminuria, CAC, and CCTA may enhance cardiovascular risk stratification in T1DM.",
       "year": 2026,
@@ -393,7 +393,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.380962+00:00"
+      "discovered_at": "2026-10-13T06:09:37.161544+00:00"
     },
     {
       "stable_id": "arxiv:2610.09781",
@@ -420,7 +420,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.350841+00:00"
+      "discovered_at": "2026-10-13T06:09:37.143368+00:00"
     },
     {
       "stable_id": "doi:10.3389/fonc.2026.1819986",
@@ -448,7 +448,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-12T05:10:27.387974+00:00"
+      "discovered_at": "2026-10-13T06:09:37.165873+00:00"
     },
     {
       "stable_id": "arxiv:2610.09127",
@@ -486,7 +486,7 @@
         "arXiv"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-12T05:10:27.351164+00:00"
+      "discovered_at": "2026-10-13T06:09:37.143570+00:00"
     },
     {
       "stable_id": "arxiv:2610.08698",
@@ -518,7 +518,39 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-12T05:10:27.351487+00:00"
+      "discovered_at": "2026-10-13T06:09:37.143770+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2610.08698",
+      "title": "PrimitiveCAD: An LLM-Based Point-to-CAD Reconstruction with Primitive-Aware Tokenization and Operation Alignment",
+      "authors": [
+        "Jian Gao",
+        "Kailin Bi",
+        "Jiamin Xu",
+        "Xu Jinlan",
+        "Gang Xu"
+      ],
+      "abstract": "Large-model-based point-to-CAD generation holds immense potential for advancing industrial design and enhancing 3D modeling efficiency. However, most existing methods approach the problem as a general point-cloud encoding and token prediction task, neglecting the tokenization and supervision specifically for CAD-related primitives. As a result, these methods often struggle to accurately reconstruct the intricate primitive structures. To address this limitation, we propose PrimitiveCAD, a novel multi-stage paradigm for point-to-CAD reconstruction that enhances the geometric accuracy of generated CAD models while better preserving critical geometric features. First, we introduce a primitive-aware point cloud tokenization model, enabling the system to learn more robust geometric representations from CAD point clouds. Next, we perform supervised finetuning on a large language model (LLM) and introduce an operation alignment loss to align key CAD operation frequencies, thereby improving the preservation of global shape features. Finally, we incorporate reinforcement learning (RL) and introduce a feature-line alignment reward to further reduce stochasticity and enhance the fine-grained preservation of geometric features. Experiments on the DeepCAD and Fusion360 datasets show that our method achieves state-of-the-art performance in code validity, geometric accuracy, and geometric feature preservation.",
+      "year": 2026,
+      "published_at": "2026-10-06",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2610.08698",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7220910364",
+      "source_url": "https://arxiv.org/abs/2610.08698",
+      "pdf_url": "https://arxiv.org/pdf/2610.08698",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [
+        "摘要命中 CAD generation",
+        "标题命中 CAD reconstruction"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 9,
+      "discovered_at": "2026-10-13T06:09:37.159060+00:00"
     },
     {
       "stable_id": "arxiv:2610.07062",
@@ -550,7 +582,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.352393+00:00"
+      "discovered_at": "2026-10-13T06:09:37.144280+00:00"
     },
     {
       "stable_id": "doi:10.1080/00207543.2026.2741386",
@@ -581,7 +613,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-12T05:10:27.417846+00:00"
+      "discovered_at": "2026-10-13T06:09:37.183016+00:00"
     },
     {
       "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
@@ -612,7 +644,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.368177+00:00"
+      "discovered_at": "2026-10-13T06:09:37.153479+00:00"
     },
     {
       "stable_id": "arxiv:2610.04262",
@@ -645,7 +677,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-12T05:10:27.353114+00:00"
+      "discovered_at": "2026-10-13T06:09:37.144703+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04262",
@@ -678,7 +710,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-12T05:10:27.370970+00:00"
+      "discovered_at": "2026-10-13T06:09:37.155328+00:00"
     },
     {
       "stable_id": "arxiv:2610.04292",
@@ -714,7 +746,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.352812+00:00"
+      "discovered_at": "2026-10-13T06:09:37.144519+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04292",
@@ -750,7 +782,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.493391+00:00"
+      "discovered_at": "2026-10-13T06:09:37.226636+00:00"
     },
     {
       "stable_id": "arxiv:2610.04084",
@@ -777,7 +809,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.354126+00:00"
+      "discovered_at": "2026-10-13T06:09:37.145309+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04084",
@@ -804,7 +836,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.471250+00:00"
+      "discovered_at": "2026-10-13T06:09:37.213695+00:00"
     },
     {
       "stable_id": "arxiv:2610.04116",
@@ -836,7 +868,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.353519+00:00"
+      "discovered_at": "2026-10-13T06:09:37.144955+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.mfglet.2026.07.025",
@@ -867,7 +899,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-12T05:10:27.489953+00:00"
+      "discovered_at": "2026-10-13T06:09:37.224989+00:00"
     },
     {
       "stable_id": "arxiv:2610.03799",
@@ -896,7 +928,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-12T05:10:27.354431+00:00"
+      "discovered_at": "2026-10-13T06:09:37.145497+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.03799",
@@ -925,7 +957,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-12T05:10:27.366579+00:00"
+      "discovered_at": "2026-10-13T06:09:37.152707+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00158-026-04429-0",
@@ -954,7 +986,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.385171+00:00"
+      "discovered_at": "2026-10-13T06:09:37.164178+00:00"
     },
     {
       "stable_id": "doi:10.33103/2617-3352.1528",
@@ -979,7 +1011,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.364879+00:00"
+      "discovered_at": "2026-10-13T06:09:37.151671+00:00"
     },
     {
       "stable_id": "doi:10.31399/asm.cp.istfa2026p0027",
@@ -1009,7 +1041,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.405162+00:00"
+      "discovered_at": "2026-10-13T06:09:37.175793+00:00"
     },
     {
       "stable_id": "doi:10.3390/mi17101154",
@@ -1042,7 +1074,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.398286+00:00"
+      "discovered_at": "2026-10-13T06:09:37.171754+00:00"
     },
     {
       "stable_id": "arxiv:2609.39150",
@@ -1074,7 +1106,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.354952+00:00"
+      "discovered_at": "2026-10-13T06:09:37.145812+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.39150",
@@ -1106,7 +1138,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.373671+00:00"
+      "discovered_at": "2026-10-13T06:09:37.157191+00:00"
     },
     {
       "stable_id": "doi:10.6026/973206300225558",
@@ -1131,7 +1163,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.371967+00:00"
+      "discovered_at": "2026-10-13T06:09:37.156068+00:00"
     },
     {
       "stable_id": "arxiv:2609.36806",
@@ -1168,7 +1200,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.356109+00:00"
+      "discovered_at": "2026-10-13T06:09:37.146456+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.36806",
@@ -1205,7 +1237,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.370118+00:00"
+      "discovered_at": "2026-10-13T06:09:37.154806+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23062597",
@@ -1214,7 +1246,7 @@
         "Ifeoluwa Akande",
         "AnjolaJesu Joy Oso",
         "Inioluwa Joseph Akinteye",
-        "Sagesse Ekenedilichukwu Godwin",
+        "Godwin Sagésse",
         "Anthonia Ilamosi Akieneme"
       ],
       "abstract": "The rapid emergence of artificial intelligence (AI) is transforming architectural design processes, yet empirical evidence on Architects’ perception and adoption of AI-generated designs in developing-country contexts remains limited. This study investigates registered Architects’ perceptions of AI-generated designs and examines the factors influencing the adoption and application of AI tools in architectural practice in Lagos, Nigeria. A mixed-method research design was employed, combining a cross-sectional questionnaire survey with semi-structured interviews. Data were obtained from 117 of the 277 registered Architects practising in Lagos State and analysed using descriptive statistics, content analysis and thematic analysis, with triangulation used to integrate quantitative and qualitative findings. The findings reveal high awareness and understanding of AI technologies (M=3.19, SD=1.28), but relatively limited practical competence and experience. Architects predominantly perceive AI-generated designs as conceptual and creative aids (M=3.23, SD=1.24), rather than finished professional outputs. Consequently, AI adoption is concentrated in early design activities, particularly rapid client visualisation and the generation of design alternatives (M=3.15 each). Integration into detailed design and documentation remains constrained by interoperability challenges with CAD and BIM platforms (M=2.97, SD=1.08). Ethical concerns surrounding authorship, accountability, professional responsibility and contextual relevance further moderate adoption, while perceived usefulness, workflow efficiency, innovation and creative support encourage it. Conversely, concerns about reliability, practice is shaped by interacting technological, professional and contextual factors. It highlights the need for targeted professional training, appropriate regulatory frameworks and context-sensitive strategies for responsible AI integration into architectural education and practice.",
@@ -1234,7 +1266,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.500534+00:00"
+      "discovered_at": "2026-10-13T06:09:37.230814+00:00"
     },
     {
       "stable_id": "doi:10.2118/231957-ms",
@@ -1266,7 +1298,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.466572+00:00"
+      "discovered_at": "2026-10-13T06:09:37.211089+00:00"
     },
     {
       "stable_id": "arxiv:2609.37686",
@@ -1312,7 +1344,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.355757+00:00"
+      "discovered_at": "2026-10-13T06:09:37.146245+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.37686",
@@ -1358,7 +1390,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.384315+00:00"
+      "discovered_at": "2026-10-13T06:09:37.163271+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.09.28.26364159",
@@ -1392,7 +1424,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.382005+00:00"
+      "discovered_at": "2026-10-13T06:09:37.162166+00:00"
     },
     {
       "stable_id": "doi:10.2174/0126667797467407260912093229",
@@ -1424,7 +1456,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.459423+00:00"
+      "discovered_at": "2026-10-13T06:09:37.206595+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jcomc.2026.100821",
@@ -1456,7 +1488,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.395497+00:00"
+      "discovered_at": "2026-10-13T06:09:37.170333+00:00"
     },
     {
       "stable_id": "arxiv:2609.35035",
@@ -1486,7 +1518,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.357122+00:00"
+      "discovered_at": "2026-10-13T06:09:37.147104+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35035",
@@ -1516,7 +1548,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.390735+00:00"
+      "discovered_at": "2026-10-13T06:09:37.167319+00:00"
     },
     {
       "stable_id": "doi:10.2346/tst-25-029",
@@ -1546,7 +1578,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.398996+00:00"
+      "discovered_at": "2026-10-13T06:09:37.172180+00:00"
     },
     {
       "stable_id": "doi:10.17816/transsyst716698",
@@ -1573,7 +1605,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.474069+00:00"
+      "discovered_at": "2026-10-13T06:09:37.215520+00:00"
     },
     {
       "stable_id": "arxiv:2609.34976",
@@ -1604,7 +1636,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.357400+00:00"
+      "discovered_at": "2026-10-13T06:09:37.147274+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.34976",
@@ -1635,7 +1667,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.387480+00:00"
+      "discovered_at": "2026-10-13T06:09:37.165538+00:00"
     },
     {
       "stable_id": "arxiv:2609.35242",
@@ -1665,7 +1697,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.356828+00:00"
+      "discovered_at": "2026-10-13T06:09:37.146923+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35242",
@@ -1695,7 +1727,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.381261+00:00"
+      "discovered_at": "2026-10-13T06:09:37.161727+00:00"
     },
     {
       "stable_id": "doi:10.5194/isprs-archives-l-4-w2-2026-221-2026",
@@ -1724,7 +1756,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.367475+00:00"
+      "discovered_at": "2026-10-13T06:09:37.153247+00:00"
     },
     {
       "stable_id": "arxiv:2609.36161",
@@ -1752,7 +1784,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.356522+00:00"
+      "discovered_at": "2026-10-13T06:09:37.146701+00:00"
     },
     {
       "stable_id": "doi:10.65520/erciyesfen.1925750",
@@ -1779,7 +1811,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.384754+00:00"
+      "discovered_at": "2026-10-13T06:09:37.163746+00:00"
     },
     {
       "stable_id": "doi:10.47760/ijcsmc.2026.v15i09.006",
@@ -1805,7 +1837,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.414226+00:00"
+      "discovered_at": "2026-10-13T06:09:37.181581+00:00"
     },
     {
       "stable_id": "arxiv:2609.32773",
@@ -1832,7 +1864,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.358100+00:00"
+      "discovered_at": "2026-10-13T06:09:37.147682+00:00"
     },
     {
       "stable_id": "doi:10.67440/ahj.vi.2380",
@@ -1862,7 +1894,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.492672+00:00"
+      "discovered_at": "2026-10-13T06:09:37.226223+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.22925097",
@@ -1889,7 +1921,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.364466+00:00"
+      "discovered_at": "2026-10-13T06:09:37.151429+00:00"
     },
     {
       "stable_id": "doi:10.5772/intechopen.1018046",
@@ -1919,7 +1951,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.452734+00:00"
+      "discovered_at": "2026-10-13T06:09:37.202868+00:00"
     },
     {
       "stable_id": "doi:10.1177/10692509261488309",
@@ -1948,7 +1980,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.393800+00:00"
+      "discovered_at": "2026-10-13T06:09:37.168928+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.22924498",
@@ -1974,7 +2006,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.379492+00:00"
+      "discovered_at": "2026-10-13T06:09:37.160670+00:00"
     },
     {
       "stable_id": "doi:10.1038/s41598-026-71324-5",
@@ -2012,7 +2044,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.387140+00:00"
+      "discovered_at": "2026-10-13T06:09:37.165361+00:00"
     },
     {
       "stable_id": "doi:10.1177/14780771261488679",
@@ -2037,7 +2069,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.367100+00:00"
+      "discovered_at": "2026-10-13T06:09:37.153018+00:00"
     },
     {
       "stable_id": "doi:10.1177/14644207261487416",
@@ -2067,7 +2099,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.368608+00:00"
+      "discovered_at": "2026-10-13T06:09:37.153916+00:00"
     },
     {
       "stable_id": "arxiv:2609.23425",
@@ -2097,15 +2129,15 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.359082+00:00"
+      "discovered_at": "2026-10-13T06:09:37.148264+00:00"
     },
     {
       "stable_id": "doi:10.6084/m9.figshare.33944528",
       "title": "From footwear lasts to generative AI: a CAD-driven framework for geometry-conditioned technical sketching",
       "authors": [
         "Juan José Hinojo-Pérez",
-        "Vicente Manuel López-Martín",
-        "David Sánchez-Pastor",
+        "Vicente Manuel López Martín",
+        "David Sánchez Pastor",
         "Júlia Valdés-Martínez",
         "Carlos Javier Bonete-Andréu",
         "José-Francisco Gómez-Hernández"
@@ -2127,7 +2159,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.363141+00:00"
+      "discovered_at": "2026-10-13T06:09:37.150652+00:00"
     },
     {
       "stable_id": "arxiv:2609.22688",
@@ -2159,7 +2191,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.359377+00:00"
+      "discovered_at": "2026-10-13T06:09:37.148442+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.22688",
@@ -2191,7 +2223,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.376321+00:00"
+      "discovered_at": "2026-10-13T06:09:37.158866+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.aei.2026.105276",
@@ -2219,7 +2251,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.380031+00:00"
+      "discovered_at": "2026-10-13T06:09:37.161140+00:00"
     },
     {
       "stable_id": "doi:10.36948/ijfmr.2026.v08i05.87962",
@@ -2247,7 +2279,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.369373+00:00"
+      "discovered_at": "2026-10-13T06:09:37.154186+00:00"
     },
     {
       "stable_id": "doi:10.1080/17543266.2026.2730340",
@@ -2277,7 +2309,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.363470+00:00"
+      "discovered_at": "2026-10-13T06:09:37.150859+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.cad.2026.104175",
@@ -2286,7 +2318,7 @@
         "Konstantinos Gkrispanis",
         "Stavros Nousias",
         "Jovana Knezevic-Sorger",
-        "Claas Röver",
+        "Claas Roever",
         "André Borrmann"
       ],
       "abstract": "Machining Feature Recognition (MFR) remains challenging on industrial CAD models because complex feature interactions, irregular topology, and free-form geometry are only partially captured by discretized 3D representations and face-only CAD graphs. We propose TopoGNN, a CAD-native framework that operates directly on STEP boundary representations and models CAD parts as heterogeneous face–edge–vertex graphs with orientation-aware incidence, adjacency, and loop-order relations. To encode geometry, the method combines NURBS- and UV-based descriptors with type-specific self-supervised variational autoencoders for faces, edges, and vertices, whose embeddings are processed by a relation-aware heterogeneous graph neural network for per-face prediction. We evaluate the approach on the Fusion 360 Gallery benchmark, the TMCAD classification benchmark, and a proprietary industrial dataset of annotated machining operations. TopoGNN achieves 97.21% accuracy and 0.8757 mIoU on Fusion 360 and 88.50% accuracy on TMCAD. On the industrial dataset, evaluated with multi-seed variance reporting and model-level cross-validation, TopoGNN reaches 83.0 ± 0.4 % accuracy and 0.507 ± 0.010 mIoU on the fixed split, outperforming five retrained CAD-native baselines in accuracy under every evaluation protocol. Ablation studies show that the gains arise from two components whose relative importance depends on the data regime: on the large-scale public benchmark, the heterogeneous face–edge topology and the learned geometric embeddings contribute jointly, whereas in the small-data industrial regime the discriminative signal is carried primarily by compact handcrafted descriptors together with self-supervised face geometry. These results indicate that explicit B-Rep topology together with learned parametric geometry is an effective basis for robust CAD-native recognition in both public and industrial settings.",
@@ -2309,7 +2341,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-10-12T05:10:27.418253+00:00"
+      "discovered_at": "2026-10-13T06:09:37.183266+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jag.2026.105583",
@@ -2340,7 +2372,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.375847+00:00"
+      "discovered_at": "2026-10-13T06:09:37.158411+00:00"
     },
     {
       "stable_id": "openalex:w7213686910",
@@ -2368,7 +2400,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.364180+00:00"
+      "discovered_at": "2026-10-13T06:09:37.151284+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1860391",
@@ -2396,7 +2428,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.377457+00:00"
+      "discovered_at": "2026-10-13T06:09:37.159319+00:00"
     },
     {
       "stable_id": "doi:10.1007/s11263-026-03024-6",
@@ -2425,7 +2457,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-12T05:10:27.406452+00:00"
+      "discovered_at": "2026-10-13T06:09:37.177100+00:00"
     },
     {
       "stable_id": "arxiv:2609.20323",
@@ -2456,7 +2488,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.360041+00:00"
+      "discovered_at": "2026-10-13T06:09:37.148848+00:00"
     },
     {
       "stable_id": "doi:10.1109/qsw72780.2026.00033",
@@ -2488,7 +2520,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.359698+00:00"
+      "discovered_at": "2026-10-13T06:09:37.148638+00:00"
     },
     {
       "stable_id": "doi:10.1922/ejprd.v34i13s.2216",
@@ -2519,7 +2551,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.464922+00:00"
+      "discovered_at": "2026-10-13T06:09:37.210117+00:00"
     },
     {
       "stable_id": "doi:10.4018/979-8-3373-9089-5.ch005",
@@ -2545,7 +2577,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.366273+00:00"
+      "discovered_at": "2026-10-13T06:09:37.152518+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.22325",
@@ -2580,7 +2612,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-12T05:10:27.370661+00:00"
+      "discovered_at": "2026-10-13T06:09:37.155142+00:00"
     },
     {
       "stable_id": "doi:10.3389/fpubh.2026.1929290",
@@ -2610,7 +2642,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.386091+00:00"
+      "discovered_at": "2026-10-13T06:09:37.164720+00:00"
     },
     {
       "stable_id": "arxiv:2609.16727",
@@ -2640,7 +2672,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.360640+00:00"
+      "discovered_at": "2026-10-13T06:09:37.149208+00:00"
     },
     {
       "stable_id": "doi:10.33619/2414-2948/130/18",
@@ -2666,7 +2698,34 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.457733+00:00"
+      "discovered_at": "2026-10-13T06:09:37.205834+00:00"
+    },
+    {
+      "stable_id": "doi:10.55227/ijhet.v5i3.1196",
+      "title": "Implementation Of Convolutional Neural Network(CNN) Resnet-50 Architecture For Mammography Image Classification In Early Breast Cancer Detection",
+      "authors": [
+        "Akbar Muhammad Dzidan",
+        "Bagus Satrio Waluyo Poetro",
+        "Moh Taufik Febriansah"
+      ],
+      "abstract": "Breast cancer is one of the leading causes of death among women. Early detection through mammography screening is crucial to reduce mortality rates. However, manual image interpretation by radiologists is susceptible to subjectivity and visual fatigue, which can lead to misdiagnoses (False Positives and False Negatives). This study aims to design and implement a deep learning model using a Convolutional Neural Network (CNN) with the ResNet-50 architecture to classify mammography images into three tissue conditions: Benign, Malignant, and Normal. The model was developed using a Transfer Learning approach based on ImageNet weights, with specific modifications made to the classifier head layer. The secondary dataset was sourced from Kaggle, resulting in a final total of 23,939 images after undergoing preprocessing stages that included background removal (Auto-Crop), dimensional resizing (224x224 pixels), normalization, and geometric data augmentation. Model training was optimized using a Two-Stage Training strategy consisting of Feature Extraction and Fine-Tuning—to overcome potential performance degradation caused by an imbalanced data distribution (class imbalance) and to maximize the recognition of pathological features. Testing results conducted on 4,542 images in the testing data demonstrated that the proposed model achieved an Overall Accuracy of 98%. The evaluation of the F1-Score metric recorded a value of 0.98 for the Benign and Malignant classes, and a perfect 1.00 for the Normal class. Furthermore, the model exhibited excellent sensitivity (Recall) with zero False Negative predictions for malignant cases detected as Normal. Overall, this modified ResNet-50 architecture is proven to be reliable, precise, and holds significant potential to be implemented as a Computer-Aided Diagnosis (CAD) system to support the efficiency of medical professionals' clinical decisions.",
+      "year": 2026,
+      "published_at": "2026-09-15",
+      "venue": "International Journal of Health Engineering and Technology",
+      "doi": "10.55227/ijhet.v5i3.1196",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7221451722",
+      "source_url": "https://doi.org/10.55227/ijhet.v5i3.1196",
+      "pdf_url": "",
+      "oa_status": "diamond",
+      "license": "cc-by-nc",
+      "suggested_category": "CAD Representations & Understanding",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-13T06:09:37.173543+00:00"
     },
     {
       "stable_id": "doi:10.1922/ejprd.v34i4.2106",
@@ -2697,7 +2756,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.457382+00:00"
+      "discovered_at": "2026-10-13T06:09:37.205612+00:00"
     },
     {
       "stable_id": "arxiv:2609.15122",
@@ -2727,7 +2786,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.362113+00:00"
+      "discovered_at": "2026-10-13T06:09:37.150090+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.15122",
@@ -2757,7 +2816,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.374461+00:00"
+      "discovered_at": "2026-10-13T06:09:37.156706+00:00"
     },
     {
       "stable_id": "arxiv:2609.16251",
@@ -2790,7 +2849,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-12T05:10:27.360981+00:00"
+      "discovered_at": "2026-10-13T06:09:37.149408+00:00"
     },
     {
       "stable_id": "doi:10.3390/jmse14181707",
@@ -2822,7 +2881,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-12T05:10:27.390137+00:00"
+      "discovered_at": "2026-10-13T06:09:37.167134+00:00"
     },
     {
       "stable_id": "arxiv:2609.15659",
@@ -2858,7 +2917,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.361364+00:00"
+      "discovered_at": "2026-10-13T06:09:37.149636+00:00"
     },
     {
       "stable_id": "arxiv:2609.35788",
@@ -2884,7 +2943,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.361730+00:00"
+      "discovered_at": "2026-10-13T06:09:37.149863+00:00"
     },
     {
       "stable_id": "doi:10.21227/f2km-kr19",
@@ -2915,38 +2974,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.371271+00:00"
-    },
-    {
-      "stable_id": "arxiv:2609.14521",
-      "title": "CGGT: Curve-Grounded Geometry Transformer for 3D Parametric Curve Reconstruction",
-      "authors": [
-        "Zhirui Gao",
-        "Renjiao Yi",
-        "Yunfan Ye",
-        "Ruizhen Hu",
-        "Chenyang Zhu",
-        "Wei Chen",
-        "Kai Xu"
-      ],
-      "abstract": "Recovering editable 3D parametric curves from 2D images is a fundamental challenge in computer graphics, bridging pixel-based perception and vector-based CAD modeling. Existing NeRF- and 3DGS-based methods often rely on dense calibrated views, precomputed 2D edge maps, and costly per-scene optimization, limiting their applicability to casually captured real-world inputs. We propose CGGT, a Curve-Grounded Geometry Transformer that directly grounds 3D-consistent 2D curve instances in the image space from sparse, unposed multi-view images. CGGT combines a geometry-aware transformer encoder for multi-view feature learning with a curve-aware masked-attention decoder for cross-view instance association. In a single forward pass, it predicts camera parameters, dense depth maps, and instance-level 2D curve masks, which are then lifted into 3D and refined through a fast parametric optimization stage to recover compact, editable 3D curve primitives. To support structured curve learning, we introduce Wireframe-100K, a large-scale dataset comprising 100,000 CAD models with diverse topologies, realistic multi-view renderings, and accurate parametric curve annotations. Extensive experiments show that our framework achieves substantial improvements in both reconstruction accuracy and efficiency, particularly under challenging sparse-view settings and in separating persistent 3D structural edges from view-dependent image edges caused by silhouettes, textures, and appearance variations. Despite being trained solely on synthetic data, CGGT generalizes well to real-world images, demonstrating its potential for practical CAD-style wireframe reconstruction from unconstrained visual inputs.",
-      "year": 2026,
-      "published_at": "2026-09-13",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2609.14521",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2609.14521v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.14521v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "CAD Reconstruction & Reverse Engineering",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-10-12T05:10:27.362467+00:00"
+      "discovered_at": "2026-10-13T06:09:37.155515+00:00"
     }
   ]
 }
