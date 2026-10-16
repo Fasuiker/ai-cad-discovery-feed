@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "profile": "llm",
-  "generated_at": "2026-10-15T03:55:21.999424+00:00",
+  "generated_at": "2026-10-16T03:51:16.328642+00:00",
   "latest": "data/archive/llm/latest.json",
-  "count": 871,
-  "sha256": "e61b4ec1e6c3c776c7c954b8271b052b2b7d581a6ab8457244fbf21505ce8bb9",
+  "count": 875,
+  "sha256": "92029bde41fa7f726ce4b3eefbcb445f20e8468e3be832fe3b09c51532cb8783",
   "range": {
-    "from": "2026-09-16",
-    "to": "2026-10-15"
+    "from": "2026-09-17",
+    "to": "2026-10-16"
   }
 }

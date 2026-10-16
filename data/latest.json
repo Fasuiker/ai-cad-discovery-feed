@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-10-15T03:54:59.376407+00:00",
+  "generated_at": "2026-10-16T03:50:53.654905+00:00",
   "range": {
-    "from": "2026-09-16",
-    "to": "2026-10-15"
+    "from": "2026-09-17",
+    "to": "2026-10-16"
   },
-  "count": 95,
+  "count": 100,
   "source_health": {
     "arxiv": {
       "ok": true,
-      "count": 43,
-      "seconds": 3.31
+      "count": 47,
+      "seconds": 1.7
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 5.04
+      "seconds": 4.82
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 3.45
+      "seconds": 4.77
     },
     "upstream_awesome": {
       "ok": true,
       "count": 0,
-      "seconds": 0.75
+      "seconds": 0.61
     }
   },
   "public_profile": {
@@ -76,11 +76,124 @@
   },
   "candidates": [
     {
+      "stable_id": "arxiv:2610.21755",
+      "title": "DeciCAD: Harness-Grounded Learning of Action Policies for CAD Agents",
+      "authors": [
+        "Yufeng Peng",
+        "Yixin Zhang",
+        "Ziyi Liu",
+        "Zhikun Xu",
+        "Jiarong Yang",
+        "Sijie Wang",
+        "Wenjie Feng",
+        "Qiyu Kang"
+      ],
+      "abstract": "Large Language Model agents operate through closed-loop action policies whose decision space is defined by an agent harness. We investigate how this operating space shapes agent behavior and policy learning in computer-aided design (CAD), a professional domain characterized by persistent state, geometric constraints, and long-horizon procedures. We instantiate this perspective in DeciCAD, a domain-native harness that exposes semantic CAD actions, decision-oriented observations, environment feedback, and persistent state transitions. Building on this harness, we develop a learning pipeline that extracts causal decision supervision from interaction trajectories and improves the policy through supervised fine-tuning (SFT) and geometry-grounded online reinforcement learning (RL). Across four CAD benchmarks, DeciCAD achieves the best F1 and intersection over union (IoU) while reducing model-output tokens by 45--88% relative to a general-purpose coding harness. Under matched supervision, its SFT policy improves F1 from 0.6883 to 0.7437 and outperforms the coding policy; subsequent online RL further raises geometry availability from 66.5% to 73.5% and F1 to 0.7880. These results demonstrate that the decision space induced by a harness materially affects both agent execution and policy learning in CAD.",
+      "year": 2026,
+      "published_at": "2026-10-15",
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2610.21755",
+      "openalex_id": "",
+      "source_url": "https://arxiv.org/abs/2610.21755v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.21755v1",
+      "oa_status": "green",
+      "license": "arXiv",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [
+        "摘要命中 computer-aided design",
+        "标题命中 CAD agent"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "relevance_score": 9,
+      "discovered_at": "2026-10-16T03:50:53.387045+00:00"
+    },
+    {
+      "stable_id": "doi:10.20944/preprints202609.0173.v2",
+      "title": "Agentic AIGC: A Survey of Visual Generation Agents",
+      "authors": [
+        "Zihan Xing",
+        "Jin Wang",
+        "Rong Xia",
+        "Keming Ye",
+        "Zhan Qu",
+        "Biao Yi",
+        "Tianqi Liu",
+        "Junhao Chen",
+        "Jie Yang",
+        "Zhibo Zhu",
+        "Zhouzhou Shen",
+        "Honghui Sheng",
+        "Yurun Chen",
+        "Yuqing Zhang",
+        "Shuanghe Zhu",
+        "Wenkai Wang",
+        "Tao Xiong",
+        "Kuncheng Lin",
+        "Qihang Yu",
+        "Kui Chen",
+        "Yufan Xiong",
+        "Juncheng Li",
+        "Wenqiao Zhang",
+        "Zheqi Lv",
+        "Chengxi Zang",
+        "Long Chen",
+        "Zhou Zhao",
+        "Shengyu Zhang",
+        "Fei Wu"
+      ],
+      "abstract": "Visual generation is becoming a general component of AI infrastructure, supporting content creation across design, entertainment, education, science, and industry. Generative and multimodal models have substantially improved single-pass synthesis. At the same time, multi-step visual creation requires spatial precision, identity persistence, temporal coherence, editable structure, factual fidelity, and physical plausibility throughout the creation process. Errors in intermediate artifacts can propagate across subsequent steps, making creation control a central requirement. Model scaling, prompt refinement, additional conditioning, and repeated sampling improve individual outputs; coordinating these capabilities across a task requires runtime evidence to influence subsequent creation decisions. Within AI-generated content (AIGC), we use Agentic AIGC to describe goal-driven content creation organized through a multi-step control loop. This survey focuses on visual generation agents: systems that use runtime evidence from evolving visual artifacts, task environments, and interaction histories to change later creation-relevant action selection or parameterization, including generation, editing, verification, recovery, replanning, and stopping. The defining behavioral property is therefore an observation--action dependency: runtime observations change later action selection. Whether those decisions improve task or constraint outcomes is evaluated separately with matched tools and resource budgets. We organize this emerging field around the control mechanisms and behavioral evidence that connect generative capabilities to autonomous visual creation. Specifically, we formalize this boundary and characterize autonomy through five cumulative levels (L1--L5). A six-component analytical framework (goal understanding, specification, and planning; memory; tool; perception; action; and cross-task self-improvement) structures a cross-domain comparison spanning image, video, 3D/CAD, scientific visualization, structured documents, UI/Web, and related visual-creation domains. Building on this comparison, we analyze training from trajectory supervision and policy initialization through reinforcement learning from multimodal and executable feedback to experience reuse with skill abstraction and transfer. We organize evaluation into four complementary levels: artifact quality, goal and constraint satisfaction, trajectory and decision quality, and system and human-centered evaluation. This synthesis distinguishes behavioral evidence from evidence that feedback improves a creation outcome. Finally, we identify research directions in the scope of visual agency, reliable long-horizon control, cross-task improvement, and evaluation.",
+      "year": 2026,
+      "published_at": "2026-10-15",
+      "venue": "",
+      "doi": "10.20944/preprints202609.0173.v2",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.20944/preprints202609.0173.v2",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "http://creativecommons.org/licenses/by/4.0",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-16T03:50:53.581087+00:00"
+    },
+    {
+      "stable_id": "doi:10.5281/zenodo.23339160",
+      "title": "Mechanical Design & CAD Explained: Engineering Design & Digital Modeling",
+      "authors": [
+        "Prep4Uni.Online"
+      ],
+      "abstract": "Mechanical Design & CAD Explained: Engineering Design & Digital Modeling is an open-access, accreditation-aligned curriculum module developed under the PREP4UNI.ONLINE OER Initiative for undergraduate engineering candidates, mechanical designers, and STEM educators. Structured in accordance with the Washington Accord, EUR-ACE, and IEA Global Engineering Competency frameworks, this module bridges fundamental mechanics of materials with modern 3D CAD modeling, finite element simulation, and design for manufacturing. Key Analytical & Technical Coverage: Continuum Failure Theories: Von Mises distortion energy multi-axial yield criteria, Modified Goodman and ASME elliptic dynamic fatigue limits, and preloaded bolted joint compliance. Machine Element Synthesis: Circular power transmission shafting under combined torsion and bending, Marin endurance limit factors, stress concentration factors, and 1D worst-case vs. RSS statistical tolerance stack-up analysis. Digital Design Paradigms: Parametric feature modeling, generative topology optimization, Physics-Informed Neural Networks (PINNs) for real-time stress feedback, and Model-Based Definition (MBD) standards (ASME Y14.5 / STEP AP242). Applied Pedagogy: 4-column systems engineering trade-off matrix, seven cross-sector industrial failure case studies across aerospace, automotive, energy, and robotics, an interactive HTML5 canvas beam stress simulator, and six multi-step quantitative worked examples with explicit engineering interpretations. Curricular Attribution: Dr. Jacob Gan, PhD (Mich). PREP4UNI.ONLINE OER Initiative. Released under CC BY-NC-SA 4.0. DOI: 10.5281/zenodo.23339161.",
+      "year": 2026,
+      "published_at": "2026-10-14",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "doi": "10.5281/zenodo.23339160",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7221817108",
+      "source_url": "https://doi.org/10.5281/zenodo.23339160",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-16T03:50:53.405198+00:00"
+    },
+    {
       "stable_id": "doi:10.58168/intinfsys2026_67-72",
       "title": "INTEGRATION OF GENERATIVE DESIGN AND PARAMETRIC MODELING IN CAD FOR OPTIMIZATION OF AEROSPACE COMPONENT STRUCTURES",
       "authors": [
         "I. Zanin",
-        "E. Anikeev",
+        "Evgeniy Anikeev",
         "P. Mel'nikova"
       ],
       "abstract": "This paper discusses modern approaches to the design of load-bearing structures for aerospace equipment using topology optimization and generative design methods. The need to integrate parametric modeling to ensure the manufacturability of complex geometric shapes is sub-stantiated. It is shown that the application of additive technologies in combination with generative design allows reducing the weight of components by 40–50% while maintaining their strength characteristics.",
@@ -89,7 +202,7 @@
       "venue": "INTELLECTUAL INFORMATION SYSTEMS: FROM THEORY TO PRACTICE – 2026 : Proceedings of the International Scientific and Practical Conference, Voronezh, July 02, 2026",
       "doi": "10.58168/intinfsys2026_67-72",
       "arxiv_id": "",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/W7221809958",
       "source_url": "https://doi.org/10.58168/intinfsys2026_67-72",
       "pdf_url": "",
       "oa_status": "unknown",
@@ -97,10 +210,11 @@
       "suggested_category": "Datasets, Benchmarks & Evaluation",
       "matched_terms": [],
       "source_names": [
+        "OpenAlex",
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.325549+00:00"
+      "discovered_at": "2026-10-16T03:50:53.401300+00:00"
     },
     {
       "stable_id": "doi:10.26686/dxa3-72jf",
@@ -127,7 +241,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.237435+00:00"
+      "discovered_at": "2026-10-16T03:50:53.402031+00:00"
     },
     {
       "stable_id": "arxiv:2610.17776",
@@ -158,7 +272,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.223497+00:00"
+      "discovered_at": "2026-10-16T03:50:53.387646+00:00"
     },
     {
       "stable_id": "doi:10.37128/2306-8744-2026-3-6",
@@ -184,7 +298,32 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.239128+00:00"
+      "discovered_at": "2026-10-16T03:50:53.404533+00:00"
+    },
+    {
+      "stable_id": "arxiv:2610.20651",
+      "title": "Towards automatic digital garment assembly",
+      "authors": [
+        "Alejandro Rodriguez"
+      ],
+      "abstract": "Creating digital garments from existing two-dimensional patterns remains a time-consuming process. Although patterns are widely available in digital form, their assembly in garment CAD software involves manual definition of sewing operations and arrangement of the pattern panels for drape simulation. We present two learning-based approaches that automate both tasks using the 2D vector pattern as their sole input. Our automatic sewing model operates at the segment level, leveraging a Transformer encoder with multiple prediction heads. Our novel architecture supports many-to-many, ordered segment correspondences, as well as hems, overlapping seams needed for multilayer garments, and construction properties such as seam allowances and stitch types, required for the finished virtual garment but neglected by previous methods. A complementary panel-level model predicts body-region assignments, layers, and placement coordinates to initialize the drape simulation. We evaluate both models on a curated dataset of 4,035 professionally assembled garment instances. The sewing model exactly recovers all seam and hem topologies of 63.3\\% of test garments, while the arrangement model meets the specified placement criteria for all panels in 66.2\\% of test garments. We also integrate both methods into garment CAD software, demonstrating automatic assembly of successfully predicted garments.",
+      "year": 2026,
+      "published_at": "2026-10-12",
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2610.20651",
+      "openalex_id": "",
+      "source_url": "https://arxiv.org/abs/2610.20651v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20651v1",
+      "oa_status": "green",
+      "license": "arXiv",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [],
+      "source_names": [
+        "arXiv"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-16T03:50:53.387987+00:00"
     },
     {
       "stable_id": "arxiv:2610.14413",
@@ -213,7 +352,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.223981+00:00"
+      "discovered_at": "2026-10-16T03:50:53.388757+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23286370",
@@ -238,7 +377,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.237189+00:00"
+      "discovered_at": "2026-10-16T03:50:53.401629+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1909068",
@@ -274,7 +413,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.238574+00:00"
+      "discovered_at": "2026-10-16T03:50:53.404064+00:00"
     },
     {
       "stable_id": "doi:10.58830/ozgur.pub1444.c5845",
@@ -300,7 +439,38 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.243464+00:00"
+      "discovered_at": "2026-10-16T03:50:53.411485+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2610.12870",
+      "title": "Localized Generative Design of Ship Hulls with Diffusion Models and High-Fidelity Assessment",
+      "authors": [
+        "Hadi Keramati",
+        "Mohammed A. Hannan",
+        "Patrick Kirchen",
+        "Sina Tousi",
+        "Joonas Riekkinen",
+        "Jim Pyra",
+        "Rajeev K. Jaiman"
+      ],
+      "abstract": "Practical ship design requires localized refinement and performance evaluation. This paper presents a reward-directed diffusion framework for localized hull optimization. Parametric masking during dataset generation restricts geometric changes to selected variables, including the bulbous bow and forebody, while preserving full-hull continuity. Surrogate-assisted sequential Monte Carlo sampling targets reduced predicted calm-water resistance, with stability retained through training data and displacement matched during screening. An automated viscous free-surface CFD pipeline, validated against measurements for two benchmark container ships, evaluates a generated variant and GenHull E, a hull refined by a naval architect within the same representation. At matched KRISO Container Ship (KCS) displacement, the generated variant has comparable total resistance at $F_n=0.195$ but 45-50% higher resistance at $F_n=0.250$ and $0.260$, missed by empirical screening. GenHull E achieves 6-8% lower total resistance up to $F_n=0.240$ but higher resistance above $F_n=0.250$ as opposing friction and pressure trends reverse the gains. Aggregating resistance across this crossover can conceal tradeoffs that emerge when friction and pressure components are evaluated separately. The assessment reveals an inability to represent a faired bulbous bow and a reward lacking viscous pressure and stability terms. These findings show how high-fidelity assessment informs improved representations and objectives for physically realizable generative designs.",
+      "year": 2026,
+      "published_at": "2026-10-09",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2610.12870",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7221528614",
+      "source_url": "https://arxiv.org/abs/2610.12870",
+      "pdf_url": "https://arxiv.org/pdf/2610.12870",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "CAD Representations & Understanding",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 5,
+      "discovered_at": "2026-10-16T03:50:53.418770+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmsy.2026.09.026",
@@ -331,7 +501,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-15T03:54:59.268414+00:00"
+      "discovered_at": "2026-10-16T03:50:53.455106+00:00"
     },
     {
       "stable_id": "arxiv:2610.11954",
@@ -364,7 +534,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-15T03:54:59.224594+00:00"
+      "discovered_at": "2026-10-16T03:50:53.389793+00:00"
     },
     {
       "stable_id": "arxiv:2610.12147",
@@ -393,7 +563,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.224379+00:00"
+      "discovered_at": "2026-10-16T03:50:53.389446+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.12147",
@@ -422,7 +592,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.244499+00:00"
+      "discovered_at": "2026-10-16T03:50:53.415159+00:00"
     },
     {
       "stable_id": "arxiv:2610.11896",
@@ -452,7 +622,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.224792+00:00"
+      "discovered_at": "2026-10-16T03:50:53.390105+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.11896",
@@ -482,7 +652,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.251871+00:00"
+      "discovered_at": "2026-10-16T03:50:53.426778+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -513,7 +683,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.238311+00:00"
+      "discovered_at": "2026-10-16T03:50:53.403483+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23208825",
@@ -538,7 +708,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.309654+00:00"
+      "discovered_at": "2026-10-16T03:50:53.527976+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1963643",
@@ -564,7 +734,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.246405+00:00"
+      "discovered_at": "2026-10-16T03:50:53.419966+00:00"
     },
     {
       "stable_id": "arxiv:2610.09781",
@@ -591,7 +761,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.224992+00:00"
+      "discovered_at": "2026-10-16T03:50:53.390447+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.09781",
@@ -618,7 +788,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.310079+00:00"
+      "discovered_at": "2026-10-16T03:50:53.526956+00:00"
     },
     {
       "stable_id": "doi:10.3389/fonc.2026.1819986",
@@ -646,7 +816,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-15T03:54:59.252480+00:00"
+      "discovered_at": "2026-10-16T03:50:53.427614+00:00"
     },
     {
       "stable_id": "arxiv:2610.09127",
@@ -684,7 +854,7 @@
         "arXiv"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-15T03:54:59.225185+00:00"
+      "discovered_at": "2026-10-16T03:50:53.390766+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.09127",
@@ -722,7 +892,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-15T03:54:59.240444+00:00"
+      "discovered_at": "2026-10-16T03:50:53.408101+00:00"
     },
     {
       "stable_id": "arxiv:2610.08698",
@@ -754,7 +924,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-15T03:54:59.225371+00:00"
+      "discovered_at": "2026-10-16T03:50:53.391075+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.08698",
@@ -786,7 +956,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-15T03:54:59.245087+00:00"
+      "discovered_at": "2026-10-16T03:50:53.414848+00:00"
     },
     {
       "stable_id": "arxiv:2610.07062",
@@ -818,7 +988,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.225866+00:00"
+      "discovered_at": "2026-10-16T03:50:53.391960+00:00"
     },
     {
       "stable_id": "doi:10.1080/00207543.2026.2741386",
@@ -849,7 +1019,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-15T03:54:59.268623+00:00"
+      "discovered_at": "2026-10-16T03:50:53.455455+00:00"
     },
     {
       "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
@@ -880,7 +1050,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.240054+00:00"
+      "discovered_at": "2026-10-16T03:50:53.407061+00:00"
     },
     {
       "stable_id": "arxiv:2610.04262",
@@ -913,7 +1083,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-15T03:54:59.226276+00:00"
+      "discovered_at": "2026-10-16T03:50:53.392727+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04262",
@@ -946,7 +1116,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-15T03:54:59.242016+00:00"
+      "discovered_at": "2026-10-16T03:50:53.409791+00:00"
     },
     {
       "stable_id": "arxiv:2610.04292",
@@ -982,7 +1152,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.226098+00:00"
+      "discovered_at": "2026-10-16T03:50:53.392365+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04292",
@@ -1018,7 +1188,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.311556+00:00"
+      "discovered_at": "2026-10-16T03:50:53.530566+00:00"
     },
     {
       "stable_id": "arxiv:2610.04084",
@@ -1045,7 +1215,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.226861+00:00"
+      "discovered_at": "2026-10-16T03:50:53.393721+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04084",
@@ -1072,7 +1242,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.298852+00:00"
+      "discovered_at": "2026-10-16T03:50:53.507754+00:00"
     },
     {
       "stable_id": "arxiv:2610.04116",
@@ -1104,7 +1274,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.226509+00:00"
+      "discovered_at": "2026-10-16T03:50:53.393129+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.mfglet.2026.07.025",
@@ -1135,7 +1305,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-15T03:54:59.309885+00:00"
+      "discovered_at": "2026-10-16T03:50:53.527353+00:00"
     },
     {
       "stable_id": "arxiv:2610.03799",
@@ -1164,7 +1334,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-15T03:54:59.227095+00:00"
+      "discovered_at": "2026-10-16T03:50:53.394023+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.03799",
@@ -1193,7 +1363,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-15T03:54:59.239310+00:00"
+      "discovered_at": "2026-10-16T03:50:53.405510+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00158-026-04429-0",
@@ -1222,7 +1392,35 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.249113+00:00"
+      "discovered_at": "2026-10-16T03:50:53.424135+00:00"
+    },
+    {
+      "stable_id": "doi:10.1136/bmjhci-2026-102072",
+      "title": "Performance of large language models in complex coronary artery disease decision-making and potential improvement strategy in a real-world cohort",
+      "authors": [
+        "Zhixiang Zhang",
+        "Runze Chen",
+        "Shen Lin",
+        "Zhe Zheng"
+      ],
+      "abstract": "Objective Previous studies have demonstrated that large language models (LLMs) can achieve performance comparable to multidisciplinary heart teams (HTs) in coronary revascularisation decision-making but limited by population bias. We aimed to assess LLMs’ performance in complex coronary artery disease (CAD) decision-making using a real-world cohort and to explore the potential improvement strategy.Methods Patients with stable CAD and angiographically confirmed three-vessel or left main disease randomly selected from a consecutive angiography registry study were included in this cross-sectional study. ChatGPT-4.1 was used to provide five-category treatment decisions based on inputted patient information and a prompt most commonly used by real-world patients. The primary outcome was the agreement rate between HT and LLM recommendations. Three predefined prompting strategies were further evaluated for their potential to enhance agreement rates.Results A total of 564 patients were included. The agreement rate between HT and LLM recommendations was 47.0% based on initial prompt. LLM performed poorly in further testing (sensitivity=0.0%) decision. LLM performed well in patients with Synergy between Percutaneous Coronary Intervention with Taxus and Cardiac Surgery score ≥33 (94.1%) but poorly in 23–32 (61.7%) and 0–22 (20.9%). After using prompting strategies, the agreement rate increased significantly (79.3%, p<0.001).Discussion Simple patient-style queries cannot independently generate reliable decisions for real-world complex revascularisation scenarios. While prompt engineering and subgroup analysis can partially improve LLM’s performance, the potential safety risk remains emphasised.Conclusion Among a real-world cohort of patients with complex CAD, the agreement rate of decision-making between LLM and HTs was only half, but could be improved with appropriate prompts.",
+      "year": 2026,
+      "published_at": "2026-10-01",
+      "venue": "BMJ Health & Care Informatics",
+      "doi": "10.1136/bmjhci-2026-102072",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7221698608",
+      "source_url": "https://doi.org/10.1136/bmjhci-2026-102072",
+      "pdf_url": "https://informatics.bmj.com/content/33/1/e102072.full.pdf",
+      "oa_status": "gold",
+      "license": "cc-by-nc",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-16T03:50:53.414249+00:00"
     },
     {
       "stable_id": "doi:10.33103/2617-3352.1528",
@@ -1247,7 +1445,42 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.238030+00:00"
+      "discovered_at": "2026-10-16T03:50:53.403011+00:00"
+    },
+    {
+      "stable_id": "doi:10.1016/j.acra.2026.08.038",
+      "title": "Comparison of Integrated Versus Sequential Artificial Intelligence–Based Computer-Aided Diagnosis Systems in Breast Ultrasound: A Prospective Pilot Study on Examination Time, Reproducibility, and Diagnostic Performance",
+      "authors": [
+        "Jiyoon Ban",
+        "Haejung Kim",
+        "Sun‐Young Baek",
+        "Boo-Kyung Han",
+        "Eun Sook Ko",
+        "Eun Sook Ko",
+        "Ji Soo Choi",
+        "Jeongmin Lee",
+        "Myoung Kyoung Kim",
+        "Eun Young Ko",
+        "Eun Young Ko"
+      ],
+      "abstract": "RATIONALE AND OBJECTIVES: To compare integrated and sequential artificial intelligence-based computer-aided diagnosis (AI-CAD) systems in terms of examination time, reproducibility, and diagnostic performance in breast ultrasound (US). MATERIALS AND METHODS: This prospective single-center study included women who underwent breast US at a breast imaging center between February and March 2025. Two real-time AI-CAD systems were evaluated: an integrated system providing simultaneous lesion detection and diagnosis during scanning, and a sequential system in which lesion detection and diagnostic assessment were performed separately. Examination time was assessed in patients who underwent paired breast US examinations with both AI-CAD systems during the same visit, with randomized examination order. Reproducibility was assessed by applying both systems twice to the same breast lesions. Diagnostic performance was evaluated using sensitivity, specificity, and area under the receiver operating characteristic curve (AUC). RESULTS: Examination time analysis included 97 patients and showed longer examination time with sequential AI-CAD than with integrated AI-CAD (P < .001), regardless of examination order. Reproducibility analysis included 145 patients with 215 lesions and showed almost perfect agreement between the first and second acquisitions for both systems (integrated vs. sequential: κ = 0.81 vs. 0.83). For the comparison between the first and second acquisitions, κ values for the integrated versus sequential systems were 0.92 versus 0.76 for malignant lesions, 0.79 versus 0.84 for mass lesions, and 1.00 versus 0.75 for nonmass lesions. However, agreement patterns varied across other scan-plane comparisons. Diagnostic performance analysis included 242 patients. Integrated AI-CAD showed higher sensitivity (integrated vs. sequential: 87.6% vs. 76.9%; P < .001), whereas sequential AI-CAD showed higher specificity (integrated vs. sequential: 74.2% vs. 90.0%; P < .001). AUC did not differ between the two systems. CONCLUSION: Integrated and sequential AI-CAD systems showed complementary strengths in breast US. Integrated AI-CAD favored shorter examination time and higher sensitivity, whereas sequential AI-CAD favored higher specificity, with reproducibility differing according to lesion type.",
+      "year": 2026,
+      "published_at": "2026-10-01",
+      "venue": "Academic Radiology",
+      "doi": "10.1016/j.acra.2026.08.038",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7221770573",
+      "source_url": "https://doi.org/10.1016/j.acra.2026.08.038",
+      "pdf_url": "https://www.academicradiology.org/article/S1076-6332(26)00626-4/pdf",
+      "oa_status": "hybrid",
+      "license": "cc-by-nc-nd",
+      "suggested_category": "Open-source Systems & Tools",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-16T03:50:53.443380+00:00"
     },
     {
       "stable_id": "doi:10.31399/asm.cp.istfa2026p0027",
@@ -1277,7 +1510,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.260419+00:00"
+      "discovered_at": "2026-10-16T03:50:53.444107+00:00"
     },
     {
       "stable_id": "doi:10.3390/mi17101154",
@@ -1310,7 +1543,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.257375+00:00"
+      "discovered_at": "2026-10-16T03:50:53.436021+00:00"
     },
     {
       "stable_id": "arxiv:2609.39150",
@@ -1342,7 +1575,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.227395+00:00"
+      "discovered_at": "2026-10-16T03:50:53.394535+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.39150",
@@ -1374,7 +1607,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.243892+00:00"
+      "discovered_at": "2026-10-16T03:50:53.411060+00:00"
     },
     {
       "stable_id": "doi:10.6026/973206300225558",
@@ -1399,7 +1632,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.242277+00:00"
+      "discovered_at": "2026-10-16T03:50:53.410470+00:00"
     },
     {
       "stable_id": "arxiv:2609.36806",
@@ -1436,7 +1669,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.228031+00:00"
+      "discovered_at": "2026-10-16T03:50:53.395603+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.36806",
@@ -1473,7 +1706,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.241519+00:00"
+      "discovered_at": "2026-10-16T03:50:53.409277+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23062597",
@@ -1502,7 +1735,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.314822+00:00"
+      "discovered_at": "2026-10-16T03:50:53.536799+00:00"
     },
     {
       "stable_id": "doi:10.2118/231957-ms",
@@ -1534,7 +1767,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.296534+00:00"
+      "discovered_at": "2026-10-16T03:50:53.503554+00:00"
     },
     {
       "stable_id": "arxiv:2609.37686",
@@ -1580,7 +1813,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.227825+00:00"
+      "discovered_at": "2026-10-16T03:50:53.395264+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.37686",
@@ -1626,7 +1859,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.248618+00:00"
+      "discovered_at": "2026-10-16T03:50:53.423728+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.09.28.26364159",
@@ -1660,7 +1893,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.247722+00:00"
+      "discovered_at": "2026-10-16T03:50:53.421952+00:00"
     },
     {
       "stable_id": "doi:10.2174/0126667797467407260912093229",
@@ -1692,7 +1925,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.292067+00:00"
+      "discovered_at": "2026-10-16T03:50:53.496692+00:00"
     },
     {
       "stable_id": "arxiv:2610.14008",
@@ -1721,7 +1954,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.228249+00:00"
+      "discovered_at": "2026-10-16T03:50:53.395956+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jcomc.2026.100821",
@@ -1753,7 +1986,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.255715+00:00"
+      "discovered_at": "2026-10-16T03:50:53.433125+00:00"
     },
     {
       "stable_id": "arxiv:2609.35035",
@@ -1771,8 +2004,8 @@
       "doi": "",
       "arxiv_id": "2609.35035",
       "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2609.35035v2",
-      "pdf_url": "https://arxiv.org/pdf/2609.35035v2",
+      "source_url": "https://arxiv.org/abs/2609.35035v3",
+      "pdf_url": "https://arxiv.org/pdf/2609.35035v3",
       "oa_status": "green",
       "license": "arXiv",
       "suggested_category": "LLM, VLM & CAD Agents",
@@ -1783,7 +2016,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.228852+00:00"
+      "discovered_at": "2026-10-16T03:50:53.397013+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35035",
@@ -1813,7 +2046,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.253621+00:00"
+      "discovered_at": "2026-10-16T03:50:53.429544+00:00"
     },
     {
       "stable_id": "doi:10.2346/tst-25-029",
@@ -1843,7 +2076,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.257789+00:00"
+      "discovered_at": "2026-10-16T03:50:53.437014+00:00"
     },
     {
       "stable_id": "doi:10.17816/transsyst716698",
@@ -1870,7 +2103,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.300676+00:00"
+      "discovered_at": "2026-10-16T03:50:53.511275+00:00"
     },
     {
       "stable_id": "arxiv:2609.34976",
@@ -1901,7 +2134,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.229018+00:00"
+      "discovered_at": "2026-10-16T03:50:53.397297+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.34976",
@@ -1932,7 +2165,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.252194+00:00"
+      "discovered_at": "2026-10-16T03:50:53.427117+00:00"
     },
     {
       "stable_id": "arxiv:2609.35242",
@@ -1962,7 +2195,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.228667+00:00"
+      "discovered_at": "2026-10-16T03:50:53.396678+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35242",
@@ -1992,7 +2225,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.246579+00:00"
+      "discovered_at": "2026-10-16T03:50:53.420267+00:00"
     },
     {
       "stable_id": "doi:10.5194/isprs-archives-l-4-w2-2026-221-2026",
@@ -2021,7 +2254,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.239835+00:00"
+      "discovered_at": "2026-10-16T03:50:53.406393+00:00"
     },
     {
       "stable_id": "arxiv:2609.36161",
@@ -2049,7 +2282,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.228491+00:00"
+      "discovered_at": "2026-10-16T03:50:53.396366+00:00"
     },
     {
       "stable_id": "doi:10.65520/erciyesfen.1925750",
@@ -2076,7 +2309,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.248871+00:00"
+      "discovered_at": "2026-10-16T03:50:53.423382+00:00"
     },
     {
       "stable_id": "doi:10.47760/ijcsmc.2026.v15i09.006",
@@ -2102,7 +2335,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.266365+00:00"
+      "discovered_at": "2026-10-16T03:50:53.453758+00:00"
     },
     {
       "stable_id": "arxiv:2609.32773",
@@ -2129,7 +2362,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.229417+00:00"
+      "discovered_at": "2026-10-16T03:50:53.397967+00:00"
     },
     {
       "stable_id": "doi:10.67440/ahj.vi.2380",
@@ -2159,7 +2392,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.311159+00:00"
+      "discovered_at": "2026-10-16T03:50:53.529860+00:00"
     },
     {
       "stable_id": "doi:10.62441/actainnovations.v63i1s.1646",
@@ -2186,7 +2419,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.290930+00:00"
+      "discovered_at": "2026-10-16T03:50:53.494624+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.22925097",
@@ -2213,7 +2446,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.237793+00:00"
+      "discovered_at": "2026-10-16T03:50:53.402625+00:00"
     },
     {
       "stable_id": "doi:10.5772/intechopen.1018046",
@@ -2243,7 +2476,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.288576+00:00"
+      "discovered_at": "2026-10-16T03:50:53.490657+00:00"
     },
     {
       "stable_id": "doi:10.1177/10692509261488309",
@@ -2272,7 +2505,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.254763+00:00"
+      "discovered_at": "2026-10-16T03:50:53.431291+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.22924498",
@@ -2298,7 +2531,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.247457+00:00"
+      "discovered_at": "2026-10-16T03:50:53.416954+00:00"
     },
     {
       "stable_id": "doi:10.1038/s41598-026-71324-5",
@@ -2336,7 +2569,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.251513+00:00"
+      "discovered_at": "2026-10-16T03:50:53.426476+00:00"
     },
     {
       "stable_id": "doi:10.1177/14780771261488679",
@@ -2361,7 +2594,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.239607+00:00"
+      "discovered_at": "2026-10-16T03:50:53.406019+00:00"
     },
     {
       "stable_id": "doi:10.17762/jidmis.v3.3686",
@@ -2386,7 +2619,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.250659+00:00"
+      "discovered_at": "2026-10-16T03:50:53.425457+00:00"
     },
     {
       "stable_id": "doi:10.1177/14644207261487416",
@@ -2416,7 +2649,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.240931+00:00"
+      "discovered_at": "2026-10-16T03:50:53.407492+00:00"
     },
     {
       "stable_id": "arxiv:2609.23425",
@@ -2446,7 +2679,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.229988+00:00"
+      "discovered_at": "2026-10-16T03:50:53.398919+00:00"
     },
     {
       "stable_id": "doi:10.6084/m9.figshare.33944528",
@@ -2476,7 +2709,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.236800+00:00"
+      "discovered_at": "2026-10-16T03:50:53.400690+00:00"
     },
     {
       "stable_id": "arxiv:2609.22688",
@@ -2508,7 +2741,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.230161+00:00"
+      "discovered_at": "2026-10-16T03:50:53.399217+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.22688",
@@ -2540,7 +2773,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.245509+00:00"
+      "discovered_at": "2026-10-16T03:50:53.414542+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.aei.2026.105276",
@@ -2568,7 +2801,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-15T03:54:59.248038+00:00"
+      "discovered_at": "2026-10-16T03:50:53.417494+00:00"
     },
     {
       "stable_id": "doi:10.36948/ijfmr.2026.v08i05.87962",
@@ -2596,7 +2829,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.240705+00:00"
+      "discovered_at": "2026-10-16T03:50:53.408553+00:00"
     },
     {
       "stable_id": "doi:10.1080/17543266.2026.2730340",
@@ -2626,7 +2859,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.236990+00:00"
+      "discovered_at": "2026-10-16T03:50:53.401013+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.cad.2026.104175",
@@ -2658,7 +2891,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-10-15T03:54:59.268879+00:00"
+      "discovered_at": "2026-10-16T03:50:53.455867+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jag.2026.105583",
@@ -2689,7 +2922,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.244745+00:00"
+      "discovered_at": "2026-10-16T03:50:53.413337+00:00"
     },
     {
       "stable_id": "openalex:w7213686910",
@@ -2717,7 +2950,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.237646+00:00"
+      "discovered_at": "2026-10-16T03:50:53.402393+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1860391",
@@ -2745,7 +2978,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.245337+00:00"
+      "discovered_at": "2026-10-16T03:50:53.418369+00:00"
     },
     {
       "stable_id": "doi:10.1007/s11263-026-03024-6",
@@ -2774,7 +3007,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-15T03:54:59.262134+00:00"
+      "discovered_at": "2026-10-16T03:50:53.445495+00:00"
     },
     {
       "stable_id": "arxiv:2609.20323",
@@ -2805,7 +3038,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-15T03:54:59.230549+00:00"
+      "discovered_at": "2026-10-16T03:50:53.399863+00:00"
     },
     {
       "stable_id": "doi:10.1109/qsw72780.2026.00033",
@@ -2837,7 +3070,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.230353+00:00"
+      "discovered_at": "2026-10-16T03:50:53.399536+00:00"
     },
     {
       "stable_id": "doi:10.1922/ejprd.v34i13s.2216",
@@ -2868,7 +3101,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.295333+00:00"
+      "discovered_at": "2026-10-16T03:50:53.501903+00:00"
     },
     {
       "stable_id": "doi:10.4018/979-8-3373-9089-5.ch005",
@@ -2894,72 +3127,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.238854+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2609.22325",
-      "title": "ReliCAD: From Uncertain LLM Generation to Reliable Parametric CAD Modeling",
-      "authors": [
-        "Peng Zheng",
-        "Xintong Dong",
-        "Chuanyang Li",
-        "Jiaxin Jing",
-        "Chuqi Han",
-        "Hailong Shen",
-        "Yanzhi Song",
-        "Zhouwang Yang"
-      ],
-      "abstract": "Large language models have shown considerable potential for natural-language-driven parametric CAD modeling. However, a fundamental contradiction exists between their probabilistic generation and the deterministic requirements of CAD modeling, resulting in limitations in reliability, design-intent preservation, and geometric validity. Existing methods typically rely on large-scale annotated datasets, lack explicit modeling of design intent, and underutilize the deterministic capabilities of CAD kernels. To address these limitations, we propose ReliCAD, a unified framework that transforms uncertain LLM generation into reliable parametric CAD modeling. Through explicit design-intent modeling, ReliCAD converts user requirements into structured design specifications and explicitly models geometric relations, topological dependencies, and feature construction order. It then generates constraint-aware parametric instructions and invokes the CAD kernel through an Agent-ready API to perform geometric construction and constraint solving. ReliCAD further records runtime evidence and employs a verification-feedback mechanism to assess consistency between the generated model and the design specifications, enabling error localization and iterative repair. Experiments on the public HistCAD generation dataset and our multi-granularity CAD editing dataset demonstrate that ReliCAD significantly outperforms baseline methods, achieving 99.8\\% validity rate and 0.8753 IoU. ReliCAD provides a verifiable, repairable, and generalizable approach to natural-language-interactive CAD modeling.",
-      "year": 2026,
-      "published_at": "2026-09-16",
-      "venue": "arXiv (Cornell University)",
-      "doi": "10.48550/arxiv.2609.22325",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7214047826",
-      "source_url": "https://arxiv.org/abs/2609.22325",
-      "pdf_url": "https://arxiv.org/pdf/2609.22325",
-      "oa_status": "green",
-      "license": "",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "标题命中 parametric CAD",
-        "摘要命中 CAD generation"
-      ],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 9,
-      "discovered_at": "2026-10-15T03:54:59.241841+00:00"
-    },
-    {
-      "stable_id": "doi:10.3389/fpubh.2026.1929290",
-      "title": "Predicted 10-year cardiometabolic risk among hospital staff: a cross-sectional study",
-      "authors": [
-        "Ching-Yuan Wu",
-        "Yen-Wen Wu",
-        "Hon‐Yen Wu",
-        "Jia‐Ren Tsai",
-        "Chiung-Fang Chang",
-        "Yen‐Ling Chiu"
-      ],
-      "abstract": "Objective: Chronic diseases and cardiometabolic disorders are major public health and occupational health challenges in Taiwan, particularly among healthcare workers exposed to shift work, high occupational stress, and irregular schedules. Nurses and hospital staff are especially vulnerable to hypertension, type 2 diabetes mellitus, stroke, and cardiovascular disease risk. Using a localized digital risk assessment platform and machine learning-based data-driven modeling, this study aimed to evaluate chronic disease risk among medical center employees and identify high-risk occupational subgroups for precision health management. Participants/Methods: This retrospective cross-sectional study included 1,916 employees aged 35-70 at a Northern Taiwan medical center from 2019 to 2024. Ten-year predicted risks for coronary artery disease, stroke, type 2 diabetes mellitus, hypertension, and major adverse cardiovascular events were estimated using the Chronic Disease Risk Assessment Platform. To assess associations between predicted risk and demographic or occupational variables, we used ordinal logistic regression, generalized linear models, and decision tree algorithms. Results: = 0.024). Multivariable generalized linear models identified increasing age and metabolic factors, including obesity, elevated blood pressure, hyperglycemia, and dyslipidemia, as the major predictors of predicted cardiometabolic risk, whereas occupational category was not independently associated with disease risk after adjustment. Significant interaction effects were observed for CAD, stroke, HTN, and MACE. Ten-fold cross-validated decision tree models identified age, waist circumference, blood pressure, and body mass index as key classification variables, with overall accuracies ranging from 86.9 to 91.7% and F1-scores ranging from 0.622 to 0.936 across the five outcomes. Conclusion: This study applied disease risk prediction models developed by the Taiwan Health Promotion Administration platform, integrating clinical indicators and machine learning analyses to identify healthcare workers at increased disease risk. The findings suggest that localized digital prediction tools may be integrated into institutional health surveillance systems to support continuous health monitoring, early risk identification, and proactive preventive care in healthcare settings.",
-      "year": 2026,
-      "published_at": "2026-09-16",
-      "venue": "Frontiers in Public Health",
-      "doi": "10.3389/fpubh.2026.1929290",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7213286618",
-      "source_url": "https://doi.org/10.3389/fpubh.2026.1929290",
-      "pdf_url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1929290/pdf",
-      "oa_status": "gold",
-      "license": "cc-by",
-      "suggested_category": "Open-source Systems & Tools",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-10-15T03:54:59.250958+00:00"
+      "discovered_at": "2026-10-16T03:50:53.404848+00:00"
     }
   ]
 }
