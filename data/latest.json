@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-10-20T04:09:22.288356+00:00",
+  "generated_at": "2026-10-21T03:58:00.875903+00:00",
   "range": {
-    "from": "2026-09-21",
-    "to": "2026-10-20"
+    "from": "2026-09-22",
+    "to": "2026-10-21"
   },
-  "count": 90,
+  "count": 92,
   "source_health": {
     "arxiv": {
       "ok": true,
       "count": 48,
-      "seconds": 3.26
+      "seconds": 2.66
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 7.71
+      "seconds": 4.49
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 5.71
+      "seconds": 7.17
     },
     "upstream_awesome": {
       "ok": true,
       "count": 0,
-      "seconds": 0.94
+      "seconds": 0.45
     }
   },
   "public_profile": {
@@ -76,6 +76,34 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.3389/fbioe.2026.1970931",
+      "title": "Cerebrovascular flow field reconstruction method based on residual network of physical information",
+      "authors": [
+        "Zhifan Teng",
+        "Yaochun Hou",
+        "Jianhua Liu",
+        "Qiuliang Wang"
+      ],
+      "abstract": "Introduction Accurate characterization of the hemodynamic environment within intracranial aneurysms is important for rupture‐risk assessment and interventional treatment planning. Although computational fluid dynamics (CFD) provides high‐fidelity flow‐field data, its computational cost limits parametric analyses across multiple vascular geometries and inlet flow conditions. Existing physics‐informed neural‐network surrogates are predominantly trained for individual geometries and single flow conditions. Systematic comparisons of performance degradation under geometric and flow‐rate distribution shifts across different architectures remain lacking, and the distinct roles of physics‐based constraints under in-distribution versus out‐of‐distribution conditions have not been thoroughly examined. Methods This study proposes PIReN, a physics‐informed residual network that decomposes the velocity‐pressure field into a learnable baseline field and a gated residual correction. The training objective incorporates continuity and steady, incompressible Navier‐Stokes momentum residuals. Training and in‐domain evaluation employ seven geometries; zero‐shot testing uses 16 fully held‐out geometries, and flow‐rate generalization is evaluated via five leave‐one‐flow‐rate‐out folds. These two protocols withhold complete geometries or flow conditions and avoid spatial-correlation leakage. Results In the pointwise‐random in‐domain test, PIReN achieves an aggregate relative L 2 error of 11.34% ± 0.65%, outperforming a standard PINN (16.57% ± 1.04%) and purely supervised MLP (14.74% ± 0.72%). These optimistic values describe spatial‐interpolation accuracy. Using a contiguous axial held‐out block while fixing model weights, PIReN still delivers superior accuracy: under the pooled configuration, its aggregate relative L 2 error is 30.35%± 2.55% versus 39.27%±2.85% for PINN. PIReN dominates across all four metrics, both partitions and five configurations, with a larger absolute performance margin under the stricter block partition. On geometry set B, the corresponding errors for PIReN and the PINN are 42.71% and 121.92%, respectively. Discussion Ablation studies show that removing the residual decoder produces the largest increase in prediction error, whereas the physics‐informed loss terms primarily reduce governing‐equation residuals. These results indicate that PIReN reduces performance degradation under changes in vascular geometry and inlet flow rate and provides a promising framework for steady‐state cerebrovascular flow‐field surrogate modeling.",
+      "year": 2026,
+      "published_at": "2026-10-20",
+      "venue": "Frontiers in Bioengineering and Biotechnology",
+      "doi": "10.3389/fbioe.2026.1970931",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.3389/fbioe.2026.1970931",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "suggested_category": "CAD Editing, Constraints & Verification",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 5,
+      "discovered_at": "2026-10-21T03:58:00.845360+00:00"
+    },
+    {
       "stable_id": "arxiv:2610.26861",
       "title": "Can It Actually Work? Synthesizing Functional CAD Mechanisms",
       "authors": [
@@ -104,7 +132,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.030418+00:00"
+      "discovered_at": "2026-10-21T03:58:00.660477+00:00"
     },
     {
       "stable_id": "arxiv:2610.25840",
@@ -135,7 +163,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.030764+00:00"
+      "discovered_at": "2026-10-21T03:58:00.660736+00:00"
     },
     {
       "stable_id": "doi:10.25258/ijddt.16.74s.113",
@@ -158,7 +186,7 @@
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.195489+00:00"
+      "discovered_at": "2026-10-21T03:58:00.802365+00:00"
     },
     {
       "stable_id": "arxiv:2610.24451",
@@ -188,7 +216,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.031492+00:00"
+      "discovered_at": "2026-10-21T03:58:00.661301+00:00"
     },
     {
       "stable_id": "doi:10.3390/machines14101206",
@@ -223,7 +251,7 @@
         "Crossref"
       ],
       "relevance_score": 16,
-      "discovered_at": "2026-10-20T04:09:22.050349+00:00"
+      "discovered_at": "2026-10-21T03:58:00.676065+00:00"
     },
     {
       "stable_id": "doi:10.13140/rg.2.2.21268.05769",
@@ -248,7 +276,34 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.044192+00:00"
+      "discovered_at": "2026-10-21T03:58:00.671071+00:00"
+    },
+    {
+      "stable_id": "doi:10.17586/0021-3454-2026-69-9-789-799",
+      "title": "An algorithm for 6D object pose estimation based on generative single-image 3D reconstruction",
+      "authors": [
+        "J. Lou",
+        "Sergey V. Shavetov",
+        "N. Tang"
+      ],
+      "abstract": "Reliable 6D object pose estimation is a foundational capability for robotic manipulation in Industry 4.0 and unstructured warehouse environments. Current state-of-the-art methods, such as PVN3D and SAM-6D, predominantly rely on “Model-Based” paradigms that necessitate high-fidelity CAD models of the target objects for training or template matching. This requirement severely limits their applicability in open-world scenarios where such CAD models are unavailable in real-time. To bridge this gap, a novel 6D Pose Estimation Framework without fine-tuning on the target object (Zero-Shot) is proposed to eliminate the dependency on prior CAD models. A single-view 3D generative model is leveraged to synthesize a geometrically plausible 3D mesh from a single RGB image. To address the scale ambiguity inherent in generative models, which poses a critical challenge for robotic grasping, a Template-Prior Iterative Closest Point (TP-ICP) based on the classical ICP is introduced for iterative recovery of the metric scale. This algorithm robustly recovers the metric physical scale of the neural-generated mesh using depth information, employing median-based outlier removal and template-guided ICP to handle occlusions and sensor noise. The recovered metric mesh is then seamlessly integrated into a standard 6D pose estimation pipeline, establishing a closed-loop framework comprising model self-generation, metric scale calibration, and pose estimation. A fully reproducible implementation scheme is presented. Systematic experiments on the LINEMOD dataset demonstrate that the proposed approach achieves robust 6D pose estimation suitable for robotic tasks, even in the complete absence of prior CAD models.",
+      "year": 2026,
+      "published_at": "2026-10-16",
+      "venue": "Известия высших учебных заведений. Приборостроение",
+      "doi": "10.17586/0021-3454-2026-69-9-789-799",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7222947068",
+      "source_url": "https://doi.org/10.17586/0021-3454-2026-69-9-789-799",
+      "pdf_url": "",
+      "oa_status": "hybrid",
+      "license": "cc-by",
+      "suggested_category": "CAD Reconstruction & Reverse Engineering",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-21T03:58:00.673824+00:00"
     },
     {
       "stable_id": "arxiv:2610.21755",
@@ -283,7 +338,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-20T04:09:22.032246+00:00"
+      "discovered_at": "2026-10-21T03:58:00.661890+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.21755",
@@ -318,7 +373,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-20T04:09:22.052568+00:00"
+      "discovered_at": "2026-10-21T03:58:00.677832+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23339160",
@@ -343,7 +398,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.048037+00:00"
+      "discovered_at": "2026-10-21T03:58:00.674496+00:00"
     },
     {
       "stable_id": "doi:10.58168/intinfsys2026_67-72",
@@ -370,7 +425,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.044875+00:00"
+      "discovered_at": "2026-10-21T03:58:00.671586+00:00"
     },
     {
       "stable_id": "doi:10.3389/fmed.2026.1980048",
@@ -400,7 +455,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.057397+00:00"
+      "discovered_at": "2026-10-21T03:58:00.681319+00:00"
     },
     {
       "stable_id": "doi:10.26686/dxa3-72jf",
@@ -427,7 +482,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.045665+00:00"
+      "discovered_at": "2026-10-21T03:58:00.672229+00:00"
     },
     {
       "stable_id": "arxiv:2610.17776",
@@ -458,7 +513,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.032791+00:00"
+      "discovered_at": "2026-10-21T03:58:00.662338+00:00"
     },
     {
       "stable_id": "doi:10.37128/2306-8744-2026-3-6",
@@ -484,7 +539,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.047675+00:00"
+      "discovered_at": "2026-10-21T03:58:00.674208+00:00"
     },
     {
       "stable_id": "arxiv:2610.20651",
@@ -509,7 +564,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.033145+00:00"
+      "discovered_at": "2026-10-21T03:58:00.662605+00:00"
     },
     {
       "stable_id": "arxiv:2610.14413",
@@ -538,7 +593,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-20T04:09:22.033883+00:00"
+      "discovered_at": "2026-10-21T03:58:00.663203+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23286370",
@@ -563,7 +618,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.045252+00:00"
+      "discovered_at": "2026-10-21T03:58:00.671863+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1909068",
@@ -599,7 +654,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.047221+00:00"
+      "discovered_at": "2026-10-21T03:58:00.673495+00:00"
     },
     {
       "stable_id": "doi:10.58830/ozgur.pub1444.c5845",
@@ -625,7 +680,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.055245+00:00"
+      "discovered_at": "2026-10-21T03:58:00.679823+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.12870",
@@ -656,7 +711,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-20T04:09:22.062135+00:00"
+      "discovered_at": "2026-10-21T03:58:00.685179+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmsy.2026.09.026",
@@ -687,7 +742,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-20T04:09:22.098689+00:00"
+      "discovered_at": "2026-10-21T03:58:00.714674+00:00"
     },
     {
       "stable_id": "arxiv:2610.11954",
@@ -720,7 +775,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-20T04:09:22.034919+00:00"
+      "discovered_at": "2026-10-21T03:58:00.664011+00:00"
     },
     {
       "stable_id": "arxiv:2610.12147",
@@ -749,7 +804,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.034569+00:00"
+      "discovered_at": "2026-10-21T03:58:00.663736+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.12147",
@@ -778,7 +833,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.056791+00:00"
+      "discovered_at": "2026-10-21T03:58:00.680838+00:00"
     },
     {
       "stable_id": "arxiv:2610.11896",
@@ -808,7 +863,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.035255+00:00"
+      "discovered_at": "2026-10-21T03:58:00.664263+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.11896",
@@ -838,7 +893,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.070607+00:00"
+      "discovered_at": "2026-10-21T03:58:00.691533+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -869,7 +924,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.046768+00:00"
+      "discovered_at": "2026-10-21T03:58:00.673128+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23208825",
@@ -894,7 +949,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.173759+00:00"
+      "discovered_at": "2026-10-21T03:58:00.776184+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1963643",
@@ -920,7 +975,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.059697+00:00"
+      "discovered_at": "2026-10-21T03:58:00.683184+00:00"
     },
     {
       "stable_id": "arxiv:2610.09781",
@@ -947,7 +1002,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.035596+00:00"
+      "discovered_at": "2026-10-21T03:58:00.664530+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.09781",
@@ -974,7 +1029,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.174118+00:00"
+      "discovered_at": "2026-10-21T03:58:00.776454+00:00"
     },
     {
       "stable_id": "doi:10.3389/fonc.2026.1819986",
@@ -1002,7 +1057,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-20T04:09:22.071096+00:00"
+      "discovered_at": "2026-10-21T03:58:00.691918+00:00"
     },
     {
       "stable_id": "arxiv:2610.09127",
@@ -1040,7 +1095,7 @@
         "arXiv"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-20T04:09:22.035918+00:00"
+      "discovered_at": "2026-10-21T03:58:00.664784+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.09127",
@@ -1078,7 +1133,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-20T04:09:22.050984+00:00"
+      "discovered_at": "2026-10-21T03:58:00.676583+00:00"
     },
     {
       "stable_id": "arxiv:2610.08698",
@@ -1110,7 +1165,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-20T04:09:22.036253+00:00"
+      "discovered_at": "2026-10-21T03:58:00.665034+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.08698",
@@ -1142,7 +1197,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-20T04:09:22.057715+00:00"
+      "discovered_at": "2026-10-21T03:58:00.681568+00:00"
     },
     {
       "stable_id": "arxiv:2610.07062",
@@ -1174,7 +1229,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.037132+00:00"
+      "discovered_at": "2026-10-21T03:58:00.665735+00:00"
     },
     {
       "stable_id": "doi:10.1080/00207543.2026.2741386",
@@ -1205,7 +1260,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-20T04:09:22.099038+00:00"
+      "discovered_at": "2026-10-21T03:58:00.714949+00:00"
     },
     {
       "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
@@ -1236,7 +1291,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.049652+00:00"
+      "discovered_at": "2026-10-21T03:58:00.675771+00:00"
     },
     {
       "stable_id": "arxiv:2610.04262",
@@ -1269,7 +1324,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-20T04:09:22.037896+00:00"
+      "discovered_at": "2026-10-21T03:58:00.666368+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04262",
@@ -1302,7 +1357,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-20T04:09:22.052871+00:00"
+      "discovered_at": "2026-10-21T03:58:00.678073+00:00"
     },
     {
       "stable_id": "arxiv:2610.04292",
@@ -1338,7 +1393,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.037590+00:00"
+      "discovered_at": "2026-10-21T03:58:00.666126+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04292",
@@ -1374,7 +1429,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.177656+00:00"
+      "discovered_at": "2026-10-21T03:58:00.778961+00:00"
     },
     {
       "stable_id": "arxiv:2610.04084",
@@ -1401,7 +1456,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-20T04:09:22.038903+00:00"
+      "discovered_at": "2026-10-21T03:58:00.667172+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04084",
@@ -1428,7 +1483,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-20T04:09:22.154966+00:00"
+      "discovered_at": "2026-10-21T03:58:00.760413+00:00"
     },
     {
       "stable_id": "arxiv:2610.04116",
@@ -1460,7 +1515,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.038318+00:00"
+      "discovered_at": "2026-10-21T03:58:00.666694+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.mfglet.2026.07.025",
@@ -1491,7 +1546,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-20T04:09:22.174507+00:00"
+      "discovered_at": "2026-10-21T03:58:00.776762+00:00"
     },
     {
       "stable_id": "arxiv:2610.03799",
@@ -1520,7 +1575,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-20T04:09:22.039231+00:00"
+      "discovered_at": "2026-10-21T03:58:00.667417+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.03799",
@@ -1549,7 +1604,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-20T04:09:22.048365+00:00"
+      "discovered_at": "2026-10-21T03:58:00.674744+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00158-026-04429-0",
@@ -1578,7 +1633,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.065401+00:00"
+      "discovered_at": "2026-10-21T03:58:00.687495+00:00"
     },
     {
       "stable_id": "doi:10.1136/bmjhci-2026-102072",
@@ -1606,7 +1661,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.056292+00:00"
+      "discovered_at": "2026-10-21T03:58:00.680443+00:00"
     },
     {
       "stable_id": "doi:10.33103/2617-3352.1528",
@@ -1631,7 +1686,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.046306+00:00"
+      "discovered_at": "2026-10-21T03:58:00.672732+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.acra.2026.08.038",
@@ -1666,7 +1721,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.087168+00:00"
+      "discovered_at": "2026-10-21T03:58:00.705214+00:00"
     },
     {
       "stable_id": "doi:10.31399/asm.cp.istfa2026p0027",
@@ -1696,7 +1751,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.086274+00:00"
+      "discovered_at": "2026-10-21T03:58:00.704339+00:00"
     },
     {
       "stable_id": "doi:10.3390/mi17101154",
@@ -1729,7 +1784,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.079427+00:00"
+      "discovered_at": "2026-10-21T03:58:00.699156+00:00"
     },
     {
       "stable_id": "arxiv:2609.39150",
@@ -1761,7 +1816,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.039749+00:00"
+      "discovered_at": "2026-10-21T03:58:00.667819+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.39150",
@@ -1793,7 +1848,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.055586+00:00"
+      "discovered_at": "2026-10-21T03:58:00.680100+00:00"
     },
     {
       "stable_id": "doi:10.6026/973206300225558",
@@ -1818,7 +1873,36 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.053575+00:00"
+      "discovered_at": "2026-10-21T03:58:00.678632+00:00"
+    },
+    {
+      "stable_id": "doi:10.1922/comdem.v3i3s.18647",
+      "title": "Agent Breast-RAG: An Agentic Retrieval-Augmented Explainable Large Language Model Framework for Multimodal Breast Cancer Diagnosis and Clinical Decision Support",
+      "authors": [
+        "Anushree Raj",
+        "Dr. Hareesh B",
+        "Manjula M. Ramannavar",
+        "Prashant Ankalkoti",
+        "Ishwarya"
+      ],
+      "abstract": "Breast cancer continues to be one of the leading causes of cancer-related death among women worldwide, and early detection together with timely clinical intervention remains essential for improving survival outcomes. Deep learning and Large Language Models (LLMs) have shown impressive results in breast cancer diagnosis and medical decision support, yet their use in real clinical settings is still held back by black-box decision making, hallucinated outputs, reasoning that is not grounded in evidence, poor integration of heterogeneous patient data, and limited explainability. Most existing computer-aided diagnosis (CAD) systems focus mainly on image classification and offer little in the way of transparent clinical justification or personalized treatment guidance, which in turn undermines clinician trust and everyday usefulness. This paper proposes AgentBreast-RAG, an Agentic Retrieval-Augmented Explainable Large Language Model (ARX-LLM) framework built for breast cancer diagnosis and clinical decision support. The framework brings together multimodal patient data, mammography, ultrasound and histopathological imaging, clinical records, laboratory findings, biomarker profiles, and patient history, within a single diagnostic pipeline that is coordinated by a collaborative multi-agent ecosystem. Within this ecosystem, specialized agents handle patient profiling, medical image interpretation, evidence retrieval, clinical reasoning, explanation generation, treatment recommendation, and decision verification. An Agentic Retrieval-Augmented Generation (Agentic RAG) module retrieves and verifies medical evidence from PubMed, NCCN guidelines, ASCO recommendations, WHO resources, and peer-reviewed oncology literature in a dynamic, ongoing manner, which substantially cuts down hallucination compared to standalone LLMs. A dedicated Explainable AI (XAI) module then brings all of this together through Grad-CAM and attention visualization for imaging, SHAP-based feature attribution for structured variables, natural-language rationales grounded in the retrieved evidence, and an uncertainty estimation module that assigns confidence scores to the model's outputs. We also lay out an evaluation protocol built around seven public multimodal breast cancer resources (CBIS-DDSM, INbreast, BUSI, BreakHis, BACH, the Wisconsin Breast Cancer Dataset, and TCGA-BRCA), benchmarked against convolutional neural networks, Vision Transformers, conventional RAG, GraphRAG, and existing medical LLMs. This evaluation draws on diagnostic metrics (Accuracy, Precision, Recall, F1-score, Specificity, Sensitivity, AUC), retrieval metrics (Recall@K, Precision@K, nDCG), and explainability metrics (faithfulness, localization accuracy, clinician interpretability rating, hallucination rate). The performance figures reported here are illustrative and clearly labeled as simulated projections rather than results from executed experiments; they are meant only to show the intended structure of the evaluation. Even so, the direction we propose suggests that combining autonomous multi-agent collaboration, verified retrieval, multimodal fusion, and interpretable decision support could meaningfully improve diagnostic reliability, evidence-grounded reasoning, and clinician confidence, pointing toward a scalable path for trustworthy, explainable AI-assisted breast cancer care.",
+      "year": 2026,
+      "published_at": "2026-09-30",
+      "venue": "Computer and decision making.",
+      "doi": "10.1922/comdem.v3i3s.18647",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7222954764",
+      "source_url": "https://doi.org/10.1922/comdem.v3i3s.18647",
+      "pdf_url": "https://www.comdem.org/index.php/comdem/article/download/18647/12444",
+      "oa_status": "hybrid",
+      "license": "cc-by",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-21T03:58:00.765824+00:00"
     },
     {
       "stable_id": "doi:10.18208/ksdc.2026.32.3.381",
@@ -1844,7 +1928,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.058157+00:00"
+      "discovered_at": "2026-10-21T03:58:00.682136+00:00"
     },
     {
       "stable_id": "arxiv:2609.36806",
@@ -1881,7 +1965,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.040865+00:00"
+      "discovered_at": "2026-10-21T03:58:00.668682+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.36806",
@@ -1918,7 +2002,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.052029+00:00"
+      "discovered_at": "2026-10-21T03:58:00.677413+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23062597",
@@ -1947,7 +2031,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.185251+00:00"
+      "discovered_at": "2026-10-21T03:58:00.784891+00:00"
     },
     {
       "stable_id": "doi:10.2118/231957-ms",
@@ -1979,7 +2063,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.149718+00:00"
+      "discovered_at": "2026-10-21T03:58:00.756190+00:00"
     },
     {
       "stable_id": "arxiv:2609.37686",
@@ -2025,7 +2109,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.040518+00:00"
+      "discovered_at": "2026-10-21T03:58:00.668408+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.37686",
@@ -2071,7 +2155,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.064529+00:00"
+      "discovered_at": "2026-10-21T03:58:00.687153+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.09.28.26364159",
@@ -2105,7 +2189,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.062577+00:00"
+      "discovered_at": "2026-10-21T03:58:00.685551+00:00"
     },
     {
       "stable_id": "doi:10.2174/0126667797467407260912093229",
@@ -2137,7 +2221,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.142769+00:00"
+      "discovered_at": "2026-10-21T03:58:00.750496+00:00"
     },
     {
       "stable_id": "arxiv:2610.14008",
@@ -2166,7 +2250,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-20T04:09:22.041294+00:00"
+      "discovered_at": "2026-10-21T03:58:00.668968+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jcomc.2026.100821",
@@ -2198,7 +2282,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-20T04:09:22.077586+00:00"
+      "discovered_at": "2026-10-21T03:58:00.697719+00:00"
     },
     {
       "stable_id": "arxiv:2609.35035",
@@ -2228,7 +2312,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.042351+00:00"
+      "discovered_at": "2026-10-21T03:58:00.669771+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35035",
@@ -2258,7 +2342,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.073357+00:00"
+      "discovered_at": "2026-10-21T03:58:00.693721+00:00"
     },
     {
       "stable_id": "doi:10.2346/tst-25-029",
@@ -2288,7 +2372,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.080607+00:00"
+      "discovered_at": "2026-10-21T03:58:00.700062+00:00"
     },
     {
       "stable_id": "doi:10.17816/transsyst716698",
@@ -2315,7 +2399,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.156883+00:00"
+      "discovered_at": "2026-10-21T03:58:00.761971+00:00"
     },
     {
       "stable_id": "arxiv:2609.34976",
@@ -2346,7 +2430,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.042640+00:00"
+      "discovered_at": "2026-10-21T03:58:00.669995+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.34976",
@@ -2377,7 +2461,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.070295+00:00"
+      "discovered_at": "2026-10-21T03:58:00.691293+00:00"
     },
     {
       "stable_id": "arxiv:2609.35242",
@@ -2407,7 +2491,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.042012+00:00"
+      "discovered_at": "2026-10-21T03:58:00.669535+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35242",
@@ -2437,7 +2521,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.061179+00:00"
+      "discovered_at": "2026-10-21T03:58:00.683422+00:00"
     },
     {
       "stable_id": "doi:10.5194/isprs-archives-l-4-w2-2026-221-2026",
@@ -2466,7 +2550,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.049268+00:00"
+      "discovered_at": "2026-10-21T03:58:00.675467+00:00"
     },
     {
       "stable_id": "arxiv:2609.36161",
@@ -2494,7 +2578,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.041710+00:00"
+      "discovered_at": "2026-10-21T03:58:00.669300+00:00"
     },
     {
       "stable_id": "doi:10.65520/erciyesfen.1925750",
@@ -2521,7 +2605,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.064172+00:00"
+      "discovered_at": "2026-10-21T03:58:00.686855+00:00"
     },
     {
       "stable_id": "arxiv:2609.32773",
@@ -2548,7 +2632,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.043335+00:00"
+      "discovered_at": "2026-10-21T03:58:00.670555+00:00"
     },
     {
       "stable_id": "doi:10.67440/ahj.vi.2380",
@@ -2578,7 +2662,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.176712+00:00"
+      "discovered_at": "2026-10-21T03:58:00.778248+00:00"
     },
     {
       "stable_id": "doi:10.62441/actainnovations.v63i1s.1646",
@@ -2605,7 +2689,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.139984+00:00"
+      "discovered_at": "2026-10-21T03:58:00.748380+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.22925097",
@@ -2632,7 +2716,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-20T04:09:22.045900+00:00"
+      "discovered_at": "2026-10-21T03:58:00.672417+00:00"
     },
     {
       "stable_id": "doi:10.5772/intechopen.1018046",
@@ -2662,7 +2746,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.136285+00:00"
+      "discovered_at": "2026-10-21T03:58:00.745383+00:00"
     },
     {
       "stable_id": "doi:10.1177/10692509261488309",
@@ -2691,7 +2775,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-20T04:09:22.075094+00:00"
+      "discovered_at": "2026-10-21T03:58:00.696160+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.22924498",
@@ -2717,7 +2801,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.060859+00:00"
+      "discovered_at": "2026-10-21T03:58:00.684411+00:00"
     },
     {
       "stable_id": "doi:10.1038/s41598-026-71324-5",
@@ -2755,7 +2839,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.069442+00:00"
+      "discovered_at": "2026-10-21T03:58:00.690636+00:00"
     },
     {
       "stable_id": "doi:10.1177/14780771261488679",
@@ -2780,32 +2864,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.048875+00:00"
-    },
-    {
-      "stable_id": "doi:10.17762/jidmis.v3.3686",
-      "title": "Accurate Early Skin Cancer Detection and Classification Using Dense Dilated Convolution Network and Ensemble Extreme Learning Machines",
-      "authors": [
-        "Puneet Kumar Goyal"
-      ],
-      "abstract": "Skin cancer is one of the major diseases characterized by the uncontrolled growth of abnormal skin cells, leading to malignant tumors. Nowadays, skin cancer is regarded as one of the most serious and prevalent cancers in the world, necessitating special attention. Due to this, the automated skin cancer detection became an essential task. However, existing skin cancer detection systems faced some limitations, such as skipping the lesion segmentation, which contains the background skin in the feature extraction, and several models were not suitable for the darker skin tones. To address these challenges, the proposed system is developed using advanced methodologies. This research paper presents a computer-aided diagnosis (CAD) system for detecting skin cancer based on deep learning methods. Initially, the images are pre-processed, including image resizing, eliminating irrelevant noise, and improving image quality using an improved Wiener filter and contrast limited adaptive histogram equalization (CLAHE). Then, improved maximum relevance minimum redundancy (mRMR) is selected to select the most relevant features, which reduces noise and improves accuracy. After that, the selected features are passed to the Residual UNet with Attention mechanism to segment the skin lesions effectively. Then, the features are extracted using dense dilated convolution-based EfficientNetV2 from the segmented skin region images. Then the extracted features are sent to an ensemble-based ELM model for accurately classifying skin cancer types. Then, the ensemble based model is fine-tuned using the Hybrid Genetic Fire Hawk optimizer (HGFO), which increases the model performance. The proposed model attains the best accuracy of 98.56% utilizing the ISIC2020 dataset.",
-      "year": 2026,
-      "published_at": "2026-09-21",
-      "venue": "Journal of Intelligent Decision Making and Information Science",
-      "doi": "10.17762/jidmis.v3.3686",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7221563398",
-      "source_url": "https://doi.org/10.17762/jidmis.v3.3686",
-      "pdf_url": "https://jidmis.org/index.php/jidmis/article/download/3686/1610",
-      "oa_status": "hybrid",
-      "license": "cc-by",
-      "suggested_category": "CAD Representations & Understanding",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-10-20T04:09:22.066955+00:00"
+      "discovered_at": "2026-10-21T03:58:00.675166+00:00"
     }
   ]
 }
