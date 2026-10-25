@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-10-24T03:56:31.721837+00:00",
+  "generated_at": "2026-10-25T03:55:47.292962+00:00",
   "range": {
-    "from": "2026-09-25",
-    "to": "2026-10-24"
+    "from": "2026-09-26",
+    "to": "2026-10-25"
   },
-  "count": 65,
+  "count": 66,
   "source_health": {
     "arxiv": {
       "ok": false,
       "count": 0,
-      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202609250000+TO+202610242359%5D&start=0&",
-      "seconds": 34.11
+      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202609260000+TO+202610252359%5D&start=0&",
+      "seconds": 19.04
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 4.31
+      "seconds": 5.78
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 4.89
+      "seconds": 5.42
     },
     "upstream_awesome": {
       "ok": true,
       "count": 14,
-      "seconds": 0.48
+      "seconds": 1.08
     }
   },
   "public_profile": {
@@ -77,6 +77,62 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.5281/zenodo.23600947",
+      "title": "EDA-Agent: A Multi-Agent AI System for RTL Verification, Circuit Debugging, and Semiconductor Design Automation -TCAD-2026-2322 (IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems)",
+      "authors": [
+        "Ritwik Raj"
+      ],
+      "abstract": "Hardware verification and debugging traditionally consume over 70% of digital Integrated Circuit (IC) design cycles. Engineers spend thousands of hours manually parsing static timing reports, inspecting Value Change Dump (VCD) waveform traces, and writing SystemVerilog Assertions (SVA). EDA-Agent is an open-source, multi-agent AI platform designed to automate Register-Transfer Level (RTL) code analysis, functional testbench generation, waveform failure debugging, synthesis area estimation, and timing slack optimization. To overcome the hallucination risks of pure neural generation, EDA-Agent employs a hierarchical coordinator-worker architecture that combines Large Language Models (LLMs) with strict deterministic boundaries: AST Static Analysis: A custom regex/AST parser deterministically evaluates design violations, such as latch inference conditions and blocking assignment race hazards. Trace-Based VCD Waveform Debugging: The system parses standard IEEE 1364 VCD files to build a temporal transition matrix, allowing the agent to back-track state transitions and map assertion failures directly to faulty source code lines. Retrieval-Augmented Generation (RAG): The system grounds its reasoning in an indexed database of IEEE 1800-2017 SystemVerilog standards, Yosys manuals, and OpenSTA documentation. Empirical evaluations of EDA-Agent demonstrate 100% unit test accuracy on core parsing components, 94.2% waveform-based bug localization accuracy, and a 37.5x acceleration in SystemVerilog testbench generation compared to manual human workflows.",
+      "year": 2026,
+      "published_at": "2026-10-23",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "doi": "10.5281/zenodo.23600947",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7223414566",
+      "source_url": "https://doi.org/10.5281/zenodo.23600947",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [
+        "标题命中 computer-aided design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 8,
+      "discovered_at": "2026-10-25T03:55:47.155937+00:00"
+    },
+    {
+      "stable_id": "doi:10.1142/s1793351x26450042",
+      "title": "From CAD Data to Semantic Graphs: Integration and Derivation of Domain-Specific Knowledge within Classified Graphs",
+      "authors": [
+        "Robin Taba",
+        "Joshua Falkenhain",
+        "Arne Kugel",
+        "Taro Watanabe",
+        "Frank Köster"
+      ],
+      "abstract": "This paper is an extended version of our paper presented at the 2026 International Conference on Semantic Computing (ICSC 2026), generalizing the proposed framework to robotic assemblies. It presents a hybrid framework that integrates machine learning and ontological reasoning in graph-based representations of CAD assemblies to enable functional analysis. Building on the Core Product Model (CPM), we define multiple levels of information richness — CPM-Default, CPM-STEP, and CPM-Enriched — within our Hybrid-Data Assembly Graphs (HDGs), which fuse geometric and parametric data from STEP and CATIA sources into a unified semantic representation. By embedding CAD domain expertise into ontological rule sets and coupling them with machine learning models refined through ontology-guided node and edge regularization, our method elevates low-information assembly graphs to CPM-Enriched level. The enriched graphs support the inference of implicit degrees of freedom and automated motion propagation by operationalizing ontological rules, reconstructing complete kinematic chains from input to output shaft on gearbox assemblies. A hybrid node-update mechanism combining ML predictions with ontological adjacency constraints corrects residual misclassifications, improving node accuracy from [Formula: see text]85–90% to 100% on the test assembly. To validate generalizability, the framework is applied to a serial robotic manipulator, where swapping only the propagation rule set enables ontology-driven forward kinematics computation. By uniting rule-based reasoning with machine-learned prediction, this work establishes a foundation for semantic, interpretable, and knowledge-driven CAD graph analysis.",
+      "year": 2026,
+      "published_at": "2026-10-23",
+      "venue": "International Journal of Semantic Computing",
+      "doi": "10.1142/s1793351x26450042",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.1142/s1793351x26450042",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "",
+      "suggested_category": "CAD Editing, Constraints & Verification",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-10-25T03:55:47.228789+00:00"
+    },
+    {
       "stable_id": "doi:10.1117/12.3133467",
       "title": "Dual-graph computable knowledge engineering for CAD-to-CNC macro synthesis",
       "authors": [
@@ -89,7 +145,7 @@
       "venue": "Fifth International Conference on Advanced Manufacturing Technology and Manufacturing System (ICAMTMS 2026)",
       "doi": "10.1117/12.3133467",
       "arxiv_id": "",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/W7223261784",
       "source_url": "https://doi.org/10.1117/12.3133467",
       "pdf_url": "",
       "oa_status": "unknown",
@@ -97,10 +153,76 @@
       "suggested_category": "LLM, VLM & CAD Agents",
       "matched_terms": [],
       "source_names": [
+        "OpenAlex",
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.620471+00:00"
+      "discovered_at": "2026-10-25T03:55:47.204406+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2610.30974",
+      "title": "GraphCAD: Geometry-Aware Diffusion on Edge-Adjacency Graphs for CAD Generation",
+      "authors": [
+        "Wenhao Zheng",
+        "Xianggen Liu",
+        "Li Yue",
+        "Jiancheng Shi",
+        "Jiancheng Lv"
+      ],
+      "abstract": "Generative modeling for Computer-Aided Design (CAD) remains fundamentally challenged by the need to capture the intricate interplay between discrete topological connectivity and precise spatial geometry inherent in Boundary Representations (B-reps). Existing generative approaches largely formulate CAD construction as a sequence modeling problem, but consequently lack an explicit topological inductive bias. In this work, we present GraphCAD, a geometry-aware generative framework that centers modeling on the Edge-Adjacency Graph (EAG), a novel graph-based CAD representation tailored for generative tasks. GraphCAD adopts a hybrid graph diffusion formulation to jointly model the discrete and continuous components of EAG and introduces a geometry-aware denoising mechanism that renders node attributes into spatial point sets. These point sets are encoded by an SE(3)-equivariant backbone and fused into the node representations, thereby grounding the generative process in physical geometry. To support this study, we construct EAGBench, a large-scale dataset of engineering CAD models. Extensive experiments show that GraphCAD can generate complex CAD models with more than 50 faces and achieves state-of-the-art performance in geometric fidelity and distributional alignment compared with sequence-based baselines.",
+      "year": 2026,
+      "published_at": "2026-10-22",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2610.30974",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7223337115",
+      "source_url": "https://doi.org/10.48550/arxiv.2610.30974",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "CAD Representations & Understanding",
+      "matched_terms": [
+        "摘要命中 b-rep",
+        "摘要命中 boundary representation",
+        "摘要命中 computer-aided design",
+        "标题命中 CAD generation"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 13,
+      "discovered_at": "2026-10-25T03:55:47.136312+00:00"
+    },
+    {
+      "stable_id": "doi:10.1021/acsaelm.6c01066",
+      "title": "Machine Learning Computer-Aided Design of Electronic Devices and Circuits",
+      "authors": [
+        "Paolo Lugli",
+        "Damiano Marian",
+        "Alejandro Toral-López",
+        "Francesco Pieri",
+        "Gianluca Fiori"
+      ],
+      "abstract": "Abstract Driven by the miniaturization of single components, which has reached few nanometers, chips can nowadays accommodate hundreds of billions of transistors. As a result, modern nanoelectronics devices and systems are becoming extremely complex. To remain truly effective, computer-aided design (CAD) tools must evolve in parallel with these advancements, keeping pace with the increasing demands of scale and functionality. In recent years, machine learning (ML) has seen an incredible development in several areas. In nanoelectronics, ML is already offering promising technological solutions that improve performance and provide predictions across the entire electronic design stack. From material properties to quantum transport and circuit behavior, ML techniques are making simulation workflows much more efficient and flexible, leading to a new paradigm of CAD: Machine Learning Computer-Aided Design. This review examines the latest developments in computer simulations for assessing the performance of electronic systems and the types of models used across the different levels of abstraction. We also discuss the challenges that still need to be addressed, especially the need for physics-based ML models, and explore future directions toward generative machine learning frameworks tailored specifically for electronic system design.",
+      "year": 2026,
+      "published_at": "2026-10-22",
+      "venue": "ACS Applied Electronic Materials",
+      "doi": "10.1021/acsaelm.6c01066",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7223237278",
+      "source_url": "https://doi.org/10.1021/acsaelm.6c01066",
+      "pdf_url": "https://pubs.acs.org/aaembp/article-pdf/doi/10.1021/acsaelm.6c01066/68948242/el-2026-01066t.pdf",
+      "oa_status": "hybrid",
+      "license": "cc-by",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [
+        "标题命中 computer-aided design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 8,
+      "discovered_at": "2026-10-25T03:55:47.154103+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23523939",
@@ -125,7 +247,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.477103+00:00"
+      "discovered_at": "2026-10-25T03:55:47.138196+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23500419",
@@ -150,7 +272,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.476035+00:00"
+      "discovered_at": "2026-10-25T03:55:47.137556+00:00"
     },
     {
       "stable_id": "doi:10.17605/osf.io/62ty9",
@@ -175,7 +297,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.481935+00:00"
+      "discovered_at": "2026-10-25T03:55:47.141052+00:00"
     },
     {
       "stable_id": "doi:10.20944/preprints202610.1746.v1",
@@ -203,7 +325,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.510070+00:00"
+      "discovered_at": "2026-10-25T03:55:47.158406+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.26861",
@@ -234,7 +356,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.479465+00:00"
+      "discovered_at": "2026-10-25T03:55:47.139584+00:00"
     },
     {
       "stable_id": "doi:10.60078/3060-4842-2026-vol3-iss5-pp432-454",
@@ -261,37 +383,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.492712+00:00"
-    },
-    {
-      "stable_id": "doi:10.1016/j.cma.2026.119500",
-      "title": "Constraint-driven optimization and parametrization of industrial NURBS geometries via neural deformation field",
-      "authors": [
-        "Federico Tamburlin",
-        "Giovanni Canali",
-        "Giuseppe Alessio D’Inverno",
-        "Nicola Demo",
-        "Andrea Mola",
-        "Gianluigi Rozza"
-      ],
-      "abstract": "This work presents a differentiable framework for the parametrization and shape optimization of industrial CAD geometries represented by multi-patch NURBS surfaces. The method enables the deformation of complex CAD models through a physics-informed geometric parametrization, allowing direct morphing driven by physical constraints without the need to prescribe a predefined deformation strategy. A neural displacement field, implemented as a multi-layer perceptron acting on the NURBS control points, provides a compact parametrization of the admissible design space while preserving patch connectivity. Global geometric quantities relevant to vessel design, including displaced volume, wetted surface area and buoyancy centroid, are formulated as differentiable integral operators evaluated on the parametric domain. These quantities are computed through Gauss–Legendre quadrature combined with analytical B-spline derivatives for surface metric evaluation, allowing gradient propagation to the deformation parameters while limiting the computational overhead of automatic differentiation. The proposed framework operates directly on CAD representations without intermediate mesh generation. Numerical experiments on a modified KVLCC2 hull demonstrate the capability of the method to satisfy competing hydrostatic constraints while producing smooth CAD-compatible geometries and showing stable convergence across multiple random initializations.",
-      "year": 2026,
-      "published_at": "2026-10-19",
-      "venue": "Computer Methods in Applied Mechanics and Engineering",
-      "doi": "10.1016/j.cma.2026.119500",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7163884204",
-      "source_url": "https://doi.org/10.1016/j.cma.2026.119500",
-      "pdf_url": "",
-      "oa_status": "hybrid",
-      "license": "cc-by-nc-nd",
-      "suggested_category": "CAD Editing, Constraints & Verification",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.523103+00:00"
+      "discovered_at": "2026-10-25T03:55:47.147217+00:00"
     },
     {
       "stable_id": "doi:10.3390/machines14101206",
@@ -325,7 +417,7 @@
         "OpenAlex"
       ],
       "relevance_score": 16,
-      "discovered_at": "2026-10-24T03:56:31.478319+00:00"
+      "discovered_at": "2026-10-25T03:55:47.138911+00:00"
     },
     {
       "stable_id": "doi:10.36922/msam026290070",
@@ -353,7 +445,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-24T03:56:31.483341+00:00"
+      "discovered_at": "2026-10-25T03:55:47.141892+00:00"
     },
     {
       "stable_id": "doi:10.13140/rg.2.2.21268.05769",
@@ -378,7 +470,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.465305+00:00"
+      "discovered_at": "2026-10-25T03:55:47.134482+00:00"
     },
     {
       "stable_id": "doi:10.17586/0021-3454-2026-69-9-789-799",
@@ -405,7 +497,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.474967+00:00"
+      "discovered_at": "2026-10-25T03:55:47.136885+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.21755",
@@ -440,7 +532,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-24T03:56:31.481054+00:00"
+      "discovered_at": "2026-10-25T03:55:47.140644+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23339160",
@@ -465,7 +557,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.476436+00:00"
+      "discovered_at": "2026-10-25T03:55:47.137790+00:00"
     },
     {
       "stable_id": "doi:10.58168/intinfsys2026_67-72",
@@ -492,7 +584,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.472224+00:00"
+      "discovered_at": "2026-10-25T03:55:47.135018+00:00"
     },
     {
       "stable_id": "doi:10.3389/fmed.2026.1980048",
@@ -522,7 +614,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.486772+00:00"
+      "discovered_at": "2026-10-25T03:55:47.143957+00:00"
     },
     {
       "stable_id": "doi:10.26686/dxa3-72jf",
@@ -549,7 +641,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.473084+00:00"
+      "discovered_at": "2026-10-25T03:55:47.135539+00:00"
     },
     {
       "stable_id": "doi:10.37128/2306-8744-2026-3-6",
@@ -575,7 +667,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.475469+00:00"
+      "discovered_at": "2026-10-25T03:55:47.137187+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23286370",
@@ -600,7 +692,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.472636+00:00"
+      "discovered_at": "2026-10-25T03:55:47.135249+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1909068",
@@ -636,7 +728,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.474528+00:00"
+      "discovered_at": "2026-10-25T03:55:47.136619+00:00"
     },
     {
       "stable_id": "doi:10.58830/ozgur.pub1444.c5845",
@@ -662,7 +754,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.484558+00:00"
+      "discovered_at": "2026-10-25T03:55:47.142847+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.12870",
@@ -693,7 +785,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-24T03:56:31.491190+00:00"
+      "discovered_at": "2026-10-25T03:55:47.146488+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmsy.2026.09.026",
@@ -724,7 +816,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-24T03:56:31.528622+00:00"
+      "discovered_at": "2026-10-25T03:55:47.168551+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.12147",
@@ -753,7 +845,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.485894+00:00"
+      "discovered_at": "2026-10-25T03:55:47.143428+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.11896",
@@ -783,7 +875,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.500236+00:00"
+      "discovered_at": "2026-10-25T03:55:47.151644+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -814,7 +906,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.474006+00:00"
+      "discovered_at": "2026-10-25T03:55:47.136105+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23208825",
@@ -839,7 +931,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.607792+00:00"
+      "discovered_at": "2026-10-25T03:55:47.215622+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1963643",
@@ -865,7 +957,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.489192+00:00"
+      "discovered_at": "2026-10-25T03:55:47.145383+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.09781",
@@ -892,7 +984,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.608154+00:00"
+      "discovered_at": "2026-10-25T03:55:47.215837+00:00"
     },
     {
       "stable_id": "doi:10.3389/fonc.2026.1819986",
@@ -903,7 +995,7 @@
         "Yong Peng",
         "Xia Du"
       ],
-      "abstract": "Objective Accurate early diagnosis of Clinically Significant prostate cancer (csPCa) is crucial for improving patient survival rates. This study aimed to develop and validate an interpretable, confidence-based deep learning model for csPCa classification using biparametric MRI (bpMRI). Methods A retrospective analysis was conducted on bpMRI data from 410 patients. A classification model was constructed using the visual geometry group 16-layer (VGG-16) network, incorporating gradient-weighted class activation mapping (Grad-CAM) for visual interpretability, Monte Carlo Dropout (MC-Dropout) for uncertainty estimation, and a rejection mechanism. The model’s performance was evaluated using receiver operating characteristic (ROC) curves and area under the ROC curve (AUC). Results Across all predictions, the confidence-based model achieved an overall accuracy of 79.3% before rejection. At a confidence threshold of 0.8, 80.8% of predictions were retained, among which the selective accuracy was 94.6%, with 99 false-positive and 2 false-negative predictions. Besides, the model’s accuracy outperformed that of a senior radiologist (94.6% vs 90.8%). Qualitative Grad-CAM visualization demonstrated that the classifier frequently assigned high activation to MRI regions considered suspicious for csPCa; however, quantitative spatial agreement with lesion annotations was not assessed. Conclusion This confidence-based model identifies csPCa lesions and provides reliable confidence scores without pixel-level annotations. By rejecting uncertain predictions, it enhances the transparency and safety of clinical decision-making.",
+      "abstract": "Objective: Accurate early diagnosis of Clinically Significant prostate cancer (csPCa) is crucial for improving patient survival rates. This study aimed to develop and validate an interpretable, confidence-based deep learning model for csPCa classification using biparametric MRI (bpMRI). Methods: A retrospective analysis was conducted on bpMRI data from 410 patients. A classification model was constructed using the visual geometry group 16-layer (VGG-16) network, incorporating gradient-weighted class activation mapping (Grad-CAM) for visual interpretability, Monte Carlo Dropout (MC-Dropout) for uncertainty estimation, and a rejection mechanism. The model's performance was evaluated using receiver operating characteristic (ROC) curves and area under the ROC curve (AUC). Results: Across all predictions, the confidence-based model achieved an overall accuracy of 79.3% before rejection. At a confidence threshold of 0.8, 80.8% of predictions were retained, among which the selective accuracy was 94.6%, with 99 false-positive and 2 false-negative predictions. Besides, the model's accuracy outperformed that of a senior radiologist (94.6% vs 90.8%). Qualitative Grad-CAM visualization demonstrated that the classifier frequently assigned high activation to MRI regions considered suspicious for csPCa; however, quantitative spatial agreement with lesion annotations was not assessed. Conclusion: This confidence-based model identifies csPCa lesions and provides reliable confidence scores without pixel-level annotations. By rejecting uncertain predictions, it enhances the transparency and safety of clinical decision-making.",
       "year": 2026,
       "published_at": "2026-10-07",
       "venue": "Frontiers in Oncology",
@@ -920,7 +1012,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-10-24T03:56:31.499049+00:00"
+      "discovered_at": "2026-10-25T03:55:47.150909+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.09127",
@@ -958,7 +1050,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-24T03:56:31.479140+00:00"
+      "discovered_at": "2026-10-25T03:55:47.139385+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.08698",
@@ -990,7 +1082,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-24T03:56:31.487100+00:00"
+      "discovered_at": "2026-10-25T03:55:47.144318+00:00"
     },
     {
       "stable_id": "doi:10.1080/00207543.2026.2741386",
@@ -1021,7 +1113,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-10-24T03:56:31.528984+00:00"
+      "discovered_at": "2026-10-25T03:55:47.168772+00:00"
     },
     {
       "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
@@ -1052,7 +1144,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.477919+00:00"
+      "discovered_at": "2026-10-25T03:55:47.138677+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04262",
@@ -1085,7 +1177,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-24T03:56:31.481581+00:00"
+      "discovered_at": "2026-10-25T03:55:47.140835+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04292",
@@ -1121,7 +1213,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.611957+00:00"
+      "discovered_at": "2026-10-25T03:55:47.217744+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.04084",
@@ -1148,7 +1240,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-24T03:56:31.584348+00:00"
+      "discovered_at": "2026-10-25T03:55:47.200762+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.mfglet.2026.07.025",
@@ -1179,7 +1271,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-10-24T03:56:31.608576+00:00"
+      "discovered_at": "2026-10-25T03:55:47.216086+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.03799",
@@ -1208,7 +1300,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-10-24T03:56:31.476765+00:00"
+      "discovered_at": "2026-10-25T03:55:47.137988+00:00"
     },
     {
       "stable_id": "arxiv:2610.30974",
@@ -1233,7 +1325,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-24T03:56:31.719868+00:00"
+      "discovered_at": "2026-10-25T03:55:47.291279+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00158-026-04429-0",
@@ -1262,7 +1354,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.494224+00:00"
+      "discovered_at": "2026-10-25T03:55:47.148125+00:00"
     },
     {
       "stable_id": "doi:10.1136/bmjhci-2026-102072",
@@ -1290,7 +1382,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.485371+00:00"
+      "discovered_at": "2026-10-25T03:55:47.143118+00:00"
     },
     {
       "stable_id": "doi:10.33103/2617-3352.1528",
@@ -1315,7 +1407,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.473514+00:00"
+      "discovered_at": "2026-10-25T03:55:47.135797+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.acra.2026.08.038",
@@ -1350,7 +1442,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.515547+00:00"
+      "discovered_at": "2026-10-25T03:55:47.161621+00:00"
     },
     {
       "stable_id": "doi:10.31399/asm.cp.istfa2026p0027",
@@ -1380,7 +1472,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.514767+00:00"
+      "discovered_at": "2026-10-25T03:55:47.161011+00:00"
     },
     {
       "stable_id": "doi:10.3390/mi17101154",
@@ -1413,7 +1505,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.507218+00:00"
+      "discovered_at": "2026-10-25T03:55:47.156699+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.39150",
@@ -1445,7 +1537,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.484915+00:00"
+      "discovered_at": "2026-10-25T03:55:47.142576+00:00"
     },
     {
       "stable_id": "doi:10.6026/973206300225558",
@@ -1470,7 +1562,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.482666+00:00"
+      "discovered_at": "2026-10-25T03:55:47.141479+00:00"
     },
     {
       "stable_id": "doi:10.1922/comdem.v3i3s.18647",
@@ -1499,7 +1591,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.594540+00:00"
+      "discovered_at": "2026-10-25T03:55:47.207746+00:00"
     },
     {
       "stable_id": "doi:10.18208/ksdc.2026.32.3.381",
@@ -1525,7 +1617,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.487843+00:00"
+      "discovered_at": "2026-10-25T03:55:47.144592+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.36806",
@@ -1562,7 +1654,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.480499+00:00"
+      "discovered_at": "2026-10-25T03:55:47.140192+00:00"
     },
     {
       "stable_id": "doi:10.2118/231957-ms",
@@ -1594,7 +1686,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.578649+00:00"
+      "discovered_at": "2026-10-25T03:55:47.197960+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.37686",
@@ -1640,7 +1732,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.493552+00:00"
+      "discovered_at": "2026-10-25T03:55:47.147714+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.09.28.26364159",
@@ -1674,7 +1766,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.491683+00:00"
+      "discovered_at": "2026-10-25T03:55:47.146784+00:00"
     },
     {
       "stable_id": "doi:10.2174/0126667797467407260912093229",
@@ -1706,7 +1798,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.571605+00:00"
+      "discovered_at": "2026-10-25T03:55:47.193771+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jcomc.2026.100821",
@@ -1738,7 +1830,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-10-24T03:56:31.505320+00:00"
+      "discovered_at": "2026-10-25T03:55:47.155192+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35035",
@@ -1768,7 +1860,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.501421+00:00"
+      "discovered_at": "2026-10-25T03:55:47.152171+00:00"
     },
     {
       "stable_id": "doi:10.2346/tst-25-029",
@@ -1798,7 +1890,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.508446+00:00"
+      "discovered_at": "2026-10-25T03:55:47.157267+00:00"
     },
     {
       "stable_id": "doi:10.17816/transsyst716698",
@@ -1825,7 +1917,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.588724+00:00"
+      "discovered_at": "2026-10-25T03:55:47.203979+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.34976",
@@ -1856,7 +1948,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.498277+00:00"
+      "discovered_at": "2026-10-25T03:55:47.150462+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2609.35242",
@@ -1886,7 +1978,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-10-24T03:56:31.489735+00:00"
+      "discovered_at": "2026-10-25T03:55:47.145709+00:00"
     },
     {
       "stable_id": "doi:10.5194/isprs-archives-l-4-w2-2026-221-2026",
@@ -1915,7 +2007,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.477518+00:00"
+      "discovered_at": "2026-10-25T03:55:47.138432+00:00"
     },
     {
       "stable_id": "doi:10.65520/erciyesfen.1925750",
@@ -1942,64 +2034,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.493168+00:00"
-    },
-    {
-      "stable_id": "doi:10.67440/ahj.vi.2380",
-      "title": "Effect of AI-Assisted Crown Design on Marginal And Internal Adaptation",
-      "authors": [
-        "Dr. S. Aruna Kumari",
-        "Dr.N.Pragnyatha Pavani",
-        "Dr.A.Roja Roshan",
-        "Anusha Yarram",
-        "Dr. Kuppala Venkata Sreekanth",
-        "Dr. Shaik Kamal Sha"
-      ],
-      "abstract": "Background:Artificial intelligence (AI) has emerged as a promising technology in digital dentistry, particularly in the automated design of dental crowns. Although AI-assisted systems have demonstrated potential in reproducing dental morphology and improving the efficiency of digital workflows, their effect on the marginal and internal adaptation of CAD/CAM-fabricated crowns requires further evaluation. Aim:The present in vitro study was conducted to evaluate the effect of AI-assisted crown design on the marginal and internal adaptation of CAD/CAM-fabricated dental crowns in comparison with conventional CAD crown design. Materials and Methods: Thirty standardized artificial maxillary first molar preparations were included in the study and randomly divided into two equal groups of 15 specimens each. In Group I, crowns were designed using an AI-assisted dental crown-design software, whereas in Group II, crowns were designed using conventional CAD software. The same scanning protocol, restorative material, CAD/CAM milling system, and manufacturing procedure were used for both groups. Marginal and internal adaptation was evaluated using a three-dimensional replica technique. Internal adaptation was assessed at the cervical, axial, and occlusal regions. The thickness of the replica material was measured using a digital microscope and recorded in micrometres (µm). The marginal gap was considered the primary outcome, while cervical, axial, and occlusal internal gaps were considered secondary outcomes. The data were analyzed using an independent-samples t-test, with the level of statistical significance set at p < 0.05. Results:The AI-assisted crown-design group demonstrated a mean marginal gap of 72.4 ± 8.6 µm compared with 86.7 ± 10.1 µm in the conventional CAD group (p < 0.001). The mean cervical internal gap was 78.3 ± 9.2 µm in the AI-assisted group and 91.5 ± 10.4 µm in the conventional CAD group (p = 0.001). At the axial region, the mean internal gap was 94.6 ± 11.3 µm and 106.8 ± 12.1 µm, respectively (p = 0.008). At the occlusal region, the corresponding values were 118.2 ± 15.4 µm and 132.5 ± 16.2 µm, respectively (p = 0.020). Thus, lower marginal and internal gap values were observed in the AI-assisted crown-design group at all evaluated locations. Conclusion:Within the limitations of the present in vitro study, AI-assisted crown design demonstrated lower marginal and internal gap values than conventional CAD crown design. The findings suggested that the crown-design approach influenced the adaptation of CAD/CAM-fabricated crowns. Further investigations using natural teeth, different restorative materials and AI systems, cementation, artificial aging, and clinical conditions are required to establish the clinical relevance of these findings.",
-      "year": 2026,
-      "published_at": "2026-09-25",
-      "venue": "Adolescencia e Saude",
-      "doi": "10.67440/ahj.vi.2380",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7219600018",
-      "source_url": "https://doi.org/10.67440/ahj.vi.2380",
-      "pdf_url": "https://adolescenciaesaude.com/index.php/aes/article/download/2380/1813",
-      "oa_status": "hybrid",
-      "license": "cc-by",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.610673+00:00"
-    },
-    {
-      "stable_id": "doi:10.62441/actainnovations.v63i1s.1646",
-      "title": "BEYOND THE CHAIR: THE FUTURE OF TELEDENTISTRY AND AI-DRIVEN DENTAL INNOVATION",
-      "authors": [
-        "Atharva Avinash Kolvankar",
-        "Ajay Gaikwad",
-        "Khamkar Saloni Krishnat"
-      ],
-      "abstract": "Background: The landscape of oral rehabilitation is undergoing a profound paradigm shift driven by the fusion of digital healthcare, artificial intelligence (AI), and remote clinical infrastructure. Traditional prosthodontic workflows, while time-tested, often involve labour-intensive procedures, multiple physical visits, and subjective diagnostic interpretability. Purpose: This comprehensive review evaluates the integration of AI, teledentistry, augmented/virtual reality (AR/VR), and digital fabrication modalities in modern prosthodontics, highlighting their collective impact on clinical precision, operational efficiency, and patient accessibility. Methods: A systematic literature review was structured across PubMed, Web of Science, and Scopus, focusing on peer-reviewed articles published between 2018 and 2026. Keywords included artificial intelligence, teledentistry, digital prosthodontics, 3D printing, intraoral scanning, and augmented reality. Results: Evidence demonstrates that AI integration significantly enhances diagnostic accuracy in margin detection, shade matching, and bone loss quantification. Teledentistry bridges geographical barriers, enabling remote triage, pre-prosthetic evaluation, and long-term maintenance monitoring. Concurrently, CAD/CAM and 3D printing facilitate rapid, highly reproducible prosthesis manufacturing. Conclusions: The convergence of these technologies transitions prosthodontics from a chairside-centric model toward a hybrid, data-driven ecosystem. While regulatory, ethical, and technological hurdles remain, AI-driven teledentistry represents a robust platform for the future of specialized oral rehabilitation.",
-      "year": 2026,
-      "published_at": "2026-09-25",
-      "venue": "Acta Innovations",
-      "doi": "10.62441/actainnovations.v63i1s.1646",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7221526669",
-      "source_url": "https://doi.org/10.62441/actainnovations.v63i1s.1646",
-      "pdf_url": "https://actainnovations.com/index.php/pub/article/download/1646/884",
-      "oa_status": "diamond",
-      "license": "cc-by",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-10-24T03:56:31.569534+00:00"
+      "discovered_at": "2026-10-25T03:55:47.147484+00:00"
     }
   ]
 }
