@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-01T05:12:34.751949+00:00",
+  "generated_at": "2026-11-02T05:12:36.077689+00:00",
   "range": {
-    "from": "2026-10-03",
-    "to": "2026-11-01"
+    "from": "2026-10-04",
+    "to": "2026-11-02"
   },
-  "count": 71,
+  "count": 68,
   "source_health": {
     "arxiv": {
       "ok": true,
-      "count": 38,
-      "seconds": 1.67
+      "count": 36,
+      "seconds": 1.82
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 6.81
+      "seconds": 9.17
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 8.59
+      "seconds": 11.21
     },
     "upstream_awesome": {
       "ok": true,
       "count": 0,
-      "seconds": 0.87
+      "seconds": 0.93
     }
   },
   "public_profile": {
@@ -108,7 +108,7 @@
         "arXiv"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-01T05:12:34.631496+00:00"
+      "discovered_at": "2026-11-02T05:12:35.823436+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.39306",
@@ -128,8 +128,8 @@
       "doi": "10.48550/arxiv.2610.39306",
       "arxiv_id": "",
       "openalex_id": "https://openalex.org/W7224861286",
-      "source_url": "https://doi.org/10.48550/arxiv.2610.39306",
-      "pdf_url": "",
+      "source_url": "https://arxiv.org/abs/2610.39306",
+      "pdf_url": "https://arxiv.org/pdf/2610.39306",
       "oa_status": "green",
       "license": "",
       "suggested_category": "LLM, VLM & CAD Agents",
@@ -143,7 +143,36 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-01T05:12:34.712138+00:00"
+      "discovered_at": "2026-11-02T05:12:35.951331+00:00"
+    },
+    {
+      "stable_id": "doi:10.54097/ht37b711",
+      "title": "Co-Construction of Production-Line AAS Geometric Models and Knowledge Graphs Driven by a Vision-Language Model",
+      "authors": [
+        "Hui Li",
+        "Xiaoyi Zhao",
+        "Shasha Wang",
+        "Chenxi Yang",
+        "Wenxin Huang"
+      ],
+      "abstract": "Digital twin systems for a production line usually run on two models at once: an Asset Administration Shell (AAS) that holds asset information under IEC 63278, and a knowledge graph (KG) that records device topology and process semantics. On real projects, though, the two are built apart from each other. Engineers key the AAS geometric model in by hand from drawings and field measurements, while process engineers author the KG separately. The same data therefore gets entered twice, reuse is poor, and sooner or later the two models disagree. This paper presents a co-construction method that removes the duplication at its source. A fine-tuned vision-language model (VLM) reads the engineering sources a line already has, namely 2D/3D CAD drawings, on-site laser point clouds, and equipment technical manuals, and fills a standardized AAS; the KG is then derived from that AAS by fixed rules, so both models share one source. The method is arranged in four layers: multi-source data preprocessing with coarse-to-fine ICP spatial registration; LoRA-based domain adaptation of an open-source VLM supported by industrial prompt templates; automatic population of the AAS geometric, property, and connectivity submodels with conformance-checked .aasx generation on Eclipse BaSyx, plus QEM-based mesh simplification; and same-source KG derivation through fixed field-to-triple mapping rules, backed by a single-source constraint, automatic reconciliation, and incremental refresh with version traceability. We demonstrate the complete pipeline on a photovoltaic cell production line, and a parameterized Monte Carlo simulation of data consistency shows that, for manual single-entry error rates between 1% and 10%, conventional dual-entry modeling produces 4–39 times more data inconsistencies than the proposed single-source derivation, with the gap widening as the error rate grows. The method offers a reusable and extensible path toward production-line digital twin modeling; empirical validation on a physical line is planned as future work.",
+      "year": 2026,
+      "published_at": "2026-10-29",
+      "venue": "Frontiers in Computing and Intelligent Systems",
+      "doi": "10.54097/ht37b711",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7224856400",
+      "source_url": "https://doi.org/10.54097/ht37b711",
+      "pdf_url": "https://drpress.org/ojs/index.php/fcis/article/download/36303/35401",
+      "oa_status": "diamond",
+      "license": "cc-by-nc",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-02T05:12:35.956038+00:00"
     },
     {
       "stable_id": "doi:10.59490/6ad294696ee698573e4dd65c",
@@ -169,7 +198,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.716779+00:00"
+      "discovered_at": "2026-11-02T05:12:35.959474+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23756809",
@@ -196,7 +225,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-01T05:12:34.670419+00:00"
+      "discovered_at": "2026-11-02T05:12:35.881129+00:00"
     },
     {
       "stable_id": "doi:10.1007/s10791-026-10699-5",
@@ -223,7 +252,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.704370+00:00"
+      "discovered_at": "2026-11-02T05:12:35.938830+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.ejro.2026.100821",
@@ -257,7 +286,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.644699+00:00"
+      "discovered_at": "2026-11-02T05:12:35.836712+00:00"
     },
     {
       "stable_id": "arxiv:2610.35704",
@@ -285,7 +314,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.631726+00:00"
+      "discovered_at": "2026-11-02T05:12:35.823792+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23662350",
@@ -310,7 +339,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.654520+00:00"
+      "discovered_at": "2026-11-02T05:12:35.852461+00:00"
     },
     {
       "stable_id": "arxiv:2610.35566",
@@ -339,7 +368,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.631979+00:00"
+      "discovered_at": "2026-11-02T05:12:35.824228+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23636235",
@@ -367,7 +396,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-01T05:12:34.646544+00:00"
+      "discovered_at": "2026-11-02T05:12:35.839723+00:00"
     },
     {
       "stable_id": "arxiv:2610.34529",
@@ -392,7 +421,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.632213+00:00"
+      "discovered_at": "2026-11-02T05:12:35.824602+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19307-8",
@@ -420,7 +449,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.723369+00:00"
+      "discovered_at": "2026-11-02T05:12:35.971038+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23600947",
@@ -447,7 +476,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-01T05:12:34.663103+00:00"
+      "discovered_at": "2026-11-02T05:12:35.868394+00:00"
     },
     {
       "stable_id": "doi:10.1117/12.3133467",
@@ -473,7 +502,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.712751+00:00"
+      "discovered_at": "2026-11-02T05:12:35.952382+00:00"
     },
     {
       "stable_id": "arxiv:2610.30974",
@@ -507,7 +536,7 @@
         "arXiv"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-01T05:12:34.633094+00:00"
+      "discovered_at": "2026-11-02T05:12:35.826095+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.30974",
@@ -541,7 +570,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-01T05:12:34.644390+00:00"
+      "discovered_at": "2026-11-02T05:12:35.836201+00:00"
     },
     {
       "stable_id": "doi:10.1021/acsaelm.6c01066",
@@ -572,7 +601,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-01T05:12:34.661952+00:00"
+      "discovered_at": "2026-11-02T05:12:35.866398+00:00"
     },
     {
       "stable_id": "arxiv:2610.31623",
@@ -601,7 +630,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.632893+00:00"
+      "discovered_at": "2026-11-02T05:12:35.825726+00:00"
     },
     {
       "stable_id": "arxiv:2610.29518",
@@ -626,7 +655,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.633288+00:00"
+      "discovered_at": "2026-11-02T05:12:35.826419+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.29518",
@@ -651,7 +680,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.716977+00:00"
+      "discovered_at": "2026-11-02T05:12:35.960032+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23523939",
@@ -676,7 +705,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.646297+00:00"
+      "discovered_at": "2026-11-02T05:12:35.839325+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23500419",
@@ -701,7 +730,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.645585+00:00"
+      "discovered_at": "2026-11-02T05:12:35.837727+00:00"
     },
     {
       "stable_id": "doi:10.17605/osf.io/62ty9",
@@ -726,7 +755,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.648396+00:00"
+      "discovered_at": "2026-11-02T05:12:35.842686+00:00"
     },
     {
       "stable_id": "doi:10.20944/preprints202610.1746.v1",
@@ -754,7 +783,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-01T05:12:34.664711+00:00"
+      "discovered_at": "2026-11-02T05:12:35.871092+00:00"
     },
     {
       "stable_id": "arxiv:2610.26861",
@@ -785,7 +814,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-01T05:12:34.633631+00:00"
+      "discovered_at": "2026-11-02T05:12:35.827000+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.26861",
@@ -816,7 +845,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-01T05:12:34.647646+00:00"
+      "discovered_at": "2026-11-02T05:12:35.841633+00:00"
     },
     {
       "stable_id": "doi:10.60078/3060-4842-2026-vol3-iss5-pp432-454",
@@ -843,7 +872,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-01T05:12:34.653765+00:00"
+      "discovered_at": "2026-11-02T05:12:35.850896+00:00"
     },
     {
       "stable_id": "arxiv:2610.25840",
@@ -874,7 +903,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.633827+00:00"
+      "discovered_at": "2026-11-02T05:12:35.827324+00:00"
     },
     {
       "stable_id": "arxiv:2610.24451",
@@ -904,7 +933,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.634232+00:00"
+      "discovered_at": "2026-11-02T05:12:35.828015+00:00"
     },
     {
       "stable_id": "doi:10.3390/machines14101206",
@@ -938,7 +967,7 @@
         "OpenAlex"
       ],
       "relevance_score": 16,
-      "discovered_at": "2026-11-01T05:12:34.646994+00:00"
+      "discovered_at": "2026-11-02T05:12:35.840501+00:00"
     },
     {
       "stable_id": "doi:10.36922/msam026290070",
@@ -966,7 +995,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-01T05:12:34.649025+00:00"
+      "discovered_at": "2026-11-02T05:12:35.843462+00:00"
     },
     {
       "stable_id": "doi:10.13140/rg.2.2.21268.05769",
@@ -991,7 +1020,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.638150+00:00"
+      "discovered_at": "2026-11-02T05:12:35.833834+00:00"
     },
     {
       "stable_id": "doi:10.17586/0021-3454-2026-69-9-789-799",
@@ -1018,7 +1047,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.645229+00:00"
+      "discovered_at": "2026-11-02T05:12:35.838149+00:00"
     },
     {
       "stable_id": "arxiv:2610.21755",
@@ -1053,7 +1082,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-01T05:12:34.634673+00:00"
+      "discovered_at": "2026-11-02T05:12:35.828734+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.21755",
@@ -1088,7 +1117,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-01T05:12:34.648048+00:00"
+      "discovered_at": "2026-11-02T05:12:35.842344+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23339160",
@@ -1113,7 +1142,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.646099+00:00"
+      "discovered_at": "2026-11-02T05:12:35.838992+00:00"
     },
     {
       "stable_id": "doi:10.58168/intinfsys2026_67-72",
@@ -1140,7 +1169,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.643420+00:00"
+      "discovered_at": "2026-11-02T05:12:35.834497+00:00"
     },
     {
       "stable_id": "doi:10.3389/fmed.2026.1980048",
@@ -1170,7 +1199,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.651647+00:00"
+      "discovered_at": "2026-11-02T05:12:35.847602+00:00"
     },
     {
       "stable_id": "doi:10.26686/dxa3-72jf",
@@ -1197,7 +1226,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-01T05:12:34.643890+00:00"
+      "discovered_at": "2026-11-02T05:12:35.835334+00:00"
     },
     {
       "stable_id": "arxiv:2610.17776",
@@ -1228,7 +1257,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.634998+00:00"
+      "discovered_at": "2026-11-02T05:12:35.829290+00:00"
     },
     {
       "stable_id": "doi:10.37128/2306-8744-2026-3-6",
@@ -1254,7 +1283,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.645873+00:00"
+      "discovered_at": "2026-11-02T05:12:35.838608+00:00"
     },
     {
       "stable_id": "arxiv:2610.20651",
@@ -1279,7 +1308,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.635207+00:00"
+      "discovered_at": "2026-11-02T05:12:35.829633+00:00"
     },
     {
       "stable_id": "arxiv:2610.14413",
@@ -1308,7 +1337,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-01T05:12:34.635665+00:00"
+      "discovered_at": "2026-11-02T05:12:35.830385+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23286370",
@@ -1333,7 +1362,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.643632+00:00"
+      "discovered_at": "2026-11-02T05:12:35.834905+00:00"
     },
     {
       "stable_id": "doi:10.3390/diagnostics16203266",
@@ -1359,7 +1388,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.698197+00:00"
+      "discovered_at": "2026-11-02T05:12:35.927964+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1909068",
@@ -1395,7 +1424,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.644978+00:00"
+      "discovered_at": "2026-11-02T05:12:35.837186+00:00"
     },
     {
       "stable_id": "doi:10.58830/ozgur.pub1444.c5845",
@@ -1421,7 +1450,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.649887+00:00"
+      "discovered_at": "2026-11-02T05:12:35.844636+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.12870",
@@ -1452,7 +1481,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-01T05:12:34.652062+00:00"
+      "discovered_at": "2026-11-02T05:12:35.848573+00:00"
     },
     {
       "stable_id": "arxiv:2610.11954",
@@ -1485,7 +1514,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-01T05:12:34.636286+00:00"
+      "discovered_at": "2026-11-02T05:12:35.831418+00:00"
     },
     {
       "stable_id": "arxiv:2610.12147",
@@ -1514,7 +1543,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.636073+00:00"
+      "discovered_at": "2026-11-02T05:12:35.831069+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.12147",
@@ -1543,7 +1572,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.650676+00:00"
+      "discovered_at": "2026-11-02T05:12:35.845827+00:00"
     },
     {
       "stable_id": "arxiv:2610.11896",
@@ -1573,7 +1602,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.636481+00:00"
+      "discovered_at": "2026-11-02T05:12:35.831729+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.11896",
@@ -1603,7 +1632,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.656449+00:00"
+      "discovered_at": "2026-11-02T05:12:35.855367+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -1634,7 +1663,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-01T05:12:34.644185+00:00"
+      "discovered_at": "2026-11-02T05:12:35.835801+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23208825",
@@ -1659,7 +1688,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.721985+00:00"
+      "discovered_at": "2026-11-02T05:12:35.968751+00:00"
     },
     {
       "stable_id": "doi:10.25258/ijddt.16.55s.52",
@@ -1687,7 +1716,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.703157+00:00"
+      "discovered_at": "2026-11-02T05:12:35.936519+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1963643",
@@ -1713,7 +1742,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.652465+00:00"
+      "discovered_at": "2026-11-02T05:12:35.848995+00:00"
     },
     {
       "stable_id": "arxiv:2610.09781",
@@ -1740,7 +1769,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.636686+00:00"
+      "discovered_at": "2026-11-02T05:12:35.832081+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.09781",
@@ -1767,7 +1796,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.722201+00:00"
+      "discovered_at": "2026-11-02T05:12:35.969124+00:00"
     },
     {
       "stable_id": "doi:10.3389/fonc.2026.1819986",
@@ -1795,7 +1824,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-01T05:12:34.656893+00:00"
+      "discovered_at": "2026-11-02T05:12:35.856124+00:00"
     },
     {
       "stable_id": "arxiv:2610.09127",
@@ -1833,7 +1862,7 @@
         "arXiv"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-01T05:12:34.636883+00:00"
+      "discovered_at": "2026-11-02T05:12:35.832406+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.09127",
@@ -1871,7 +1900,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-01T05:12:34.647465+00:00"
+      "discovered_at": "2026-11-02T05:12:35.841327+00:00"
     },
     {
       "stable_id": "arxiv:2610.08698",
@@ -1903,7 +1932,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-01T05:12:34.637074+00:00"
+      "discovered_at": "2026-11-02T05:12:35.832721+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.08698",
@@ -1935,7 +1964,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-01T05:12:34.651331+00:00"
+      "discovered_at": "2026-11-02T05:12:35.847061+00:00"
     },
     {
       "stable_id": "arxiv:2610.07062",
@@ -1967,7 +1996,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.637595+00:00"
+      "discovered_at": "2026-11-02T05:12:35.833604+00:00"
     },
     {
       "stable_id": "doi:10.1080/00207543.2026.2741386",
@@ -1998,7 +2027,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-01T05:12:34.675459+00:00"
+      "discovered_at": "2026-11-02T05:12:35.889778+00:00"
     },
     {
       "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
@@ -2029,145 +2058,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-01T05:12:34.646772+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.04262",
-      "title": "CADForge: Agentic Single-View CAD Reconstruction with Explicit Geometry Reasoning",
-      "authors": [
-        "Keyang Lu",
-        "Zhifei Yang",
-        "Tianao Dong",
-        "Mingzhe Xing",
-        "Zhen Xiao",
-        "Yikai Wang"
-      ],
-      "abstract": "Reconstructing editable parametric CAD models from a single-view image is of great practical value for modern manufacturing, yet remains challenging due to incomplete geometric observations and complex inter-part relationships. To address it, we propose CADForge, an agentic framework that progressively converts a single image into CadQuery programs. CADForge decomposes an object into CAD-meaningful components and performs explicit geometric reasoning for each component, a process that first identifies CAD-relevant constraints and then translates them into precise modeling parameters through mathematical code. The inferred parameters then drive component-wise synthesis of executable CadQuery programs, with a review agent evaluating the resulting geometry and providing targeted feedback for iterative refinement. To further improve robustness and efficiency, CADForge incorporates a failure-guided toolkit construction mechanism to distill accumulated experience into tools, and maintains a compact parametric CAD memory for retrieving modeling context on demand. Experiments on diverse single- and multi-part objects show that CADForge consistently outperforms existing baselines in reconstruction fidelity and perceptual quality, demonstrating an effective approach to accurate single-view CAD reconstruction.",
-      "year": 2026,
-      "published_at": "2026-10-03",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.04262",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.04262v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.04262v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [
-        "摘要命中 parametric CAD",
-        "标题命中 CAD reconstruction"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 9,
-      "discovered_at": "2026-11-01T05:12:34.638023+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2610.04262",
-      "title": "CADForge: Agentic Single-View CAD Reconstruction with Explicit Geometry Reasoning",
-      "authors": [
-        "Keyang Lu",
-        "Zhifei Yang",
-        "Tianao Dong",
-        "Mingzhe Xing",
-        "Zhen Xiao",
-        "Yikai Wang"
-      ],
-      "abstract": "Reconstructing editable parametric CAD models from a single-view image is of great practical value for modern manufacturing, yet remains challenging due to incomplete geometric observations and complex inter-part relationships. To address it, we propose CADForge, an agentic framework that progressively converts a single image into CadQuery programs. CADForge decomposes an object into CAD-meaningful components and performs explicit geometric reasoning for each component, a process that first identifies CAD-relevant constraints and then translates them into precise modeling parameters through mathematical code. The inferred parameters then drive component-wise synthesis of executable CadQuery programs, with a review agent evaluating the resulting geometry and providing targeted feedback for iterative refinement. To further improve robustness and efficiency, CADForge incorporates a failure-guided toolkit construction mechanism to distill accumulated experience into tools, and maintains a compact parametric CAD memory for retrieving modeling context on demand. Experiments on diverse single- and multi-part objects show that CADForge consistently outperforms existing baselines in reconstruction fidelity and perceptual quality, demonstrating an effective approach to accurate single-view CAD reconstruction.",
-      "year": 2026,
-      "published_at": "2026-10-03",
-      "venue": "arXiv (Cornell University)",
-      "doi": "10.48550/arxiv.2610.04262",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7220704148",
-      "source_url": "https://arxiv.org/abs/2610.04262",
-      "pdf_url": "https://arxiv.org/pdf/2610.04262",
-      "oa_status": "green",
-      "license": "",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [
-        "摘要命中 parametric CAD",
-        "标题命中 CAD reconstruction"
-      ],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 9,
-      "discovered_at": "2026-11-01T05:12:34.648580+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.04292",
-      "title": "LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures",
-      "authors": [
-        "Jiateng Liu",
-        "Rushi Wang",
-        "Cheng Qian",
-        "Xuejun Zhang",
-        "Sun Li",
-        "Jiayu Liu",
-        "Yifan Shen",
-        "Xu Cao",
-        "Jiarui Yao",
-        "Bingxuan Li",
-        "Ruhi Sarikaya",
-        "Heng Ji"
-      ],
-      "abstract": "LLM-based agents are increasingly capable of generating complex 3D structures, with the potential to reshape how objects are designed and realized in the physical world. Yet, producing elegant geometry is fundamentally different from producing objects that can be built and perform their intended functions. Existing evaluations largely focus on geometric quality while overlooking physical realizability. We introduce LMBuild, a benchmark for evaluating LLM agents on generating buildable and functional structures. LMBuild represents generated objects as assembled structures comprising part decompositions, joints, materials, and sequences. To support reproducible evaluation, we provide a unified framework consisting of: (1) an interactive environment in which agents can use tools to retrieve, create, and place components to construct objects; (2) a curated benchmark that repurposes established CAD datasets and augments them with knowledge from Wikipedia; and (3) a evaluation framework covering structural soundness, functional affordance, design quality, and physical realization. Evaluations across 30 systems reveal several intriguing findings: (a) Soundness and alignment are no longer the primary bottlenecks for frontier closed-source models, while functional affordance and physical operability remain substantially more challenging; (b) stronger models more effectively create new components, whereas weaker models tend to rely on retrieval; and (c) providing functional specifications substantially improves part completeness, kinematics, and physical operability. These results show that generating real-world structures requires deeper reasoning about functional affordances, mechanics, and designing and creating novel components. We expect LMBuild to provide a foundation for measuring progress and incentivizing research toward agents that generate buildable and functional structures.",
-      "year": 2026,
-      "published_at": "2026-10-03",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.04292",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.04292v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.04292v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.637838+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2610.04292",
-      "title": "LMBuild: Evaluating LLM Agents for Generating Buildable and Functional Structures",
-      "authors": [
-        "Jiateng Liu",
-        "Rushi Wang",
-        "Cheng Qian",
-        "Xuejun Zhang",
-        "Sun Li",
-        "Jiayu Liu",
-        "Yifan Shen",
-        "Xu Cao",
-        "Jiarui Yao",
-        "Bingxuan Li",
-        "Ruhi Sarikaya",
-        "Heng Ji"
-      ],
-      "abstract": "LLM-based agents are increasingly capable of generating complex 3D structures, with the potential to reshape how objects are designed and realized in the physical world. Yet, producing elegant geometry is fundamentally different from producing objects that can be built and perform their intended functions. Existing evaluations largely focus on geometric quality while overlooking physical realizability. We introduce LMBuild, a benchmark for evaluating LLM agents on generating buildable and functional structures. LMBuild represents generated objects as assembled structures comprising part decompositions, joints, materials, and sequences. To support reproducible evaluation, we provide a unified framework consisting of: (1) an interactive environment in which agents can use tools to retrieve, create, and place components to construct objects; (2) a curated benchmark that repurposes established CAD datasets and augments them with knowledge from Wikipedia; and (3) a evaluation framework covering structural soundness, functional affordance, design quality, and physical realization. Evaluations across 30 systems reveal several intriguing findings: (a) Soundness and alignment are no longer the primary bottlenecks for frontier closed-source models, while functional affordance and physical operability remain substantially more challenging; (b) stronger models more effectively create new components, whereas weaker models tend to rely on retrieval; and (c) providing functional specifications substantially improves part completeness, kinematics, and physical operability. These results show that generating real-world structures requires deeper reasoning about functional affordances, mechanics, and designing and creating novel components. We expect LMBuild to provide a foundation for measuring progress and incentivizing research toward agents that generate buildable and functional structures.",
-      "year": 2026,
-      "published_at": "2026-10-03",
-      "venue": "arXiv (Cornell University)",
-      "doi": "10.48550/arxiv.2610.04292",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7220677559",
-      "source_url": "https://arxiv.org/abs/2610.04292",
-      "pdf_url": "https://arxiv.org/pdf/2610.04292",
-      "oa_status": "green",
-      "license": "cc-by-nc-sa",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-01T05:12:34.711245+00:00"
+      "discovered_at": "2026-11-02T05:12:35.840129+00:00"
     }
   ]
 }
