@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-04T05:32:13.919094+00:00",
+  "generated_at": "2026-11-05T05:52:24.447381+00:00",
   "range": {
-    "from": "2026-10-06",
-    "to": "2026-11-04"
+    "from": "2026-10-07",
+    "to": "2026-11-05"
   },
   "count": 28,
   "source_health": {
     "arxiv": {
       "ok": true,
-      "count": 44,
-      "seconds": 1.83
+      "count": 43,
+      "seconds": 1.98
     },
     "openalex": {
       "ok": false,
       "count": 0,
-      "error": "request failed: https://api.openalex.org/works?search=generative+CAD&filter=from_publication_date%3A2026-10-06%2Cto_publication_date%3A2026-11-04&per-page=100: HTTP Error 429: Too Many Requests",
-      "seconds": 3.29
+      "error": "request failed: https://api.openalex.org/works?search=parametric+CAD+large+language+model&filter=from_publication_date%3A2026-10-07%2Cto_publication_date%3A2026-11-05&per-page=100: HTTP Error 429: Too Many Requests",
+      "seconds": 11.27
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 5.05
+      "seconds": 5.68
     },
     "upstream_awesome": {
       "ok": true,
       "count": 0,
-      "seconds": 0.77
+      "seconds": 0.78
     }
   },
   "public_profile": {
@@ -77,6 +77,62 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.4271/2026-28-0198",
+      "title": "Scalable Physics-Informed Neural Network for Real-Time Thermal Analysis for Battery Packs",
+      "authors": [
+        "Shantanu Sarkar",
+        "Yoganathan Lakshmanan",
+        "Raju A."
+      ],
+      "abstract": "&lt;div class=\"section abstract\"&gt;&lt;div class=\"htmlview paragraph\"&gt;Accurately predicting Thermal and Flow parameters in Battery Pack Thermal Management System is very important to ensure maximum system efficiency, long range and vehicle safety. Traditionally, conventional Computational Fluid Dynamics (CFD) methods are used to get detailed insights into these parameters. But these methods remain computationally very expensive, which limits their application in real-time predictions. This study presents an alternate structured simulation framework that combines CFD fundamentals with Physics-Informed Neural Networks (PINNs) to enable fast and efficient prediction of thermal and flow behavior. PINNs incorporates the governing partial differential equations (PDEs) - mass, momentum and energy – directly into the neural network's loss function, enabling efficient learning with limited dependency on training datasets.&lt;/div&gt;&lt;div class=\"htmlview paragraph\"&gt;In this study, we present a PINN framework trained on limited datasets derived from general CFD simulations of flow and Conjugate Heat Transfer (CHT) cases for a battery pack. The trained PINN model is then validated against a separate set of test datasets obtained from independent studies, across key performance parameters including pressure drop, velocity, temperature distribution, and hotspot location. Comparative analysis indicates that the proposed PINN framework predicts key parameters within 5% deviation from test dataset values. The PINN model also significantly reduces computational time from 5-8 hours per case for traditional detailed CFD to 2-3 seconds. Additionally, the PINN framework requires only a closed-volume CAD geometry and does not rely on 3D-mesh. Limited data can be used to speed up the training process, thereby eliminating the time associated with pre-processing, repeated model setup for different cases, and subsequent corrections. Findings from this study demonstrate PINNs as a potential surrogate modelling tool for real-time thermal monitoring and rapid design iteration in battery cooling systems. This reduces dependency on computationally expensive simulations, thereby reducing development cycles and faster time for customers. This work shows a scalable physics-informed neural-network framework that can be extended beyond battery systems to other components at system and vehicle levels.&lt;/div&gt;&lt;/div&gt;",
+      "year": 2026,
+      "published_at": "2026-11-05",
+      "venue": "SAE Technical Paper Series",
+      "doi": "10.4271/2026-28-0198",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.4271/2026-28-0198",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-05T05:52:24.373248+00:00"
+    },
+    {
+      "stable_id": "arxiv:2611.05449",
+      "title": "SO(3)-Equivariant Learning on CAD Boundary Representations",
+      "authors": [
+        "Matteo Ballegeer",
+        "Dries F. Benoit"
+      ],
+      "abstract": "Learning on boundary representations (B-reps) requires robustness to the pose of a part, since CAD models are not stored in a canonical orientation. Existing B-rep networks either operate on world-frame coordinates and normals, and thus degrade under rotation, or encode each face in a local reference frame. Local frames yield invariance, but reduce inter-face messages to scalars and discard the relative orientation of adjacent faces. We propose SO3brep, an SO(3)-equivariant graph neural network on the B-rep face-adjacency graph. Node features are computed in local frames and mapped into a shared frame by Wigner D-matrices. Clebsch-Gordan tensor products couple these features with the directions between adjacent faces, so that relative orientation is preserved throughout message passing and the output remains SE(3)-invariant. Across three face-segmentation and two classification benchmarks with randomly rotated test parts, SO3brep achieves the highest accuracy among the compared B-rep networks and equivariant point cloud networks, with the fewest parameters. Its advantage is largest with few labeled parts, a setting typical of industrial CAD. Code is available at https://github.com/UGent-CVAMO/so3brep.",
+      "year": 2026,
+      "published_at": "2026-11-03",
+      "venue": "arXiv",
+      "doi": "",
+      "arxiv_id": "2611.05449",
+      "openalex_id": "",
+      "source_url": "https://arxiv.org/abs/2611.05449v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05449v1",
+      "oa_status": "green",
+      "license": "arXiv",
+      "suggested_category": "CAD Representations & Understanding",
+      "matched_terms": [
+        "摘要命中 b-rep",
+        "标题命中 boundary representation"
+      ],
+      "source_names": [
+        "arXiv"
+      ],
+      "relevance_score": 12,
+      "discovered_at": "2026-11-05T05:52:24.337662+00:00"
+    },
+    {
       "stable_id": "arxiv:2611.02659",
       "title": "Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings",
       "authors": [
@@ -105,7 +161,7 @@
         "arXiv"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-04T05:32:13.859007+00:00"
+      "discovered_at": "2026-11-05T05:52:24.338756+00:00"
     },
     {
       "stable_id": "arxiv:2611.02540",
@@ -135,7 +191,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.859199+00:00"
+      "discovered_at": "2026-11-05T05:52:24.339083+00:00"
     },
     {
       "stable_id": "arxiv:2611.03178",
@@ -199,7 +255,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.858828+00:00"
+      "discovered_at": "2026-11-05T05:52:24.338453+00:00"
     },
     {
       "stable_id": "arxiv:2611.02433",
@@ -227,7 +283,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.859378+00:00"
+      "discovered_at": "2026-11-05T05:52:24.339409+00:00"
     },
     {
       "stable_id": "arxiv:2611.02286",
@@ -256,7 +312,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.859574+00:00"
+      "discovered_at": "2026-11-05T05:52:24.339767+00:00"
     },
     {
       "stable_id": "arxiv:2611.01165",
@@ -286,7 +342,7 @@
         "arXiv"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-04T05:32:13.859762+00:00"
+      "discovered_at": "2026-11-05T05:52:24.340063+00:00"
     },
     {
       "stable_id": "arxiv:2610.39306",
@@ -321,7 +377,7 @@
         "arXiv"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-04T05:32:13.860085+00:00"
+      "discovered_at": "2026-11-05T05:52:24.340634+00:00"
     },
     {
       "stable_id": "arxiv:2610.35704",
@@ -349,7 +405,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.860274+00:00"
+      "discovered_at": "2026-11-05T05:52:24.340966+00:00"
     },
     {
       "stable_id": "arxiv:2610.35566",
@@ -378,7 +434,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.860503+00:00"
+      "discovered_at": "2026-11-05T05:52:24.341365+00:00"
     },
     {
       "stable_id": "arxiv:2610.34529",
@@ -403,7 +459,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.860725+00:00"
+      "discovered_at": "2026-11-05T05:52:24.341747+00:00"
     },
     {
       "stable_id": "arxiv:2610.30974",
@@ -437,7 +493,7 @@
         "arXiv"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-04T05:32:13.861530+00:00"
+      "discovered_at": "2026-11-05T05:52:24.343232+00:00"
     },
     {
       "stable_id": "arxiv:2610.30858",
@@ -469,7 +525,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.861767+00:00"
+      "discovered_at": "2026-11-05T05:52:24.343673+00:00"
     },
     {
       "stable_id": "arxiv:2610.31623",
@@ -498,7 +554,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.861348+00:00"
+      "discovered_at": "2026-11-05T05:52:24.342882+00:00"
     },
     {
       "stable_id": "arxiv:2610.29518",
@@ -523,7 +579,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.861948+00:00"
+      "discovered_at": "2026-11-05T05:52:24.343997+00:00"
     },
     {
       "stable_id": "arxiv:2610.26861",
@@ -554,7 +610,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-04T05:32:13.862260+00:00"
+      "discovered_at": "2026-11-05T05:52:24.344565+00:00"
     },
     {
       "stable_id": "arxiv:2610.25840",
@@ -585,7 +641,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.862443+00:00"
+      "discovered_at": "2026-11-05T05:52:24.344887+00:00"
     },
     {
       "stable_id": "arxiv:2610.24451",
@@ -615,7 +671,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.862834+00:00"
+      "discovered_at": "2026-11-05T05:52:24.345589+00:00"
     },
     {
       "stable_id": "arxiv:2611.00076",
@@ -650,7 +706,7 @@
         "arXiv"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-04T05:32:13.863007+00:00"
+      "discovered_at": "2026-11-05T05:52:24.345889+00:00"
     },
     {
       "stable_id": "arxiv:2610.21755",
@@ -685,7 +741,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-04T05:32:13.863410+00:00"
+      "discovered_at": "2026-11-05T05:52:24.346629+00:00"
     },
     {
       "stable_id": "arxiv:2610.17776",
@@ -716,7 +772,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.863725+00:00"
+      "discovered_at": "2026-11-05T05:52:24.347180+00:00"
     },
     {
       "stable_id": "arxiv:2610.20651",
@@ -741,7 +797,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.863924+00:00"
+      "discovered_at": "2026-11-05T05:52:24.347533+00:00"
     },
     {
       "stable_id": "arxiv:2610.14413",
@@ -770,7 +826,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-04T05:32:13.864352+00:00"
+      "discovered_at": "2026-11-05T05:52:24.348281+00:00"
     },
     {
       "stable_id": "arxiv:2610.11954",
@@ -803,7 +859,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-04T05:32:13.864946+00:00"
+      "discovered_at": "2026-11-05T05:52:24.349359+00:00"
     },
     {
       "stable_id": "arxiv:2610.12147",
@@ -832,7 +888,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.864745+00:00"
+      "discovered_at": "2026-11-05T05:52:24.349006+00:00"
     },
     {
       "stable_id": "arxiv:2610.11896",
@@ -862,7 +918,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.865123+00:00"
+      "discovered_at": "2026-11-05T05:52:24.349689+00:00"
     },
     {
       "stable_id": "arxiv:2610.09781",
@@ -889,77 +945,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-04T05:32:13.865315+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.09127",
-      "title": "CADFather: Autonomous CAD Reconstruction through Coordinated Tool Use",
-      "authors": [
-        "Gennadiy Savrasov",
-        "Maksim Elistratov",
-        "Nikita Gavrilov",
-        "Albert Garifullin",
-        "Oleg Pavlov",
-        "Soslan Kabisov",
-        "Vladimir Frolov",
-        "Anton Konushin",
-        "Andrey Kuznetsov",
-        "Dmitrii Zhemchuzhnikov"
-      ],
-      "abstract": "Reconstructing an editable CAD model from a 3D shape remains a challenging engineering task. Existing methods can propose CAD operations, but no single source of proposals works equally well across different part geometries and stages of reconstruction. We introduce CADFather, an autonomous agentic system that coordinates complementary tools to recover parametric CAD programs from 3D meshes. A vision-language assistant inspects renders of the target and intermediate reconstructions, then decides which candidate CAD programs to extend, which tools to invoke, how many proposals to generate, and when to finish. Learned and algorithmic tools propose CAD operations, while numerical optimization refines the parameters of existing programs. Proposed or refined programs are executed and evaluated to provide feedback for subsequent decisions. The agent maintains alternative candidate programs for each target part and preserves the best valid result throughout reconstruction. CADFather uses pretrained generation and assistant models without additional training. We evaluate reconstruction quality and execution validity on the full DeepCAD, Fusion360, and MCB test sets, as well as on CADENA-Bench, CADBench, and BenchCAD. We additionally analyze computational cost and the trade-off between cost and reconstruction quality.",
-      "year": 2026,
-      "published_at": "2026-10-06",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.09127",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.09127v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.09127v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "摘要命中 cad program",
-        "摘要命中 parametric CAD",
-        "标题命中 CAD reconstruction"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 11,
-      "discovered_at": "2026-11-04T05:32:13.865499+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.08698",
-      "title": "PrimitiveCAD: An LLM-Based Point-to-CAD Reconstruction with Primitive-Aware Tokenization and Operation Alignment",
-      "authors": [
-        "Jian Gao",
-        "Kailin Bi",
-        "Jiamin Xu",
-        "Jinlan Xu",
-        "Gang Xu"
-      ],
-      "abstract": "Large-model-based point-to-CAD generation holds immense potential for advancing industrial design and enhancing 3D modeling efficiency. However, most existing methods approach the problem as a general point-cloud encoding and token prediction task, neglecting the tokenization and supervision specifically for CAD-related primitives. As a result, these methods often struggle to accurately reconstruct the intricate primitive structures. To address this limitation, we propose PrimitiveCAD, a novel multi-stage paradigm for point-to-CAD reconstruction that enhances the geometric accuracy of generated CAD models while better preserving critical geometric features. First, we introduce a primitive-aware point cloud tokenization model, enabling the system to learn more robust geometric representations from CAD point clouds. Next, we perform supervised finetuning on a large language model (LLM) and introduce an operation alignment loss to align key CAD operation frequencies, thereby improving the preservation of global shape features. Finally, we incorporate reinforcement learning (RL) and introduce a feature-line alignment reward to further reduce stochasticity and enhance the fine-grained preservation of geometric features. Experiments on the DeepCAD and Fusion360 datasets show that our method achieves state-of-the-art performance in code validity, geometric accuracy, and geometric feature preservation.",
-      "year": 2026,
-      "published_at": "2026-10-06",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.08698",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.08698v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.08698v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "摘要命中 CAD generation",
-        "标题命中 CAD reconstruction"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 9,
-      "discovered_at": "2026-11-04T05:32:13.865678+00:00"
+      "discovered_at": "2026-11-05T05:52:24.350028+00:00"
     }
   ]
 }
