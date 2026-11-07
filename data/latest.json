@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-06T05:49:02.298675+00:00",
+  "generated_at": "2026-11-07T05:19:25.315765+00:00",
   "range": {
-    "from": "2026-10-08",
-    "to": "2026-11-06"
+    "from": "2026-10-09",
+    "to": "2026-11-07"
   },
-  "count": 74,
+  "count": 72,
   "source_health": {
     "arxiv": {
       "ok": true,
-      "count": 42,
-      "seconds": 3.46
+      "count": 39,
+      "seconds": 2.22
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 5.25
+      "seconds": 5.16
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 3.52
+      "seconds": 4.27
     },
     "upstream_awesome": {
       "ok": true,
       "count": 1,
-      "seconds": 0.75
+      "seconds": 1.32
     }
   },
   "public_profile": {
@@ -76,6 +76,95 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.1145/3767308.3836073",
+      "title": "GraphCAD: Geometry-Aware Diffusion on Edge-Adjacency Graphs for CAD Generation",
+      "authors": [
+        "Wenhao Zheng",
+        "Xianggen Liu",
+        "Li Yue",
+        "Jiancheng Shi",
+        "Jiancheng Lv"
+      ],
+      "abstract": "Generative modeling for Computer-Aided Design (CAD) remains fundamentally challenged by the need to capture the intricate interplay between discrete topological connectivity and precise spatial geometry inherent in Boundary Representations (B-reps). Existing generative approaches largely formulate CAD construction as a sequence modeling problem, but consequently lack an explicit topological inductive bias. In this work, we present GraphCAD, a geometry-aware generative framework that centers modeling on the Edge-Adjacency Graph (EAG), a novel graph-based CAD representation tailored for generative tasks. GraphCAD adopts a hybrid graph diffusion formulation to jointly model the discrete and continuous components of EAG and introduces a geometry-aware denoising mechanism that renders node attributes into spatial point sets. These point sets are encoded by an SE(3)-equivariant backbone and fused into the node representations, thereby grounding the generative process in physical geometry. To support this study, we construct EAGBench, a large-scale dataset of engineering CAD models. Extensive experiments show that GraphCAD can generate complex CAD models with more than 50 faces and achieves state-of-the-art performance in geometric fidelity and distributional alignment compared with sequence-based baselines.",
+      "year": 2026,
+      "published_at": "2026-11-05",
+      "venue": "ACM International Conference on Multimedia (ACM MM)",
+      "doi": "10.1145/3767308.3836073",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7223337115",
+      "source_url": "https://doi.org/10.1145/3767308.3836073",
+      "pdf_url": "",
+      "oa_status": "hybrid",
+      "license": "cc-by",
+      "suggested_category": "CAD Representations & Understanding",
+      "matched_terms": [
+        "摘要命中 b-rep",
+        "摘要命中 boundary representation",
+        "摘要命中 computer-aided design",
+        "标题命中 CAD generation"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 13,
+      "discovered_at": "2026-11-07T05:19:25.095719+00:00"
+    },
+    {
+      "stable_id": "doi:10.5281/zenodo.23969385",
+      "title": "TerraFuture Omega v20: Universal Recoverability-Constrained Engineering, Safety, Human Rights and Living Continuity Architecture",
+      "authors": [
+        "Noelia Sanchez"
+      ],
+      "abstract": "TerraFuture Omega v20 is an integrated, cross-domain research and engineering architecture designed to explore how machines, materials, intelligent systems, infrastructure, transport, essential services and institutional processes can be developed around human rights, technical safety, collaboration, care, help, empathy, compassion, recoverability and continuity. The archive brings together twenty cumulative development editions covering conceptual machinery, engineering drawings, parametric CAD models, software reference implementations, safety and recovery mechanisms, renewable-energy configurations, advanced materials, regenerative and self-repair concepts, intelligent sensors, protective switches, human-machine collaboration, emergency response, global challenges, alliance structures and evidence-constrained governance. Its central proposition is that technological advancement should not be assessed solely by performance, autonomy, efficiency or computational capability. It should also be assessed by the protection of people, prevention of foreseeable harm, accessibility, accountability, continuity of essential functions, independent verification and preservation of recoverable future options. 1. Foundational research architecture The project applies Recoverability-Constrained Systems and Continuity Science principles across engineering, software, governance and service-continuity contexts. Core principles include: Protection of life, dignity and fundamental human rights. Collaboration, care, help, empathy and compassion. Prevention and reduction of foreseeable harm. Independent safety controls and accountable human oversight. Evidence-based decisions and explicit treatment of uncertainty. Safe interruption, isolation, recovery and authorized restart. Accessibility, non-discrimination, participation and remedies. Traceable system identity, verification and auditability. Preservation of essential services during disruption. Responsible regeneration, reconstruction and future adaptation. The architecture incorporates finite design catalogs and expandable combination grammars, allowing research proposals to be explored systematically without treating conceptual possibilities as demonstrated technologies. 2. Machine and product innovation The archive includes conceptual product and machine families for ergonomic earth-moving equipment, electric and solar-powered tools, assisted machinery, regenerative devices, transport protection and industrial automation. Proposed technical developments include: Ergonomic and electrically assisted excavation equipment. Solar charging and modular energy systems. Exoskeleton-assisted and robotic work systems. Vehicle and powered-door injury prevention. Rail, aviation, marine and industrial safety instruments. Overheating, overcurrent, overload and fault-detection switches. Self-monitoring and modularly repairable machinery. Self-healing materials and bio-inspired engineering concepts. Water, energy, environmental and disaster-response instruments. Accessibility and assistive technologies. Sensors, instrumentation and human-supervised AI systems. The archive contains reference CAD, mesh, drawing, specification and testing materials. These constitute research and prototype-development inputs rather than approved production designs. 3. Safety and recoverability architecture The proposed safety model combines hazard identification, protective sensing, independent interlocks, operational constraints, controlled stopping, fault isolation, human intervention, repair verification and accountable authorization. Artificial intelligence is treated as a potential advisory, diagnostic and optimization layer, not as an inherently sufficient authority for safety-critical action. Different machines require different protective responses. An immediate electrical shutdown may be appropriate in one system, while another may require controlled braking, load holding, containment, cooling or continued backup operation. Return to service is conditioned on relevant evidence and authorization rather than the mere disappearance of a fault indication. 4. Human rights, care and institutional safeguards Human rights are proposed as foundational design and review requirements throughout the archive. The governance layer addresses dignity, equality, accessibility, consent, child protection, dependent-person safeguards, participation, privacy, fair treatment and effective remedies. Collaboration, care, help, empathy and compassion provide an additional human-centered review framework for machines, organizations, services, decisions and institutional responses. The archive distinguishes internationally recognized legal protections from newly proposed engineering or governance principles. Legal applicability depends on jurisdiction, context and relevant instruments. 5. Global challenges and continuity The project explores potential interventions concerning healthcare, water, sanitation, food systems, energy, construction, transport, environmental hazards, climate adaptation, education, digital infrastructure, emergency management and institutional accountability. Proposed systems are organized around prevention, normal operation, early warning, safe degradation, emergency response, recovery, reconstruction and future renewal. The architecture also explores collaboration among communities, researchers, manufacturers, public institutions, professional services and humanitarian organizations. Such relationships are proposals, not representations of existing agreements. 6. Executable reference software and verification Version 20 introduces additional evidence-constrained software tools, an accountable gap-closure queue, prioritized engineering concepts, foundational release gates, adversarial scenarios, audit-chain demonstrations and technical review workflows. The archive contains Python reference implementations and associated automated tests, together with research catalogs, safety records, specifications and cross-domain traceability documents. In the v20 development checks, 21 new automated reference tests passed. These tests assess limited software and documentation behavior. They do not establish physical-machine safety, scientific proof of novel mechanisms, legal compliance or successful deployment. The archive retains 540 inherited gap and action records requiring further review. Their presence should not be interpreted as 540 independently verified physical defects or as completed remediation. 7. Living research system TerraFuture Omega incorporates finite catalogs, deterministic design exploration, conceptual technology combinations, version tracking, evidence requirements and open-ended research procedures. A finite design space may be enumerated when its assumptions and boundaries are explicitly specified. Future discoveries, changing conditions and unknown hazards cannot be exhaustively resolved by any static archive. New proposals must therefore remain distinguishable from validated results. The living-system model supports revision, challenge, rejection, revalidation and responsible continuation. 8. Research limitations TerraFuture Omega v20 is a conceptual engineering, computational research and governance reference archive. The archive does not claim: Certification of physical machinery or protective devices. Completed field trials for the proposed machines. Proven prevention of injuries or global system failures. Independent validation of every generated combination. Regulatory authorization for transport or medical applications. Establishment of new binding international law. Patentability or exclusive novelty of all proposed technologies. Exhaustion of all possible scientific discoveries or future design paths. Manufacturing, installation, deployment and safety-critical operation require qualified engineering, appropriate testing, applicable legal review and independent authorization. 9. Intended users and applications The archive is intended for researchers, engineers, educators, manufacturers, safety specialists, accessibility professionals, public-interest technology developers, humanitarian planners, policy analysts and interdisciplinary research teams. Potential applications include research planning, prototype specifications, hazard analysis, requirements engineering, design-space exploration, educational demonstrations, evidence management and continuity assessment. 10. Conclusion TerraFuture Omega v20 proposes a unified approach in which innovation remains accountable to people, safety, evidence and recoverability. Its foundational objective is to design systems that anticipate hazards, protect affected beings, maintain essential functions, respond compassionately to failures, verify recovery and remain adaptable to future knowledge. The research framework adopts a non-circular stopping principle: verified results remain distinct from conceptual proposals, unresolved conditions remain visible, and new evidence may reopen the development process. Publication status: Research and reference-software release. Physical engineering and operational validation remain outstanding.",
+      "year": 2026,
+      "published_at": "2026-11-05",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "doi": "10.5281/zenodo.23969385",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225290013",
+      "source_url": "https://doi.org/10.5281/zenodo.23969385",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [
+        "摘要命中 parametric CAD"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 7,
+      "discovered_at": "2026-11-07T05:19:25.194595+00:00"
+    },
+    {
+      "stable_id": "doi:10.3390/electronics15215130",
+      "title": "Prediction of Deep Neural Network for TCAD Analysis of Degradation Induced by Near-Interface Displacement Defects in 4H-SiC MOSFETs",
+      "authors": [
+        "박기범",
+        "Jungsik Kim"
+      ],
+      "abstract": "Silicon carbide (SiC) devices used in space and nuclear environments are exposed to radiation that creates displacement defects (DDs), but the effect of DDs near the gate oxide/SiC interface has not been analyzed systematically. Using technology computer-aided design (TCAD) simulation, this study analyzes how near-interface DDs in a 4H-SiC metal-oxide-semiconductor field-effect transistor (MOSFET) affect the threshold voltage (Vth), transconductance (gm), and on-current (Ion), and builds deep neural network (DNN) models that predict these effects. The DDs were modeled as acceptor-like traps with varied energy levels, concentration, depth, lateral position, and distribution width. The degradation was largest at the channel entrance and the edge of the junction field-effect transistor (JFET) region. The center depth mattered little while the trap region reached the interface, whereas a small gap between the trap region and the interface strongly reduced the degradation. Shallow-level traps reduced Ion without shifting Vth, whereas only deep-level traps caused an actual Vth shift. The DNNs accurately predicted the degradation for new TCAD conditions in which the trap parameters simultaneously took values not used in training and outperformed grid interpolation and other regression models. The trained DNNs thus rapidly predict the degradation at the simulated lateral positions for radiation reliability assessment.",
+      "year": 2026,
+      "published_at": "2026-11-05",
+      "venue": "Electronics",
+      "doi": "10.3390/electronics15215130",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7223011803",
+      "source_url": "https://doi.org/10.3390/electronics15215130",
+      "pdf_url": "",
+      "oa_status": "gold",
+      "license": "cc-by",
+      "suggested_category": "Open-source Systems & Tools",
+      "matched_terms": [
+        "摘要命中 computer-aided design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 7,
+      "discovered_at": "2026-11-07T05:19:25.126555+00:00"
+    },
+    {
       "stable_id": "doi:10.1093/jcde/qwag095",
       "title": "Appearance-preserving simplification of non-watertight CAD models using NeuS-guided outer shell extraction",
       "authors": [
@@ -104,34 +193,7 @@
         "Crossref"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.242163+00:00"
-    },
-    {
-      "stable_id": "doi:10.3390/fractalfract10110771",
-      "title": "Hybrid Fractal–Parametric Modeling and NSGA-II Optimization of Geometric Material-Volume Reduction in Generative Architectural Façades",
-      "authors": [
-        "Golib Berdiev",
-        "Shahzoda Anarova",
-        "Navruz Khujakulov"
-      ],
-      "abstract": "This study develops a hybrid fractal–parametric modeling (HFPM) workflow integrating recursive affine iterated-function systems, finite-scale box-counting, fixed-thickness prism extrusion, and NSGA-II to explore trade-offs between geometric material volume and geometric complexity in generative architectural façades. A common 729 × 729 raster and four box-counting scales (3, 9, 27, and 81) are applied to both investigated recursion depths (r = 3 and r = 4). Across five independent NSGA-II runs, the pooled final non-dominated reference set yielded geometric material-volume reductions of 34.58% and 44.57% within 1% and 2% deviations, respectively, from the baseline finite-scale fractal dimension (Df). Mean hypervolume was 0.26182 ± 0.00113, evaluated in the original objective space against a common reference point (1.000000, 0.323566); mean inverted generational distance was 0.01732 ± 0.00244, evaluated using range-normalized distances to the empirical pooled reference front. Independent fixed-recursion optimization, simple branch-pruning controls, and density-seed, grid-origin, raster-resolution, and scale-window sensitivity tests further delimit these findings. Branch removal contributes substantially to the volume reductions, while the measured trade-offs and tolerance-feasible solutions depend on the chosen box-counting window. The results therefore establish a computational, protocol-dependent geometric trade-off for the investigated fixed-thickness prefactal prisms, not structural efficiency, equivalent façade functionality, fabrication feasibility, cost savings, or environmental benefits.",
-      "year": 2026,
-      "published_at": "2026-11-05",
-      "venue": "Fractal and Fractional",
-      "doi": "10.3390/fractalfract10110771",
-      "arxiv_id": "",
-      "openalex_id": "",
-      "source_url": "https://doi.org/10.3390/fractalfract10110771",
-      "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "Crossref"
-      ],
-      "relevance_score": 5,
-      "discovered_at": "2026-11-06T05:49:02.237269+00:00"
+      "discovered_at": "2026-11-07T05:19:25.312793+00:00"
     },
     {
       "stable_id": "arxiv:2611.05449",
@@ -161,7 +223,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-06T05:49:02.079003+00:00"
+      "discovered_at": "2026-11-07T05:19:25.084107+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19471-x",
@@ -192,7 +254,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.201389+00:00"
+      "discovered_at": "2026-11-07T05:19:25.226641+00:00"
     },
     {
       "stable_id": "arxiv:2611.02659",
@@ -223,7 +285,38 @@
         "arXiv"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-06T05:49:02.080041+00:00"
+      "discovered_at": "2026-11-07T05:19:25.085140+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.02659",
+      "title": "Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings",
+      "authors": [
+        "Mei Chen",
+        "Yu Xia",
+        "Haipeng Mao"
+      ],
+      "abstract": "Producing an executable CAD script is not sufficient to establish that an agent has satisfied an engineering design request. Evaluation must also consider the resulting geometry, specified dimensions, and native CAD modeling history. We present Parametric CAD Bench v3, a 100-task benchmark comprising 30 text-to-CAD creation tasks, 30 text-to-CAD create-and-edit tasks, and 40 tasks that reconstruct mechanical parts from engineering drawings. Agents operate in a pinned FreeCAD environment and submit native CAD artifacts to a separate programmatic verifier. The primary metric is mean continuous task reward, combining geometry similarity and specification consistency rather than binary task success. A September 24, 2026 snapshot covers 13 model-agent systems; Claude Code with Claude Opus 5.5 achieves the highest overall point estimate, 61.03%, and an image-to-CAD mean reward of 84.66%. These measurements describe complete systems, not isolated model capabilities. We release versioned tasks, evaluation configurations, and inspectable result artifacts.",
+      "year": 2026,
+      "published_at": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.02659",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225158291",
+      "source_url": "https://arxiv.org/abs/2611.02659",
+      "pdf_url": "https://arxiv.org/pdf/2611.02659",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [
+        "摘要命中 text-to-cad",
+        "摘要命中 image-to-cad",
+        "标题命中 parametric CAD"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 12,
+      "discovered_at": "2026-11-07T05:19:25.203335+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44275-026-00056-5",
@@ -259,7 +352,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.124715+00:00"
+      "discovered_at": "2026-11-07T05:19:25.127564+00:00"
     },
     {
       "stable_id": "arxiv:2611.02540",
@@ -289,7 +382,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.080350+00:00"
+      "discovered_at": "2026-11-07T05:19:25.085439+00:00"
     },
     {
       "stable_id": "arxiv:2611.03178",
@@ -353,7 +446,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.079752+00:00"
+      "discovered_at": "2026-11-07T05:19:25.084873+00:00"
     },
     {
       "stable_id": "arxiv:2611.02433",
@@ -381,7 +474,94 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.080660+00:00"
+      "discovered_at": "2026-11-07T05:19:25.085726+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.02433",
+      "title": "Blueprint2CAD: Benchmarking Foundation Models on Engineering Drawing-to-CAD Render Correspondence",
+      "authors": [
+        "Alexander Valverde",
+        "Danny Xie-Li",
+        "Zhichao Wang",
+        "Marcos V. Conde"
+      ],
+      "abstract": "Engineering drawings specify mechanical parts through orthographic projections. Recognizing which part a drawing depicts underlies part search, design reuse, and digitization, yet no public benchmark measures whether vision models can do it. We introduce Blueprint2CAD, a benchmark for drawing-to-render correspondence: given an orthographic line drawing and a shaded render, usually from another viewpoint, decide whether they show the same part. Its data layer, BlueCAD-30K, applies an open drafting pipeline to 29,925 Zero-to-CAD models, adding view-aligned renders, clean and dimensioned drawings from six viewpoints, and surface-type metadata. Frozen encoders retrieve the matching part from a 10,000-model gallery with up to 65% Recall@1 when viewpoints are known but 43% when they are not, and the four encoders we test lie within six points of each other: viewpoint, not backbone, is the bottleneck. Six zero-shot vision-language models reach only 0.52-0.67 verification accuracy, with model-specific Yes/No biases that chain-of-thought shifts but does not remove; a quick LoRA fine-tuning on in-domain pairs improves verification accuracy by a few points but sharpens these biases and leaves the viewpoint failure intact.",
+      "year": 2026,
+      "published_at": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.02433",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225152984",
+      "source_url": "https://arxiv.org/abs/2611.02433",
+      "pdf_url": "https://arxiv.org/pdf/2611.02433",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-07T05:19:25.101115+00:00"
+    },
+    {
+      "stable_id": "doi:10.29227/im-2026-02-01-085",
+      "title": "Inclusive Restaurant Acoustics for Visually Impaired Users: Exploring Parametric Potential",
+      "authors": [
+        "Sebastian Fejes-Sava",
+        "Ioana-Antonia Tănase",
+        "Cristina-Maria Povian"
+      ],
+      "abstract": "In the current context of performance - based design, parametric design offers the opportunity to integrate acoustic criteria from the early stages of architectural conception. This paper investigates the role of sound - absorbing panels and walls with parametric structures in optimizing the acoustic environment of restaurants, with a particular focus on improving the experience of people with visual impairments. In Romania, approximately 90,000 people live with visual impairments, and their participation in social life and everyday activities such as dining out is often affected by the uncontrolled acoustic performance of interior spaces — an aspect that is rarely addressed systematically in traditional design practices. In dining and social spaces characterized by high levels of ambient noise and increased reverberation time, auditory clarity becomes essential for spatial orientation, social interaction, and the reduction of cognitive overload. For users with visual impairments, auditory perception represents a fundamental tool for navigating and interpreting space, which transforms acoustic control into a critical component of inclusive design. In addition to using ambient sounds and voices for orientation, many individuals rely on active and passive echolocation mechanisms. By analyzing subtle differences between direct and reflected sound, users can estimate the distance to obstacles, the size of the interior volume, or the openness of a spatial area. A space with chaotic echoes or excessive diffuse noise can compromise orientation ability and the perception of spatial boundaries. The paper proposes a parametric approach to the design of sound - absorbing panels and walls, in which geometry, perforation density, relief depth, and the distribution of absorbing elements are generated and optimized algorithmically within digital environments integrated with acoustic simulation. Within this framework, parameters such as reverberation time, absorption coefficient, and sound field distribution become active design variables rather than mere post - design evaluation indicators. Thus, acoustic systems are conceived as adaptive structures capable of responding to spatial volume, materiality, and occupancy levels through variable three - dimensional configurations and perforated or textured surfaces with parametrically generated patterns that combine acoustic performance with formal expressiveness. The research methodology includes a qualitative research with semi - structured interviews and analyzed using reflexive thematic analysis to demonstrate that the early integration of acoustic design significantly improves the visual impaired users while being in a restaurant. The results highlight the potential of parametric design to transform sound - absorbing panels and acoustic walls from technical elements added later in the process into generative components of the architectural concept. The study argues for the development of a practice of “parametric acoustics,” in which performance, inclusion, and formal expression are interconnected through advanced digital tools.",
+      "year": 2026,
+      "published_at": "2026-11-01",
+      "venue": "Inżynieria Mineralna",
+      "doi": "10.29227/im-2026-02-01-085",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225247610",
+      "source_url": "https://doi.org/10.29227/im-2026-02-01-085",
+      "pdf_url": "https://inz-min.online/index.php/im/article/download/2198/4143",
+      "oa_status": "diamond",
+      "license": "cc-by",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [
+        "摘要命中 parametric design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 7,
+      "discovered_at": "2026-11-07T05:19:25.209855+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.02300",
+      "title": "Trustworthy Execution of Industrial Agents",
+      "authors": [
+        "Zhongjie Wang",
+        "Mingyi Liu",
+        "Xiang He",
+        "Xiao Wang",
+        "Shuang Yu",
+        "Kai Wang"
+      ],
+      "abstract": "Industrial agents increasingly modify persistent engineering objects rather than merely generate answers. Authentication and successful calls cannot establish whether intended changes occurred, evidence supports a conclusion, or historical results remain applicable. We present a framework for trustworthy industrial-agent execution within a single enterprise governance domain. Eight control domains assign responsibilities across authority, planning, composition, tool execution, actual effects, evidence, baseline and use governance, and recovery and evolution. A four-plane architecture and three control chains connect these responsibilities through typed objects and version-bound interfaces. The specification separates tool returns from actual engineering effects, evidence coverage from engineering judgment, and historical lifecycle state from current applicability. Multi-agent handoffs are an architectural extension examined through deterministic interface tests. Distinct prototypes examine selected mechanisms using conformance tests, ablations, uncertainty stress, CAD/CAE execution, and local persistence. An OpenFOAM fixture produces COMPLETE coverage with FAIL judgment; an expired-job case requires readmission despite completed computation. CAD and recovery counterexamples expose omitted mandatory checks, discarded negative facts, and inconsistent producer-consumer mappings. Targeted repairs support local regression conclusions. The reported 0/29 hazardous commits measure closed-set specification conformance, not a safety probability. We distinguish the complete framework, implemented paths, and empirical evidence, identifying check-inventory completeness and cross-module fact preservation as prerequisites for extending these results.",
+      "year": 2026,
+      "published_at": "2026-11-01",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.02300",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225155249",
+      "source_url": "https://arxiv.org/abs/2611.02300",
+      "pdf_url": "https://arxiv.org/pdf/2611.02300",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-07T05:19:25.227464+00:00"
     },
     {
       "stable_id": "arxiv:2611.02286",
@@ -410,7 +590,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.080999+00:00"
+      "discovered_at": "2026-11-07T05:19:25.086071+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44443-026-01444-5",
@@ -426,7 +606,7 @@
       "arxiv_id": "",
       "openalex_id": "https://openalex.org/W7225262709",
       "source_url": "https://doi.org/10.1007/s44443-026-01444-5",
-      "pdf_url": "",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44443-026-01444-5.pdf",
       "oa_status": "gold",
       "license": "cc-by-nc-nd",
       "suggested_category": "CAD Reconstruction & Reverse Engineering",
@@ -435,7 +615,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.109439+00:00"
+      "discovered_at": "2026-11-07T05:19:25.108295+00:00"
     },
     {
       "stable_id": "arxiv:2611.01165",
@@ -465,7 +645,7 @@
         "arXiv"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-06T05:49:02.081288+00:00"
+      "discovered_at": "2026-11-07T05:19:25.086344+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.autcon.2026.107322",
@@ -493,7 +673,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.119060+00:00"
+      "discovered_at": "2026-11-07T05:19:25.121492+00:00"
     },
     {
       "stable_id": "doi:10.3389/frai.2026.1891993",
@@ -521,7 +701,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.102565+00:00"
+      "discovered_at": "2026-11-07T05:19:25.107362+00:00"
     },
     {
       "stable_id": "arxiv:2610.39306",
@@ -556,7 +736,7 @@
         "arXiv"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-06T05:49:02.081836+00:00"
+      "discovered_at": "2026-11-07T05:19:25.086899+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.39306",
@@ -591,7 +771,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-06T05:49:02.092555+00:00"
+      "discovered_at": "2026-11-07T05:19:25.096024+00:00"
     },
     {
       "stable_id": "doi:10.54097/ht37b711",
@@ -620,7 +800,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.206421+00:00"
+      "discovered_at": "2026-11-07T05:19:25.208093+00:00"
     },
     {
       "stable_id": "doi:10.59490/6ad294696ee698573e4dd65c",
@@ -646,7 +826,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.209253+00:00"
+      "discovered_at": "2026-11-07T05:19:25.211387+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23756809",
@@ -673,7 +853,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.132627+00:00"
+      "discovered_at": "2026-11-07T05:19:25.138364+00:00"
     },
     {
       "stable_id": "doi:10.1007/s10791-026-10699-5",
@@ -700,7 +880,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.190678+00:00"
+      "discovered_at": "2026-11-07T05:19:25.193164+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.ejro.2026.100821",
@@ -734,7 +914,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.092231+00:00"
+      "discovered_at": "2026-11-07T05:19:25.096465+00:00"
     },
     {
       "stable_id": "arxiv:2610.35704",
@@ -762,7 +942,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.082154+00:00"
+      "discovered_at": "2026-11-07T05:19:25.087203+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23662350",
@@ -787,7 +967,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.107731+00:00"
+      "discovered_at": "2026-11-07T05:19:25.110057+00:00"
     },
     {
       "stable_id": "arxiv:2610.35566",
@@ -816,7 +996,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.082545+00:00"
+      "discovered_at": "2026-11-07T05:19:25.087635+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23636235",
@@ -844,7 +1024,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-06T05:49:02.095454+00:00"
+      "discovered_at": "2026-11-07T05:19:25.099060+00:00"
     },
     {
       "stable_id": "arxiv:2610.34529",
@@ -869,7 +1049,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.082909+00:00"
+      "discovered_at": "2026-11-07T05:19:25.088008+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19307-8",
@@ -897,7 +1077,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.219974+00:00"
+      "discovered_at": "2026-11-07T05:19:25.222008+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23600947",
@@ -924,7 +1104,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-06T05:49:02.121426+00:00"
+      "discovered_at": "2026-11-07T05:19:25.123813+00:00"
     },
     {
       "stable_id": "doi:10.1117/12.3133467",
@@ -950,7 +1130,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.204094+00:00"
+      "discovered_at": "2026-11-07T05:19:25.205415+00:00"
     },
     {
       "stable_id": "arxiv:2610.30974",
@@ -984,41 +1164,7 @@
         "arXiv"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-06T05:49:02.084276+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2610.30974",
-      "title": "GraphCAD: Geometry-Aware Diffusion on Edge-Adjacency Graphs for CAD Generation",
-      "authors": [
-        "Wenhao Zheng",
-        "Xianggen Liu",
-        "Li Yue",
-        "Jiancheng Shi",
-        "Jiancheng Lv"
-      ],
-      "abstract": "Generative modeling for Computer-Aided Design (CAD) remains fundamentally challenged by the need to capture the intricate interplay between discrete topological connectivity and precise spatial geometry inherent in Boundary Representations (B-reps). Existing generative approaches largely formulate CAD construction as a sequence modeling problem, but consequently lack an explicit topological inductive bias. In this work, we present GraphCAD, a geometry-aware generative framework that centers modeling on the Edge-Adjacency Graph (EAG), a novel graph-based CAD representation tailored for generative tasks. GraphCAD adopts a hybrid graph diffusion formulation to jointly model the discrete and continuous components of EAG and introduces a geometry-aware denoising mechanism that renders node attributes into spatial point sets. These point sets are encoded by an SE(3)-equivariant backbone and fused into the node representations, thereby grounding the generative process in physical geometry. To support this study, we construct EAGBench, a large-scale dataset of engineering CAD models. Extensive experiments show that GraphCAD can generate complex CAD models with more than 50 faces and achieves state-of-the-art performance in geometric fidelity and distributional alignment compared with sequence-based baselines.",
-      "year": 2026,
-      "published_at": "2026-10-22",
-      "venue": "arXiv (Cornell University)",
-      "doi": "10.48550/arxiv.2610.30974",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7223337115",
-      "source_url": "https://arxiv.org/abs/2610.30974",
-      "pdf_url": "https://arxiv.org/pdf/2610.30974",
-      "oa_status": "green",
-      "license": "",
-      "suggested_category": "CAD Representations & Understanding",
-      "matched_terms": [
-        "摘要命中 b-rep",
-        "摘要命中 boundary representation",
-        "摘要命中 computer-aided design",
-        "标题命中 CAD generation"
-      ],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 13,
-      "discovered_at": "2026-11-06T05:49:02.091866+00:00"
+      "discovered_at": "2026-11-07T05:19:25.089358+00:00"
     },
     {
       "stable_id": "doi:10.1021/acsaelm.6c01066",
@@ -1049,7 +1195,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-06T05:49:02.119849+00:00"
+      "discovered_at": "2026-11-07T05:19:25.122285+00:00"
     },
     {
       "stable_id": "arxiv:2610.30858",
@@ -1081,7 +1227,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.084683+00:00"
+      "discovered_at": "2026-11-07T05:19:25.089816+00:00"
     },
     {
       "stable_id": "arxiv:2610.31623",
@@ -1110,7 +1256,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.083969+00:00"
+      "discovered_at": "2026-11-07T05:19:25.089061+00:00"
     },
     {
       "stable_id": "arxiv:2610.29518",
@@ -1135,7 +1281,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.084992+00:00"
+      "discovered_at": "2026-11-07T05:19:25.090122+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.29518",
@@ -1160,7 +1306,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.209562+00:00"
+      "discovered_at": "2026-11-07T05:19:25.211673+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23523939",
@@ -1185,7 +1331,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.095084+00:00"
+      "discovered_at": "2026-11-07T05:19:25.098705+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23500419",
@@ -1210,7 +1356,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.093599+00:00"
+      "discovered_at": "2026-11-07T05:19:25.098158+00:00"
     },
     {
       "stable_id": "doi:10.17605/osf.io/62ty9",
@@ -1235,35 +1381,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.097855+00:00"
-    },
-    {
-      "stable_id": "doi:10.20944/preprints202610.1746.v1",
-      "title": "Prediction of Deep Neural Network for TCAD Analysis of Degradation Induced by Near-Interface Displacement Defects in 4H-SiC MOSFETs",
-      "authors": [
-        "박기범",
-        "Jungsik Kim"
-      ],
-      "abstract": "Silicon carbide (SiC) devices used in space and nuclear environments are exposed to radiation that creates displacement defects, and the effect of these defects near the gate oxide/SiC interface has not been analyzed systematically. This paper analyzes the effects of displacement defects (DDs) near this interface in a 4H-SiC metal-oxide-semiconductor field-effect transistor (MOSFET) on the threshold voltage (Vth), transconductance (gm), and on-current (Ion) using technology computer-aided design (TCAD) simulation, and builds deep neural network (DNN) models that predict these effects. The DDs were modeled as acceptor-like traps, and their energy level, concentration, depth, lateral position, and distribution width were varied. The degradation was largest when the traps were located in the channel and at the edge of the junction field-effect transistor (JFET) region, and the depth mattered little as long as the trap region reached the interface. In addition, shallow-level traps reduced Ion without shifting Vth, whereas deep-level traps also increased Vth. All three DNN models for Vth, gm, and Ion reproduced the TCAD simulation results with high accuracy. Because the trained DNNs can rapidly predict the degradation for trap conditions not used in training within the valid range, they can be used for radiation reliability assessment of SiC MOSFETs.",
-      "year": 2026,
-      "published_at": "2026-10-19",
-      "venue": "Preprints.org",
-      "doi": "10.20944/preprints202610.1746.v1",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7223011803",
-      "source_url": "https://doi.org/10.20944/preprints202610.1746.v1",
-      "pdf_url": "",
-      "oa_status": "green",
-      "license": "cc-by",
-      "suggested_category": "Open-source Systems & Tools",
-      "matched_terms": [
-        "摘要命中 computer-aided design"
-      ],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.123559+00:00"
+      "discovered_at": "2026-11-07T05:19:25.101845+00:00"
     },
     {
       "stable_id": "arxiv:2610.26861",
@@ -1294,7 +1412,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.085522+00:00"
+      "discovered_at": "2026-11-07T05:19:25.090642+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.26861",
@@ -1325,7 +1443,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.096489+00:00"
+      "discovered_at": "2026-11-07T05:19:25.100248+00:00"
     },
     {
       "stable_id": "doi:10.60078/3060-4842-2026-vol3-iss5-pp432-454",
@@ -1352,7 +1470,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.103115+00:00"
+      "discovered_at": "2026-11-07T05:19:25.107865+00:00"
     },
     {
       "stable_id": "arxiv:2610.25840",
@@ -1383,7 +1501,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.085841+00:00"
+      "discovered_at": "2026-11-07T05:19:25.090939+00:00"
     },
     {
       "stable_id": "arxiv:2610.24451",
@@ -1413,7 +1531,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.086495+00:00"
+      "discovered_at": "2026-11-07T05:19:25.091567+00:00"
     },
     {
       "stable_id": "doi:10.3390/machines14101206",
@@ -1447,7 +1565,7 @@
         "OpenAlex"
       ],
       "relevance_score": 16,
-      "discovered_at": "2026-11-06T05:49:02.095814+00:00"
+      "discovered_at": "2026-11-07T05:19:25.099394+00:00"
     },
     {
       "stable_id": "arxiv:2611.00076",
@@ -1482,7 +1600,7 @@
         "arXiv"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-06T05:49:02.086793+00:00"
+      "discovered_at": "2026-11-07T05:19:25.091837+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.00076",
@@ -1505,7 +1623,7 @@
       "source_url": "https://arxiv.org/abs/2611.00076",
       "pdf_url": "https://arxiv.org/pdf/2611.00076",
       "oa_status": "green",
-      "license": "",
+      "license": "other-oa",
       "suggested_category": "LLM, VLM & CAD Agents",
       "matched_terms": [
         "摘要命中 text-to-cad",
@@ -1517,7 +1635,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-06T05:49:02.202156+00:00"
+      "discovered_at": "2026-11-07T05:19:25.101534+00:00"
     },
     {
       "stable_id": "doi:10.36922/msam026290070",
@@ -1545,7 +1663,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-06T05:49:02.098451+00:00"
+      "discovered_at": "2026-11-07T05:19:25.102194+00:00"
     },
     {
       "stable_id": "doi:10.13140/rg.2.2.21268.05769",
@@ -1570,7 +1688,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.090558+00:00"
+      "discovered_at": "2026-11-07T05:19:25.094485+00:00"
     },
     {
       "stable_id": "doi:10.17586/0021-3454-2026-69-9-789-799",
@@ -1597,7 +1715,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.094021+00:00"
+      "discovered_at": "2026-11-07T05:19:25.097227+00:00"
     },
     {
       "stable_id": "arxiv:2610.21755",
@@ -1632,7 +1750,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-06T05:49:02.087493+00:00"
+      "discovered_at": "2026-11-07T05:19:25.092486+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.21755",
@@ -1667,7 +1785,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-06T05:49:02.097178+00:00"
+      "discovered_at": "2026-11-07T05:19:25.100674+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23339160",
@@ -1692,7 +1810,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.094826+00:00"
+      "discovered_at": "2026-11-07T05:19:25.098477+00:00"
     },
     {
       "stable_id": "doi:10.58168/intinfsys2026_67-72",
@@ -1719,7 +1837,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.090840+00:00"
+      "discovered_at": "2026-11-07T05:19:25.094758+00:00"
     },
     {
       "stable_id": "doi:10.3389/fmed.2026.1980048",
@@ -1749,7 +1867,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.101400+00:00"
+      "discovered_at": "2026-11-07T05:19:25.105805+00:00"
     },
     {
       "stable_id": "doi:10.26686/dxa3-72jf",
@@ -1776,7 +1894,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-06T05:49:02.091551+00:00"
+      "discovered_at": "2026-11-07T05:19:25.095441+00:00"
     },
     {
       "stable_id": "arxiv:2610.17776",
@@ -1807,7 +1925,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.088028+00:00"
+      "discovered_at": "2026-11-07T05:19:25.092976+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.17776",
@@ -1838,7 +1956,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.221189+00:00"
+      "discovered_at": "2026-11-07T05:19:25.223285+00:00"
     },
     {
       "stable_id": "doi:10.37128/2306-8744-2026-3-6",
@@ -1864,7 +1982,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.094462+00:00"
+      "discovered_at": "2026-11-07T05:19:25.097647+00:00"
     },
     {
       "stable_id": "arxiv:2610.20651",
@@ -1889,7 +2007,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.088351+00:00"
+      "discovered_at": "2026-11-07T05:19:25.093280+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.20651",
@@ -1914,7 +2032,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.191308+00:00"
+      "discovered_at": "2026-11-07T05:19:25.194915+00:00"
     },
     {
       "stable_id": "arxiv:2610.14413",
@@ -1943,7 +2061,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-06T05:49:02.089067+00:00"
+      "discovered_at": "2026-11-07T05:19:25.093982+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23286370",
@@ -1968,7 +2086,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.091162+00:00"
+      "discovered_at": "2026-11-07T05:19:25.095077+00:00"
     },
     {
       "stable_id": "doi:10.3390/diagnostics16203266",
@@ -1994,7 +2112,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.179421+00:00"
+      "discovered_at": "2026-11-07T05:19:25.180862+00:00"
     },
     {
       "stable_id": "doi:10.3389/fcvm.2026.1909068",
@@ -2030,7 +2148,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.093093+00:00"
+      "discovered_at": "2026-11-07T05:19:25.096863+00:00"
     },
     {
       "stable_id": "doi:10.58830/ozgur.pub1444.c5845",
@@ -2056,7 +2174,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.099680+00:00"
+      "discovered_at": "2026-11-07T05:19:25.102996+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.12870",
@@ -2087,191 +2205,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-06T05:49:02.103804+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.11954",
-      "title": "Look Where You Can: Active View Selection for CAD Reconstruction under Occlusion",
-      "authors": [
-        "Kartik Bali",
-        "Mahish Guru",
-        "Yiderigun Borjigin",
-        "Alexandra Starostina",
-        "Christian J. Cyron",
-        "Roland Aydin"
-      ],
-      "abstract": "CAD reconstruction methods assume a luxury reality rarely grants: unrestricted visual access to the object, photographed from any desired angle. Real objects, however, are scene-embedded, bolted against walls, wedged into corners, resting on floors, where the scene renders much of the view sphere unreachable and the remaining views unequally informative. We introduce \\textbf{SightCAD}, a framework for parametric CAD reconstruction that treats view feasibility as a first-class constraint. In this work we consider objects from standard CAD benchmarks embedded in realistic indoor scenes with physically derived visibility constraints over a discrete view sphere. A learned view selector must choose $K$ feasible views for a vision--language model (VLM) that generates executable CadQuery code, scored by geometric fidelity of the executed solid. Because reward arrives only after discrete view selection, autoregressive generation, and CAD-kernel execution, we propose a joint training paradigm in which the view selector and the CAD-generation VLM are trained together against this reward. The learned selection policy departs sharply from random, uniform, and coverage-greedy alternatives, outperforming surface-area maximization (SA-max) by up to $6.4$ Intersection-over-Union (IoU) points across budgets $K\\in\\{1,\\dots,5\\}$. The full system surpasses strong external baselines on scene-embedded, occluded multi-view renders of DeepCAD and Fusion360 objects ($+21$ and $+17$ effective-mIoU points over the best baseline, respectively), as well as on test-time domain-canonicalized real images from the industrial T-LESS benchmark and on both synthetic and real images from the MP6D industrial metal-parts benchmark, while producing the highest rate of executable programs of any method compared (invalid-code rate ${\\leq}1.5\\%$).",
-      "year": 2026,
-      "published_at": "2026-10-08",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.11954",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.11954v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.11954v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "摘要命中 parametric CAD",
-        "标题命中 CAD reconstruction"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 9,
-      "discovered_at": "2026-11-06T05:49:02.090057+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2610.11954",
-      "title": "Look Where You Can: Active View Selection for CAD Reconstruction under Occlusion",
-      "authors": [
-        "Kartik Bali",
-        "Mahish Guru",
-        "Yiderigun Borjigin",
-        "Alexandra Starostina",
-        "Christian Johannes Cyron",
-        "Roland Aydin"
-      ],
-      "abstract": "CAD reconstruction methods assume a luxury reality rarely grants: unrestricted visual access to the object, photographed from any desired angle. Real objects, however, are scene-embedded, bolted against walls, wedged into corners, resting on floors, where the scene renders much of the view sphere unreachable and the remaining views unequally informative. We introduce \\textbf{SightCAD}, a framework for parametric CAD reconstruction that treats view feasibility as a first-class constraint. In this work we consider objects from standard CAD benchmarks embedded in realistic indoor scenes with physically derived visibility constraints over a discrete view sphere. A learned view selector must choose $K$ feasible views for a vision--language model (VLM) that generates executable CadQuery code, scored by geometric fidelity of the executed solid. Because reward arrives only after discrete view selection, autoregressive generation, and CAD-kernel execution, we propose a joint training paradigm in which the view selector and the CAD-generation VLM are trained together against this reward. The learned selection policy departs sharply from random, uniform, and coverage-greedy alternatives, outperforming surface-area maximization (SA-max) by up to $6.4$ Intersection-over-Union (IoU) points across budgets $K\\in\\{1,\\dots,5\\}$. The full system surpasses strong external baselines on scene-embedded, occluded multi-view renders of DeepCAD and Fusion360 objects ($+21$ and $+17$ effective-mIoU points over the best baseline, respectively), as well as on test-time domain-canonicalized real images from the industrial T-LESS benchmark and on both synthetic and real images from the MP6D industrial metal-parts benchmark, while producing the highest rate of executable programs of any method compared (invalid-code rate ${\\leq}1.5\\%$).",
-      "year": 2026,
-      "published_at": "2026-10-08",
-      "venue": "arXiv (Cornell University)",
-      "doi": "10.48550/arxiv.2610.11954",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7221145160",
-      "source_url": "https://arxiv.org/abs/2610.11954",
-      "pdf_url": "https://arxiv.org/pdf/2610.11954",
-      "oa_status": "green",
-      "license": "",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "摘要命中 parametric CAD",
-        "标题命中 CAD reconstruction"
-      ],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 9,
-      "discovered_at": "2026-11-06T05:49:02.101078+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.12147",
-      "title": "Healthy Counterfactual Generation via Diffusion Inpainting for Mammography Classification",
-      "authors": [
-        "Inês Cruchinho Garcia",
-        "Mariana Mourão",
-        "Francisco Maria Calisto",
-        "Carlos Santiago",
-        "Jacinto Nascimento"
-      ],
-      "abstract": "False negatives remain a critical limitation of computer-aided diagnosis (CAD) systems for breast cancer screening due to delayed detection and treatment. To address this issue, we propose a counterfactual data augmentation strategy that generates healthy mammograms by \"erasing\" lesions from anomalous images, thereby enriching the training distribution. We train a Denoising Diffusion Probabilistic Model on BI-RADS 1 (healthy) mammograms and use a RePaint-based sampling strategy to inpaint realistic normal tissue within annotated lesion bounding boxes. The resulting healthy counterfactuals replace annotated lesion regions with realistic healthy tissue while preserving patient-specific anatomical structure, as supported by similarity metrics between real and generated images. Image realism was further assessed by radiologists and found to be consistent with the original dataset quality. We evaluate counterfactual augmentation across four representative classifier architectures: a convolutional neural network (ConvNeXt), a vision transformer (ViT), a vision-language model pre-trained on mammogram-report pairs (Mammo-CLIP) and a multi-scale attention-based multiple-instance learning framework (FPN-MIL). Experiments conducted on the VinDr-Mammo dataset show improvements in sensitivity across all architectures, particularly at 80\\% fixed specificity, contributing towards more reliable CAD systems for breast cancer. Code is available at: https://github.com/ines03garcia/diffusion-based-counterfactual-generation.",
-      "year": 2026,
-      "published_at": "2026-10-08",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.12147",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.12147v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.12147v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.089724+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2610.12147",
-      "title": "Healthy Counterfactual Generation via Diffusion Inpainting for Mammography Classification",
-      "authors": [
-        "Inês Cruchinho Garcia",
-        "Mariana Mourão",
-        "Francisco Maria Calisto",
-        "Carlos Santiago",
-        "Jacinto Nascimento"
-      ],
-      "abstract": "False negatives remain a critical limitation of computer-aided diagnosis (CAD) systems for breast cancer screening due to delayed detection and treatment. To address this issue, we propose a counterfactual data augmentation strategy that generates healthy mammograms by \"erasing\" lesions from anomalous images, thereby enriching the training distribution. We train a Denoising Diffusion Probabilistic Model on BI-RADS 1 (healthy) mammograms and use a RePaint-based sampling strategy to inpaint realistic normal tissue within annotated lesion bounding boxes. The resulting healthy counterfactuals replace annotated lesion regions with realistic healthy tissue while preserving patient-specific anatomical structure, as supported by similarity metrics between real and generated images. Image realism was further assessed by radiologists and found to be consistent with the original dataset quality. We evaluate counterfactual augmentation across four representative classifier architectures: a convolutional neural network (ConvNeXt), a vision transformer (ViT), a vision-language model pre-trained on mammogram-report pairs (Mammo-CLIP) and a multi-scale attention-based multiple-instance learning framework (FPN-MIL). Experiments conducted on the VinDr-Mammo dataset show improvements in sensitivity across all architectures, particularly at 80\\% fixed specificity, contributing towards more reliable CAD systems for breast cancer. Code is available at: https://github.com/ines03garcia/diffusion-based-counterfactual-generation.",
-      "year": 2026,
-      "published_at": "2026-10-08",
-      "venue": "arXiv (Cornell University)",
-      "doi": "10.48550/arxiv.2610.12147",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7221178443",
-      "source_url": "https://arxiv.org/abs/2610.12147",
-      "pdf_url": "https://arxiv.org/pdf/2610.12147",
-      "oa_status": "green",
-      "license": "",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.100469+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.11896",
-      "title": "Automated Assembly Instruction Generation from CAD Models Using Grounded Large Language Models: A Human-in-the-Loop Framework",
-      "authors": [
-        "Aaron Dsouza",
-        "Mohammed Azeez Khan",
-        "Ashutosh Mishra",
-        "Arshaan Khan",
-        "Neha K. Nair",
-        "Amar Kumar Behera"
-      ],
-      "abstract": "Assembly documentation is a downstream manufacturing artifact that is still usually authored by interpreting CAD models by hand. Structured product data and large language models are both available, yet studies of CAD interpretation, assembly sequence planning, instruction writing, and human oversight have largely proceeded separately. This paper formulates CAD-grounded assembly instruction generation: the production of natural-language assembly procedures constrained by structured engineering information extracted from CAD models. The proposed framework maps a STEP assembly to a typed ProductGraph intermediate representation, derives a precedence order by deterministic topological sorting, realizes each step as language conditioned only on selected graph context, attaches per-step visual documentation, and applies rule-based and model-assisted checks. PDF export remains disabled until a human reviewer resolves every quality flag. The case study establishes endto-end feasibility on a built-in six-part reference assembly: the pipeline preserves a reported assembly order and carries quantity, material, and torque into an exported manual page. Generalization and geometric validation remain open empirical questions. The contribution is an architecture that separates engineering state, deterministic reasoning, grounded language realization, verification, and human release.",
-      "year": 2026,
-      "published_at": "2026-10-08",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.11896",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.11896v2",
-      "pdf_url": "https://arxiv.org/pdf/2610.11896v2",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.090354+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2610.11896",
-      "title": "Automated Assembly Instruction Generation from CAD Models Using Grounded Large Language Models: A Human-in-the-Loop Framework",
-      "authors": [
-        "Aaron Dsouza",
-        "Mohammed Azeez Khan",
-        "Ashutosh Mishra",
-        "Arshaan Khan",
-        "Neha K. Nair",
-        "Amar Kumar Behera"
-      ],
-      "abstract": "Assembly documentation is a downstream manufacturing artifact that is still usually authored by interpreting CAD models by hand. Structured product data and large language models are both available, yet studies of CAD interpretation, assembly sequence planning, instruction writing, and human oversight have largely proceeded separately. This paper formulates CAD-grounded assembly instruction generation: the production of natural-language assembly procedures constrained by structured engineering information extracted from CAD models. The proposed framework maps a STEP assembly to a typed ProductGraph intermediate representation, derives a precedence order by deterministic topological sorting, realizes each step as language conditioned only on selected graph context, attaches per-step visual documentation, and applies rule-based and model-assisted checks. PDF export remains disabled until a human reviewer resolves every quality flag. The case study establishes endto-end feasibility on a built-in six-part reference assembly: the pipeline preserves a reported assembly order and carries quantity, material, and torque into an exported manual page. Generalization and geometric validation remain open empirical questions. The contribution is an architecture that separates engineering state, deterministic reasoning, grounded language realization, verification, and human release.",
-      "year": 2026,
-      "published_at": "2026-10-08",
-      "venue": "arXiv (Cornell University)",
-      "doi": "10.48550/arxiv.2610.11896",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7221177263",
-      "source_url": "https://arxiv.org/abs/2610.11896",
-      "pdf_url": "https://arxiv.org/pdf/2610.11896",
-      "oa_status": "green",
-      "license": "",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-06T05:49:02.108037+00:00"
+      "discovered_at": "2026-11-07T05:19:25.106575+00:00"
     }
   ]
 }
