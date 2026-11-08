@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-07T05:19:25.315765+00:00",
+  "generated_at": "2026-11-08T05:16:59.401478+00:00",
   "range": {
-    "from": "2026-10-09",
-    "to": "2026-11-07"
+    "from": "2026-10-10",
+    "to": "2026-11-08"
   },
-  "count": 72,
+  "count": 75,
   "source_health": {
     "arxiv": {
       "ok": true,
-      "count": 39,
-      "seconds": 2.22
+      "count": 37,
+      "seconds": 1.64
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 5.16
+      "seconds": 6.24
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 4.27
+      "seconds": 4.72
     },
     "upstream_awesome": {
       "ok": true,
       "count": 1,
-      "seconds": 1.32
+      "seconds": 1.1
     }
   },
   "public_profile": {
@@ -76,6 +76,38 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.1145/3767308.3835531",
+      "title": "PrimitiveCAD: An LLM-Based Point-to-CAD Reconstruction with Primitive-Aware Tokenization and Operation Alignment",
+      "authors": [
+        "Jian Gao",
+        "Kailin Bi",
+        "Jiamin Xu",
+        "Xu Jinlan",
+        "Gang Xu"
+      ],
+      "abstract": "Large-model-based point-to-CAD generation holds immense potential for advancing industrial design and enhancing 3D modeling efficiency. However, most existing methods approach the problem as a general point-cloud encoding and token prediction task, neglecting the tokenization and supervision specifically for CAD-related primitives. As a result, these methods often struggle to accurately reconstruct the intricate primitive structures. To address this limitation, we propose PrimitiveCAD, a novel multi-stage paradigm for point-to-CAD reconstruction that enhances the geometric accuracy of generated CAD models while better preserving critical geometric features. First, we introduce a primitive-aware point cloud tokenization model, enabling the system to learn more robust geometric representations from CAD point clouds. Next, we perform supervised finetuning on a large language model (LLM) and introduce an operation alignment loss to align key CAD operation frequencies, thereby improving the preservation of global shape features. Finally, we incorporate reinforcement learning (RL) and introduce a feature-line alignment reward to further reduce stochasticity and enhance the fine-grained preservation of geometric features. Experiments on the DeepCAD and Fusion360 datasets show that our method achieves state-of-the-art performance in code validity, geometric accuracy, and geometric feature preservation.",
+      "year": 2026,
+      "published_at": "2026-11-06",
+      "venue": "ACM International Conference on Multimedia (ACM MM)",
+      "doi": "10.1145/3767308.3835531",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7220910364",
+      "source_url": "https://doi.org/10.1145/3767308.3835531",
+      "pdf_url": "",
+      "oa_status": "hybrid",
+      "license": "cc-by",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [
+        "摘要命中 CAD generation",
+        "标题命中 CAD reconstruction"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 9,
+      "discovered_at": "2026-11-08T05:16:59.193088+00:00"
+    },
+    {
       "stable_id": "doi:10.1145/3767308.3836073",
       "title": "GraphCAD: Geometry-Aware Diffusion on Edge-Adjacency Graphs for CAD Generation",
       "authors": [
@@ -85,7 +117,7 @@
         "Jiancheng Shi",
         "Jiancheng Lv"
       ],
-      "abstract": "Generative modeling for Computer-Aided Design (CAD) remains fundamentally challenged by the need to capture the intricate interplay between discrete topological connectivity and precise spatial geometry inherent in Boundary Representations (B-reps). Existing generative approaches largely formulate CAD construction as a sequence modeling problem, but consequently lack an explicit topological inductive bias. In this work, we present GraphCAD, a geometry-aware generative framework that centers modeling on the Edge-Adjacency Graph (EAG), a novel graph-based CAD representation tailored for generative tasks. GraphCAD adopts a hybrid graph diffusion formulation to jointly model the discrete and continuous components of EAG and introduces a geometry-aware denoising mechanism that renders node attributes into spatial point sets. These point sets are encoded by an SE(3)-equivariant backbone and fused into the node representations, thereby grounding the generative process in physical geometry. To support this study, we construct EAGBench, a large-scale dataset of engineering CAD models. Extensive experiments show that GraphCAD can generate complex CAD models with more than 50 faces and achieves state-of-the-art performance in geometric fidelity and distributional alignment compared with sequence-based baselines.",
+      "abstract": "Generative modeling for Computer-Aided Design (CAD) remains fundamentally challenged by the need to capture the intricate interplay between discrete topological connectivity and precise spatial geometry inherent in Boundary Representations (B-reps). Existing generative approaches largely formulate CAD construction as a sequence modeling problem, but consequently lack an explicit topological inductive bias. In this work, we present GraphCAD, a geometry-aware generative framework that centers modeling on the Edge-Adjacency Graph (EAG), a novel graph-based CAD representation tailored for generative tasks. GraphCAD adopts a hybrid graph diffusion formulation to jointly model the discrete and continuous components of EAG and introduces a geometry-aware denoising mechanism that ''renders'' node attributes into spatial point sets. These point sets are encoded by an SE(3)-equivariant backbone and fused into the node representations, thereby grounding the generative process in physical geometry. To support this study, we construct EAGBench, a large-scale dataset of engineering CAD models. Extensive experiments show that GraphCAD can generate complex CAD models with more than 50 faces and achieves state-of-the-art performance in geometric fidelity and distributional alignment compared with sequence-based baselines.",
       "year": 2026,
       "published_at": "2026-11-05",
       "venue": "ACM International Conference on Multimedia (ACM MM)",
@@ -107,7 +139,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-07T05:19:25.095719+00:00"
+      "discovered_at": "2026-11-08T05:16:59.184004+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23969385",
@@ -134,7 +166,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.194595+00:00"
+      "discovered_at": "2026-11-08T05:16:59.278692+00:00"
     },
     {
       "stable_id": "doi:10.3390/electronics15215130",
@@ -162,38 +194,104 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.126555+00:00"
+      "discovered_at": "2026-11-08T05:16:59.213206+00:00"
     },
     {
-      "stable_id": "doi:10.1093/jcde/qwag095",
-      "title": "Appearance-preserving simplification of non-watertight CAD models using NeuS-guided outer shell extraction",
+      "stable_id": "doi:10.1016/j.jmapro.2026.10.071",
+      "title": "Comparative evaluation of neural network models for geometric deviation prediction and toolpath compensation in double-sided incremental forming",
       "authors": [
-        "Taejoo Um",
-        "Minjoo Choi",
-        "Soonjo Kwon",
-        "Mingyu Kim",
-        "Sungchan Park"
+        "Shayan Darzi",
+        "Brad L. Kinsey",
+        "Jinjin Ha"
       ],
-      "abstract": "Abstract Large-scale industrial computer-aided design (CAD) assemblies in shipbuilding and process plants routinely contain dense interior geometry that hinders real-time visualization and digital twin deployment, and tessellated CAD data exchanged through neutral formats often suffer from small inter-part gaps that render conventional outer shell extraction unreliable. Under these circumstances, visibility-based techniques such as ray casting can preserve the coordinate fidelity of original mesh faces without reconstruction-induced distortion, but are prone to leakage through micro-gaps, causing interior structures to be misclassified as exterior surfaces. Neural implicit surface reconstruction methods, such as neural implicit surfaces (NeuS), can recover watertight topology by closing such gaps, but often degrade geometric fidelity by over-smoothing thin components and sharp mechanical details. To address this trade-off, we propose an automated NeuS-guided outer shell extraction framework that combines geometry-faithful visibility analysis with watertight topological guidance. The proposed method introduces anisotropic cube normalization to improve NeuS reconstruction of high-aspect-ratio industrial structures, uses the NeuS reconstruction as a watertight guide surface rather than as the final output, and refines ray-casting candidates through 6-point asymmetric tolerance filtering to preserve exterior details while rejecting interior faces. Experiments on three non-watertight tessellated benchmark models, comprising one industrial ship assembly and two publicly available polygonal assets, demonstrate that the proposed method improves leakage-robust interior elimination while retaining the coordinate fidelity of the original mesh faces that remain in the extracted shell. On the primary ship benchmark, the method achieves an inner removal rate of 95.26%, an outer preservation rate of 98.21%, and an area-weighted harmonic score of 96.71%. On the car and aircraft benchmark models, area-weighted harmonic scores of 87.18% and 96.87% are obtained, respectively; the car case reveals a near-contact limitation in which improved interior removal is accompanied by reduced exterior preservation, which a model-specific tolerance adjustment partly mitigates. Additional qualitative tests on Helicopter, Submarine, and Train models without manual ground-truth labels further illustrate the applicability of the pipeline to other interior-containing tessellated assemblies.",
+      "abstract": "Double-sided incremental forming (DSIF) is a dieless sheet metal forming process suitable for low-volume production but is limited by springback-induced geometric deviation. In this work, machine learning is used to predict the geometric deviation of a formed part. Then, these values are applied to the initial computer-aided design (CAD) model as toolpath compensation to provide a cost-effective approach to improve the accuracy of the final part compared to the target geometry after unclamping and springback. Three neural network models, i.e., a feedforward artificial neural network (ANN), a convolutional neural network (CNN), and a graph neural network (GNN), are trained on a unified experimental dataset with deep drawing quality (DDQ) steel as the material formed and directly compared for geometric deviation prediction and accuracy after toolpath compensation. The dataset is generated by forming 25 parts with diverse geometries and measuring their post-unclamping geometric deviations. Although model-specific preprocessing is required, all neural network models use consistent local geometric input features, e.g., spatial coordinates and surface normal components, and the corresponding measured geometric deviation as the output. Two unseen geometries are used for evaluation. The ANN, CNN, and GNN models achieve average prediction mean absolute errors of 0.45, 0.32, and 0.41 mm, respectively, on the two unseen geometries. The predicted deviations are then used to create modified CAD models, reducing the geometric deviation by 34%, 49%, and 51% for ANN-, CNN-, and GNN-based compensation, respectively. This study shows that neural network models with explicit spatial information aggregation, i.e., CNN and GNN models, outperform the ANN model in improving the geometric accuracy of DSIF.",
       "year": 2026,
       "published_at": "2026-11-05",
-      "venue": "Journal of Computational Design and Engineering",
-      "doi": "10.1093/jcde/qwag095",
+      "venue": "Journal of Manufacturing Processes",
+      "doi": "10.1016/j.jmapro.2026.10.071",
       "arxiv_id": "",
-      "openalex_id": "",
-      "source_url": "https://doi.org/10.1093/jcde/qwag095",
-      "pdf_url": "https://academic.oup.com/jcde/advance-article-pdf/doi/10.1093/jcde/qwag095/73131080/qwag095.pdf",
-      "oa_status": "open",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "suggested_category": "CAD Reconstruction & Reverse Engineering",
+      "openalex_id": "https://openalex.org/W7225292226",
+      "source_url": "https://doi.org/10.1016/j.jmapro.2026.10.071",
+      "pdf_url": "",
+      "oa_status": "hybrid",
+      "license": "cc-by-nc-nd",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
       "matched_terms": [
         "摘要命中 computer-aided design"
       ],
       "source_names": [
-        "Crossref"
+        "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.312793+00:00"
+      "discovered_at": "2026-11-08T05:16:59.212412+00:00"
+    },
+    {
+      "stable_id": "doi:10.1186/s13244-026-02446-7",
+      "title": "Deep learning-based detection and classification of airway nodules on CT for early medical intervention",
+      "authors": [
+        "Shulin Liu",
+        "Ping Yi",
+        "Yaheng Fan",
+        "Jing Hu",
+        "Chao Zheng",
+        "Peng Lei",
+        "Sai Li",
+        "Fangxue Yang",
+        "Chenyu Li",
+        "Yangzhen Hou",
+        "Yuxin Li",
+        "Luo Guanghua",
+        "方向军",
+        "Haijun Zheng",
+        "Harrison Bai",
+        "Hui Zhou",
+        "Weihua Liao"
+      ],
+      "abstract": "OBJECTIVES: Airway lesions are common CT findings in interval and post-screen lung cancers; however, airway nodules are frequently overlooked. Robust artificial intelligence (AI) tools for characterizing airway nodules remain limited. This study aimed to develop and evaluate deep learning-based models for the detection and classification of airway nodules on low-dose CT(LDCT) as a second-reading tool. MATERIALS AND METHODS: 1813 segmental and more proximal airway nodules were retrospectively identified from 1107 LDCT of 1043 participants. A sphere-based center-points matching network, first used to establish a lung nodule detection model, was transferred to airway nodules and enhanced by incorporating coordinate and multiscale attention. The model was trained on 907 proximal airway nodules and independently tested on 738 proximal nodules across four hospitals. The clinical utility of the AI tool was evaluated through human-AI interaction. For nodule classification, a 3D SEResNeXt101-based model was trained, validated and tested using 286 airway nodules (121 benign, 165 malignant) with a 6:2:2 split and evaluated in an independent testing dataset. RESULTS: On the independent testing set, the detection model achieved a high sensitivity of 73.7%. Human-AI interaction demonstrated AI assistance significantly improved radiologists' performance, increasing sensitivity from 39.5% to 72.9% and F1-score from 49.4% to 77.2%, while reducing diagnosis time from 83.8 s to 61.8 s. The classification model showed high sensitivities of 82.1%, 71.4%, 94.3%, 72.7% and specificities of 62.7%, 73.9%, 73.9%, 87.5% across multicenter training, validation, testing and independent testing sets, respectively. CONCLUSION: This AI system significantly enhances the detection and classification of proximal airway nodules, guiding early medical intervention. KEY POINTS: Question Improved early detection and classification of airway nodules are critical for lung cancer mortality reduction, but AI-based CAD systems targeting airway nodules remain scarce. Findings The DL models for detection and classification of proximal airway nodules on chest CT were developed and assisted radiologists to achieve higher detection accuracy. Critical Relevance Statement The clinical applications of the proposed DL-based system for detecting and classifying proximal airway nodules on chest CT scans help radiologists reduce missed/delayed diagnoses and shorten diagnostic time as a second-reading tool, guiding medical intervention and improving clinical outcomes.",
+      "year": 2026,
+      "published_at": "2026-11-05",
+      "venue": "Insights into Imaging",
+      "doi": "10.1186/s13244-026-02446-7",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225320603",
+      "source_url": "https://doi.org/10.1186/s13244-026-02446-7",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1186/s13244-026-02446-7.pdf",
+      "oa_status": "gold",
+      "license": "cc-by",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-08T05:16:59.282288+00:00"
+    },
+    {
+      "stable_id": "doi:10.1007/s11886-026-02443-8",
+      "title": "Advancements in Artificial Intelligence for Enhanced Diagnosis and Prognosis in Cardiac CT: a Comprehensive Review and Future Perspectives",
+      "authors": [
+        "Fatemeh Adabifirouzjaei",
+        "Matthew Jay Budoff",
+        "Mo Nomeli"
+      ],
+      "abstract": "PURPOSE OF REVIEW: Cardiovascular disease, with coronary artery disease (CAD) as its main culprit, remains a leading cause of death worldwide. Traditional diagnostic methods that focus on the degree of arterial narrowing (percent diameter stenosis, or %DS) can miss early signs of disease or the specific plaque features that indicate high risk. The purpose of this review is to examine how artificial intelligence (AI) can enhance the diagnostic and prognostic capabilities of cardiac computed tomography (CCT), and to address where AI can most meaningfully improve diagnostic accuracy, workflow efficiency, and patient care. RECENT FINDINGS: AI is transforming cardiac CT across the entire imaging pathway. By applying AI algorithms, recent studies have refined the assessment of coronary artery calcium (CAC), improved plaque characterization, and detected subtle lesions that might evade traditional detection methods. AI further enables non-invasive assessment of ischemia (reduced blood flow), aids in the evaluation of myocardial infarction, analyzes adipose tissue surrounding the heart, improves image quality, and provides valuable prognostic insights for risk stratification. This comprehensive review explores the transformative potential of AI in cardiac CT, highlighting its role in accurate diagnosis, precise risk stratification, and personalized management of cardiovascular disease. Through collaboration between AI technology and clinical expertise, we envision a future where cardiac CT imaging is more powerful, efficient, and patient-centered, ultimately leading to improved outcomes in cardiovascular medicine. Continued standardization, external validation, and clinician education will be essential to realize this impact in routine practice.",
+      "year": 2026,
+      "published_at": "2026-11-05",
+      "venue": "Current Cardiology Reports",
+      "doi": "10.1007/s11886-026-02443-8",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225292723",
+      "source_url": "https://doi.org/10.1007/s11886-026-02443-8",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11886-026-02443-8.pdf",
+      "oa_status": "hybrid",
+      "license": "cc-by",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-08T05:16:59.263423+00:00"
     },
     {
       "stable_id": "arxiv:2611.05449",
@@ -223,7 +321,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-07T05:19:25.084107+00:00"
+      "discovered_at": "2026-11-08T05:16:59.173267+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19471-x",
@@ -254,7 +352,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.226641+00:00"
+      "discovered_at": "2026-11-08T05:16:59.287578+00:00"
     },
     {
       "stable_id": "arxiv:2611.02659",
@@ -285,7 +383,7 @@
         "arXiv"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-07T05:19:25.085140+00:00"
+      "discovered_at": "2026-11-08T05:16:59.174284+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02659",
@@ -316,7 +414,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-07T05:19:25.203335+00:00"
+      "discovered_at": "2026-11-08T05:16:59.288611+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44275-026-00056-5",
@@ -352,7 +450,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.127564+00:00"
+      "discovered_at": "2026-11-08T05:16:59.213996+00:00"
     },
     {
       "stable_id": "arxiv:2611.02540",
@@ -382,7 +480,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.085439+00:00"
+      "discovered_at": "2026-11-08T05:16:59.174573+00:00"
     },
     {
       "stable_id": "arxiv:2611.03178",
@@ -446,7 +544,71 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.084873+00:00"
+      "discovered_at": "2026-11-08T05:16:59.173978+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.03178",
+      "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
+      "authors": [
+        "Jiajie Jin",
+        "Guanting Dong",
+        "Chengjun Pan",
+        "Xin Deng",
+        "Zhuohui Sheng",
+        "Guoqiang Wang",
+        "Tao Gui",
+        "Yutao Zhu",
+        "Yujia Chen",
+        "Shihong Yi",
+        "Binze Hu",
+        "Zhixiong Yang",
+        "Zhichao Sun",
+        "Rui Wang",
+        "Han Han",
+        "Mingyu Ma",
+        "Junhao Huang",
+        "Xiaotao Wang",
+        "Huicheng Jiang",
+        "Yuyang Hu",
+        "Xinyu Yang",
+        "Wanghan Xu",
+        "Yajie Yang",
+        "Zhecan Wang",
+        "Honglin Guo",
+        "Xiaoyu Xing",
+        "Xiaoqian Zhang",
+        "Yulun Zhu",
+        "Xiaoxi Li",
+        "Jiahang Lin",
+        "Shaofan Liu",
+        "Shihan Dou",
+        "Zhiheng Xi",
+        "Qi Zhang",
+        "Yu-Gang Jiang",
+        "See-Kiong Ng",
+        "Yang Zhang",
+        "Tat‐Seng Chua",
+        "Ji-Rong Wen",
+        "Zhicheng Dou"
+      ],
+      "abstract": "Rapid advances in cowork agents are shifting human-AI collaboration toward real-world automation, delivering software, designs, and other artifacts. However, such productivity work demands both high-quality delivery on complex productivity tasks and continued monitoring and decision-making over long horizons, a combination that remains an open challenge. We introduce CoworkOS, a general-purpose harness for long-horizon work that separates task strategy from execution management: the model decides actions, delegation, and acceptance, while the runtime maintains state and feedback. Its three-layer architecture enables direct execution or delegation to Subagents, synchronously or asynchronously, under stable responsibilities. Through a shared application layer, humans and agents inspect and revise the same evolving documents, presentations, CAD models, and Blender scenes, so human-in-the-loop participation can enter both through conversation and through direct modification of the work itself. To sustain continuity across agents and sessions, CoworkOS further introduces hierarchical workspaces and persistent semantic memory, so working files, key decisions, and long-running Job logs remain shareable, reusable, and resumable after interruption. Across 12 benchmarks and 6 categories of real-world applications, CoworkOS proves highly competitive with frontier agent applications such as Codex and DeepSeek Harness. As a sustained-work case study, CoworkOS uses GLM-5.3 as its backbone to conduct RSI-driven automated post-training on Qwen3.6-35B-A3B. Over five rounds, the model's average score across eight benchmarks rose from 33.19 to 42.95 (+9.76). Looking ahead, we believe CoworkOS opens a meaningful path toward general cowork-agent intelligence.",
+      "year": 2026,
+      "published_at": "2026-11-02",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.03178",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225182846",
+      "source_url": "https://arxiv.org/abs/2611.03178",
+      "pdf_url": "https://arxiv.org/pdf/2611.03178",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-08T05:16:59.283272+00:00"
     },
     {
       "stable_id": "arxiv:2611.02433",
@@ -474,7 +636,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.085726+00:00"
+      "discovered_at": "2026-11-08T05:16:59.174844+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02433",
@@ -502,7 +664,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.101115+00:00"
+      "discovered_at": "2026-11-08T05:16:59.189888+00:00"
     },
     {
       "stable_id": "doi:10.29227/im-2026-02-01-085",
@@ -531,7 +693,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.209855+00:00"
+      "discovered_at": "2026-11-08T05:16:59.296492+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02300",
@@ -561,7 +723,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.227464+00:00"
+      "discovered_at": "2026-11-08T05:16:59.314019+00:00"
     },
     {
       "stable_id": "arxiv:2611.02286",
@@ -590,7 +752,35 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.086071+00:00"
+      "discovered_at": "2026-11-08T05:16:59.175179+00:00"
+    },
+    {
+      "stable_id": "doi:10.1002/pat.70785",
+      "title": "Smart Morphodynamic Biomaterials: Multi‐Stimuli 4D ‐Printed Polymer Architectures for Autonomous and Next‐Generation Wound Repair",
+      "authors": [
+        "Kumaresan Parwathi Varshini",
+        "Srinivasan Balakumar",
+        "T. Selvankumar",
+        "Mahesh Narayanan"
+      ],
+      "abstract": "ABSTRACT Four‐dimensional (4D) printed polymer scaffolds are intelligent biomaterials that can revolutionize wound care by utilizing stimuli‐responsive polymers, programmable shape memory, and adaptive design to tackle the limitations imposed by static wound dressings and traditional 3D printed structures. This review describes an extensive analysis of the progress made from single stimulus‐responsive systems to dual‐ and multiple stimuli‐responsive systems that react to the changing wound environment. A comparative evaluation of stimulus platforms is presented through a proposed wound‐relevant performance framework covering the figure‐of‐merit (FoM) measurement, orthogonal hybrid stimulus design strategies, and translation needs for next‐generation wound devices. This paper also highlights CAD (Computer‐Aided Design), material intelligence, and advanced fabrication strategies to create next‐generation scaffolds that actively interact with biological tissues. Polymer chemistry and dynamic 4D functionality are integrated to create scaffolds that adhere to wound geometries, modify microenvironmental variables, and precisely distribute drugs. Recent pioneering ideas concerning the implementation of artificial intelligence (AI) and machine learning (ML) are addressed, including how these methods can be used to overcome existing problems associated with 4D‐printed wound healing scaffolds. A roadmap is provided here that outlines the areas of research that should be explored to validate 4D printing of wound healing constructs. Together, these discoveries highlight the field's increasing proximity to clinical translation and place 4D polymer scaffolds as the future of intelligent wound care.",
+      "year": 2026,
+      "published_at": "2026-11-01",
+      "venue": "Polymers for Advanced Technologies",
+      "doi": "10.1002/pat.70785",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225413816",
+      "source_url": "https://doi.org/10.1002/pat.70785",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pat.70785",
+      "oa_status": "bronze",
+      "license": "",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-08T05:16:59.276060+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44443-026-01444-5",
@@ -615,7 +805,36 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.108295+00:00"
+      "discovered_at": "2026-11-08T05:16:59.196713+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.02127",
+      "title": "Mesh2Shell Neural Operator for Inverse Shape Optimization",
+      "authors": [
+        "Xinyi Li",
+        "Xi Deng",
+        "Yubo Cao",
+        "Hudson Liu",
+        "Anima Anandkumar"
+      ],
+      "abstract": "Physics-driven design seeks high-performing geometries, which need not conform to a learned shape category. Parametric and latent-space approaches facilitate surrogate-based optimization, but restrict deformations to prescribed shape families or learned decoders. We introduce the Mesh-to-Shell Neural Operator (M2S-NO) as the mesh-to-shell component of a category-agnostic inverse shape optimization framework. We separate the explicit mesh used for design from the volumetric representation used for physics prediction. M2S-NO maps oriented surface samples to a surface-centered shell representation, such as TruncatedSDF or HeatSDF. A separate problem-specific PDE neural operator (PDE-NO) maps this representation to physical fields. Objective gradients update mesh vertices through both operators, without a latent shape decoder. Preconditioning and remeshing support free-form deformation, while fixed interfaces are controlled directly on the mesh. Optional shell-space proposals enable topology changes. We evaluate geometric matching, jet-engine brackets, and neutron moderators, with independent FEM and OpenMC evaluation. Relative to the best training designs, M2S-NO reduces maximum bracket displacement by 14.3% and increases neutron-sensor current by 13.8%. Optimization also succeeds from an out-of-distribution bracket initialization, demonstrating the framework's geometric flexibility.",
+      "year": 2026,
+      "published_at": "2026-11-01",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.02127",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225143981",
+      "source_url": "https://arxiv.org/abs/2611.02127",
+      "pdf_url": "https://arxiv.org/pdf/2611.02127",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "CAD Representations & Understanding",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 5,
+      "discovered_at": "2026-11-08T05:16:59.215731+00:00"
     },
     {
       "stable_id": "arxiv:2611.01165",
@@ -645,7 +864,37 @@
         "arXiv"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-07T05:19:25.086344+00:00"
+      "discovered_at": "2026-11-08T05:16:59.175440+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.01165",
+      "title": "Composable CAD: Sketch-to-CAD Program Synthesis in Parts",
+      "authors": [
+        "Yuanbo Li",
+        "Vivian Liu",
+        "Sean Liu",
+        "Justin Matejka"
+      ],
+      "abstract": "Designers often build CAD models part by part, and may iterate on individual components throughout the design process. Recent vision-language models (VLMs) can synthesize CAD programs from sketches, but generating parts independently does not ensure that they are composable: components may lose the intended proportions and alignments or fail to join correctly where they meet. We present Composable CAD, a framework that uses off-the-shelf VLMs to synthesize a design space of independently sampled, interchangeable component programs, where any selection composes into a coherent CAD model. We recover design constraints from the sketch and use them to construct a coarse proxy that establishes how the components are sized, aligned, and attached. We then generate each component independently from its proxy and apply a deterministic rewrite to ensure that neighboring components meet at their prescribed interfaces. We evaluate Composable CAD across a range of objects and sketch styles and conduct two user studies. Compared to VLM-only baselines, our method produces more detailed, composable designs.",
+      "year": 2026,
+      "published_at": "2026-10-31",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.01165",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225182068",
+      "source_url": "https://arxiv.org/abs/2611.01165",
+      "pdf_url": "https://arxiv.org/pdf/2611.01165",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [
+        "标题命中 cad program"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 10,
+      "discovered_at": "2026-11-08T05:16:59.184263+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.autcon.2026.107322",
@@ -673,7 +922,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.121492+00:00"
+      "discovered_at": "2026-11-08T05:16:59.208114+00:00"
     },
     {
       "stable_id": "doi:10.3389/frai.2026.1891993",
@@ -701,7 +950,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.107362+00:00"
+      "discovered_at": "2026-11-08T05:16:59.193797+00:00"
     },
     {
       "stable_id": "arxiv:2610.39306",
@@ -736,7 +985,7 @@
         "arXiv"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-07T05:19:25.086899+00:00"
+      "discovered_at": "2026-11-08T05:16:59.175952+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.39306",
@@ -771,7 +1020,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-07T05:19:25.096024+00:00"
+      "discovered_at": "2026-11-08T05:16:59.184865+00:00"
     },
     {
       "stable_id": "doi:10.54097/ht37b711",
@@ -800,7 +1049,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.208093+00:00"
+      "discovered_at": "2026-11-08T05:16:59.294744+00:00"
     },
     {
       "stable_id": "doi:10.59490/6ad294696ee698573e4dd65c",
@@ -826,7 +1075,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.211387+00:00"
+      "discovered_at": "2026-11-08T05:16:59.297468+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23756809",
@@ -853,7 +1102,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.138364+00:00"
+      "discovered_at": "2026-11-08T05:16:59.223555+00:00"
     },
     {
       "stable_id": "doi:10.1007/s10791-026-10699-5",
@@ -880,7 +1129,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.193164+00:00"
+      "discovered_at": "2026-11-08T05:16:59.277801+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.ejro.2026.100821",
@@ -897,7 +1146,7 @@
         "Kazuo Awai",
         "Mickaël Ohana"
       ],
-      "abstract": "Introduction Moderate coronary stenosis (CAD-RADS 3) is a diagnostic gray zone in coronary CT angiography (CCTA). We evaluated whether super-resolution deep learning reconstruction (SR-DLR), particularly with a 1024 matrix, modifies CAD-RADS classification and inter-reader agreement. Materials and methods: Thirty-nine CCTA examinations from two centers, each containing at least one 50–69% stenosis identified on the routine normal-resolution deep learning reconstruction (NR-DLR), were reconstructed with NR-DLR and SR-DLR (512 and 1024 matrices). Five experienced readers blindly assigned CAD-RADS categories. Agreement was assessed with Gwet's AC2 and paired reclassification with exact McNemar tests. Subgroup analyses (plaque composition, initial image quality) were exploratory. Results Forty-six lesions were analyzed (19 calcified, 16 mixed, 10 non-calcified, one in-stent). Agreement remained excellent (AC2 0.89 [0.86–0.92], 0.87 [0.83–0.90] and 0.84 [0.81–0.88] for NR-DLR, SR-DLR-512 and SR-DLR-1024). Consensus CAD-RADS 2 rose from 6.5% to 21.7% with SR-DLR-1024 (p = 0.016; 10 lesions downgraded, 2 upgraded), predominantly in lesions with non-calcified components. Per-reader CAD-RADS 2 rates ranged from 13% to 30%, increasing significantly for two of five readers (p = 0.004). Conclusion SR-DLR-1024 modified CAD-RADS classification in about one fifth of intermediate lesions while preserving excellent agreement. Without an invasive reference standard, these reclassifications reflect a change in reader interpretation rather than a proven gain in accuracy.",
+      "abstract": "Introduction: Moderate coronary stenosis (CAD-RADS 3) is a diagnostic gray zone in coronary CT angiography (CCTA). We evaluated whether super-resolution deep learning reconstruction (SR-DLR), particularly with a 1024 matrix, modifies CAD-RADS classification and inter-reader agreement. Materials and methods: Thirty-nine CCTA examinations from two centers, each containing at least one 50-69% stenosis identified on the routine normal-resolution deep learning reconstruction (NR-DLR), were reconstructed with NR-DLR and SR-DLR (512 and 1024 matrices). Five experienced readers blindly assigned CAD-RADS categories. Agreement was assessed with Gwet's AC2 and paired reclassification with exact McNemar tests. Subgroup analyses (plaque composition, initial image quality) were exploratory. Results: Forty-six lesions were analyzed (19 calcified, 16 mixed, 10 non-calcified, one in-stent). Agreement remained excellent (AC2 0.89 [0.86-0.92], 0.87 [0.83-0.90] and 0.84 [0.81-0.88] for NR-DLR, SR-DLR-512 and SR-DLR-1024). Consensus CAD-RADS 2 rose from 6.5% to 21.7% with SR-DLR-1024 (p = 0.016; 10 lesions downgraded, 2 upgraded), predominantly in lesions with non-calcified components. Per-reader CAD-RADS 2 rates ranged from 13% to 30%, increasing significantly for two of five readers (p = 0.004). Conclusion: SR-DLR-1024 modified CAD-RADS classification in about one fifth of intermediate lesions while preserving excellent agreement. Without an invasive reference standard, these reclassifications reflect a change in reader interpretation rather than a proven gain in accuracy.",
       "year": 2026,
       "published_at": "2026-10-26",
       "venue": "European Journal of Radiology Open",
@@ -914,7 +1163,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.096465+00:00"
+      "discovered_at": "2026-11-08T05:16:59.184568+00:00"
     },
     {
       "stable_id": "arxiv:2610.35704",
@@ -942,7 +1191,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.087203+00:00"
+      "discovered_at": "2026-11-08T05:16:59.176256+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23662350",
@@ -967,7 +1216,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.110057+00:00"
+      "discovered_at": "2026-11-08T05:16:59.198540+00:00"
     },
     {
       "stable_id": "arxiv:2610.35566",
@@ -996,7 +1245,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.087635+00:00"
+      "discovered_at": "2026-11-08T05:16:59.176625+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23636235",
@@ -1024,7 +1273,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-07T05:19:25.099060+00:00"
+      "discovered_at": "2026-11-08T05:16:59.187273+00:00"
     },
     {
       "stable_id": "arxiv:2610.34529",
@@ -1049,7 +1298,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.088008+00:00"
+      "discovered_at": "2026-11-08T05:16:59.176960+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19307-8",
@@ -1077,7 +1326,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.222008+00:00"
+      "discovered_at": "2026-11-08T05:16:59.307825+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23600947",
@@ -1104,7 +1353,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-07T05:19:25.123813+00:00"
+      "discovered_at": "2026-11-08T05:16:59.210806+00:00"
     },
     {
       "stable_id": "doi:10.1117/12.3133467",
@@ -1130,7 +1379,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.205415+00:00"
+      "discovered_at": "2026-11-08T05:16:59.291275+00:00"
     },
     {
       "stable_id": "arxiv:2610.30974",
@@ -1164,7 +1413,7 @@
         "arXiv"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-07T05:19:25.089358+00:00"
+      "discovered_at": "2026-11-08T05:16:59.178247+00:00"
     },
     {
       "stable_id": "doi:10.1021/acsaelm.6c01066",
@@ -1195,7 +1444,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-07T05:19:25.122285+00:00"
+      "discovered_at": "2026-11-08T05:16:59.209242+00:00"
     },
     {
       "stable_id": "arxiv:2610.30858",
@@ -1227,7 +1476,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.089816+00:00"
+      "discovered_at": "2026-11-08T05:16:59.178609+00:00"
     },
     {
       "stable_id": "arxiv:2610.31623",
@@ -1256,7 +1505,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.089061+00:00"
+      "discovered_at": "2026-11-08T05:16:59.177961+00:00"
     },
     {
       "stable_id": "arxiv:2610.29518",
@@ -1281,7 +1530,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.090122+00:00"
+      "discovered_at": "2026-11-08T05:16:59.178883+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.29518",
@@ -1306,7 +1555,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.211673+00:00"
+      "discovered_at": "2026-11-08T05:16:59.297741+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23523939",
@@ -1331,7 +1580,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.098705+00:00"
+      "discovered_at": "2026-11-08T05:16:59.186871+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23500419",
@@ -1356,7 +1605,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.098158+00:00"
+      "discovered_at": "2026-11-08T05:16:59.185477+00:00"
     },
     {
       "stable_id": "doi:10.17605/osf.io/62ty9",
@@ -1367,11 +1616,11 @@
       "abstract": "Protocol of a systematic review on generative artificial intelligence for the design of mechanical systems, components and structures (2021–2026). The review covers three paradigms: language-driven approaches (large language models, vision-language models, LLM agents, CAD-as-language models), diffusion-based approaches (denoising diffusion, latent diffusion, flow matching) and physics-informed generative approaches. It uses a two-tier design: (1) a systematic map of all eligible studies, coded by paradigm, design task, design stage, design representation and evaluation type; (2) an in-depth critical synthesis of a core set of studies that quantitatively evaluate the physical validity, constraint satisfaction or manufacturability of generated designs, selected with criteria fixed before full-text assessment. Reporting follows PRISMA 2020. Searches were run in Scopus and Web of Science on 20 October 2026; this registration was made after title/abstract screening and before full-text assessment and data extraction.",
       "year": 2026,
       "published_at": "2026-10-20",
-      "venue": "Open Science Framework",
+      "venue": "OSF Preprints (OSF Preprints)",
       "doi": "10.17605/osf.io/62ty9",
       "arxiv_id": "",
       "openalex_id": "https://openalex.org/W7223031250",
-      "source_url": "https://doi.org/10.17605/osf.io/62ty9",
+      "source_url": "https://osf.io/zk8bq",
       "pdf_url": "",
       "oa_status": "green",
       "license": "cc-by-sa",
@@ -1381,7 +1630,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.101845+00:00"
+      "discovered_at": "2026-11-08T05:16:59.190219+00:00"
     },
     {
       "stable_id": "arxiv:2610.26861",
@@ -1412,7 +1661,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.090642+00:00"
+      "discovered_at": "2026-11-08T05:16:59.179394+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.26861",
@@ -1443,7 +1692,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.100248+00:00"
+      "discovered_at": "2026-11-08T05:16:59.188259+00:00"
     },
     {
       "stable_id": "doi:10.60078/3060-4842-2026-vol3-iss5-pp432-454",
@@ -1470,7 +1719,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.107865+00:00"
+      "discovered_at": "2026-11-08T05:16:59.194802+00:00"
     },
     {
       "stable_id": "arxiv:2610.25840",
@@ -1501,7 +1750,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.090939+00:00"
+      "discovered_at": "2026-11-08T05:16:59.179667+00:00"
     },
     {
       "stable_id": "arxiv:2610.24451",
@@ -1531,7 +1780,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.091567+00:00"
+      "discovered_at": "2026-11-08T05:16:59.180276+00:00"
     },
     {
       "stable_id": "doi:10.3390/machines14101206",
@@ -1565,7 +1814,7 @@
         "OpenAlex"
       ],
       "relevance_score": 16,
-      "discovered_at": "2026-11-07T05:19:25.099394+00:00"
+      "discovered_at": "2026-11-08T05:16:59.187602+00:00"
     },
     {
       "stable_id": "arxiv:2611.00076",
@@ -1600,7 +1849,7 @@
         "arXiv"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-07T05:19:25.091837+00:00"
+      "discovered_at": "2026-11-08T05:16:59.180534+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.00076",
@@ -1635,7 +1884,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-07T05:19:25.101534+00:00"
+      "discovered_at": "2026-11-08T05:16:59.189631+00:00"
     },
     {
       "stable_id": "doi:10.36922/msam026290070",
@@ -1663,7 +1912,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-07T05:19:25.102194+00:00"
+      "discovered_at": "2026-11-08T05:16:59.191067+00:00"
     },
     {
       "stable_id": "doi:10.13140/rg.2.2.21268.05769",
@@ -1688,7 +1937,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.094485+00:00"
+      "discovered_at": "2026-11-08T05:16:59.182831+00:00"
     },
     {
       "stable_id": "doi:10.17586/0021-3454-2026-69-9-789-799",
@@ -1715,7 +1964,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.097227+00:00"
+      "discovered_at": "2026-11-08T05:16:59.185837+00:00"
     },
     {
       "stable_id": "arxiv:2610.21755",
@@ -1750,7 +1999,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-07T05:19:25.092486+00:00"
+      "discovered_at": "2026-11-08T05:16:59.181187+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.21755",
@@ -1785,7 +2034,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-07T05:19:25.100674+00:00"
+      "discovered_at": "2026-11-08T05:16:59.188895+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23339160",
@@ -1810,7 +2059,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.098477+00:00"
+      "discovered_at": "2026-11-08T05:16:59.186623+00:00"
     },
     {
       "stable_id": "doi:10.58168/intinfsys2026_67-72",
@@ -1837,7 +2086,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.094758+00:00"
+      "discovered_at": "2026-11-08T05:16:59.183071+00:00"
     },
     {
       "stable_id": "doi:10.3389/fmed.2026.1980048",
@@ -1867,7 +2116,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.105805+00:00"
+      "discovered_at": "2026-11-08T05:16:59.192458+00:00"
     },
     {
       "stable_id": "doi:10.26686/dxa3-72jf",
@@ -1894,7 +2143,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-07T05:19:25.095441+00:00"
+      "discovered_at": "2026-11-08T05:16:59.183729+00:00"
     },
     {
       "stable_id": "arxiv:2610.17776",
@@ -1925,7 +2174,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.092976+00:00"
+      "discovered_at": "2026-11-08T05:16:59.181690+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.17776",
@@ -1956,7 +2205,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.223285+00:00"
+      "discovered_at": "2026-11-08T05:16:59.309070+00:00"
     },
     {
       "stable_id": "doi:10.37128/2306-8744-2026-3-6",
@@ -1982,7 +2231,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.097647+00:00"
+      "discovered_at": "2026-11-08T05:16:59.186262+00:00"
     },
     {
       "stable_id": "arxiv:2610.20651",
@@ -2007,7 +2256,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.093280+00:00"
+      "discovered_at": "2026-11-08T05:16:59.181986+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.20651",
@@ -2032,7 +2281,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.194915+00:00"
+      "discovered_at": "2026-11-08T05:16:59.279172+00:00"
     },
     {
       "stable_id": "arxiv:2610.14413",
@@ -2061,7 +2310,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-07T05:19:25.093982+00:00"
+      "discovered_at": "2026-11-08T05:16:59.182659+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23286370",
@@ -2086,126 +2335,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.095077+00:00"
-    },
-    {
-      "stable_id": "doi:10.3390/diagnostics16203266",
-      "title": "Real-World Validation of the AI-Enabled Vectorcardiographic CSG-Index for Obstructive Coronary Artery Disease: The VECTOR-CAD Study",
-      "authors": [
-        "Muhammed Esad Çekin",
-        "Halil Gökkuş"
-      ],
-      "abstract": "Background/Objectives: Cardisiography is an artificial intelligence-enabled resting vectorcardiography (AI-VCG) system, but evidence for its accuracy in coronary artery disease (CAD) remains limited. We evaluated the AI-VCG-derived CSG-index for obstructive CAD detection, association with stenosis severity, incremental discrimination beyond clinical variables, and concordance with exercise electrocardiography (ECG). Methods: In this two-centre retrospective diagnostic-accuracy study, 721 Cardisiography records from January 2023–December 2025 were screened and 224 patients were included. Invasive coronary angiography (ICA) was the primary reference (n = 172); coronary computed tomography angiography (CCTA) contributed only reference-negative cases (n = 52) to the hierarchical cohort. Obstructive CAD was defined as ≥50% stenosis and CSG-index ≥ −0.27 as positive. Primary analysis assessed obstructive CAD discrimination in the ICA cohort; secondary analyses assessed severe CAD (≥70%), hierarchical-cohort performance, stenosis severity, incremental value beyond available clinical variables and exercise ECG concordance. Results: Obstructive CAD was present in 76/172 patients. In the ICA cohort, CSG-index area under the curve (AUC) was 0.820, with 80.3% sensitivity and 78.1% specificity; AUCs were 0.843 in the hierarchical cohort and 0.785 for severe CAD. CSG-index increased across stenosis classes. After adjustment for available clinical variables, it remained independently associated with obstructive CAD and increased model AUC from 0.806 to 0.886. In the exploratory exercise ECG subgroup (n = 83), agreement was 66.3%, with fewer false-positive CSG-index classifications. Conclusions: The locked CSG-index showed balanced performance for obstructive CAD, provided graded information across stenosis classes, and added discrimination beyond available clinical variables. These findings support prospective multicentre evaluation as a complementary non-invasive resting test.",
-      "year": 2026,
-      "published_at": "2026-10-09",
-      "venue": "Diagnostics",
-      "doi": "10.3390/diagnostics16203266",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7221087255",
-      "source_url": "https://doi.org/10.3390/diagnostics16203266",
-      "pdf_url": "",
-      "oa_status": "gold",
-      "license": "cc-by",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.180862+00:00"
-    },
-    {
-      "stable_id": "doi:10.3389/fcvm.2026.1909068",
-      "title": "Large language model-assisted CAD-RADS classification: structured report extraction, accuracy, and clinical decision-making risk of ChatGPT-4o/5 and DeepSeek-R1",
-      "authors": [
-        "Haorong Rong",
-        "黄锡谊",
-        "Xinjie Chen",
-        "欧阳丽珠",
-        "Yuelu Li",
-        "Xin Lin",
-        "Jialing Pan",
-        "Yunjing Li",
-        "Fan Xie",
-        "Fusheng Ouyang",
-        "Qiugen Hu",
-        "Baoliang Guo"
-      ],
-      "abstract": "Objective To compare ChatGPT-4o, ChatGPT-5, and DeepSeek-R1 in assigning main Coronary Artery Disease Reporting and Data System (CAD-RADS) categories from findings-only coronary computed tomography angiography (CCTA) reports and to characterize management-relevant classification errors. Methods This retrospective diagnostic-accuracy study included 2,100 category-balanced findings-only CCTA reports (300 per CAD-RADS category). Two experienced CCTA radiologists graded the English-translated reports; 12 disagreements were resolved by a third. ChatGPT-4o was evaluated in standard mode, ChatGPT-5 in Thinking mode, and DeepSeek-R1 in Deep Thinking mode; model generation and inference mode therefore varied together. Exact-match accuracy with 95% Wilson confidence intervals (CIs), paired comparisons, and unweighted Gwet AC1 with 95% CIs were calculated. Management-relevant transitions and digital subtraction angiography (DSA) findings among high-risk downgrades were analyzed. Results DeepSeek-R1 had an exact-match accuracy of 82.57% (95% CI, 80.89–84.13) and AC1 of 0.797 (95% CI, 0.778–0.816). ChatGPT-5 had an accuracy of 80.19% (95% CI, 78.43–81.84) and AC1 of 0.769 (95% CI, 0.749–0.789), whereas ChatGPT-4o had an accuracy of 53.62% (95% CI, 51.48–55.74) and AC1 of 0.460 (95% CI, 0.435–0.485). Cochran's Q test was significant (Q = 657.87; df = 2; P < 0.001); after Holm correction, DeepSeek-R1 also outperformed ChatGPT-5 in the paired comparison ( P = 0.026), and both outperformed ChatGPT-4o (both P < 0.001). ChatGPT-4o downgraded 127/900 (14.11%) reference high-risk reports to CAD-RADS 3 or lower. Of these 127 cases, 65 underwent DSA within three months; DSA supported the original high-risk assessment in 56/65 (86.15%). The corresponding high-risk downgrade proportions were 37/900 (4.11%) for ChatGPT-5 and 23/900 (2.56%) for DeepSeek-R1. Conclusion The DeepSeek-R1 Deep Thinking and ChatGPT-5 Thinking configurations achieved higher accuracy than ChatGPT-4o in standard mode. Because model generation and inference mode varied together, the results do not isolate a model-family effect. LLMs merit further evaluation for secondary structuring when no documented CAD-RADS category is available, but should not overwrite a radiologist-assigned category or independently determine management.",
-      "year": 2026,
-      "published_at": "2026-10-09",
-      "venue": "Frontiers in Cardiovascular Medicine",
-      "doi": "10.3389/fcvm.2026.1909068",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7221147015",
-      "source_url": "https://doi.org/10.3389/fcvm.2026.1909068",
-      "pdf_url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2026.1909068/pdf",
-      "oa_status": "gold",
-      "license": "cc-by",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.096863+00:00"
-    },
-    {
-      "stable_id": "doi:10.58830/ozgur.pub1444.c5845",
-      "title": "CAD/CAM Technologies, Three-Dimensional Printing, and Contemporary Dental Materials",
-      "authors": [
-        "Muhammed Mustafa Akar",
-        "Alptuğ Kendirci"
-      ],
-      "abstract": "CAD/CAM technologies have transformed the production of fixed prosthodontic restorations from a craft based on manual skill into a standardized and measurable digital process. This chapter addresses, for dental students in their clinical years and for early-career clinicians, the fundamental principles of CAD/CAM systems, digital and artificial intelligence-assisted restoration design, milling and three-dimensional printing technologies, contemporary restorative materials, the factors influencing material selection, accuracy and quality control in digital manufacturing, and the biocompatible and smart materials of the future, in the light of the current and verified literature. The digital workflow comprises three interdependent links—data acquisition, design, and manufacturing—and the quality of the final restoration is limited by the weakest link in the chain. Although milling remains the gold standard for definitive restorations, additive manufacturing has become established for interim restorations, models, and surgical guides, and it is a rapidly maturing alternative for definitive restorations. On the material side, the rise of monolithic zirconia, the diversification of lithium silicate glass-ceramics, and the establishment of resin-matrix ceramics in minimally invasive applications offer the clinician a broad range of options with varying levels of evidence. Current systematic-review and meta-analytic evidence shows that AI-assisted design shortens design time and improves reproducibility, but that human oversight remains indispensable. Clinical success depends on manufacturing the right material with validated parameters for the right indication and applying it with an appropriate adhesive or conventional cementation protocol. Accuracy should be defined by its trueness and precision components, marginal fit should be evaluated against clinical acceptability thresholds, and quality control should be maintained at every link of the digital chain. The graded, bioactive, self-healing, and stimuli-responsive materials of the future, together with additively manufactured ceramics, signal a transition from passive to smart materials in restorative dentistry.",
-      "year": 2026,
-      "published_at": "2026-10-09",
-      "venue": "Özgür Yayınları eBooks",
-      "doi": "10.58830/ozgur.pub1444.c5845",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7221077065",
-      "source_url": "https://doi.org/10.58830/ozgur.pub1444.c5845",
-      "pdf_url": "",
-      "oa_status": "hybrid",
-      "license": "cc-by",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-07T05:19:25.102996+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2610.12870",
-      "title": "Localized Generative Design of Ship Hulls with Diffusion Models and High-Fidelity Assessment",
-      "authors": [
-        "Hadi Keramati",
-        "Mohammed A. Hannan",
-        "Patrick Kirchen",
-        "Sina Tousi",
-        "Joonas Riekkinen",
-        "Jim Pyra",
-        "Rajeev K. Jaiman"
-      ],
-      "abstract": "Practical ship design requires localized refinement and performance evaluation. This paper presents a reward-directed diffusion framework for localized hull optimization. Parametric masking during dataset generation restricts geometric changes to selected variables, including the bulbous bow and forebody, while preserving full-hull continuity. Surrogate-assisted sequential Monte Carlo sampling targets reduced predicted calm-water resistance, with stability retained through training data and displacement matched during screening. An automated viscous free-surface CFD pipeline, validated against measurements for two benchmark container ships, evaluates a generated variant and GenHull E, a hull refined by a naval architect within the same representation. At matched KRISO Container Ship (KCS) displacement, the generated variant has comparable total resistance at $F_n=0.195$ but 45-50% higher resistance at $F_n=0.250$ and $0.260$, missed by empirical screening. GenHull E achieves 6-8% lower total resistance up to $F_n=0.240$ but higher resistance above $F_n=0.250$ as opposing friction and pressure trends reverse the gains. Aggregating resistance across this crossover can conceal tradeoffs that emerge when friction and pressure components are evaluated separately. The assessment reveals an inability to represent a faired bulbous bow and a reward lacking viscous pressure and stability terms. These findings show how high-fidelity assessment informs improved representations and objectives for physically realizable generative designs.",
-      "year": 2026,
-      "published_at": "2026-10-09",
-      "venue": "arXiv (Cornell University)",
-      "doi": "10.48550/arxiv.2610.12870",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7221528614",
-      "source_url": "https://arxiv.org/abs/2610.12870",
-      "pdf_url": "https://arxiv.org/pdf/2610.12870",
-      "oa_status": "green",
-      "license": "",
-      "suggested_category": "CAD Representations & Understanding",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 5,
-      "discovered_at": "2026-11-07T05:19:25.106575+00:00"
+      "discovered_at": "2026-11-08T05:16:59.183370+00:00"
     }
   ]
 }
