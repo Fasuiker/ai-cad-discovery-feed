@@ -1,32 +1,33 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-09T05:28:27.840310+00:00",
+  "generated_at": "2026-11-10T06:40:21.258137+00:00",
   "range": {
-    "from": "2026-10-11",
-    "to": "2026-11-09"
+    "from": "2026-10-12",
+    "to": "2026-11-10"
   },
-  "count": 76,
+  "count": 56,
   "source_health": {
     "arxiv": {
-      "ok": true,
-      "count": 37,
-      "seconds": 1.6
+      "ok": false,
+      "count": 0,
+      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202610120000+TO+202611102359%5D&start=0&",
+      "seconds": 18.82
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 4.89
+      "seconds": 5.52
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 2.74
+      "seconds": 26.74
     },
     "upstream_awesome": {
       "ok": true,
       "count": 1,
-      "seconds": 0.61
+      "seconds": 0.7
     }
   },
   "public_profile": {
@@ -76,70 +77,60 @@
   },
   "candidates": [
     {
-      "stable_id": "doi:10.20944/preprints202611.0787.v1",
-      "title": "Broadband RF Design with MEEP: A Set of 3D-Printed Open-Source RF Horns in the multi-GHz Bandwidth",
+      "stable_id": "doi:10.5281/zenodo.23994986",
+      "title": "Predicting Dimensional Errors in FDM Printing Using Neural Networks",
       "authors": [
-        "Jordan C. Hanson",
-        "Gia Bao Dong",
-        "Sanyah Smith",
-        "Alexander Song",
-        "Almas Waseem",
-        "Natasha Waldorf",
-        "Adam Wildanger"
+        "Jhonier Jesús Avilorio Pinzón",
+        "Yefferson Esteven Angarita Lopez",
+        "Joel Gerardo Bolivar Salcedo",
+        "Neider Nadid Romero Nuñez",
+        "Fernando Andres Estrella Casares"
       ],
-      "abstract": "Radio-frequency (RF) antenna design and fabrication traditionally proceeds in three phases. First, the design performance is modeled with expensive, proprietary software. Second, the design is built using precision metal machining or printed circuit board (PCB) fabrication. Third, the result is characterized using RF measurement tools. The process can include machine learning for optimization. We have developed an open-source alternative process that utilizes the MIT Electromagnetic Equation Propagator (MEEP) package for design and simulation, and open-source 3D printing with conductive polymer for fabrication. Using this process, we created a set of broadband RF horn antennas. The radiation patterns and the VSWR match our MEEP calculations, while the cross-polarization ratio matches theoretical expectations. These results indicate that our creations are linearly polarized, broadband RF horn antennas with bandwidth [4.0-18.0] GHz, or a fractional bandwidth of 127%. Because the maximum frequency of our network analyzer is 18 GHz, these results are lower limits. Our results therefore represent a successful broadband open-source CEM/CAD workflow utilizing direct, repeatable conductive printing that circumvents the need for electroplating processes.",
+      "abstract": "Dimensional accuracy in additive manufacturing represents a critical factor for the quality of functional parts. This work presents a predictive model based on artificial neural networks to estimate and reduce geometric deviations in polylactic acid parts processed by fused filament fabrication. Using a response surface experimental design, the influence of extruder temperature, bed temperature, printing speed, and layer height on the hole diameter relative to its computer-aided design was evaluated. The geometric discrepancy fed the training of the predictive model, which was subsequently coupled with a genetic algorithm to determine optimal manufacturing parameters. The optimized approach successfully reduced the predicted dimensional error to a minimum of 1.59%, demonstrating its applicability in automated calibration for additive processes.",
+      "year": 2026,
+      "published_at": "2026-11-10",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "doi": "10.5281/zenodo.23994986",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225403598",
+      "source_url": "https://doi.org/10.5281/zenodo.23994986",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [
+        "摘要命中 computer-aided design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 7,
+      "discovered_at": "2026-11-10T06:40:21.141987+00:00"
+    },
+    {
+      "stable_id": "doi:10.21203/rs.3.rs-11409815/v1",
+      "title": "Does Machine Learning Beat ARIMA in Foreign Exchange? Out-of- Sample Evidence on Trading Activity, Volatility and Prices for EUR/USD, GBP/USD and USD/CAD, 2010–2021",
+      "authors": [
+        "Shadia Saeed Alqahtani"
+      ],
+      "abstract": "Abstract Machine-learning models are used more and more to predict financial markets, but whether they beat simple time-series models is rarely tested under strict out-of-sample conditions. This study compares a Random Forest and a Gradient Boosting Machine (GBM), each using 26 price-derived indicators, with ARIMA models and simple rules for EUR/USD, GBP/USD and USD/CAD, using daily data from 2010 to 2021 and an 890-day test period from February 2018 to July 2021. For next-day tick-volume activity the comparison depends on information. Without volume history the Random Forest correctly classifies 31.8–41.6% of test days, while ARIMA correctly classifies 61.5–63.8%; with volume history the difference between the two is not significant. The GBM forecasts five-day realised volatility less accurately than ARIMA for EUR/USD and USD/CAD and is not significantly different from it for GBP/USD. In the main design it beats a trailing-volatility baseline only for GBP/USD, where a constant forecast performs just as well. For the price, ARIMA does no better than the random walk. Seven robustness analyses, including GARCH and HAR benchmarks, yearly re-fits, a single data source and other horizons, leave these results unchanged. Of 114 tests, four machine-learning wins remain significant after the Holm correction, and all of them are against naive baselines. The results suggest that a price-based machine-learning forecast should beat a simple time-series model, on the same information and test days, before it is trusted. The code, a pinned data download and file hashes are released for reproduction. JEL Classification: C45; C52; C53; F31; G17",
       "year": 2026,
       "published_at": "2026-11-09",
       "venue": "",
-      "doi": "10.20944/preprints202611.0787.v1",
+      "doi": "10.21203/rs.3.rs-11409815/v1",
       "arxiv_id": "",
       "openalex_id": "",
-      "source_url": "https://doi.org/10.20944/preprints202611.0787.v1",
+      "source_url": "https://doi.org/10.21203/rs.3.rs-11409815/v1",
       "pdf_url": "",
       "oa_status": "unknown",
-      "license": "http://creativecommons.org/licenses/by/4.0",
-      "suggested_category": "CAD Generation",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
       "matched_terms": [],
       "source_names": [
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.797417+00:00"
-    },
-    {
-      "stable_id": "arxiv:2611.09401",
-      "title": "PhyCAD: Physics-Aware Text-to-CAD Generation via Hierarchical Reinforcement Learning",
-      "authors": [
-        "Yuxin Cui",
-        "Weijie Zheng",
-        "Zhengyang Li",
-        "Han Wang",
-        "Wenjie Feng",
-        "Qiyu Kang"
-      ],
-      "abstract": "Language-driven computer-aided design (CAD) generation enables the creation of editable parametric models from text, yet geometric correctness alone does not ensure physical feasibility. We present PhyCAD, a framework for physics-aware Text-to-CAD generation that trains language models to produce executable CadQuery programs under geometric and physical constraints. To support this setting, we construct a Text-to-CAD dataset that links parametric CAD models with geometric specifications, loading conditions, and physical constraints. We further develop an automated CAD--CAE verifier that combines program execution, geometric checks, and finite element analysis to provide feedback for model training. A key learning challenge is to prioritize joint satisfaction of geometric and physical constraints while retaining informative feedback on partial progress. A flat aggregation of heterogeneous rewards can obscure this priority, allowing improvements in individual criteria to compensate for unmet design requirements. We therefore introduce a Hierarchical Balanced Advantage for Group Relative Policy Optimization, grouping candidates into levels according to their verification status and combining between-level progress with objective-wise peer ranking within each level. This formulation preserves cross-level priority in the training signal while providing fine-grained feedback for satisfying constraints and improving feasible designs. Experiments across multiple language models show that PhyCAD consistently improves joint geometric and physical constraint satisfaction. These results demonstrate the value of verifiable engineering feedback for advancing language-driven CAD generation beyond geometric reconstruction toward physics-aware design.",
-      "year": 2026,
-      "published_at": "2026-11-06",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2611.09401",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2611.09401v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.09401v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "标题命中 text-to-cad",
-        "摘要命中 computer-aided design",
-        "摘要命中 parametric CAD",
-        "标题命中 CAD generation"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 14,
-      "discovered_at": "2026-11-09T05:28:27.634442+00:00"
+      "discovered_at": "2026-11-10T06:40:21.214513+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835531",
@@ -172,7 +163,7 @@
         "Crossref"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-09T05:28:27.654512+00:00"
+      "discovered_at": "2026-11-10T06:40:21.130938+00:00"
     },
     {
       "stable_id": "doi:10.20517/2574-1209.2026.55",
@@ -205,7 +196,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.654827+00:00"
+      "discovered_at": "2026-11-10T06:40:21.131132+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3836073",
@@ -240,7 +231,7 @@
         "Crossref"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-09T05:28:27.645319+00:00"
+      "discovered_at": "2026-11-10T06:40:21.124722+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23969385",
@@ -267,7 +258,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.738556+00:00"
+      "discovered_at": "2026-11-10T06:40:21.185745+00:00"
     },
     {
       "stable_id": "doi:10.3390/electronics15215130",
@@ -295,7 +286,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.674260+00:00"
+      "discovered_at": "2026-11-10T06:40:21.144150+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmapro.2026.10.071",
@@ -324,7 +315,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.673466+00:00"
+      "discovered_at": "2026-11-10T06:40:21.143755+00:00"
     },
     {
       "stable_id": "doi:10.1186/s13244-026-02446-7",
@@ -365,7 +356,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.741931+00:00"
+      "discovered_at": "2026-11-10T06:40:21.187928+00:00"
     },
     {
       "stable_id": "doi:10.1007/s11886-026-02443-8",
@@ -392,10 +383,10 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.722796+00:00"
+      "discovered_at": "2026-11-10T06:40:21.175189+00:00"
     },
     {
-      "stable_id": "arxiv:2611.05449",
+      "stable_id": "doi:10.48550/arxiv.2611.05449",
       "title": "SO(3)-Equivariant Learning on CAD Boundary Representations",
       "authors": [
         "Matteo Ballegeer",
@@ -404,25 +395,56 @@
       "abstract": "Learning on boundary representations (B-reps) requires robustness to the pose of a part, since CAD models are not stored in a canonical orientation. Existing B-rep networks either operate on world-frame coordinates and normals, and thus degrade under rotation, or encode each face in a local reference frame. Local frames yield invariance, but reduce inter-face messages to scalars and discard the relative orientation of adjacent faces. We propose SO3brep, an SO(3)-equivariant graph neural network on the B-rep face-adjacency graph. Node features are computed in local frames and mapped into a shared frame by Wigner D-matrices. Clebsch-Gordan tensor products couple these features with the directions between adjacent faces, so that relative orientation is preserved throughout message passing and the output remains SE(3)-invariant. Across three face-segmentation and two classification benchmarks with randomly rotated test parts, SO3brep achieves the highest accuracy among the compared B-rep networks and equivariant point cloud networks, with the fewest parameters. Its advantage is largest with few labeled parts, a setting typical of industrial CAD. Code is available at https://github.com/UGent-CVAMO/so3brep.",
       "year": 2026,
       "published_at": "2026-11-03",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2611.05449",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2611.05449v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.05449v1",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.05449",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225342804",
+      "source_url": "https://arxiv.org/abs/2611.05449",
+      "pdf_url": "https://arxiv.org/pdf/2611.05449",
       "oa_status": "green",
-      "license": "arXiv",
+      "license": "",
       "suggested_category": "CAD Representations & Understanding",
       "matched_terms": [
         "摘要命中 b-rep",
         "标题命中 boundary representation"
       ],
       "source_names": [
-        "arXiv",
-        "awesome-AI4CAD-hub"
+        "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-09T05:28:27.635074+00:00"
+      "discovered_at": "2026-11-10T06:40:21.127591+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.05758",
+      "title": "Mechanical Engineering Skills: An Open Library of Agent Skills for Design, Analysis and Manufacturing",
+      "authors": [
+        "Achuth Chandrasekhar",
+        "Jesse Barkley",
+        "Peter Pak",
+        "Rumi Loghmani",
+        "Aakash Oza",
+        "Amir Barati Farimani"
+      ],
+      "abstract": "Mechanical engineers use specialized tools for CAD, simulation, manufacturing and research, each with a distinct interface and learning curve. We present Mechanical Engineering Skills, an open library of 33 agent skills that makes these capabilities accessible through a single text or voice conversation. Each skill combines operating instructions, executable tools and verification procedures. A language model interprets the request, selects and coordinates skills, while deterministic tools perform computations and return checked results. Default workflows require no tool-specific interface training, local model execution or model fine-tuning; skills load on demand and install with one command. Nineteen skills adapt published or preprint research from our laboratory, including text-to-CAD, linkage synthesis, CFD setup, stress-field and lattice surrogates, equation discovery, additive-manufacturing planning and in-process monitoring. Fourteen additional skills support core engineering and education. We describe the skill format, design principles and a method for translating research into practical workflows. Five case studies with explicit evidence scopes and independent reruns demonstrate exact analytical agreement for lattice homogenization, rocket apogee predictions within 4% of stored OpenRocket references, an equation fit nine times more accurate than a cubic polynomial at an unseen temperature, and an end-to-end rehearsal of porosity monitoring. Controlled agent comparisons remain future work. The open library is available at https://github.com/BaratiLab/mechanical-engineering-skills.",
+      "year": 2026,
+      "published_at": "2026-11-03",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.05758",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225303980",
+      "source_url": "https://arxiv.org/abs/2611.05758",
+      "pdf_url": "https://arxiv.org/pdf/2611.05758",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [
+        "摘要命中 text-to-cad"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 8,
+      "discovered_at": "2026-11-10T06:40:21.203171+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19471-x",
@@ -453,38 +475,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.772571+00:00"
-    },
-    {
-      "stable_id": "arxiv:2611.02659",
-      "title": "Parametric CAD Bench v3: Evaluating Agentic Parametric CAD Authoring from Text and Engineering Drawings",
-      "authors": [
-        "Mei Chen",
-        "Yu Xia",
-        "Haipeng Mao"
-      ],
-      "abstract": "Producing an executable CAD script is not sufficient to establish that an agent has satisfied an engineering design request. Evaluation must also consider the resulting geometry, specified dimensions, and native CAD modeling history. We present Parametric CAD Bench v3, a 100-task benchmark comprising 30 text-to-CAD creation tasks, 30 text-to-CAD create-and-edit tasks, and 40 tasks that reconstruct mechanical parts from engineering drawings. Agents operate in a pinned FreeCAD environment and submit native CAD artifacts to a separate programmatic verifier. The primary metric is mean continuous task reward, combining geometry similarity and specification consistency rather than binary task success. A September 24, 2026 snapshot covers 13 model-agent systems; Claude Code with Claude Opus 5.5 achieves the highest overall point estimate, 61.03%, and an image-to-CAD mean reward of 84.66%. These measurements describe complete systems, not isolated model capabilities. We release versioned tasks, evaluation configurations, and inspectable result artifacts.",
-      "year": 2026,
-      "published_at": "2026-11-02",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2611.02659",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2611.02659v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.02659v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "摘要命中 text-to-cad",
-        "摘要命中 image-to-cad",
-        "标题命中 parametric CAD"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 12,
-      "discovered_at": "2026-11-09T05:28:27.636071+00:00"
+      "discovered_at": "2026-11-10T06:40:21.207442+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02659",
@@ -515,7 +506,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-09T05:28:27.748468+00:00"
+      "discovered_at": "2026-11-10T06:40:21.192137+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44275-026-00056-5",
@@ -551,101 +542,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.675050+00:00"
-    },
-    {
-      "stable_id": "arxiv:2611.02540",
-      "title": "PixelBench: Can LLMs Understand and Generate Images Pixel by Pixel?",
-      "authors": [
-        "Haoquan Zhang",
-        "Feiyang Liu",
-        "Juanxi Tian",
-        "Wanhua Li",
-        "Haodong Duan",
-        "Weiyang Liu"
-      ],
-      "abstract": "Large language models (LLMs) can generate visual assets through text-based formats such as SVG and CAD, but these symbolic representations describe images using high-level primitives rather than explicit raster values. We ask whether LLMs can instead generate pixel images directly through their existing vocabulary, without a learned image tokenizer or decoder. We introduce PixelBench, a benchmark for text-to-pixel (T2P) and image-to-pixel (I2P) generation across multiple resolutions, together with a complementary pixel-understanding evaluation. Models generate an RGB color palette followed by a grid of indices specifying the palette color of each output pixel. In T2P, the strongest models produce recognizable images directly from text. In I2P, the strongest models outperform palette-matched downsampling and specialized pixelization algorithms at low resolutions. Pixel-understanding performance correlates strongly with generation performance. A resolution-scaling study shows that pixel-generation performance often improves initially before declining at high resolutions. Finally, we introduce Pixel Reconstruction Tuning (PRT), which augments visual instruction tuning with caption-palette-grid trajectories. We post-train Molmo2-4B from its pretraining checkpoint by mixing general instruction data with our curated PRT data, improving performance across 16 visual-centric benchmarks, indicating that explicit pixel reconstruction can provide useful auxiliary supervision.",
-      "year": 2026,
-      "published_at": "2026-11-02",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2611.02540",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2611.02540v2",
-      "pdf_url": "https://arxiv.org/pdf/2611.02540v2",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.636375+00:00"
-    },
-    {
-      "stable_id": "arxiv:2611.03178",
-      "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
-      "authors": [
-        "Jiajie Jin",
-        "Guanting Dong",
-        "Chengjun Pan",
-        "Xin Deng",
-        "Zhuohui Sheng",
-        "Guoqiang Wang",
-        "Tao Gui",
-        "Yutao Zhu",
-        "Yujia Chen",
-        "Shihong Yi",
-        "Binze Hu",
-        "Zhixiong Yang",
-        "Zhichao Sun",
-        "Rui Wang",
-        "Han Han",
-        "Mingyu Ma",
-        "Junhao Huang",
-        "Xiaotao Wang",
-        "Huicheng Jiang",
-        "Yuyang Hu",
-        "Xinyu Yang",
-        "Wanghan Xu",
-        "Yajie Yang",
-        "Zhecan Wang",
-        "Honglin Guo",
-        "Xiaoyu Xing",
-        "Xiaoqian Zhang",
-        "Yulun Zhu",
-        "Xiaoxi Li",
-        "Jiahang Lin",
-        "Shaofan Liu",
-        "Shihan Dou",
-        "Zhiheng Xi",
-        "Qi Zhang",
-        "Yu-Gang Jiang",
-        "See-Kiong Ng",
-        "Yang Zhang",
-        "Tat-Seng Chua",
-        "Ji-Rong Wen",
-        "Zhicheng Dou"
-      ],
-      "abstract": "Rapid advances in cowork agents are shifting human-AI collaboration toward real-world automation, delivering software, designs, and other artifacts. However, such productivity work demands both high-quality delivery on complex productivity tasks and continued monitoring and decision-making over long horizons, a combination that remains an open challenge. We introduce CoworkOS, a general-purpose harness for long-horizon work that separates task strategy from execution management: the model decides actions, delegation, and acceptance, while the runtime maintains state and feedback. Its three-layer architecture enables direct execution or delegation to Subagents, synchronously or asynchronously, under stable responsibilities. Through a shared application layer, humans and agents inspect and revise the same evolving documents, presentations, CAD models, and Blender scenes, so human-in-the-loop participation can enter both through conversation and through direct modification of the work itself. To sustain continuity across agents and sessions, CoworkOS further introduces hierarchical workspaces and persistent semantic memory, so working files, key decisions, and long-running Job logs remain shareable, reusable, and resumable after interruption. Across 12 benchmarks and 6 categories of real-world applications, CoworkOS proves highly competitive with frontier agent applications such as Codex and DeepSeek Harness. As a sustained-work case study, CoworkOS uses GLM-5.3 as its backbone to conduct RSI-driven automated post-training on Qwen3.6-35B-A3B. Over five rounds, the model's average score across eight benchmarks rose from 33.19 to 42.95 (+9.76). Looking ahead, we believe CoworkOS opens a meaningful path toward general cowork-agent intelligence.",
-      "year": 2026,
-      "published_at": "2026-11-02",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2611.03178",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2611.03178v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.03178v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.635794+00:00"
+      "discovered_at": "2026-11-10T06:40:21.144680+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.03178",
@@ -709,35 +606,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.743636+00:00"
-    },
-    {
-      "stable_id": "arxiv:2611.02433",
-      "title": "Blueprint2CAD: Benchmarking Foundation Models on Engineering Drawing-to-CAD Render Correspondence",
-      "authors": [
-        "Alexander Valverde",
-        "Danny Xie-Li",
-        "Zhichao Wang",
-        "Marcos V. Conde"
-      ],
-      "abstract": "Engineering drawings specify mechanical parts through orthographic projections. Recognizing which part a drawing depicts underlies part search, design reuse, and digitization, yet no public benchmark measures whether vision models can do it. We introduce Blueprint2CAD, a benchmark for drawing-to-render correspondence: given an orthographic line drawing and a shaded render, usually from another viewpoint, decide whether they show the same part. Its data layer, BlueCAD-30K, applies an open drafting pipeline to 29,925 Zero-to-CAD models, adding view-aligned renders, clean and dimensioned drawings from six viewpoints, and surface-type metadata. Frozen encoders retrieve the matching part from a 10,000-model gallery with up to 65% Recall@1 when viewpoints are known but 43% when they are not, and the four encoders we test lie within six points of each other: viewpoint, not backbone, is the bottleneck. Six zero-shot vision-language models reach only 0.52-0.67 verification accuracy, with model-specific Yes/No biases that chain-of-thought shifts but does not remove; a quick LoRA fine-tuning on in-domain pairs improves verification accuracy by a few points but sharpens these biases and leaves the viewpoint failure intact.",
-      "year": 2026,
-      "published_at": "2026-11-02",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2611.02433",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2611.02433v2",
-      "pdf_url": "https://arxiv.org/pdf/2611.02433v2",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.636676+00:00"
+      "discovered_at": "2026-11-10T06:40:21.189031+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02433",
@@ -765,7 +634,32 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.651221+00:00"
+      "discovered_at": "2026-11-10T06:40:21.128460+00:00"
+    },
+    {
+      "stable_id": "arxiv:2611.05449",
+      "title": "SO(3)-Equivariant Learning on CAD Boundary Representations",
+      "authors": [],
+      "abstract": "",
+      "year": 2026,
+      "published_at": "2026-11-01",
+      "venue": "",
+      "doi": "",
+      "arxiv_id": "2611.05449",
+      "openalex_id": "",
+      "source_url": "https://arxiv.org/abs/2611.05449v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05449",
+      "oa_status": "green",
+      "license": "arXiv",
+      "suggested_category": "CAD Representations & Understanding",
+      "matched_terms": [
+        "标题命中 boundary representation"
+      ],
+      "source_names": [
+        "awesome-AI4CAD-hub"
+      ],
+      "relevance_score": 8,
+      "discovered_at": "2026-11-10T06:40:21.256083+00:00"
     },
     {
       "stable_id": "doi:10.29227/im-2026-02-01-085",
@@ -794,7 +688,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.756706+00:00"
+      "discovered_at": "2026-11-10T06:40:21.197290+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02300",
@@ -824,36 +718,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.774363+00:00"
-    },
-    {
-      "stable_id": "arxiv:2611.02286",
-      "title": "Toward Agentic AI-Ready Workflows in Built Environment Organizations: Knowledge Structures and Interoperability Challenges",
-      "authors": [
-        "Ahmet Bahaddin Ersoz",
-        "Justin McHenry",
-        "Yevgeniya Kovalchuk",
-        "Edward Barrett",
-        "Mandana Sarey Khanie"
-      ],
-      "abstract": "The rise of agentic artificial intelligence (AI) in the built environment is shifting attention from isolated AI tools toward autonomous systems that reason, plan, and act across project and organizational workflows. The effectiveness of such systems depends not only on large language model capabilities, but also on the readiness of heterogeneous data environments across the Architecture, Engineering, and Construction (AEC) sector. These environments combine structured sources, such as CAD and BIM models, schedules, cost databases, and asset registers, with unstructured ones, including technical reports, design narratives, planning and policy documents, contracts, meeting minutes, and risk registers. This paper reviews how built environment data can be organized to support agentic AI-ready workflows, focusing on knowledge structures, interoperability, and access and integration mechanisms such as retrieval-augmented generation (RAG) and the Model Context Protocol (MCP). Drawing on existing literature, it examines approaches proposed to organize structured and unstructured data and considers how such data can be contextualized and made accessible to AI agents in a reliable manner. The paper synthesizes current perspectives, highlights challenges around fragmentation and interoperability, and identifies open questions for future research on AI-compatible information management in the built environment.",
-      "year": 2026,
-      "published_at": "2026-11-01",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2611.02286",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2611.02286v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.02286v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.636988+00:00"
+      "discovered_at": "2026-11-10T06:40:21.208814+00:00"
     },
     {
       "stable_id": "doi:10.1002/pat.70785",
@@ -881,7 +746,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.736113+00:00"
+      "discovered_at": "2026-11-10T06:40:21.184134+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44443-026-01444-5",
@@ -906,7 +771,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.658137+00:00"
+      "discovered_at": "2026-11-10T06:40:21.133511+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02127",
@@ -935,37 +800,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-09T05:28:27.676461+00:00"
-    },
-    {
-      "stable_id": "arxiv:2611.01165",
-      "title": "Composable CAD: Sketch-to-CAD Program Synthesis in Parts",
-      "authors": [
-        "Yuanbo Li",
-        "Vivian Liu",
-        "Sean Liu",
-        "Justin Matejka"
-      ],
-      "abstract": "Designers often build CAD models part by part, and may iterate on individual components throughout the design process. Recent vision-language models (VLMs) can synthesize CAD programs from sketches, but generating parts independently does not ensure that they are composable: components may lose the intended proportions and alignments or fail to join correctly where they meet. We present Composable CAD, a framework that uses off-the-shelf VLMs to synthesize a design space of independently sampled, interchangeable component programs, where any selection composes into a coherent CAD model. We recover design constraints from the sketch and use them to construct a coarse proxy that establishes how the components are sized, aligned, and attached. We then generate each component independently from its proxy and apply a deterministic rewrite to ensure that neighboring components meet at their prescribed interfaces. We evaluate Composable CAD across a range of objects and sketch styles and conduct two user studies. Compared to VLM-only baselines, our method produces more detailed, composable designs.",
-      "year": 2026,
-      "published_at": "2026-10-31",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2611.01165",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2611.01165v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.01165v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "标题命中 cad program"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 10,
-      "discovered_at": "2026-11-09T05:28:27.637255+00:00"
+      "discovered_at": "2026-11-10T06:40:21.145569+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.01165",
@@ -995,7 +830,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-09T05:28:27.645583+00:00"
+      "discovered_at": "2026-11-10T06:40:21.124906+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.autcon.2026.107322",
@@ -1023,7 +858,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.668660+00:00"
+      "discovered_at": "2026-11-10T06:40:21.140421+00:00"
     },
     {
       "stable_id": "doi:10.3389/frai.2026.1891993",
@@ -1051,42 +886,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.655330+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.39306",
-      "title": "CAD-WAM: Anticipating Geometry for Text-to-CAD Generation",
-      "authors": [
-        "Zhengyang Li",
-        "Weijie Zheng",
-        "Yuxin Cui",
-        "Sijie Wang",
-        "Wenjie Feng",
-        "Qiyu Kang"
-      ],
-      "abstract": "Generating editable computer-aided design (CAD) models from text requires selecting operations that produce the intended changes to the geometry constructed so far. An incorrect operation can compromise subsequent steps, making reliable multi-step generation challenging. Existing methods based on large language models (LLMs) primarily learn to predict commands, without explicit supervision of the geometric states those commands should produce. Inspired by world-action models, we introduce CAD-WAM, which couples geometry-conditioned action generation with next-state prediction. We define complete modeling operations as actions in a CAD domain-specific language (DSL) and encode surface point clouds of intermediate solids into compact latent states using a pretrained variational autoencoder. An LLM backbone generates the next action from the target description and current geometric state, while an auxiliary head on the same backbone predicts the next state to provide geometric supervision during training. We construct step-wise training trajectories from parametric CAD models in the DeepCAD dataset, pairing each trajectory with an expert-level textual description. At inference, each generated action is executed by a CAD kernel, and the resulting solid is re-encoded to inform the next decision. On the DeepCAD test set, CAD-WAM outperforms the task-specific baselines in geometric accuracy and output validity, with larger gains on models requiring more operations, and produces more accurate geometry than general-purpose LLMs prompted with the same DSL. Ablations further show that next-state supervision reduces mean Chamfer distance by 13.2\\% relative to an otherwise identical model trained only to predict actions. Code is available at https://github.com/Lzy-1037/CAD-WAM.",
-      "year": 2026,
-      "published_at": "2026-10-29",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.39306",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.39306v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.39306v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "标题命中 text-to-cad",
-        "摘要命中 computer-aided design",
-        "摘要命中 parametric CAD",
-        "标题命中 CAD generation"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 14,
-      "discovered_at": "2026-11-09T05:28:27.637778+00:00"
+      "discovered_at": "2026-11-10T06:40:21.131447+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.39306",
@@ -1121,7 +921,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-09T05:28:27.645903+00:00"
+      "discovered_at": "2026-11-10T06:40:21.125109+00:00"
     },
     {
       "stable_id": "doi:10.54097/ht37b711",
@@ -1150,7 +950,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.754940+00:00"
+      "discovered_at": "2026-11-10T06:40:21.196098+00:00"
     },
     {
       "stable_id": "doi:10.59490/6ad294696ee698573e4dd65c",
@@ -1176,7 +976,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.757718+00:00"
+      "discovered_at": "2026-11-10T06:40:21.197934+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23756809",
@@ -1203,7 +1003,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.683705+00:00"
+      "discovered_at": "2026-11-10T06:40:21.150251+00:00"
     },
     {
       "stable_id": "doi:10.1007/s10791-026-10699-5",
@@ -1230,7 +1030,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.737639+00:00"
+      "discovered_at": "2026-11-10T06:40:21.185125+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.ejro.2026.100821",
@@ -1264,35 +1064,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.667823+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.35704",
-      "title": "Explainable Multimodal AI Approach to Reduce Unnecessary Breast Biopsies",
-      "authors": [
-        "Sadam Hussain",
-        "Mansoor Ali",
-        "Daly Betzabeth Avendaño-Avalos",
-        "Jose Gerardo Tamez-Peña"
-      ],
-      "abstract": "Recently, there has been rise in multimodal vision-language models for computer-aided diagnosis (CAD), yet their application in breast diagnosis, particularly for predicting biopsy outcomes remains limited. This study presents a multimodal vision-language approach, incorporating Grad-CAM as an Explainable AI (XAI) technique, to predict benign tumors in patients recommended for biopsy, especially those classified as BI-RADS 4 and 5. A novel multimodal framework was devel- oped using Vision Transformer (ViT) for imaging feature extraction and DeBERTa-V3-Large for textual embeddings. The model was trained and evaluated on a comprehensive in-house dataset comprising 1,632 patients, each with four mammography views and a corresponding radiology report. The features of both modalities were extracted independently and fused by late fusion before classification. Grad-CAM was used to generate visual explanations highlighting key regions influencing model predictions. The proposed model demonstrated high sensitivity 90%, 95%, 99%, and 100% with corresponding specificities of 40%, 36%, 18%, and 11%, respectively. The best AUC achieved was 0.72 by multimodal approach on the test set, outperforming the image only (0.66) and text-only (0.68) baselines. The proposed multimodal architecture, enhanced with Grad-CAM, demonstrates a strong potential to identify benign tumors among high-risk patients, offering interpretable insights and thereby helping reduce unnecessary biopsies, patient anxiety, and healthcare costs.",
-      "year": 2026,
-      "published_at": "2026-10-26",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.35704",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.35704v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.35704v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.638080+00:00"
+      "discovered_at": "2026-11-10T06:40:21.139904+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23662350",
@@ -1317,36 +1089,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.659934+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.35566",
-      "title": "Copying As Defense: Protecting Images from Editing By Eliciting Model Copying",
-      "authors": [
-        "Salma Abdel Magid",
-        "Sanghyuk Chun",
-        "Eric Slyman",
-        "Kushal Kafle",
-        "Olga Russakovsky"
-      ],
-      "abstract": "Image editors built on diffusion transformers (DiTs), such as Flux Kontext, make it possible to turn a single photograph into a convincing manipulated image, including harmful and non-consensual edits. Proactive defenses aim to prevent such manipulations by adding an imperceptible perturbation before an image is shared. Existing defenses for DiT-based in-context editors make the output attend less to the protected reference image. But this leaves the model free to follow the edit instruction using the text and its own generated tokens, often producing a new, weakly grounded image rather than preventing the edit. We find that the opposite strategy is more effective: instead of leading the model to ignore the reference, we encourage it to copy it. Through controlled attention interventions, we show that concentrating target-token attention on the reference image in only a few early blocks is sufficient to collapse the editing behavior, causing the model to reproduce its input, often as a lossy copy, rather than execute the requested transformation. Based on this insight, we introduce Copying-as-Defense (CaD), which maximizes per-token target-to-reference attention mass in early transformer blocks. Since attention rows are normalized, increasing reference attention suppresses the attention allocated to the text and generated canvas. Restricting the objective to early blocks also lets us truncate the backpropagation path, keeping optimization cheap. Across editors and benchmarks, CaD reduces average edit success from 81.4% on unprotected images to 24.0%, a 70.6% relative reduction, and by a further 44.3% relative to DeContext, the strongest baseline (43.0%). CaD is also roughly 1.8-2.0x faster per optimization step than comparable methods.",
-      "year": 2026,
-      "published_at": "2026-10-26",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.35566",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.35566v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.35566v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "CAD Editing, Constraints & Verification",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.638446+00:00"
+      "discovered_at": "2026-11-10T06:40:21.134836+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23636235",
@@ -1374,32 +1117,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-09T05:28:27.648279+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.34529",
-      "title": "Acute Stroke Classification Using Asymmetric Data Standardization and Orthogonal-Focal Loss Optimized CNN-ViT Cross-Attention Fusion: A Multicenter External Validation Study",
-      "authors": [
-        "Tansel Uyar"
-      ],
-      "abstract": "Background/Objectives: Rapid differentiation of ischemic and hemorrhagic stroke subtypes is vital for acute management. Although current deep learning models achieve high single-dataset accuracy, they suffer from \"shortcut learning\" and domain shift in external validation. This study proposes a hierarchical computer-aided diagnostic (CAD) system mimicking emergency triage. Methods: We introduce a 3-channel Radiology-Focused Preprocessing pipeline that feeds radiological Hounsfield Unit (HU) windows into Convolutional Neural Network (CNN) and Vision Transformer (ViT) backbones via asymmetric formats (.mat and .png). The architecture utilizes a novel joint cross-attention fusion network optimized by an Integrated Orthogonal-Focal Loss. Results: Our system achieved a 95.48% F1-score on the internal stroke dataset. However, multi-center external validation (AISD, BHSD, PhysioNet) using a Mask Anchor filter revealed a drop to the 58-62% range, exposing the \"internal validation illusion\" caused by hardware noise. Critically, models exhibited high precision (77%) but low sensitivity (57%) for ischemic stroke, proving prone to hemorrhage overdiagnosis. Multi-seed variance analysis demonstrated that the DenseNet201+ViT backbone yielded the lowest deviation (0.59) and highest stability, making it the most reliable architecture for real-world clinical integration. Conclusions: To overcome diagnostic challenges, future research must focus on multimodal architectures that combine 3D volumetric extraction with clinical data.",
-      "year": 2026,
-      "published_at": "2026-10-25",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.34529",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.34529v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.34529v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.638798+00:00"
+      "discovered_at": "2026-11-10T06:40:21.126720+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19307-8",
@@ -1427,7 +1145,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.768570+00:00"
+      "discovered_at": "2026-11-10T06:40:21.204856+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23600947",
@@ -1454,7 +1172,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-09T05:28:27.672322+00:00"
+      "discovered_at": "2026-11-10T06:40:21.142738+00:00"
     },
     {
       "stable_id": "doi:10.1117/12.3133467",
@@ -1480,41 +1198,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.750931+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.30974",
-      "title": "GraphCAD: Geometry-Aware Diffusion on Edge-Adjacency Graphs for CAD Generation",
-      "authors": [
-        "Wenhao Zheng",
-        "Xianggen Liu",
-        "Li Yue",
-        "Jiancheng Shi",
-        "Jiancheng Lv"
-      ],
-      "abstract": "Generative modeling for Computer-Aided Design (CAD) remains fundamentally challenged by the need to capture the intricate interplay between discrete topological connectivity and precise spatial geometry inherent in Boundary Representations (B-reps). Existing generative approaches largely formulate CAD construction as a sequence modeling problem, but consequently lack an explicit topological inductive bias. In this work, we present GraphCAD, a geometry-aware generative framework that centers modeling on the Edge-Adjacency Graph (EAG), a novel graph-based CAD representation tailored for generative tasks. GraphCAD adopts a hybrid graph diffusion formulation to jointly model the discrete and continuous components of EAG and introduces a geometry-aware denoising mechanism that renders node attributes into spatial point sets. These point sets are encoded by an SE(3)-equivariant backbone and fused into the node representations, thereby grounding the generative process in physical geometry. To support this study, we construct EAGBench, a large-scale dataset of engineering CAD models. Extensive experiments show that GraphCAD can generate complex CAD models with more than 50 faces and achieves state-of-the-art performance in geometric fidelity and distributional alignment compared with sequence-based baselines.",
-      "year": 2026,
-      "published_at": "2026-10-22",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.30974",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.30974v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.30974v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "CAD Representations & Understanding",
-      "matched_terms": [
-        "摘要命中 b-rep",
-        "摘要命中 boundary representation",
-        "摘要命中 computer-aided design",
-        "标题命中 CAD generation"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 13,
-      "discovered_at": "2026-11-09T05:28:27.640101+00:00"
+      "discovered_at": "2026-11-10T06:40:21.193511+00:00"
     },
     {
       "stable_id": "doi:10.1021/acsaelm.6c01066",
@@ -1545,93 +1229,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-09T05:28:27.670748+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.30858",
-      "title": "Joules-to-GDP: How Much Economic Value Do AI Systems Produce per Unit of Energy?",
-      "authors": [
-        "Amirreza Zeinali",
-        "Jon Saad-Falcon",
-        "Avanika Narayan",
-        "Mersad Abbasi",
-        "Jonathan S. Hartley",
-        "John Hennessy",
-        "Christopher Re",
-        "Azalia Mirhoseini"
-      ],
-      "abstract": "AI systems are increasingly used to complete economically valuable tasks in various professions, such as software engineering and finance. This motivates the question: how much economic value does an AI system produce per unit of energy? To answer it, we introduce Joules-to-GDP, a framework that measures output dollar value minus AI execution cost per unit of energy, which we call Net Value per Joule (NVJ), and expert time saved per unit of energy, or Time Saving per Joule (TSJ). We then apply the framework to 220 GDPval tasks across 44 occupations. Four findings stand out. First, the most valuable work is not always the most efficient. For example, engineering work such as CAD design yields about 10% more net value per task than software development such as building websites, yet the latter yields about 27% more per joule. Second, defaulting to the most capable model can mean less total value from the same energy budget. Of the five tested models, GLM 5.2 delivers the most net value, $72.27 per task on average, using the energy of about four hours of active laptop use, while Gemma 4 31B achieves 56% of that with 23% of the energy, for 2.5x the NVJ and 2.8x the TSJ. Third, for the same model, NVJ and TSJ vary widely across different accelerators, and adding GPUs can raise energy use for modest gains: eight H100s use 3.2x the energy of one to cut completion time by only 22%, at similar net value. More capable models and more hardware must therefore earn their extra energy with enough gains in output value. Finally, the work of experts who use AI is harder for AI to match than that of experts working alone. Measured against it, GLM 5.2's NVJ falls by 70% and its TSJ by 65%. Taken together, these findings justify economic return per joule as an objective for selecting professional tasks and improving language models and accelerators, and as a basis for examining AI's effect on the economy",
-      "year": 2026,
-      "published_at": "2026-10-22",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.30858",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.30858v2",
-      "pdf_url": "https://arxiv.org/pdf/2610.30858v2",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.640474+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.31623",
-      "title": "F2G-Pose: Geometry-Aware Foundation Feature Lifting for Direct RGB-D Category-Level Object Pose Estimation",
-      "authors": [
-        "Jinyu Zhang",
-        "Haitao Lin",
-        "Jiashu Hou",
-        "Xiangyang Xue",
-        "Yanwei Fu"
-      ],
-      "abstract": "This paper studies category-level RGB-D object pose estimation, which recovers an object's 3D rotation and translation without instance-specific CAD models or reference views. This task is highly ambiguous due to intra-class variations, symmetries, and partial observations. Current solutions struggle to balance reliability and efficiency: methods based on intermediate structures are prone to error propagation, while diffusion models suffer from high inference latency and complex post-hoc candidate extraction. To address this, we present F2G-Pose, a real-time direct, single-pass framework that predicts category-level pose, metric size, and camera-frame completed shape from a single RGB-D observation in one feed-forward pass. F2G-Pose lifts dense visual foundation features to partial point clouds, encodes local geometry with DGCNN tokenization, and integrates object-level structure with a Mixture-of-Experts Transformer. Joint size prediction and camera-frame shape completion encourage metric consistency through dense geometric supervision. With its task-specific network trained only on pose-annotated synthetic SOPE data and its frozen RADIO backbone externally pretrained, F2G-Pose achieves state-of-the-art accuracy on SOPE and ROPE while running at 28 FPS for pose-only inference, and further demonstrates strong camera-frame geometry on HouseCat6D and real-object transfer on HANDAL. Analyses of latency, robustness, shape completion, and GenPose++ candidate behavior further demonstrate the efficiency and reliability of F2G-Pose, with real-world manipulation experiments demonstrating deployment potential under segmented RGB-D inputs. The project page, code, and pretrained models are made available at https://jrryzh.github.io/F2G-Pose/.",
-      "year": 2026,
-      "published_at": "2026-10-22",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.31623",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.31623v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.31623v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.639806+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.29518",
-      "title": "Mitigating Query Shortcuts in Chain-of-Thought with Context-Aware Decoding",
-      "authors": [
-        "Shin'ya Yamaguchi"
-      ],
-      "abstract": "While Chain-of-Thought (CoT) prompting improves the reasoning performance of large language models (LLMs), recent studies have shown that final answers do not always depend on the generated rationales. In particular, LLMs may rely on query-specific shortcuts rather than the information provided by their reasoning steps. In this paper, we investigate whether context-aware decoding (CAD), an existing contrastive decoding method, can mitigate such shortcut behavior when applied to CoT reasoning. We study this application as Rationale Contrastive Decoding (RCD), which contrasts the next-token distributions conditioned on the query with and without its rationale, amplifying tokens whose likelihood increases due to the rationale. We provide a theoretical interpretation of this decoding rule via a KL-regularized reward-maximization objective. Experiments across five reasoning benchmarks demonstrate that RCD improves answer accuracy over standard CoT. Furthermore, intervention analyses using ground-truth and random rationales reveal that RCD increases the behavioral dependence of final answers on the rationale content. Our findings suggest that contrastive decoding offers a simple, training-free approach to mitigating query shortcuts.",
-      "year": 2026,
-      "published_at": "2026-10-21",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.29518",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.29518v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.29518v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.640772+00:00"
+      "discovered_at": "2026-11-10T06:40:21.141556+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.29518",
@@ -1656,7 +1254,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.758013+00:00"
+      "discovered_at": "2026-11-10T06:40:21.198248+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23523939",
@@ -1681,7 +1279,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.647911+00:00"
+      "discovered_at": "2026-11-10T06:40:21.126490+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23500419",
@@ -1706,7 +1304,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.646516+00:00"
+      "discovered_at": "2026-11-10T06:40:21.125538+00:00"
     },
     {
       "stable_id": "doi:10.17605/osf.io/62ty9",
@@ -1731,38 +1329,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.651550+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.26861",
-      "title": "Can It Actually Work? Synthesizing Functional CAD Mechanisms",
-      "authors": [
-        "Wenqian Zhang",
-        "Yangyi Huang",
-        "Zigeng Xu",
-        "Weiyang Liu",
-        "Zhen Liu"
-      ],
-      "abstract": "While LLM agents can generate visually plausible CAD assemblies, these designs often fail to fulfill their intended physical functions. We study functional CAD design, a setting where agents interpret underspecified requests to construct and iteratively revise mechanisms that satisfy functional requirements in physical simulation. Verifying these requirements is nontrivial: different candidate mechanisms may realize the same function through entirely different components, controls, and operating sequences. To bridge this gap, we propose FunCAD-Harness, a framework that translates abstract requirements into candidate-specific physical tests and uses simulation feedback to guide design revisions. To systematically evaluate this capability, we introduce FunCADBench, a benchmark spanning 46 mechanism families with interdependent and multi-step operations. Experiments across frontier LLM agents show that FunCAD-Harness exposes subtle mechanical failures invisible to visual inspection, substantially improving functional success rates over standard simulation-augmented baselines. Ultimately, our work marks a step toward CAD agents capable of translating human intent into working mechanisms.",
-      "year": 2026,
-      "published_at": "2026-10-19",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.26861",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.26861v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.26861v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "摘要命中 CAD agent"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.641268+00:00"
+      "discovered_at": "2026-11-10T06:40:21.128887+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.26861",
@@ -1793,7 +1360,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.649526+00:00"
+      "discovered_at": "2026-11-10T06:40:21.127412+00:00"
     },
     {
       "stable_id": "doi:10.60078/3060-4842-2026-vol3-iss5-pp432-454",
@@ -1820,68 +1387,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.656748+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.25840",
-      "title": "OV-PEAR: Observation-Verified Pose-Scale Estimation and Reconstruction for Unknown Industrial Manipulation Objects",
-      "authors": [
-        "Guoqin Tang",
-        "Qingxuan Jia",
-        "Yichen Tan",
-        "Zihang Lv",
-        "Ruiquan Wang",
-        "Zeyuan Huang",
-        "Gang Chen"
-      ],
-      "abstract": "Fine industrial robotic manipulation requires 6D pose, scale, and an operation-ready 3D model. Existing industrial pose estimation relies on CAD models, object-specific training data, or stable workcells, limiting use with unseen objects; zero-shot methods suffer from single-view occlusion, generative bias, and scale uncertainty. We present OV-PEAR, an observation-verified framework for 3D reconstruction and pose-scale estimation of unknown industrial objects. Its three-stage object-centric pipeline: (1) segments RGB-D instances and generates object-level 3D hypotheses; (2) anchors them to the robot frame via appearance-aware view retrieval, explicit scale search, and visibility-sensitive registration; (3) back-projects multi-view RGB-D evidence into the object-canonical frame to verify voxel occupancy, suppress hallucinations, and produce reusable trusted object models. On BOP-Industrial, OV-PEAR achieves 0.657 average AR and improves pose and voxel-level geometric consistency in real scenes; real-robot connector assembly reaches 99.67% grasp and 84.00% assembly success. The model library and pose-scale log enable short-term object-level state maintenance at 0.02 ms/frame.",
-      "year": 2026,
-      "published_at": "2026-10-19",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.25840",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.25840v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.25840v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "CAD Reconstruction & Reverse Engineering",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.641562+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.24451",
-      "title": "Assessing the CAD Capabilities of General-Purpose AI Models: A Case Study of GPT-6 Astra",
-      "authors": [
-        "Qiang Zou",
-        "Jiajun Shen",
-        "Zhijie Yang",
-        "Yuhao Wang",
-        "Shitianyi Leng",
-        "Dongshuo Yin"
-      ],
-      "abstract": "Recent advances in general-purpose AI models and agentic systems have enabled them to perform some CAD tasks. A systematic assessment is now needed to establish what these systems can accomplish and how well their outputs meet engineering requirements. This paper presents an empirical study of GPT-6 Astra, a SOTA general-purpose AI model, across four basic CAD tasks: model understanding, generation, editing, and evaluation. We design test cases spanning different levels of complexity and engineering requirements. The results show that GPT-6 Astra can support multiple stages of CAD workflows, with successful outcomes in cases involving nontrivial geometric complexity. This suggests that general-purpose AI is beginning to offer practical value in almost all steps in CAD workflow. However, gaps remain between generating visually plausible geometry and producing valid, functional, and editable CAD models. Recurring errors in freeform geometry, parameter dependencies, and mating relationships between parts limit engineering usefulness. Agentic iterative refinement can improve results but does not consistently resolve critical errors; long completion times further constrain practical use.",
-      "year": 2026,
-      "published_at": "2026-10-17",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.24451",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.24451v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.24451v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.642188+00:00"
+      "discovered_at": "2026-11-10T06:40:21.132434+00:00"
     },
     {
       "stable_id": "doi:10.3390/machines14101206",
@@ -1915,42 +1421,7 @@
         "OpenAlex"
       ],
       "relevance_score": 16,
-      "discovered_at": "2026-11-09T05:28:27.648627+00:00"
-    },
-    {
-      "stable_id": "arxiv:2611.00076",
-      "title": "CRAFT: Corrective and Robust Multi-Agent Framework for Text-to-Parametric CAD",
-      "authors": [
-        "Mohammed Musthafa Rafi",
-        "Anushrut Jignasu",
-        "Mahdi Saraeian",
-        "Chinmay Hegde",
-        "Aditya Balu",
-        "Adarsh Krishnamurthy"
-      ],
-      "abstract": "Text-to-CAD generation has the potential to make mechanical CAD more accessible, but existing approaches face a trade-off between data dependence and output fidelity. Supervised methods rely on large paired text-model datasets, while zero-shot prompting strategies are often brittle and tend to lose the parametric structure needed for downstream editing and customization. We present CRAFT, a corrective and robust multi-agent framework that produces parametric OpenSCAD programs from natural language without task-specific training. At its core is a JSON intermediate representation that carries symbolic parametric expressions throughout the generation process, so the resulting models remain editable and retain their parametric structure. CRAFT combines semantic understanding, parametric planning, compilation, rendering, self-correction, and component-level verification within a layered recovery process, using multi-view visual feedback to detect and repair geometric errors. Across NopSCADlib, ABC, and Slice-100K, CRAFT is competitive with direct zero-shot baselines in perceptual and geometric quality while exposing substantially more editable parametric structure.",
-      "year": 2026,
-      "published_at": "2026-10-16",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2611.00076",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2611.00076v1",
-      "pdf_url": "https://arxiv.org/pdf/2611.00076v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "摘要命中 text-to-cad",
-        "摘要命中 cad program",
-        "标题命中 parametric CAD",
-        "摘要命中 CAD generation"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 13,
-      "discovered_at": "2026-11-09T05:28:27.642462+00:00"
+      "discovered_at": "2026-11-10T06:40:21.126952+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.00076",
@@ -1985,7 +1456,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-09T05:28:27.650942+00:00"
+      "discovered_at": "2026-11-10T06:40:21.128282+00:00"
     },
     {
       "stable_id": "doi:10.36922/msam026290070",
@@ -2013,32 +1484,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-09T05:28:27.652199+00:00"
-    },
-    {
-      "stable_id": "doi:10.13140/rg.2.2.21268.05769",
-      "title": "Exploring an Agent-Based Generative AI CAD Framework Enhancing CAD Design Automation with AI-Driven Parametric Modelling and Adaptive Query Generation",
-      "authors": [
-        "Aref Aghaee Hakkak"
-      ],
-      "abstract": "",
-      "year": 2026,
-      "published_at": "2026-10-16",
-      "venue": "",
-      "doi": "10.13140/rg.2.2.21268.05769",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7222486671",
-      "source_url": "https://doi.org/10.13140/rg.2.2.21268.05769",
-      "pdf_url": "",
-      "oa_status": "closed",
-      "license": "",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.644355+00:00"
+      "discovered_at": "2026-11-10T06:40:21.129090+00:00"
     },
     {
       "stable_id": "doi:10.17586/0021-3454-2026-69-9-789-799",
@@ -2065,42 +1511,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.646901+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.21755",
-      "title": "DeciCAD: Harness-Grounded Learning of Action Policies for CAD Agents",
-      "authors": [
-        "Yufeng Peng",
-        "Yixin Zhang",
-        "Ziyi Liu",
-        "Zhikun Xu",
-        "Jiarong Yang",
-        "Sijie Wang",
-        "Wenjie Feng",
-        "Qiyu Kang"
-      ],
-      "abstract": "Large Language Model agents operate through closed-loop action policies whose decision space is defined by an agent harness. We investigate how this operating space shapes agent behavior and policy learning in computer-aided design (CAD), a professional domain characterized by persistent state, geometric constraints, and long-horizon procedures. We instantiate this perspective in DeciCAD, a domain-native harness that exposes semantic CAD actions, decision-oriented observations, environment feedback, and persistent state transitions. Building on this harness, we develop a learning pipeline that extracts causal decision supervision from interaction trajectories and improves the policy through supervised fine-tuning (SFT) and geometry-grounded online reinforcement learning (RL). Across four CAD benchmarks, DeciCAD achieves the best F1 and intersection over union (IoU) while reducing model-output tokens by 45--88% relative to a general-purpose coding harness. Under matched supervision, its SFT policy improves F1 from 0.6883 to 0.7437 and outperforms the coding policy; subsequent online RL further raises geometry availability from 66.5% to 73.5% and F1 to 0.7880. These results demonstrate that the decision space induced by a harness materially affects both agent execution and policy learning in CAD.",
-      "year": 2026,
-      "published_at": "2026-10-15",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.21755",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.21755v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.21755v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "摘要命中 computer-aided design",
-        "标题命中 CAD agent"
-      ],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 9,
-      "discovered_at": "2026-11-09T05:28:27.643184+00:00"
+      "discovered_at": "2026-11-10T06:40:21.125812+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.21755",
@@ -2135,7 +1546,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-09T05:28:27.650174+00:00"
+      "discovered_at": "2026-11-10T06:40:21.127900+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23339160",
@@ -2160,7 +1571,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.647663+00:00"
+      "discovered_at": "2026-11-10T06:40:21.126033+00:00"
     },
     {
       "stable_id": "doi:10.58168/intinfsys2026_67-72",
@@ -2187,7 +1598,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.644616+00:00"
+      "discovered_at": "2026-11-10T06:40:21.124240+00:00"
     },
     {
       "stable_id": "doi:10.3389/fmed.2026.1980048",
@@ -2217,7 +1628,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.653869+00:00"
+      "discovered_at": "2026-11-10T06:40:21.130473+00:00"
     },
     {
       "stable_id": "doi:10.26686/dxa3-72jf",
@@ -2228,13 +1639,13 @@
       "abstract": "Contemporary industrial designers have increasing access to Generative AI, computer-aided design (CAD), and fused deposition modelling (FDM) 3D printing. These tools can expand the possibilities available to individual designers, but their value cannot be understood only through the outputs they produce. This thesis examines how transferable knowledge can emerge through a practice-based design process that uses these tools, with particular emphasis on Generative AI. The research uses the design and fabrication of a free-standing loudspeaker as a vehicle for inquiry. Grounded in Research through Design and structured through Programmatic Design Research, the project was organised as a sequence of connected engagements involving visual and technical exploration, AI-assisted inquiry, CAD development, material experiments, comparative testing, practitioner feedback, fabrication, assembly, and reflection. Each engagement produced artefacts, observations, and takeaways that informed the direction of those that followed. The project demonstrates that transferable design knowledge was generated through the multiple interactions among these activities and shows how designer judgement emerged as a crucial part of the process, shaping how outputs were interpreted, which assumptions required proving, and which findings were rejected, revised, or carried forward. Generative AI supported exploration, technical questioning, comparison, and reflection, but its outputs were uneven and required further investigation through CAD, physical making, testing, and external feedback. CAD allowed possibilities to become controlled geometry while exposing material and assembly requirements. FDM printing brought these decisions into reality, revealing constraints involving tolerances, print behaviour, and material behaviour. The thesis argues that Programmatic Design Research provides a useful structure for turning these situated experiences into communicable and documented knowledge. By showing how ideas were generated, tested, rejected, revised, and carried between engagements, the research makes the design process open to reflection and extension by others. Its contribution is both the loudspeaker artefact and a transferable account of how contemporary tools, particularly Generative AI, can be investigated through contemporary industrial design practice.",
       "year": 2026,
       "published_at": "2026-10-13",
-      "venue": "",
+      "venue": "Open Access Victoria University of Wellington | Te Herenga Waka (Figshare)",
       "doi": "10.26686/dxa3-72jf",
       "arxiv_id": "",
       "openalex_id": "https://openalex.org/W7221536454",
       "source_url": "https://doi.org/10.26686/dxa3-72jf",
       "pdf_url": "",
-      "oa_status": "gold",
+      "oa_status": "green",
       "license": "cc-by-sa",
       "suggested_category": "CAD Editing, Constraints & Verification",
       "matched_terms": [
@@ -2244,38 +1655,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-09T05:28:27.645029+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.17776",
-      "title": "TempFit: Panoptic Symbol Spotting via Template Fitting",
-      "authors": [
-        "Honghao Xu",
-        "Hao Wang",
-        "Xiang Liu",
-        "Juzhan Xu",
-        "Manfred Lau",
-        "Kai Xu",
-        "Ruizhen Hu"
-      ],
-      "abstract": "In this paper, we introduce TempFit, a novel approach for the problem of Panoptic Symbol Spotting on CAD drawings. Existing methods treat symbol spotting as a per-primitive classification or mask-prediction task, with no explicit constraint enforcing that the primitives assigned to one instance form a spatially connected group. As a result, predictions may erroneously merge primitives from distant symbols into a single instance or fragment a coherent symbol across multiple predictions. Motivated by the professional \"retrieve-and-transform\" CAD design workflow, we reformulate this task as a Template Fitting problem, where each foreground instance is detected by retrieving and aligning a canonical template from a library, enforcing structural completeness by construction. Building on this formulation, we present an autoregressive transformer that unifies template retrieval and pose prediction within a single end-to-end pipeline. The framework treats the template library as an explicit geometric memory, parsing background regions in parallel via learnable background tokens and synthesizing foreground instances autoregressively while attending to template-specific geometry at each step. Experiments on FloorplanCAD and our newly collected IndustryCAD dataset, a more challenging benchmark with complex industrial symbols, heavy occlusion, and wide scale variation, demonstrate state-of-the-art performance with particularly large gains on IndustryCAD. Project page: https://tempfit-project.github.io/.",
-      "year": 2026,
-      "published_at": "2026-10-13",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.17776",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.17776v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.17776v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "CAD Editing, Constraints & Verification",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.643705+00:00"
+      "discovered_at": "2026-11-10T06:40:21.124526+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.17776",
@@ -2306,7 +1686,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.769772+00:00"
+      "discovered_at": "2026-11-10T06:40:21.205605+00:00"
     },
     {
       "stable_id": "doi:10.37128/2306-8744-2026-3-6",
@@ -2332,32 +1712,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.647322+00:00"
-    },
-    {
-      "stable_id": "arxiv:2610.20651",
-      "title": "Towards automatic digital garment assembly",
-      "authors": [
-        "Alejandro Rodriguez"
-      ],
-      "abstract": "Creating digital garments from existing two-dimensional patterns remains a time-consuming process. Although patterns are widely available in digital form, their assembly in garment CAD software involves manual definition of sewing operations and arrangement of the pattern panels for drape simulation. We present two learning-based approaches that automate both tasks using the 2D vector pattern as their sole input. Our automatic sewing model operates at the segment level, leveraging a Transformer encoder with multiple prediction heads. Our novel architecture supports many-to-many, ordered segment correspondences, as well as hems, overlapping seams needed for multilayer garments, and construction properties such as seam allowances and stitch types, required for the finished virtual garment but neglected by previous methods. A complementary panel-level model predicts body-region assignments, layers, and placement coordinates to initialize the drape simulation. We evaluate both models on a curated dataset of 4,035 professionally assembled garment instances. The sewing model exactly recovers all seam and hem topologies of 63.3\\% of test garments, while the arrangement model meets the specified placement criteria for all panels in 66.2\\% of test garments. We also integrate both methods into garment CAD software, demonstrating automatic assembly of successfully predicted garments.",
-      "year": 2026,
-      "published_at": "2026-10-12",
-      "venue": "arXiv",
-      "doi": "",
-      "arxiv_id": "2610.20651",
-      "openalex_id": "",
-      "source_url": "https://arxiv.org/abs/2610.20651v1",
-      "pdf_url": "https://arxiv.org/pdf/2610.20651v1",
-      "oa_status": "green",
-      "license": "arXiv",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "arXiv"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.644022+00:00"
+      "discovered_at": "2026-11-10T06:40:21.126326+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.20651",
@@ -2382,7 +1737,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-09T05:28:27.739052+00:00"
+      "discovered_at": "2026-11-10T06:40:21.186072+00:00"
     }
   ]
 }
