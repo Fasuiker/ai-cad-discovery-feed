@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-12T06:30:43.666700+00:00",
+  "generated_at": "2026-11-13T05:50:01.819280+00:00",
   "latest": "data/latest.json",
-  "count": 82,
-  "sha256": "c41a21777ca4032b220b41a494d6aee4be4923eb28f48e31ffca1f33f331fe26",
+  "count": 83,
+  "sha256": "b8fbe8a96b3c610953db2f99e5856df934eb7cf72cdbffc1bae49a4b168e1480",
   "range": {
-    "from": "2026-10-14",
-    "to": "2026-11-12"
+    "from": "2026-10-15",
+    "to": "2026-11-13"
   }
 }
