@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-18T06:39:30.633003+00:00",
+  "generated_at": "2026-11-19T06:43:10.490995+00:00",
   "range": {
-    "from": "2026-10-20",
-    "to": "2026-11-18"
+    "from": "2026-10-21",
+    "to": "2026-11-19"
   },
-  "count": 67,
+  "count": 71,
   "source_health": {
     "arxiv": {
       "ok": false,
       "count": 0,
-      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202610200000+TO+202611182359%5D&start=0&",
-      "seconds": 13.55
+      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202610210000+TO+202611192359%5D&start=0&",
+      "seconds": 108.37
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 8.06
+      "seconds": 10.74
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 3.69
+      "seconds": 4.78
     },
     "upstream_awesome": {
       "ok": true,
       "count": 6,
-      "seconds": 0.38
+      "seconds": 0.73
     }
   },
   "public_profile": {
@@ -77,6 +77,100 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.3390/su182211713",
+      "title": "A Carbon Break-Even Framework for Computational Generative Design: Formulation and a Proof-of-Concept on Real CAD Geometries",
+      "authors": [
+        "Kimia Memarpour",
+        "Bahar Memarpour",
+        "Siamak Pedrammehr",
+        "Milad Hajiamiri",
+        "Kimia Shirini",
+        "Sina Samadi Gharehveran"
+      ],
+      "abstract": "Computational generative design, including topology optimization and AI-assisted text-to-CAD tools, is promoted as a route to lighter, lower-carbon products, yet the electricity of the design computation itself is rarely counted. This study proposes a carbon break-even framework that adapts the indifference-point concept from computer-hardware sustainability analysis to product redesign, defining a break-even production volume, a net environmental return, and a carbon return on investment within a cradle-to-gate boundary. As a computational proof of concept, a three-dimensional SIMP topology-optimization solver instrumented with CodeCarbon redesigned 20 CAD geometries from the Fusion 360 Gallery under a generic load case, primary aluminum, CNC machining, and an imposed 30% volume reduction. Under these assumptions, all redesigns broke even before one unit was produced (median 0.016 units; maximum 0.39) while retaining, for the analyzed load case, the stiffness of 13 of 14 comparable original parts. Sensitivity analyses show that this outcome is conditional: break-even within one unit no longer holds for every part with recycled aluminum (18 of 20 parts) or for mass reductions below about 12%, the break-even volume grows by over four orders of magnitude with larger meshes or other computational backends, and the saving reverses when the redesign requires laser powder bed fusion.",
+      "year": 2026,
+      "published_at": "2026-11-18",
+      "venue": "Sustainability",
+      "doi": "10.3390/su182211713",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.3390/su182211713",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "suggested_category": "CAD Generation",
+      "matched_terms": [
+        "摘要命中 text-to-cad"
+      ],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 8,
+      "discovered_at": "2026-11-19T06:43:10.406274+00:00"
+    },
+    {
+      "stable_id": "doi:10.1145/3829340.3842261",
+      "title": "CADKnitter: Compositional CAD Generation from Text and Geometry Guidance",
+      "authors": [
+        "Tri Le",
+        "Khang Nguyen",
+        "Baoru Huang",
+        "Tung D. Ta",
+        "Anh Nguyen"
+      ],
+      "abstract": "Computer-aided design (CAD) defines 3D models as compact, precise, and editable representations, making it directly useful for several fields. Recently, CAD generation has been gaining more attention in both the research community and industry. Crafting CAD models has long been a painstaking and time-intensive task, demanding both precision and expertise from designers. Prior works have achieved early success in single-part CAD generation, which is not well-suited for real-world applications, as multiple parts need to be assembled under semantic constraints and geometric compatibility. In this paper, we propose CADKnitter, a compositional CAD generation framework with geometric-guiding cues to steer diffusion sampling. CADKnitter is able to generate a complementary CAD part that follows both the geometric constraints of the given CAD model and the semantic constraints of the desired design text prompt. We also curate a dataset, so-called KnitCAD, containing over 310,000 samples of CAD models, along with textual prompts and assembly metadata that provide semantic and geometric constraints. Intensive experiments demonstrate that our proposed method outperforms other state-of-the-art baselines by a clear margin. Our project page is available at https://cadknitter.github.io/.",
+      "year": 2026,
+      "published_at": "2026-11-17",
+      "venue": "SIGGRAPH Asia Conference Papers",
+      "doi": "10.1145/3829340.3842261",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7115606200",
+      "source_url": "https://doi.org/10.1145/3829340.3842261",
+      "pdf_url": "",
+      "oa_status": "hybrid",
+      "license": "cc-by",
+      "suggested_category": "CAD Editing, Constraints & Verification",
+      "matched_terms": [
+        "摘要命中 computer-aided design",
+        "标题命中 CAD generation"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 9,
+      "discovered_at": "2026-11-19T06:43:10.288028+00:00"
+    },
+    {
+      "stable_id": "doi:10.21203/rs.3.rs-11735626/v1",
+      "title": "Machine-Learning-Based Forward Modeling of a p-Type Gate-All-Around Junctionless Nanowire Field-Effect Transistor Using Quantum-Corrected Technology Computer-Aided Design",
+      "authors": [
+        "Sushovan Das",
+        "Archishman Sarkar",
+        "Vivek Chowdhury",
+        "Md. Mohsinur Rahman Adnan"
+      ],
+      "abstract": "Abstract Quantum confinement becomes significant once a transistor channel is thinner than about 10 nm, so technology computer-aided design (TCAD) models of such devices must include it. Nearly all machine-learning surrogates reported for gate-all-around junctionless field-effect transistors (GAA-JLFETs) cover n-type devices only, although complementary logic also requires p-type devices. In this work, we calibrated a quantum-corrected drift-diffusion TCAD model against measured data from an n-type GAA-JLFET and then adapted it to a p-type device. Six design parameters were sampled by Latin hypercube sampling, and the transfer characteristic of each design was simulated at drain voltages of −0.1 and −1 V. Runs were retained on the basis of simulation reliability rather than device performance, and the noise floor was set from current samples with a physically impossible sign. The resulting 217 devices were used to train a dilated residual one-dimensional convolutional network that predicts the full transfer curve directly from the design parameters. On 26 held-out test devices, the network reached a median R 2 of 0.9994 and a worst-case R 2 of 0.9959, and it predicted the ON current with a mean error of 1.6%. Each prediction requires a single forward pass instead of a TCAD solve, which removes the simulation bottleneck from the design of p-type GAA-JLFETs.",
+      "year": 2026,
+      "published_at": "2026-11-17",
+      "venue": "Research Square",
+      "doi": "10.21203/rs.3.rs-11735626/v1",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7235715621",
+      "source_url": "https://doi.org/10.21203/rs.3.rs-11735626/v1",
+      "pdf_url": "https://www.researchsquare.com/article/rs-11735626/latest.pdf",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "CAD Generation",
+      "matched_terms": [
+        "标题命中 computer-aided design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 8,
+      "discovered_at": "2026-11-19T06:43:10.308342+00:00"
+    },
+    {
       "stable_id": "doi:10.21203/rs.3.rs-11493537/v1",
       "title": "Assessing the Effects of Design Complexity and Prompt Engineering on CAD Model Generation Using Microsoft Copilot",
       "authors": [
@@ -87,10 +181,10 @@
       "abstract": "Abstract The use of generative artificial intelligence (AI) is rapidly increasing across various sectors, making tasks more accessible, efficient, and user-friendly. One emerging application is computer-aided design (CAD), where AI has the potential to enable users with little or no-prior CAD experience to create three-dimensional (3D) models through natural-language. Despite growing interest in AI-assisted design, the capability of publicly accessible generative AI systems to reliably generate CAD models across varying levels of design complexity remains insufficiently studied. This work benchmarks the performance of Microsoft Copilot for CAD model generation and investigates the influence of prompt engineering on model quality. A benchmark dataset comprising 60 design tasks was developed and categorized into easy, intermediate, and complex levels. The benchmark included primitive geometries, polygonal and polyhedral models, mechanical components, hollow structures, assemblies, lattice designs, and advanced engineering systems. For each prompt, the generated STL file was evaluated based on geometric accuracy, completeness of requested features, and overall structural validity using commercial software. The results revealed a strong dependence of generation success on design complexity, with easy-level tasks exhibiting high first-attempt success rates, while intermediate and complex tasks frequently required prompt refinement. Prompt length alone was found to have minimal influence on performance; instead, successful CAD generation depended primarily on clearly specified dimensions, geometric features, and functional relationships. Overall, the findings demonstrate that generative AI can lower the barrier to CAD modeling for non-expert users while improving productivity for experienced designers, thereby offering significant potential for engineering design, rapid prototyping, and additive manufacturing applications.",
       "year": 2026,
       "published_at": "2026-11-17",
-      "venue": "",
+      "venue": "Research Square",
       "doi": "10.21203/rs.3.rs-11493537/v1",
       "arxiv_id": "",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/W7235114831",
       "source_url": "https://doi.org/10.21203/rs.3.rs-11493537/v1",
       "pdf_url": "",
       "oa_status": "unknown",
@@ -101,10 +195,77 @@
         "摘要命中 CAD generation"
       ],
       "source_names": [
+        "OpenAlex",
         "Crossref"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-18T06:39:30.604971+00:00"
+      "discovered_at": "2026-11-19T06:43:10.285392+00:00"
+    },
+    {
+      "stable_id": "doi:10.1145/3829340.3842167",
+      "title": "CGGT: Curve-Grounded Geometry Transformer for 3D Parametric Curve Reconstruction",
+      "authors": [
+        "Zhirui Gao",
+        "Renjiao Yi",
+        "Yunfan Ye",
+        "Ruizhen Hu",
+        "Chenyang Zhu",
+        "Wei Chen",
+        "Kai Xu"
+      ],
+      "abstract": "Recovering editable 3D parametric curves from 2D images is a fundamental challenge in computer graphics, bridging pixel-based perception and vector-based CAD modeling. Existing NeRF- and 3DGS-based methods often rely on dense calibrated views, precomputed 2D edge maps, and costly per-scene optimization, limiting their applicability to casually captured real-world inputs. We propose CGGT, a Curve-Grounded Geometry Transformer that directly grounds 3D-consistent 2D curve instances in the image space from sparse, unposed multi-view images. CGGT combines a geometry-aware transformer encoder for multi-view feature learning with a curve-aware masked-attention decoder for cross-view instance association. In a single forward pass, it predicts camera parameters, dense depth maps, and instance-level 2D curve masks, which are then lifted into 3D and refined through a fast parametric optimization stage to recover compact, editable 3D curve primitives. To support structured curve learning, we introduce Wireframe-100K, a large-scale dataset comprising 100,000 CAD models with diverse topologies, realistic multi-view renderings, and accurate parametric curve annotations. Extensive experiments show that our framework achieves substantial improvements in both reconstruction accuracy and efficiency, particularly under challenging sparse-view settings and in separating persistent 3D structural edges from view-dependent image edges caused by silhouettes, textures, and appearance variations. Despite being trained solely on synthetic data, CGGT generalizes well to real-world images, demonstrating its potential for practical CAD-style wireframe reconstruction from unconstrained visual inputs.",
+      "year": 2026,
+      "published_at": "2026-11-17",
+      "venue": "SIGGRAPH Asia Conference Papers",
+      "doi": "10.1145/3829340.3842167",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7213264175",
+      "source_url": "https://doi.org/10.1145/3829340.3842167",
+      "pdf_url": "",
+      "oa_status": "hybrid",
+      "license": "cc-by",
+      "suggested_category": "CAD Reconstruction & Reverse Engineering",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-19T06:43:10.359412+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.20451",
+      "title": "Generative AI-Driven Parametric Design Optimization Framework for Vehicle Closure Systems",
+      "authors": [
+        "Dongeon Lee",
+        "Yurim Lee",
+        "김지용",
+        "Sanghyeon Kim",
+        "이상현",
+        "Seungyeon Shin",
+        "Jeahong Kim",
+        "Namwoo Kang"
+      ],
+      "abstract": "This study presents a generative AI-driven parametric design optimization framework integrating performance-oriented generation with editable computer-aided design (CAD) and downstream computer-aided engineering (CAE) analysis for industrial vehicle closure systems. The framework is demonstrated on an automotive tailgate assembly with complex geometry, coupled components, and competing performance and feasibility requirements. A production-oriented CATIA model is restructured into a reference-based parametric template with a 13-dimensional design representation. An automated CAD/CAE workflow generates parametric models, performs structural analysis, and constructs a database of mass, maximum displacement, and maximum von Mises stress. Gaussian process regression surrogates predict performance, while diffusion and flow matching models generate design candidates. The design problem minimizes mass and maximum displacement, with stress assessed as an engineering feasibility constraint. Performance-guided generation using surrogate guidance and performance-aware training using a performance-aware loss incorporate engineering objectives, with sensitivity to guidance scale and loss weight evaluated. Generative search is compared with NSGA-II under matched evaluation budgets using a common surrogate model. Selected Pareto-region candidates are reconstructed in CATIA and re-evaluated through native CAE; all verified candidates are successfully regenerated and analyzed. Relative to the baseline, the knee-point design reduces mass by 7.1% and maximum displacement by 29.4%, while extreme verified solutions achieve maximum reductions of 10.3% and 37.3%, respectively. The results demonstrate performance-oriented multi-objective design exploration compatible with editable industrial CAD and native engineering verification.",
+      "year": 2026,
+      "published_at": "2026-11-16",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.20451",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7235675496",
+      "source_url": "https://doi.org/10.48550/arxiv.2611.20451",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "CAD Editing, Constraints & Verification",
+      "matched_terms": [
+        "标题命中 parametric design",
+        "摘要命中 computer-aided design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 11,
+      "discovered_at": "2026-11-19T06:43:10.285676+00:00"
     },
     {
       "stable_id": "doi:10.55942/jeht.v2i2.2375",
@@ -134,7 +295,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-18T06:39:30.398836+00:00"
+      "discovered_at": "2026-11-19T06:43:10.283537+00:00"
     },
     {
       "stable_id": "doi:10.1080/20464177.2026.2763301",
@@ -162,7 +323,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.431577+00:00"
+      "discovered_at": "2026-11-19T06:43:10.310415+00:00"
     },
     {
       "stable_id": "doi:10.1002/jomd.70006",
@@ -193,19 +354,18 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.399655+00:00"
+      "discovered_at": "2026-11-19T06:43:10.284232+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.11.11.26367872",
       "title": "Artificial intelligence for pulmonary tuberculosis detection on chest X-ray images: A systematic review and diagnostic accuracy meta-analysis",
       "authors": [
         "Sayem Al Mahfuz",
-        "Sayem Al Mahfuz",
         "Shimanto Kumar Roy",
         "Hamim Ibne Rahman",
         "Aminun Nahar Jhumur"
       ],
-      "abstract": "Artificial intelligence (AI)-based computer-aided detection (CAD) of tuberculosis (TB) on chest X-ray (CXR) may standardize screening and triage in settings with few radiologists but its accuracy in clinical cohorts remains uncertain. We searched five databases (PubMed, ScienceDirect, IEEE Xplore, OpenAlex, Lens.org) on 15 March 2026 for studies published between January 2020 and March 2026, and we appraised these studies using QUADAS-2. Evaluations from clinical cohorts with complete 2 × 2 data and a microbiological or composite reference standard for all participants were pooled using a bivariate random-effects model, with 95% prediction intervals. We accounted for overlapping participants by performing a post hoc analysis with one evaluation per cohort and used GRADE to assess the certainty of the evidence. No protocol was prepared or registered. We included 21 studies (26 evaluations of AI models). Nine evaluations from three independent cohorts were pooled. Pooled sensitivity was 0.896 (95% confidence interval [CI] 0.874 to 0.915, prediction interval 0.798 to 0.950) and pooled specificity was 0.689 (95% CI 0.642 to 0.732; prediction interval 0.499 to 0.831). Both confidence intervals include the World Health Organization (WHO) triage thresholds (sensitivity 90%, specificity 70%). When a screening study with partial verification was added, pooled specificity increased to 0.735. Eighteen of 24 assessed evaluations were at high risk of bias and only 1 of 21 studies was prospective, fully verified, externally validated and met the WHO thresholds. Certainty of evidence was low for sensitivity and very low for specificity. A subsequent PubMed search found additional eligible clinical evaluations that were not screened, so the review is incomplete for those studies. In clinical cohorts, AI-CXR sensitivity is close to the WHO triage target, and specificity is close to, but not clearly above, its target. The evidence is pooled across only three cohorts, and specificity varies by product and setting. Thresholds need to be calibrated locally, and prospective, externally validated evaluations are needed before widespread deployment.",
+      "abstract": "Abstract Artificial intelligence (AI)-based computer-aided detection (CAD) of tuberculosis (TB) on chest X-ray (CXR) may standardize screening and triage in settings with few radiologists but its accuracy in clinical cohorts remains uncertain. We searched five databases (PubMed, ScienceDirect, IEEE Xplore, OpenAlex, Lens.org) on 15 March 2026 for studies published between January 2020 and March 2026, and we appraised these studies using QUADAS-2. Evaluations from clinical cohorts with complete 2 × 2 data and a microbiological or composite reference standard for all participants were pooled using a bivariate random-effects model, with 95% prediction intervals. We accounted for overlapping participants by performing a post hoc analysis with one evaluation per cohort and used GRADE to assess the certainty of the evidence. No protocol was prepared or registered. We included 21 studies (26 evaluations of AI models). Nine evaluations from three independent cohorts were pooled. Pooled sensitivity was 0.896 (95% confidence interval [CI] 0.874 to 0.915, prediction interval 0.798 to 0.950) and pooled specificity was 0.689 (95% CI 0.642 to 0.732; prediction interval 0.499 to 0.831). Both confidence intervals include the World Health Organization (WHO) triage thresholds (sensitivity 90%, specificity 70%). When a screening study with partial verification was added, pooled specificity increased to 0.735. Eighteen of 24 assessed evaluations were at high risk of bias and only 1 of 21 studies was prospective, fully verified, externally validated and met the WHO thresholds. Certainty of evidence was low for sensitivity and very low for specificity. A subsequent PubMed search found additional eligible clinical evaluations that were not screened, so the review is incomplete for those studies. In clinical cohorts, AI-CXR sensitivity is close to the WHO triage target, and specificity is close to, but not clearly above, its target. The evidence is pooled across only three cohorts, and specificity varies by product and setting. Thresholds need to be calibrated locally, and prospective, externally validated evaluations are needed before widespread deployment.",
       "year": 2026,
       "published_at": "2026-11-13",
       "venue": "medRxiv",
@@ -222,7 +382,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.415064+00:00"
+      "discovered_at": "2026-11-19T06:43:10.297264+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.16184",
@@ -254,7 +414,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.401613+00:00"
+      "discovered_at": "2026-11-19T06:43:10.285983+00:00"
     },
     {
       "stable_id": "doi:10.3390/wevj17110593",
@@ -281,7 +441,37 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.521881+00:00"
+      "discovered_at": "2026-11-19T06:43:10.384735+00:00"
+    },
+    {
+      "stable_id": "doi:10.54448/mdnt26s402",
+      "title": "Optimization in dentistry using digital resources: a systematic review",
+      "authors": [
+        "Luana Barros Pagiatto",
+        "Sabrina Magiollo",
+        "João Pedro Gayoso Queiróz",
+        "Carlos Alberto Costa Neves Buchala"
+      ],
+      "abstract": "The development of digital dentistry offers opportunities to enhance the quality of dental treatment for both patients and dentists. Tools such as intraoral scanners, cone-beam computed tomography (CBCT), CAD/CAM (Computer-Aided Design/Computer-Aided Manufacturing) systems, 3D printing, virtual planning, and artificial intelligence are being widely employed to refine every stage of dental treatment, from diagnosis to oral rehabilitation. In this context, this study aimed to analyze the key contributions of these technologies to the optimization of dental practice, highlighting their clinical applications, benefits, limitations, and future development prospects. To this end, scientific articles published between 2020 and 2026 and indexed in the PubMed, SciELO, Virtual Health Library (VHL), and Web of Science databases were selected. A total of 115 articles were identified. 35 articles were evaluated in full, with 23 included and analyzed in this systematic review. Clinical studies showed homogeneity in their results, with a Chi-square (X²) value of 71.6% (>50%). Regarding the Cochrane risk-of-bias tool, the overall assessment identified 15 studies with a high risk of bias and 29 studies that failed to meet GRADE criteria. According to the Cochrane tool, the risks of bias did not compromise scientific progress. Analysis of the evidence demonstrated that the use of digital resources provides greater diagnostic precision, reduced chair time, and improved communication between professionals and patients, while also increasing treatment predictability and minimizing errors during laboratory and clinical phases. The integration of artificial intelligence into digital workflows has also expanded capabilities for individualized and automated planning, facilitating more accurate decision-making. Despite these advances, challenges remain regarding high initial investment, the need for continuous professional training, technology upgrade costs, and ethical issues associated with the use of these tools. It is concluded that digital dentistry represents a significant milestone in the evolution of clinical practice, establishing itself as a care model that is increasingly efficient, safe, personalized, and grounded in scientific evidence",
+      "year": 2026,
+      "published_at": "2026-11-11",
+      "venue": "MedNEXT Journal of Medical and Health Sciences",
+      "doi": "10.54448/mdnt26s402",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7233977020",
+      "source_url": "https://doi.org/10.54448/mdnt26s402",
+      "pdf_url": "https://mednext.zotarellifilhoscientificworks.com/index.php/mednext/article/download/536/506",
+      "oa_status": "diamond",
+      "license": "cc-by",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [
+        "摘要命中 computer-aided design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 7,
+      "discovered_at": "2026-11-19T06:43:10.367691+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23994986",
@@ -312,7 +502,35 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.427770+00:00"
+      "discovered_at": "2026-11-19T06:43:10.307003+00:00"
+    },
+    {
+      "stable_id": "doi:10.1016/j.rineng.2026.114086",
+      "title": "Digital twin-driven generative design of multi-layer cultivation systems for vertical farming with solar light",
+      "authors": [
+        "Yongbing Feng",
+        "Guohua Gao",
+        "Quan Qiu",
+        "Lifa Fang"
+      ],
+      "abstract": "Multi-layer Cultivation Systems (MCSs) intensify urban food production. Designing MCSs for Vertical Farming with Solar Light (VFSL) delivers energy-saving benefits but is constrained by inter-layer shading, which limits productivity and conflicts with yield requirements. Therefore, optimal conceptual design is crucial. To address how to ensure complex designs meet stakeholder requirements during conceptual design, this study proposes a Digital Twin-driven Generative Design (DTGD) framework. The framework links stakeholder requirements with system architecture, fully incorporating theories related to system architecture, Model-Based Systems Engineering (MBSE), The Double Diamond (TDD), and Digital twin (DT). Using Digital Twin Modeling (DTM) and Candidate Architecture Decision (CAD) as core methods, it supports the generation and trade-off analysis of multiple Candidate Architectures (CAs). When applied to the design of MCSs in a case study, two CAs (square and zigzag cultivation) are generated. Within a design-stage DT model (an early-stage DT) for light simulation, key A-Frame design variables, including A-Frame Width (FW), A-Frame Height (FH), and the vertical height difference between adjacent planting containers (PCVH), are optimized to identify the optimal design solution. Cultivation experiments using the designed MCSs in a greenhouse in Handan, China, confirmed normal growth of cream lettuce in a single cycle. Based on this empirical data, the estimated annual production potential reaches 49.78 kg·m⁻²·year⁻¹ (assuming ten annual cropping cycles), satisfying the stakeholder yield requirement. This demonstrates the framework's practical feasibility for the evaluated case. Future work may incorporate Large Language Models to enhance automated design generation and explore alternative MCSs for wider urban adoption.",
+      "year": 2026,
+      "published_at": "2026-11-10",
+      "venue": "Results in Engineering",
+      "doi": "10.1016/j.rineng.2026.114086",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225616538",
+      "source_url": "https://doi.org/10.1016/j.rineng.2026.114086",
+      "pdf_url": "",
+      "oa_status": "gold",
+      "license": "cc-by-nc-nd",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-19T06:43:10.288517+00:00"
     },
     {
       "stable_id": "doi:10.14797/mdcvj.1917",
@@ -355,7 +573,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.409105+00:00"
+      "discovered_at": "2026-11-19T06:43:10.292208+00:00"
     },
     {
       "stable_id": "openalex:w7225934142",
@@ -380,7 +598,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-18T06:39:30.410954+00:00"
+      "discovered_at": "2026-11-19T06:43:10.293966+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835182",
@@ -412,7 +630,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-18T06:39:30.401929+00:00"
+      "discovered_at": "2026-11-19T06:43:10.286235+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jestch.2026.102594",
@@ -441,7 +659,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.441438+00:00"
+      "discovered_at": "2026-11-19T06:43:10.317807+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842584",
@@ -472,7 +690,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.533911+00:00"
+      "discovered_at": "2026-11-19T06:43:10.395398+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842505",
@@ -504,7 +722,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.432131+00:00"
+      "discovered_at": "2026-11-19T06:43:10.311385+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.13344",
@@ -531,7 +749,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-18T06:39:30.528759+00:00"
+      "discovered_at": "2026-11-19T06:43:10.390390+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.11470",
@@ -564,7 +782,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-18T06:39:30.400706+00:00"
+      "discovered_at": "2026-11-19T06:43:10.285081+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.09401",
@@ -599,7 +817,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-18T06:39:30.406802+00:00"
+      "discovered_at": "2026-11-19T06:43:10.290680+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835531",
@@ -631,7 +849,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-18T06:39:30.409735+00:00"
+      "discovered_at": "2026-11-19T06:43:10.292885+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.10063",
@@ -661,7 +879,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-18T06:39:30.415648+00:00"
+      "discovered_at": "2026-11-19T06:43:10.298068+00:00"
     },
     {
       "stable_id": "doi:10.2186/jpr.jpr_d_25_00232",
@@ -694,7 +912,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.536268+00:00"
+      "discovered_at": "2026-11-19T06:43:10.396970+00:00"
     },
     {
       "stable_id": "doi:10.20517/2574-1209.2026.55",
@@ -727,7 +945,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.409431+00:00"
+      "discovered_at": "2026-11-19T06:43:10.292464+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3836073",
@@ -761,7 +979,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-18T06:39:30.399166+00:00"
+      "discovered_at": "2026-11-19T06:43:10.283811+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23969385",
@@ -788,7 +1006,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.501967+00:00"
+      "discovered_at": "2026-11-19T06:43:10.369904+00:00"
     },
     {
       "stable_id": "doi:10.3390/electronics15215130",
@@ -816,7 +1034,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.432487+00:00"
+      "discovered_at": "2026-11-19T06:43:10.311095+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmapro.2026.10.071",
@@ -845,7 +1063,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.430189+00:00"
+      "discovered_at": "2026-11-19T06:43:10.309257+00:00"
     },
     {
       "stable_id": "doi:10.1186/s13244-026-02446-7",
@@ -886,7 +1104,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.504752+00:00"
+      "discovered_at": "2026-11-19T06:43:10.372641+00:00"
     },
     {
       "stable_id": "doi:10.1007/s11886-026-02443-8",
@@ -913,7 +1131,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.483130+00:00"
+      "discovered_at": "2026-11-19T06:43:10.352526+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05449",
@@ -942,7 +1160,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-18T06:39:30.403583+00:00"
+      "discovered_at": "2026-11-19T06:43:10.287783+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05758",
@@ -974,7 +1192,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-18T06:39:30.529797+00:00"
+      "discovered_at": "2026-11-19T06:43:10.391665+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19471-x",
@@ -1005,7 +1223,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.537533+00:00"
+      "discovered_at": "2026-11-19T06:43:10.398459+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02659",
@@ -1036,7 +1254,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-18T06:39:30.510072+00:00"
+      "discovered_at": "2026-11-19T06:43:10.374903+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44275-026-00056-5",
@@ -1072,7 +1290,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.434037+00:00"
+      "discovered_at": "2026-11-19T06:43:10.313043+00:00"
     },
     {
       "stable_id": "doi:10.1145/3830397.3841806",
@@ -1100,7 +1318,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.426002+00:00"
+      "discovered_at": "2026-11-19T06:43:10.306323+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.03178",
@@ -1164,7 +1382,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.507048+00:00"
+      "discovered_at": "2026-11-19T06:43:10.374537+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02433",
@@ -1192,7 +1410,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.404977+00:00"
+      "discovered_at": "2026-11-19T06:43:10.289022+00:00"
     },
     {
       "stable_id": "doi:10.1161/circ.154.suppl_1.6313",
@@ -1220,7 +1438,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.403040+00:00"
+      "discovered_at": "2026-11-19T06:43:10.287352+00:00"
     },
     {
       "stable_id": "arxiv:2611.05449",
@@ -1245,7 +1463,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-18T06:39:30.630623+00:00"
+      "discovered_at": "2026-11-19T06:43:10.488696+00:00"
     },
     {
       "stable_id": "arxiv:2611.22903",
@@ -1270,7 +1488,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-18T06:39:30.631123+00:00"
+      "discovered_at": "2026-11-19T06:43:10.489091+00:00"
     },
     {
       "stable_id": "doi:10.29227/im-2026-02-01-085",
@@ -1299,7 +1517,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.520176+00:00"
+      "discovered_at": "2026-11-19T06:43:10.383411+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02300",
@@ -1329,7 +1547,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.539352+00:00"
+      "discovered_at": "2026-11-19T06:43:10.399929+00:00"
     },
     {
       "stable_id": "doi:10.1002/pat.70785",
@@ -1357,7 +1575,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.499320+00:00"
+      "discovered_at": "2026-11-19T06:43:10.368026+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44443-026-01444-5",
@@ -1382,7 +1600,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.413694+00:00"
+      "discovered_at": "2026-11-19T06:43:10.296167+00:00"
     },
     {
       "stable_id": "arxiv:2611.11470",
@@ -1407,35 +1625,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.630422+00:00"
-    },
-    {
-      "stable_id": "doi:10.1016/j.rineng.2026.114086",
-      "title": "Digital Twin-Driven Generative Design of Multi-Layer Cultivation Systems for Vertical Farming with Solar Light",
-      "authors": [
-        "Yongbing Feng",
-        "Guohua Gao",
-        "Quan Qiu",
-        "Lifa Fang"
-      ],
-      "abstract": "Multi-layer Cultivation Systems (MCSs) intensify urban food production. Designing MCSs for Vertical Farming with Solar Light (VFSL) delivers energy-saving benefits but is constrained by inter-layer shading, which limits productivity and conflicts with yield requirements. Therefore, optimal conceptual design is crucial. To address how to ensure complex designs meet stakeholder requirements during conceptual design, this study proposes a Digital Twin-driven Generative Design (DTGD) framework. The framework links stakeholder requirements with system architecture, fully incorporating theories related to system architecture, Model-Based Systems Engineering (MBSE), The Double Diamond (TDD), and Digital twin (DT). Using Digital Twin Modeling (DTM) and Candidate Architecture Decision (CAD) as core methods, it supports the generation and trade-off analysis of multiple Candidate Architectures (CAs). When applied to the design of MCSs in a case study, two CAs (square and zigzag cultivation) are generated. Within a design-stage DT model (an early-stage DT) for light simulation, key A-Frame design variables, including A-Frame Width (FW), A-Frame Height (FH), and the vertical height difference between adjacent planting containers (PCVH), are optimized to identify the optimal design solution. Cultivation experiments using the designed MCSs in a greenhouse in Handan, China, confirmed normal growth of cream lettuce in a single cycle. Based on this empirical data, the estimated annual production potential reaches 49.78 kg·m⁻²·year⁻¹ (assuming ten annual cropping cycles), satisfying the stakeholder yield requirement. This demonstrates the framework's practical feasibility for the evaluated case. Future work may incorporate Large Language Models to enhance automated design generation and explore alternative MCSs for wider urban adoption.",
-      "year": 2026,
-      "published_at": "2026-11-01",
-      "venue": "Results in Engineering",
-      "doi": "10.1016/j.rineng.2026.114086",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7225616538",
-      "source_url": "https://doi.org/10.1016/j.rineng.2026.114086",
-      "pdf_url": "",
-      "oa_status": "gold",
-      "license": "cc-by-nc-nd",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.404180+00:00"
+      "discovered_at": "2026-11-19T06:43:10.488539+00:00"
     },
     {
       "stable_id": "arxiv:2611.22563",
@@ -1460,7 +1650,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.630877+00:00"
+      "discovered_at": "2026-11-19T06:43:10.488892+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.joes.2026.100783",
@@ -1487,7 +1677,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-18T06:39:30.535911+00:00"
+      "discovered_at": "2026-11-19T06:43:10.397401+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02127",
@@ -1516,7 +1706,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-18T06:39:30.436330+00:00"
+      "discovered_at": "2026-11-19T06:43:10.314728+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.01165",
@@ -1546,7 +1736,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-18T06:39:30.399943+00:00"
+      "discovered_at": "2026-11-19T06:43:10.284467+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.autcon.2026.107322",
@@ -1574,7 +1764,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.425354+00:00"
+      "discovered_at": "2026-11-19T06:43:10.305837+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.39306",
@@ -1609,7 +1799,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-18T06:39:30.400284+00:00"
+      "discovered_at": "2026-11-19T06:43:10.284734+00:00"
     },
     {
       "stable_id": "doi:10.2991/978-2-38476-628-4_9",
@@ -1635,7 +1825,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.498101+00:00"
+      "discovered_at": "2026-11-19T06:43:10.366695+00:00"
     },
     {
       "stable_id": "doi:10.54097/ht37b711",
@@ -1664,7 +1854,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.517925+00:00"
+      "discovered_at": "2026-11-19T06:43:10.381726+00:00"
     },
     {
       "stable_id": "doi:10.59490/6ad294696ee698573e4dd65c",
@@ -1690,7 +1880,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.520815+00:00"
+      "discovered_at": "2026-11-19T06:43:10.383929+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23756809",
@@ -1717,7 +1907,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.445939+00:00"
+      "discovered_at": "2026-11-19T06:43:10.321139+00:00"
     },
     {
       "stable_id": "doi:10.1007/s10791-026-10699-5",
@@ -1744,7 +1934,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.501028+00:00"
+      "discovered_at": "2026-11-19T06:43:10.370224+00:00"
     },
     {
       "stable_id": "doi:10.1017/dsj.2026.10073",
@@ -1774,7 +1964,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-18T06:39:30.412120+00:00"
+      "discovered_at": "2026-11-19T06:43:10.294871+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.ejro.2026.100821",
@@ -1808,7 +1998,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.423876+00:00"
+      "discovered_at": "2026-11-19T06:43:10.304944+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23662350",
@@ -1833,7 +2023,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.416068+00:00"
+      "discovered_at": "2026-11-19T06:43:10.297793+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23636235",
@@ -1861,7 +2051,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-18T06:39:30.402572+00:00"
+      "discovered_at": "2026-11-19T06:43:10.286961+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19307-8",
@@ -1889,7 +2079,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.532146+00:00"
+      "discovered_at": "2026-11-19T06:43:10.394136+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23600947",
@@ -1916,7 +2106,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-18T06:39:30.428564+00:00"
+      "discovered_at": "2026-11-19T06:43:10.307629+00:00"
     },
     {
       "stable_id": "doi:10.1117/12.3133467",
@@ -1942,7 +2132,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.512682+00:00"
+      "discovered_at": "2026-11-19T06:43:10.376755+00:00"
     },
     {
       "stable_id": "doi:10.1021/acsaelm.6c01066",
@@ -1973,7 +2163,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-18T06:39:30.427227+00:00"
+      "discovered_at": "2026-11-19T06:43:10.306597+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.29518",
@@ -1998,7 +2188,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.521127+00:00"
+      "discovered_at": "2026-11-19T06:43:10.384193+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23523939",
@@ -2023,57 +2213,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.402189+00:00"
-    },
-    {
-      "stable_id": "doi:10.5281/zenodo.23500419",
-      "title": "Leonardo's CAD - La Geometria Svelata / Dal modulo alla prospettiva: la griglia generativa di Leonardo e il Braccio Fiorentino nell'Adorazione dei Magi. Una rilettura tecnica del disegno degli Uffizi (inv. 436 E). (it) Leonardo's CAD - The Revealed Geometry / From modulus to perspective: Leonardo's generative grid and the Florentine Braccio in the Adoration of the Magi. A technical reinterpretation of the Uffizi Drawing (inv. 436 E). (en) App di supporto alla ricerca accademica (it) / Academic Research Support App (en)",
-      "authors": [
-        "Giancarlo De Leo"
-      ],
-      "abstract": "Premessa Leonardo’s CAD non è una ricerca isolata. È un pannello del trittico Leonardo’s Spatial Grammar, insieme a Leonardo’s Rulers e a Leonardo’s Score: tre indagini nate separate, una sola grammatica metrico-modulare dello spazio. Quella utilizzata da Leonardo da Vinci per costruire i suoi spazi prospettici. Il corpus, depositato su Zenodo, contesta l’idea di una prospettiva albertiana a scacchiera applicata in modo uniforme. Dall’Annunciazione all’Adorazione fino al Cenacolo, Leonardo lascia nel quadro i moduli con cui ha misurato: bugne e mattonelle (geometria inserita), la maglia 4:3 (geometria svelata), i ritmi degli arazzi e dei cassettoni (geometria intonata). Metodo La ricerca adotta un approccio di retroingegneria: parte da ciò che è visibile e misurabile nelle opere per ricostruire i principi metrici e modulari che ne organizzano lo spazio. Funzione dell’app L’app è uno strumento di supporto alla ricerca accademica: non la sostituisce, ma la integra, rendendone più accessibili e immediatamente comprensibili i risultati più significativi. È tuttora in fase di sviluppo e viene progressivamente aggiornata con l’avanzamento degli studi. Preface Leonardo’s CAD is not an isolated inquiry. It is one panel of the triptych Leonardo’s Spatial Grammar, with Leonardo’s Rulers and Leonardo’s Score: three inquiries born apart, one metric-modular grammar of space. The grammar Leonardo da Vinci used to construct his perspectival spaces. The corpus, deposited on Zenodo, challenges the idea of an Albertian checkerboard perspective applied uniformly. From the Annunciation through the Adoration to the Last Supper, Leonardo leaves in the picture the modules he measured with: ashlars and tiles (inserted geometry), the 4:3 mesh (revealed geometry), the rhythms of the tapestries and coffers (tuned geometry). The method is reverse engineering, starting from what can be seen and measured. This app was developed to highlight the most significant findings of the research. Method The research adopts a reverse-engineering approach: it begins with what is visible and measurable in the works to reconstruct the metric and modular principles that organize their space. Purpose of the App The app is designed to support academic research: it does not replace it but complements it by making its most significant findings more accessible and easier to understand. It is still under development and is progressively updated as the research advances. Giancarlo De Leo 20 ottobre 2026",
-      "year": 2026,
-      "published_at": "2026-10-20",
-      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
-      "doi": "10.5281/zenodo.23500419",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7223022513",
-      "source_url": "https://doi.org/10.5281/zenodo.23500419",
-      "pdf_url": "",
-      "oa_status": "green",
-      "license": "cc-by",
-      "suggested_category": "CAD Reconstruction & Reverse Engineering",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.401236+00:00"
-    },
-    {
-      "stable_id": "doi:10.17605/osf.io/62ty9",
-      "title": "Generative AI for Mechanical Systems Design: A Systematic Review of Language-Driven, Diffusion-Based, and Physics-Informed Approaches — Protocol for a Two-Tier Systematic Map and In-Depth Synthesis",
-      "authors": [
-        "Alexis Lazanas"
-      ],
-      "abstract": "Protocol of a systematic review on generative artificial intelligence for the design of mechanical systems, components and structures (2021–2026). The review covers three paradigms: language-driven approaches (large language models, vision-language models, LLM agents, CAD-as-language models), diffusion-based approaches (denoising diffusion, latent diffusion, flow matching) and physics-informed generative approaches. It uses a two-tier design: (1) a systematic map of all eligible studies, coded by paradigm, design task, design stage, design representation and evaluation type; (2) an in-depth critical synthesis of a core set of studies that quantitatively evaluate the physical validity, constraint satisfaction or manufacturability of generated designs, selected with criteria fixed before full-text assessment. Reporting follows PRISMA 2020. Searches were run in Scopus and Web of Science on 20 October 2026; this registration was made after title/abstract screening and before full-text assessment and data extraction.",
-      "year": 2026,
-      "published_at": "2026-10-20",
-      "venue": "OSF Preprints (OSF Preprints)",
-      "doi": "10.17605/osf.io/62ty9",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7223031250",
-      "source_url": "https://osf.io/zk8bq",
-      "pdf_url": "",
-      "oa_status": "green",
-      "license": "cc-by-sa",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-18T06:39:30.404682+00:00"
+      "discovered_at": "2026-11-19T06:43:10.286649+00:00"
     }
   ]
 }
