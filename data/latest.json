@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-21T06:20:11.778622+00:00",
+  "generated_at": "2026-11-22T05:52:20.047843+00:00",
   "range": {
-    "from": "2026-10-23",
-    "to": "2026-11-21"
+    "from": "2026-10-24",
+    "to": "2026-11-22"
   },
-  "count": 97,
+  "count": 96,
   "source_health": {
     "arxiv": {
       "ok": true,
-      "count": 36,
-      "seconds": 1.38
+      "count": 35,
+      "seconds": 1.23
     },
     "openalex": {
       "ok": true,
@@ -21,12 +21,12 @@
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 6.1
+      "seconds": 5.1
     },
     "upstream_awesome": {
       "ok": true,
       "count": 6,
-      "seconds": 0.67
+      "seconds": 0.8
     }
   },
   "public_profile": {
@@ -76,41 +76,6 @@
   },
   "candidates": [
     {
-      "stable_id": "doi:10.1186/s12903-026-10471-7",
-      "title": "Deep learning–based CT segmentation of mandibular bone invasion in oral squamous cell carcinoma",
-      "authors": [
-        "David Steybe",
-        "Elisabeth Fiederling",
-        "Philipp Poxleitner",
-        "Sven Otto",
-        "Katharina Theresa Obermeier",
-        "Bastian Sabel",
-        "Stephan Rau",
-        "Marco Reisert",
-        "Maximilian Frederik Russe"
-      ],
-      "abstract": "Abstract Background Accurate identification of mandibular invasion by oral squamous cell carcinoma (OSCC) is important for virtual surgical planning, but manual delineation on CT is challenging and time-consuming. This retrospective proof-of-concept study evaluated automated segmentation of the mandible and radiologically apparent bone invasion and explored centerline-based assessment of longitudinal tumor extent for computer-aided design/computer-aided manufacturing (CAD/CAM) planning. Methods Fifty preoperative CT examinations from 50 patients with histopathologically confirmed mandibular invasion were included. Thirty examinations were used for model development and 20 for independent testing. A three-dimensional MedNeXt architecture implemented within nnU-Net was trained applying expert-reviewed CT reference segmentations. Performance was assessed using Dice similarity coefficient (DSC), precision, recall, average symmetric surface distance and 95th-percentile Hausdorff distance. Spatial localization, longitudinal invasion-span differences and signed centerline-projected endpoint errors were assessed in the holdout cohort. Results Mean mandibular DSC was 0.965 (95% confidence interval [CI], 0.961–0.969; median 0.967). Mean invasion DSC was 0.553 (95% CI, 0.425–0.660; median 0.623), with mean precision of 0.742 and recall of 0.483. Predicted invasion overlapped the CT reference in 18/20 examinations (90%); 16/20 (80%) achieved DSC ≥ 0.20. Two cases were completely missed. Among the 18 evaluable cases, the median absolute invasion-span difference was 7.01 mm (interquartile range, 5.08–13.00 mm) and the median symmetric endpoint distance was 5.88 mm (3.19–9.16 mm). Conclusions The present proof-of-concept study demonstrates the technical feasibility of automated CT segmentation of the mandible and radiologically apparent mandibular invasion by OSCC. The approach may support transmission of radiological tumor extent into virtual resection planning. Larger multicenter studies and prospective clinical validation are needed to establish its impact on planning accuracy and workflow efficiency.",
-      "year": 2026,
-      "published_at": "2026-11-21",
-      "venue": "BMC Oral Health",
-      "doi": "10.1186/s12903-026-10471-7",
-      "arxiv_id": "",
-      "openalex_id": "",
-      "source_url": "https://doi.org/10.1186/s12903-026-10471-7",
-      "pdf_url": "https://link.springer.com/content/pdf/10.1186/s12903-026-10471-7.pdf",
-      "oa_status": "open",
-      "license": "https://creativecommons.org/licenses/by/4.0",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [
-        "摘要命中 computer-aided design"
-      ],
-      "source_names": [
-        "Crossref"
-      ],
-      "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.718358+00:00"
-    },
-    {
       "stable_id": "doi:10.3390/jcm15229106",
       "title": "High-Strength Deep Learning Image Reconstruction Versus Adaptive Statistical Iterative Reconstruction for Stenosis Assessment in Stented Coronary Vessels on Coronary CT Angiography: A Multireader Study",
       "authors": [
@@ -140,7 +105,58 @@
         "Crossref"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.736825+00:00"
+      "discovered_at": "2026-11-22T05:52:20.010562+00:00"
+    },
+    {
+      "stable_id": "doi:10.1002/9781394403257.ch7",
+      "title": "Generative AI in Product Design and Prototyping",
+      "authors": [
+        "Minesh Vohra"
+      ],
+      "abstract": "Generative artificial intelligence is changing how engineered products are imagined and built, making the journey from idea to prototype faster and more flexible. Instead of moving step by step from requirements to sketches, CAD models, simulations, and prototypes, these models can propose many design options in one go that already consider performance targets, manufacturing limits, and even likely user preferences. Engineers can then quickly filter and refine these options using lightweight predictive tools, rather than having to start each design loop from scratch. The chapter examines generative AI as a connecting layer across the product design workflow, from early concept sketches generated via text-to-image or text-to-3D tools to detailed, manufacturability- aware refinements for both mass production and additive manufacturing. It also considers applications in topology-optimized parts and mechanical metamaterials, where rapid back-and-forth between virtual and physical prototypes is essential. Along the way, it discusses goals, feasibility, diversity-driven generation strategies, closer integration with CAD/CAE environments, and human–AI co- creation interfaces that clearly communicate to designers what the models can and cannot do. At the same time, the chapter is careful to address open issues such as how design data are represented, how to build fair benchmarks, and how to ensure robustness, safety, and regulatory compliance in high-stakes applications. It concludes with a future roadmap for multimodal, knowledge-rich, and certifiable generative design systems that can be trusted in industrial settings while maintaining human responsibility for final design decisions.",
+      "year": 2026,
+      "published_at": "2026-11-20",
+      "venue": "Sustainable and Generative Artificial Intelligence in Manufacturing",
+      "doi": "10.1002/9781394403257.ch7",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7237096070",
+      "source_url": "https://doi.org/10.1002/9781394403257.ch7",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex",
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-22T05:52:19.815236+00:00"
+    },
+    {
+      "stable_id": "doi:10.3791/74764",
+      "title": "Artificial Intelligence-Assisted Digital Workflow for Dental Implant Planning, Guided Surgery, and CAD/CAM Restoration: A Step-by-Step Protocol",
+      "authors": [
+        "Omid Panahi"
+      ],
+      "abstract": "",
+      "year": 2026,
+      "published_at": "2026-11-20",
+      "venue": "Journal of Visualized Experiments",
+      "doi": "10.3791/74764",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.3791/74764",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "",
+      "suggested_category": "CAD Generation",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-22T05:52:19.967365+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.24378728",
@@ -167,7 +183,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-21T06:20:11.547446+00:00"
+      "discovered_at": "2026-11-22T05:52:19.823828+00:00"
     },
     {
       "stable_id": "arxiv:2611.26003",
@@ -197,7 +213,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.527536+00:00"
+      "discovered_at": "2026-11-22T05:52:19.803564+00:00"
     },
     {
       "stable_id": "doi:10.1145/3862473",
@@ -230,7 +246,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-21T06:20:11.581409+00:00"
+      "discovered_at": "2026-11-22T05:52:19.856523+00:00"
     },
     {
       "stable_id": "doi:10.3390/su182211713",
@@ -252,18 +268,17 @@
       "openalex_id": "https://openalex.org/W7235913410",
       "source_url": "https://doi.org/10.3390/su182211713",
       "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "oa_status": "gold",
+      "license": "cc-by",
       "suggested_category": "CAD Generation",
       "matched_terms": [
         "摘要命中 text-to-cad"
       ],
       "source_names": [
-        "OpenAlex",
-        "Crossref"
+        "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-21T06:20:11.538476+00:00"
+      "discovered_at": "2026-11-22T05:52:19.814117+00:00"
     },
     {
       "stable_id": "arxiv:2611.24681",
@@ -298,7 +313,7 @@
         "arXiv"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.528285+00:00"
+      "discovered_at": "2026-11-22T05:52:19.804271+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11337866/v1",
@@ -328,7 +343,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.554030+00:00"
+      "discovered_at": "2026-11-22T05:52:19.830306+00:00"
     },
     {
       "stable_id": "arxiv:2611.25228",
@@ -383,7 +398,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.527930+00:00"
+      "discovered_at": "2026-11-22T05:52:19.803960+00:00"
     },
     {
       "stable_id": "arxiv:2611.22903",
@@ -415,7 +430,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-21T06:20:11.528621+00:00"
+      "discovered_at": "2026-11-22T05:52:19.804620+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22903",
@@ -446,7 +461,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-21T06:20:11.541108+00:00"
+      "discovered_at": "2026-11-22T05:52:19.816620+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11735626/v1",
@@ -476,7 +491,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-21T06:20:11.570392+00:00"
+      "discovered_at": "2026-11-22T05:52:19.845156+00:00"
     },
     {
       "stable_id": "arxiv:2611.22563",
@@ -510,7 +525,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-21T06:20:11.529204+00:00"
+      "discovered_at": "2026-11-22T05:52:19.805168+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11493537/v1",
@@ -540,7 +555,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-21T06:20:11.540662+00:00"
+      "discovered_at": "2026-11-22T05:52:19.817093+00:00"
     },
     {
       "stable_id": "arxiv:2611.22565",
@@ -571,7 +586,37 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.528904+00:00"
+      "discovered_at": "2026-11-22T05:52:19.804900+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.22565",
+      "title": "MillBill: A Machining Agent with Geometric Feedback",
+      "authors": [
+        "Gennadii Savrasov",
+        "Artem Slavin",
+        "Soslan Kabisov",
+        "Andrey Kuznetsov",
+        "Anton Konushin",
+        "Dmitrii Zhemchuzhnikov"
+      ],
+      "abstract": "Turning a CAD model into a machining program requires both process knowledge and geometric precision. Language models can generate such workflows by writing geometry and toolpath code for each part, but this makes numerical execution part of the model's task. We introduce MillBill, an agent that separates machining decisions from their geometric execution and verification. Given a boundary-representation part, stock, and material, a locally hosted, mid-sized open model proposes operations and cutting parameters for indexed three-axis machining. A geometric harness generates toolpaths, simulates material removal, and returns feedback for plan refinement. Setup planning accounts for what the available cutters can physically reach, rather than visibility alone. We evaluate the resulting programs by the fraction of the target surface area within the specified tolerance after simulated machining. With Qwen3.8-27B, MillBill outperforms frontier-model approaches that construct their own geometry and toolpath workflows on the evaluated machining tasks. Code: https://github.com/kulibinai/millbill",
+      "year": 2026,
+      "published_at": "2026-11-17",
+      "venue": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2611.22565",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7236249710",
+      "source_url": "https://arxiv.org/abs/2611.22565",
+      "pdf_url": "https://arxiv.org/pdf/2611.22565",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-22T05:52:19.934110+00:00"
     },
     {
       "stable_id": "arxiv:2611.20451",
@@ -607,7 +652,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-21T06:20:11.529875+00:00"
+      "discovered_at": "2026-11-22T05:52:19.805839+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.20451",
@@ -642,7 +687,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-21T06:20:11.541732+00:00"
+      "discovered_at": "2026-11-22T05:52:19.817728+00:00"
     },
     {
       "stable_id": "doi:10.20998/2313-8890.2026.10.19",
@@ -670,7 +715,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.555254+00:00"
+      "discovered_at": "2026-11-22T05:52:19.830948+00:00"
     },
     {
       "stable_id": "arxiv:2611.21707",
@@ -697,7 +742,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.529523+00:00"
+      "discovered_at": "2026-11-22T05:52:19.805492+00:00"
     },
     {
       "stable_id": "doi:10.55942/jeht.v2i2.2375",
@@ -727,7 +772,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-21T06:20:11.538137+00:00"
+      "discovered_at": "2026-11-22T05:52:19.813781+00:00"
     },
     {
       "stable_id": "doi:10.1080/20464177.2026.2763301",
@@ -755,7 +800,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.572401+00:00"
+      "discovered_at": "2026-11-22T05:52:19.847640+00:00"
     },
     {
       "stable_id": "doi:10.1002/jomd.70006",
@@ -786,7 +831,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.539690+00:00"
+      "discovered_at": "2026-11-22T05:52:19.815683+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.11.11.26367872",
@@ -814,7 +859,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.557963+00:00"
+      "discovered_at": "2026-11-22T05:52:19.834305+00:00"
     },
     {
       "stable_id": "arxiv:2611.16184",
@@ -846,7 +891,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.530242+00:00"
+      "discovered_at": "2026-11-22T05:52:19.806190+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.16184",
@@ -878,7 +923,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.542089+00:00"
+      "discovered_at": "2026-11-22T05:52:19.818076+00:00"
     },
     {
       "stable_id": "doi:10.3390/wevj17110593",
@@ -905,7 +950,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.658838+00:00"
+      "discovered_at": "2026-11-22T05:52:19.935061+00:00"
     },
     {
       "stable_id": "doi:10.54448/mdnt26s402",
@@ -935,7 +980,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.638919+00:00"
+      "discovered_at": "2026-11-22T05:52:19.915016+00:00"
     },
     {
       "stable_id": "arxiv:2611.15459",
@@ -965,7 +1010,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.530597+00:00"
+      "discovered_at": "2026-11-22T05:52:19.806548+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23994986",
@@ -996,7 +1041,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.567965+00:00"
+      "discovered_at": "2026-11-22T05:52:19.843256+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.rineng.2026.114086",
@@ -1024,7 +1069,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.544858+00:00"
+      "discovered_at": "2026-11-22T05:52:19.820847+00:00"
     },
     {
       "stable_id": "doi:10.14797/mdcvj.1917",
@@ -1067,7 +1112,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.550297+00:00"
+      "discovered_at": "2026-11-22T05:52:19.826679+00:00"
     },
     {
       "stable_id": "openalex:w7225934142",
@@ -1092,7 +1137,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-21T06:20:11.552803+00:00"
+      "discovered_at": "2026-11-22T05:52:19.829029+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3836073",
@@ -1126,7 +1171,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-21T06:20:11.539245+00:00"
+      "discovered_at": "2026-11-22T05:52:19.814873+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835182",
@@ -1158,7 +1203,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-21T06:20:11.542398+00:00"
+      "discovered_at": "2026-11-22T05:52:19.818391+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835531",
@@ -1190,7 +1235,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-21T06:20:11.551959+00:00"
+      "discovered_at": "2026-11-22T05:52:19.827151+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jestch.2026.102594",
@@ -1219,7 +1264,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.582192+00:00"
+      "discovered_at": "2026-11-22T05:52:19.857030+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842584",
@@ -1250,7 +1295,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.671769+00:00"
+      "discovered_at": "2026-11-22T05:52:19.947690+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842505",
@@ -1282,7 +1327,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.574174+00:00"
+      "discovered_at": "2026-11-22T05:52:19.848670+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.13344",
@@ -1309,7 +1354,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-21T06:20:11.665502+00:00"
+      "discovered_at": "2026-11-22T05:52:19.942430+00:00"
     },
     {
       "stable_id": "arxiv:2611.11470",
@@ -1343,7 +1388,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-21T06:20:11.530886+00:00"
+      "discovered_at": "2026-11-22T05:52:19.806832+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.11470",
@@ -1376,7 +1421,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-21T06:20:11.541394+00:00"
+      "discovered_at": "2026-11-22T05:52:19.817378+00:00"
     },
     {
       "stable_id": "arxiv:2611.10653",
@@ -1403,7 +1448,7 @@
         "arXiv"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-21T06:20:11.531803+00:00"
+      "discovered_at": "2026-11-22T05:52:19.807739+00:00"
     },
     {
       "stable_id": "arxiv:2611.10798",
@@ -1433,7 +1478,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.531255+00:00"
+      "discovered_at": "2026-11-22T05:52:19.807184+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.10502",
@@ -1462,7 +1507,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.644144+00:00"
+      "discovered_at": "2026-11-22T05:52:19.920865+00:00"
     },
     {
       "stable_id": "arxiv:2611.09401",
@@ -1497,7 +1542,7 @@
         "arXiv"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-21T06:20:11.532363+00:00"
+      "discovered_at": "2026-11-22T05:52:19.808281+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.09401",
@@ -1532,7 +1577,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-21T06:20:11.549670+00:00"
+      "discovered_at": "2026-11-22T05:52:19.824581+00:00"
     },
     {
       "stable_id": "arxiv:2611.10063",
@@ -1562,7 +1607,7 @@
         "arXiv"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-21T06:20:11.532691+00:00"
+      "discovered_at": "2026-11-22T05:52:19.808616+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.10063",
@@ -1592,7 +1637,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-21T06:20:11.559134+00:00"
+      "discovered_at": "2026-11-22T05:52:19.835187+00:00"
     },
     {
       "stable_id": "doi:10.2186/jpr.jpr_d_25_00232",
@@ -1625,7 +1670,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.675526+00:00"
+      "discovered_at": "2026-11-22T05:52:19.950700+00:00"
     },
     {
       "stable_id": "doi:10.20517/2574-1209.2026.55",
@@ -1658,7 +1703,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.551276+00:00"
+      "discovered_at": "2026-11-22T05:52:19.827480+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23969385",
@@ -1685,7 +1730,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.641635+00:00"
+      "discovered_at": "2026-11-22T05:52:19.917713+00:00"
     },
     {
       "stable_id": "doi:10.3390/electronics15215130",
@@ -1713,7 +1758,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.573232+00:00"
+      "discovered_at": "2026-11-22T05:52:19.847981+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmapro.2026.10.071",
@@ -1742,48 +1787,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.571035+00:00"
-    },
-    {
-      "stable_id": "doi:10.1186/s13244-026-02446-7",
-      "title": "Deep learning-based detection and classification of airway nodules on CT for early medical intervention",
-      "authors": [
-        "Shulin Liu",
-        "Ping Yi",
-        "Yaheng Fan",
-        "Jing Hu",
-        "Chao Zheng",
-        "Peng Lei",
-        "Sai Li",
-        "Fangxue Yang",
-        "Chenyu Li",
-        "Yangzhen Hou",
-        "Yuxin Li",
-        "Luo Guanghua",
-        "方向军",
-        "Haijun Zheng",
-        "Harrison Bai",
-        "Hui Zhou",
-        "Weihua Liao"
-      ],
-      "abstract": "OBJECTIVES: Airway lesions are common CT findings in interval and post-screen lung cancers; however, airway nodules are frequently overlooked. Robust artificial intelligence (AI) tools for characterizing airway nodules remain limited. This study aimed to develop and evaluate deep learning-based models for the detection and classification of airway nodules on low-dose CT(LDCT) as a second-reading tool. MATERIALS AND METHODS: 1813 segmental and more proximal airway nodules were retrospectively identified from 1107 LDCT of 1043 participants. A sphere-based center-points matching network, first used to establish a lung nodule detection model, was transferred to airway nodules and enhanced by incorporating coordinate and multiscale attention. The model was trained on 907 proximal airway nodules and independently tested on 738 proximal nodules across four hospitals. The clinical utility of the AI tool was evaluated through human-AI interaction. For nodule classification, a 3D SEResNeXt101-based model was trained, validated and tested using 286 airway nodules (121 benign, 165 malignant) with a 6:2:2 split and evaluated in an independent testing dataset. RESULTS: On the independent testing set, the detection model achieved a high sensitivity of 73.7%. Human-AI interaction demonstrated AI assistance significantly improved radiologists' performance, increasing sensitivity from 39.5% to 72.9% and F1-score from 49.4% to 77.2%, while reducing diagnosis time from 83.8 s to 61.8 s. The classification model showed high sensitivities of 82.1%, 71.4%, 94.3%, 72.7% and specificities of 62.7%, 73.9%, 73.9%, 87.5% across multicenter training, validation, testing and independent testing sets, respectively. CONCLUSION: This AI system significantly enhances the detection and classification of proximal airway nodules, guiding early medical intervention. KEY POINTS: Question Improved early detection and classification of airway nodules are critical for lung cancer mortality reduction, but AI-based CAD systems targeting airway nodules remain scarce. Findings The DL models for detection and classification of proximal airway nodules on chest CT were developed and assisted radiologists to achieve higher detection accuracy. Critical Relevance Statement The clinical applications of the proposed DL-based system for detecting and classifying proximal airway nodules on chest CT scans help radiologists reduce missed/delayed diagnoses and shorten diagnostic time as a second-reading tool, guiding medical intervention and improving clinical outcomes.",
-      "year": 2026,
-      "published_at": "2026-11-05",
-      "venue": "Insights into Imaging",
-      "doi": "10.1186/s13244-026-02446-7",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7225320603",
-      "source_url": "https://doi.org/10.1186/s13244-026-02446-7",
-      "pdf_url": "https://link.springer.com/content/pdf/10.1186/s13244-026-02446-7.pdf",
-      "oa_status": "gold",
-      "license": "cc-by",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.645990+00:00"
+      "discovered_at": "2026-11-22T05:52:19.846582+00:00"
     },
     {
       "stable_id": "doi:10.1007/s11886-026-02443-8",
@@ -1810,7 +1814,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.621295+00:00"
+      "discovered_at": "2026-11-22T05:52:19.896644+00:00"
     },
     {
       "stable_id": "arxiv:2611.05449",
@@ -1840,7 +1844,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-21T06:20:11.533358+00:00"
+      "discovered_at": "2026-11-22T05:52:19.809257+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05449",
@@ -1869,7 +1873,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-21T06:20:11.544138+00:00"
+      "discovered_at": "2026-11-22T05:52:19.820125+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05758",
@@ -1901,7 +1905,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-21T06:20:11.667040+00:00"
+      "discovered_at": "2026-11-22T05:52:19.943309+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19471-x",
@@ -1932,7 +1936,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.676499+00:00"
+      "discovered_at": "2026-11-22T05:52:19.951941+00:00"
     },
     {
       "stable_id": "arxiv:2611.02659",
@@ -1963,7 +1967,7 @@
         "arXiv"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-21T06:20:11.534334+00:00"
+      "discovered_at": "2026-11-22T05:52:19.810214+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02659",
@@ -1994,7 +1998,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-21T06:20:11.646284+00:00"
+      "discovered_at": "2026-11-22T05:52:19.922268+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44275-026-00056-5",
@@ -2030,7 +2034,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.575343+00:00"
+      "discovered_at": "2026-11-22T05:52:19.850271+00:00"
     },
     {
       "stable_id": "arxiv:2611.02540",
@@ -2060,7 +2064,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.534642+00:00"
+      "discovered_at": "2026-11-22T05:52:19.810531+00:00"
     },
     {
       "stable_id": "arxiv:2611.03178",
@@ -2124,7 +2128,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.534054+00:00"
+      "discovered_at": "2026-11-22T05:52:19.809939+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.03178",
@@ -2188,7 +2192,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.677967+00:00"
+      "discovered_at": "2026-11-22T05:52:19.952986+00:00"
     },
     {
       "stable_id": "arxiv:2611.02433",
@@ -2216,7 +2220,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.534931+00:00"
+      "discovered_at": "2026-11-22T05:52:19.810818+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02433",
@@ -2244,7 +2248,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.545730+00:00"
+      "discovered_at": "2026-11-22T05:52:19.821136+00:00"
     },
     {
       "stable_id": "doi:10.1161/circ.154.suppl_1.6313",
@@ -2272,7 +2276,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.543605+00:00"
+      "discovered_at": "2026-11-22T05:52:19.819602+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.dibe.2026.101120",
@@ -2300,7 +2304,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-21T06:20:11.663942+00:00"
+      "discovered_at": "2026-11-22T05:52:19.940608+00:00"
     },
     {
       "stable_id": "doi:10.29227/im-2026-02-01-085",
@@ -2329,7 +2333,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.657534+00:00"
+      "discovered_at": "2026-11-22T05:52:19.933531+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02300",
@@ -2359,7 +2363,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.677134+00:00"
+      "discovered_at": "2026-11-22T05:52:19.953365+00:00"
     },
     {
       "stable_id": "arxiv:2611.02286",
@@ -2388,7 +2392,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.535267+00:00"
+      "discovered_at": "2026-11-22T05:52:19.811142+00:00"
     },
     {
       "stable_id": "doi:10.1002/pat.70785",
@@ -2416,7 +2420,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.639332+00:00"
+      "discovered_at": "2026-11-22T05:52:19.915411+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44443-026-01444-5",
@@ -2441,7 +2445,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.557392+00:00"
+      "discovered_at": "2026-11-22T05:52:19.833255+00:00"
     },
     {
       "stable_id": "doi:10.21037/qims-2026-1308",
@@ -2474,7 +2478,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.620950+00:00"
+      "discovered_at": "2026-11-22T05:52:19.895999+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.joes.2026.100783",
@@ -2501,7 +2505,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-21T06:20:11.674851+00:00"
+      "discovered_at": "2026-11-22T05:52:19.950345+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02127",
@@ -2530,7 +2534,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-21T06:20:11.576999+00:00"
+      "discovered_at": "2026-11-22T05:52:19.851728+00:00"
     },
     {
       "stable_id": "arxiv:2611.01165",
@@ -2560,7 +2564,7 @@
         "arXiv"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-21T06:20:11.535540+00:00"
+      "discovered_at": "2026-11-22T05:52:19.811414+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.01165",
@@ -2590,7 +2594,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-21T06:20:11.539966+00:00"
+      "discovered_at": "2026-11-22T05:52:19.815963+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -2621,7 +2625,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.538927+00:00"
+      "discovered_at": "2026-11-22T05:52:19.814574+00:00"
     },
     {
       "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
@@ -2652,7 +2656,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.543145+00:00"
+      "discovered_at": "2026-11-22T05:52:19.818761+00:00"
     },
     {
       "stable_id": "doi:10.2991/978-2-38476-628-4_9",
@@ -2678,7 +2682,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.637750+00:00"
+      "discovered_at": "2026-11-22T05:52:19.912841+00:00"
     },
     {
       "stable_id": "arxiv:2610.39306",
@@ -2713,7 +2717,7 @@
         "arXiv"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-21T06:20:11.536074+00:00"
+      "discovered_at": "2026-11-22T05:52:19.811941+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.39306",
@@ -2748,7 +2752,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-21T06:20:11.540298+00:00"
+      "discovered_at": "2026-11-22T05:52:19.816283+00:00"
     },
     {
       "stable_id": "doi:10.54097/ht37b711",
@@ -2777,7 +2781,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.655198+00:00"
+      "discovered_at": "2026-11-22T05:52:19.930632+00:00"
     },
     {
       "stable_id": "doi:10.59490/6ad294696ee698573e4dd65c",
@@ -2803,7 +2807,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.658189+00:00"
+      "discovered_at": "2026-11-22T05:52:19.934429+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23756809",
@@ -2830,7 +2834,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.585102+00:00"
+      "discovered_at": "2026-11-22T05:52:19.859811+00:00"
     },
     {
       "stable_id": "doi:10.1007/s10791-026-10699-5",
@@ -2857,7 +2861,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.642019+00:00"
+      "discovered_at": "2026-11-22T05:52:19.918088+00:00"
     },
     {
       "stable_id": "doi:10.1017/dsj.2026.10073",
@@ -2887,7 +2891,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-21T06:20:11.554391+00:00"
+      "discovered_at": "2026-11-22T05:52:19.829831+00:00"
     },
     {
       "stable_id": "arxiv:2610.35704",
@@ -2915,7 +2919,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.536386+00:00"
+      "discovered_at": "2026-11-22T05:52:19.812247+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23662350",
@@ -2940,7 +2944,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.558767+00:00"
+      "discovered_at": "2026-11-22T05:52:19.834725+00:00"
     },
     {
       "stable_id": "arxiv:2610.35566",
@@ -2969,7 +2973,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.536769+00:00"
+      "discovered_at": "2026-11-22T05:52:19.812638+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23636235",
@@ -2997,7 +3001,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-21T06:20:11.542763+00:00"
+      "discovered_at": "2026-11-22T05:52:19.819127+00:00"
     },
     {
       "stable_id": "arxiv:2610.34529",
@@ -3022,7 +3026,7 @@
         "arXiv"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.537127+00:00"
+      "discovered_at": "2026-11-22T05:52:19.813030+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19307-8",
@@ -3050,60 +3054,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.670452+00:00"
-    },
-    {
-      "stable_id": "doi:10.5281/zenodo.23600947",
-      "title": "EDA-Agent: A Multi-Agent AI System for RTL Verification, Circuit Debugging, and Semiconductor Design Automation -TCAD-2026-2322 (IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems)",
-      "authors": [
-        "Ritwik Raj"
-      ],
-      "abstract": "Hardware verification and debugging traditionally consume over 70% of digital Integrated Circuit (IC) design cycles. Engineers spend thousands of hours manually parsing static timing reports, inspecting Value Change Dump (VCD) waveform traces, and writing SystemVerilog Assertions (SVA). EDA-Agent is an open-source, multi-agent AI platform designed to automate Register-Transfer Level (RTL) code analysis, functional testbench generation, waveform failure debugging, synthesis area estimation, and timing slack optimization. To overcome the hallucination risks of pure neural generation, EDA-Agent employs a hierarchical coordinator-worker architecture that combines Large Language Models (LLMs) with strict deterministic boundaries: AST Static Analysis: A custom regex/AST parser deterministically evaluates design violations, such as latch inference conditions and blocking assignment race hazards. Trace-Based VCD Waveform Debugging: The system parses standard IEEE 1364 VCD files to build a temporal transition matrix, allowing the agent to back-track state transitions and map assertion failures directly to faulty source code lines. Retrieval-Augmented Generation (RAG): The system grounds its reasoning in an indexed database of IEEE 1800-2017 SystemVerilog standards, Yosys manuals, and OpenSTA documentation. Empirical evaluations of EDA-Agent demonstrate 100% unit test accuracy on core parsing components, 94.2% waveform-based bug localization accuracy, and a 37.5x acceleration in SystemVerilog testbench generation compared to manual human workflows.",
-      "year": 2026,
-      "published_at": "2026-10-23",
-      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
-      "doi": "10.5281/zenodo.23600947",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7223414566",
-      "source_url": "https://doi.org/10.5281/zenodo.23600947",
-      "pdf_url": "",
-      "oa_status": "green",
-      "license": "cc-by",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "标题命中 computer-aided design"
-      ],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 8,
-      "discovered_at": "2026-11-21T06:20:11.569148+00:00"
-    },
-    {
-      "stable_id": "doi:10.1117/12.3133467",
-      "title": "Dual-graph computable knowledge engineering for CAD-to-CNC macro synthesis",
-      "authors": [
-        "Haining Liu",
-        "Changchao Jiao"
-      ],
-      "abstract": "Large language models (LLMs) can synthesize G-code, but autonomous CAD-to-CNC macro-generation must preserve geometry, process constraints, variable roles, equations, loop bounds, coordinate mappings, and controller syntax. This paper presents a dual-graph computable knowledge engineering method in which typed knowledge objects are selected by a semantic relation graph and converted by a computational dependency graph into acyclic variable-expression-loop dependencies. A seven-layer Macro-Structured Parametric CNC Code (Macro-SPCC) schema and Macro-Program Intermediate Representation (MPIR) organize the evidence, while deterministic modules perform evaluation, geometric checking, and FANUC Macro B compilation. Across 12 tire-mold lettering-insert tasks from six DXF cases and two toolpath configurations, the method achieved 91.7% accuracy, 50.0 percentage points above Text-RAG, and a 100.0% compilation pass rate. VERICUT confirmed continuity, endpoint reachability, and safe retraction, demonstrating a traceable, computationally closed, and executable synthesis process.",
-      "year": 2026,
-      "published_at": "2026-10-23",
-      "venue": "International Conference on Advanced Manufacturing Technology and Manufacturing Systems (ICAMTMS)",
-      "doi": "10.1117/12.3133467",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7223261784",
-      "source_url": "https://doi.org/10.1117/12.3133467",
-      "pdf_url": "",
-      "oa_status": "closed",
-      "license": "",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-21T06:20:11.648588+00:00"
+      "discovered_at": "2026-11-22T05:52:19.946633+00:00"
     }
   ]
 }
