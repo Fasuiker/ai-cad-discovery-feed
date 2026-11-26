@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-25T07:45:46.532867+00:00",
+  "generated_at": "2026-11-26T07:36:06.140899+00:00",
   "range": {
-    "from": "2026-10-27",
-    "to": "2026-11-25"
+    "from": "2026-10-28",
+    "to": "2026-11-26"
   },
-  "count": 77,
+  "count": 81,
   "source_health": {
     "arxiv": {
       "ok": false,
       "count": 0,
-      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202610270000+TO+202611252359%5D&start=0&",
-      "seconds": 78.97
+      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202610280000+TO+202611262359%5D&start=0&",
+      "seconds": 44.42
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 5.66
+      "seconds": 4.81
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 13.03
+      "seconds": 8.38
     },
     "upstream_awesome": {
       "ok": true,
-      "count": 8,
-      "seconds": 0.7
+      "count": 9,
+      "seconds": 0.52
     }
   },
   "public_profile": {
@@ -77,6 +77,98 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.1108/ria-09-2025-0303",
+      "title": "Control of a ball balancing robot using a standalone reinforcement learning agent",
+      "authors": [
+        "Abdelrahman Nashat",
+        "Mustafa Abdelrahman",
+        "Mohamed Hassan",
+        "Abdelrahman Morsi"
+      ],
+      "abstract": "Purpose The purpose of this study is to design and evaluate a standalone reinforcement learning (RL) controller for a ball-balancing robot (ballbot). Conventional linear controllers such as proportional integral derivative (PID) or linear quadratic regulator (LQR) require simplified models that neglect nonlinear couplings, whereas nonlinear methods such as nonlinear model predictive control (NMPC) and sliding mode control impose high computational demands that hinder real-time implementation. These limitations make RL a necessary alternative, as it can directly learn robust control policies from interaction without explicit model simplification. Design/methodology/approach This study presents the development and training of a standalone RL controller to balance a ballbot using the deep deterministic policy gradient (DDPG). In addition, twin delayed deep deterministic policy gradient (TD3) algorithm is included and used in training as a comparative baseline. A high-fidelity simulation environment is constructed using NVIDIA IsaacGym, which incorporates a custom computer-aided design (CAD) model and a physics-based simulation framework that facilitates agent training. Findings Both RL algorithms successfully learn to stabilize the ballbot. However, the DDPG-based controller demonstrates superior performance in maintaining balance under external disturbances and varying ground conditions. Robustness of the trained RL agent is validated through different testing scenarios including weight perturbation, external force application and movement over nonuniform ground surfaces. In addition, a comparison with a classical PID controller is presented to highlight relative strengths and limitations. Originality/value This research introduces a novel standalone RL controller designed specifically for the ballbot system, trained in a realistic and robust simulation environment. The study highlights the potential of RL-based strategies in managing the complexities of balancing tasks for inherently unstable robotic platforms. Further originality of this work lies in the design of a task-specific reward function that integrates penalties on tilt, angular velocity and lateral drift, ensuring that the RL agent learns robust, efficient balancing strategies beyond what standard reward formulations achieve.",
+      "year": 2026,
+      "published_at": "2026-11-26",
+      "venue": "Robotic Intelligence and Automation",
+      "doi": "10.1108/ria-09-2025-0303",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.1108/ria-09-2025-0303",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [
+        "摘要命中 computer-aided design"
+      ],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 7,
+      "discovered_at": "2026-11-26T07:36:06.093865+00:00"
+    },
+    {
+      "stable_id": "doi:10.20944/preprints202611.2640.v1",
+      "title": "Beyond Toy Scripts: Auditing Silent Failures and Closing the Trial-to-Trial Consistency Gap in VLM-Driven 2D-to-3D Parametric CAD Reconstruction",
+      "authors": [
+        "Jialiang Ying"
+      ],
+      "abstract": "Translating multi-view 2D engineering drawings into editable 3D boundary-representation (B-Rep) models remains an unsolved bottleneck in mechanical manufacturing. Most vision-language model (VLM) CAD pipelines emit offline Python scripts (such as CadQuery) from synthetic projections and evaluate reconstructed solids with scale-normalized volumetric Intersection-over-Union (IoU) or Chamfer Distance (CD). In shop-floor machining, however, sub-millimeter errors or omitted holes cause assembly interference, scrap parts, and reduced fatigue life, while unconstrained scripting brings high latency, weak verifiability, and full rebuilds whenever a late feature fails. We present dsh-solidworks, a sandboxed Model Context Protocol (MCP) architecture over commercial SolidWorks 2025 built on the open-source SolidPilot compiler. The system restricts the VLM to 12 task-level CAD tools, runs static pre-build geometric checks on a declarative Feature Graph, speeds up cross-process COM face inspection by 97.7x to 150x, replaces inflated tessellation bounding boxes with exact six-direction extremum metrology, and gates delivery through a provenance-tracked dimension_ledger. Across 31 verified drawings and 134 curated high-reasoning unattended runs (drawn from 335 benchmark sessions), our diagnostic audit on National Vocational Skill Exam parts (4b7dc30) shows high single-part solvability (Pass@3 = 100%, 7/7) alongside low 3-of-3 repeatability (Pass^3 = 28.6%, 2/7). In three counterbalanced matched-pair A/B cohorts across five repeated development drawings (28 pairs, 56 runs), tested prompt and strategy edits produced no detectable large pass-rate gain (14/28 vs. 15/28 under pre-H24 scoring, exact McNemar p=1.000, drawing-cluster bootstrap 95% CI [-20.0, +33.3] pp; exact 16/28 vs. 16/28 tie under exact extremum scoring, 95% CI [-21.4, +30.8] pp). After resolving hole-face (H25) and coaxial-cylinder ledger (H26) ambiguities (37f5ac1-&gt;601ef29), LEDGER_INVALID errors drop from 33.3% (8/24) to 0.0% (0/20 on 601ef29). On a separate held-out CC-BY-4.0 machined-part blind benchmark, the updated system reaches an 86.7% (26/30) run pass rate (76.7% under uniform ±1% volume tolerance) and 80.0% (8/10) 3-of-3 consistency; because the diagnostic and blind cohorts differ in part sets and tolerances, we report 80.0% as a held-out benchmark result while characterizing the shared-perception ceiling of single-model self-verification. Code and evaluation artifacts are open-sourced at https://github.com/tian-yu200/dsh-solidworks.",
+      "year": 2026,
+      "published_at": "2026-11-25",
+      "venue": "",
+      "doi": "10.20944/preprints202611.2640.v1",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.20944/preprints202611.2640.v1",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "http://creativecommons.org/licenses/by/4.0",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [
+        "摘要命中 b-rep",
+        "标题命中 parametric CAD",
+        "标题命中 CAD reconstruction"
+      ],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 12,
+      "discovered_at": "2026-11-26T07:36:06.064602+00:00"
+    },
+    {
+      "stable_id": "doi:10.3390/buildings16234723",
+      "title": "Human–Agent Collaboration in CAD-to-Revit Reconstruction: An MCP-Based Framework and Case Study",
+      "authors": [
+        "Guangyao Zhang",
+        "Bojin Hao",
+        "Wenliang Ma",
+        "Lingxin Zeng",
+        "Jiaomei Wang",
+        "Qiuya Liu",
+        "Sijin Zhu",
+        "Shangfei Yang",
+        "Qikai Yang"
+      ],
+      "abstract": "To address cross-software collaboration needs in CAD–Revit reconstruction, this study proposes and implements a human–agent collaboration framework based on the Model Context Protocol (MCP) to support natural language-driven information processing and model operations. Validation is conducted through CAD information extraction, controlled writing to Revit, and reconstruction of the BIM Home residence using publicly available Autodesk materials. Records of 12 interaction rounds, model comparisons, and manual checks are combined to analyze the modeling results and collaboration process. Comparison with the reference model showed that 46 of the 60 target elements (76.7%) passed the 2 mm per-element surface geometry check. Differences in the remaining elements are mainly concentrated at wall joins and in door and window details. Process analysis shows that the agent continuously undertakes program preparation and data processing, and that supplementary conditions and feedback can drive local corrections; however, explicit requirements remain insufficient to prevent geometric misjudgments and new deviations introduced by modifications. This study verifies the feasibility of interoperability under the specified conditions and provides empirical evidence to help engineers identify priorities for condition confirmation, result checking, and manual completion.",
+      "year": 2026,
+      "published_at": "2026-11-25",
+      "venue": "Buildings",
+      "doi": "10.3390/buildings16234723",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.3390/buildings16234723",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-26T07:36:06.066670+00:00"
+    },
+    {
       "stable_id": "doi:10.1111/cgf.70660",
       "title": "Reward‐Driven Learning of Concise CAD Command Sequences From Point Clouds",
       "authors": [
@@ -105,65 +197,67 @@
         "Crossref"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-25T07:45:46.487613+00:00"
+      "discovered_at": "2026-11-26T07:36:06.133085+00:00"
     },
     {
-      "stable_id": "doi:10.4018/979-8-3373-9089-5.ch005",
-      "title": "A Trust-Adaptive Generative AI Framework for Competency-Centered and Integrity-Preserving Assessment in Higher Education",
+      "stable_id": "doi:10.25258/ijddt.16.82s.13",
+      "title": "Comparison of Different Types of Plates Used in Condylar Fractures: A Narrative Review",
       "authors": [
-        "Dhinakaran Damodaran",
-        "S. Edwin Raja"
+        "Snehal B Charthad",
+        "V Raj Kumar",
+        "Saurabh Kamble",
+        "Dnyaneshwari Mahakulkar",
+        "Sweety Rajaram Gaikwad",
+        "Nitish Kumar",
+        "H. Priyalaxmee Devi"
       ],
-      "abstract": "The rapid integration of generative artificial intelligence (GenAI) into higher education has transformed assessment practices, yet existing systems remain limited in adaptivity, integrity, trust, and fairness. This chapter proposes a novel framework, Trust-Adaptive Generative Assessment for Competency-Aligned Design (TAGA-CAD), which reconceptualizes assessment as a continuous, adaptive, and ethically governed process. The framework integrates competency-driven task generation, integrity-preserving assessment design, trust-calibrated evaluation mechanisms, and fairness-aware regulation within a unified architecture. By embedding human oversight and closed-loop feedback, TAGA-CAD ensures alignment with learning outcomes while maintaining transparency and reliability in automated grading. A conceptual evaluation model supported by analytical metrics and comparative visualizations demonstrates the superiority of the proposed approach over traditional and existing AI-based systems.",
+      "abstract": "Mandibular condylar fractures are among the most frequently encountered mandibular fractures and present considerable challenges owing to the complex anatomy of the temporomandibular joint and the multidirectional biomechanical forces acting on the condylar region. Stable fixation is essential to achieve anatomical reduction, restore mandibular function, maintain occlusion, and facilitate early rehabilitation. Over the years, fixation methods have evolved from conventional single and double miniplate osteosynthesis to dedicated threedimensional (3D) plate systems and, more recently, patient-specific fixation devices. This review summarizes the current concepts in the fixation of mandibular condylar fractures, with emphasis on the biomechanical rationale, clinical applications, and performance of commonly used plate designs, including single miniplates, double miniplates, delta, trapezoidal, lambda, rhombic, Y-shaped, and mechanically optimized plates. Current evidence indicates that although double miniplate fixation continues to provide the highest biomechanical stability, modern 3D plate systems achieve comparable clinical outcomes while reducing surgical exposure, operative time, and hardware-related complications. Recent advances in computer-aided design/computer-aided manufacturing (CAD/CAM), virtual surgical planning, finite element analysis, three-dimensional printing, and patient-specific implants have further improved fixation accuracy and surgical precision. The integration of artificial intelligence and advanced biomaterials is expected to enhance implant design and be individualized according to fracture configuration, available bone stock, surgical approach, and biomechanical requirements. Continued clinical research and technological innovation are expected to further optimize the management of mandibular condylar fractures and improve long-term functional outcomes.",
       "year": 2026,
       "published_at": "2026-11-24",
-      "venue": "Advances in Computational Intelligence and Robotics",
-      "doi": "10.4018/979-8-3373-9089-5.ch005",
+      "venue": "International Journal of Drug Delivery Technology",
+      "doi": "10.25258/ijddt.16.82s.13",
       "arxiv_id": "",
-      "openalex_id": "",
-      "source_url": "https://doi.org/10.4018/979-8-3373-9089-5.ch005",
-      "pdf_url": "",
-      "oa_status": "unknown",
+      "openalex_id": "https://openalex.org/W7239394215",
+      "source_url": "https://doi.org/10.25258/ijddt.16.82s.13",
+      "pdf_url": "https://doi.org/10.25258/ijddt.16.82s.13",
+      "oa_status": "bronze",
       "license": "",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "Crossref"
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [
+        "摘要命中 computer-aided design"
       ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.487128+00:00"
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 7,
+      "discovered_at": "2026-11-26T07:36:06.020298+00:00"
     },
     {
-      "stable_id": "doi:10.21203/rs.3.rs-11331717/v1",
-      "title": "Multimodal machine learning bridges the cardiology–ICU gap predicts in- hospital mortality and outperforms severity scores in critically ill CAD patients",
+      "stable_id": "doi:10.54097/ajad.42",
+      "title": "Analysis of Human-Computer Collaborative Creation for Dunhuang Pattern Innovation Empowered by Generative Artificial Intelligence from the Perspective of Parametric Design",
       "authors": [
-        "Bing Cui",
-        "Xinfang Zhang",
-        "Zhaokui Kou",
-        "Tianlan Wang",
-        "Ge Chen",
-        "Yulong Liu",
-        "Hua Xu",
-        "Yaohua Zhang"
+        "Ziwen Xie"
       ],
-      "abstract": "Abstract Background Critically ill patients with coronary artery disease (CAD) occupy an intermediate position between two risk assessment frameworks: cartographical specific scores established outside the intensive care unit (ICU), and the general ICU severity scores that do not account for cardiac-specific characteristics. To address this gap, we developed and externally validated machine-learning models predicting in-hospital mortality from the first 24 h of ICU data. Methods Adults diagnosed with coronary artery disease (CAD) or acute coronary syndrome, who experienced an ICU stay of 24 hours or more, were identified within the eICU Collaborative Research Database, encompassing data from 208 hospitals across the United States during the years 2014 to 2015. Predictors were hourly vital-sign and laboratory trajectories (24 h × 41 variables), static and comorbidity data, first-day treatments and diagnosis text. Logistic regression, LightGBM, XGBoost and CHD-MMNet were developed in 146 hospitals with hospital-grouped cross-validation and validated in 42 unseen hospitals, in 2015 discharges after training on 2014, and externally in MIMIC-IV v3.1 (2008–2022), where a frozen portable model was applied without updating. Comparators were APACHE IV, day-1 SOFA and OASIS. Analyses followed the pre-specified plan and TRIPOD + AI. Results Of 200,859 ICU stays, 17586 were included (188 hospitals, mean age 67.6 years, 65.0% male) and 1315 (7.5%) died. We first tested whether the model improved on existing severity scores in hold-out hospitals (n = 4653, 308 deaths). The AUROC of LightGBM was 0.897 (95% CI 0.879–0.914) versus 0.864 (0.842–0.887) for APACHE IV (ΔAUROC 0.032, P = 1.2×10 − 4 ), with better precision–recall, calibration and net benefit, demonstrating a consistent advantage over the clinical comparator; XGBoost was equivalent whereas CHD-MMNet inferior. To assess robustness over time, we performed temporal validation, which yielded an AUROC of 0.886 versus 0.854 for APACHE IV, indicating that the advantage persisted in a subsequent calendar year. We then applied the frozen model externally to an independent health system (24,129 MIMIC-IV CAD stays, 2785 deaths). It retained an AUROC of 0.871 (0.864–0.877), showed no decay across admission-year groups, and exceeded day-1 SOFA (0.658) and OASIS (0.688). Ablation showed that only removal of the hourly time series reduced discrimination (ΔAUROC − 0.036). The highest risk tier contained 6.5% of patients and 47.4% of deaths. Together, these findings indicate that the model improved on existing severity scores, remained stable over time, transported across health systems, relied mainly on hourly physiological data, and enabled clinically meaningful risk stratification. Conclusions Machine learning using first-day ICU data predicts in-hospital death in critically ill CAD patients more accurately than traditional scores over 14 years. Gradient boosting on physiological trajectories performed as well as or better than deep sequence networks, favoring simpler models for implementation.",
+      "abstract": "The dynamic inheritance of Dunhuang patterns is limited by the practical problems of low-efficiency manual reproduction and high professional demands. Generative artificial intelligence provides the technical conditions for pattern innovation, but the model is based on statistical patterns from training data and cannot grasp the structural logic and symbolic connotations of Dunhuang patterns; therefore, there is a risk of style deviation and semantic dilution. Parametric Design is employed as the analytical framework in this paper to study the operating mode of human-machine collaboration when generative artificial intelligence is used for the innovation of Dunhuang patterns. Parametric Design can be used to set up a controllable rule system for the structure of the Design Object, thus adapting to the natural geometric order of Dunhuang patterns. Under this framework, the digital translation of Dunhuang patterns proceeds along the paths of structural analysis, rule extraction, constrained generation, and multi-dimensional evaluation, and the human-machine relationship evolves iteratively under the constraints of rules. The preservation of cultural authenticity and the determination of copyright ownership are problems to be solved in collaborative creation. This paper proposes a way of thinking that combines technical feasibility with cultural awareness for the digital innovation of Dunhuang patterns.",
       "year": 2026,
       "published_at": "2026-11-23",
-      "venue": "",
-      "doi": "10.21203/rs.3.rs-11331717/v1",
+      "venue": "Academic Journal of Art and Design",
+      "doi": "10.54097/ajad.42",
       "arxiv_id": "",
-      "openalex_id": "",
-      "source_url": "https://doi.org/10.21203/rs.3.rs-11331717/v1",
-      "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "suggested_category": "Open-source Systems & Tools",
-      "matched_terms": [],
-      "source_names": [
-        "Crossref"
+      "openalex_id": "https://openalex.org/W7239413502",
+      "source_url": "https://doi.org/10.54097/ajad.42",
+      "pdf_url": "https://ajoad.org/index.php/ojs/article/download/42/41",
+      "oa_status": "hybrid",
+      "license": "cc-by-nc",
+      "suggested_category": "CAD Editing, Constraints & Verification",
+      "matched_terms": [
+        "标题命中 parametric design"
       ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.524581+00:00"
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 9,
+      "discovered_at": "2026-11-26T07:36:06.004994+00:00"
     },
     {
       "stable_id": "doi:10.1038/s41598-026-80981-5",
@@ -194,7 +288,37 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.382816+00:00"
+      "discovered_at": "2026-11-26T07:36:05.933737+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.28853",
+      "title": "CivilCADBench: Benchmarking Multimodal LLMs for Understanding, Reconstructing, and Designing Civil Engineering Drawing Sets",
+      "authors": [
+        "Zelin Zheng",
+        "Wu Difei",
+        "Xinyan Liu",
+        "Minghong Chen",
+        "Antoni B. Chan",
+        "Difan Zou"
+      ],
+      "abstract": "Civil infrastructure is designed, built, and maintained through engineering drawing sets, yet preparing and revising them remains labour-intensive and calls for automation. Multimodal large language models (MLLMs) are promising candidates, but assessing them requires a benchmark grounded in real engineering practice. We introduce CivilCADBench, a benchmark for understanding, reconstructing, and designing civil engineering drawing sets, built from real infrastructure drawings and source CAD files containing over 250,000 CAD entities. Unlike parametric 3D CAD models, these drawings are dense, layered, and multi-sheet; and since prints are lossy projections with no pixel trace of layers, a file can print correctly yet remain wrongly organised. CivilCADBench comprises three task families of increasing difficulty: understanding tasks are evaluated with 2,183 expert-reviewed questions ranging from single sheets to whole sets, while reconstruction and design tasks are agentic, requiring models to rebuild printed pages as editable CAD files, either as single pages or entire drawing sets, and to produce new designs. These tasks are performed across 232 pages, 28 sets, and 19 design tasks, and evaluated by a deterministic scorer that compares model outputs with the designers' source files on geometry, layers, text, and dimensions. We evaluate seven frontier MLLMs on CivilCADBench, and find that they read and redraw printed content accurately but recover the file structure poorly: the best model scores above 90% in understanding and single-page reconstruction, yet only 60% on layer assignment and 48% on design. Grounded in real engineering practice, CivilCADBench exposes both the capabilities and the limitations of frontier models in professional civil engineering, laying a foundation for next-generation models and agentic systems for intelligent civil engineering.",
+      "year": 2026,
+      "published_at": "2026-11-21",
+      "venue": "arXiv",
+      "doi": "10.48550/arxiv.2611.28853",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7239393084",
+      "source_url": "https://doi.org/10.48550/arxiv.2611.28853",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "cc-by",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-26T07:36:06.036924+00:00"
     },
     {
       "stable_id": "doi:10.1002/9781394403257.ch7",
@@ -219,7 +343,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.372804+00:00"
+      "discovered_at": "2026-11-26T07:36:05.917441+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.24378728",
@@ -246,7 +370,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-25T07:45:46.378615+00:00"
+      "discovered_at": "2026-11-26T07:36:05.927761+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.26003",
@@ -276,7 +400,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.458579+00:00"
+      "discovered_at": "2026-11-26T07:36:06.031666+00:00"
     },
     {
       "stable_id": "doi:10.1145/3862473",
@@ -309,7 +433,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-25T07:45:46.399515+00:00"
+      "discovered_at": "2026-11-26T07:36:05.958243+00:00"
     },
     {
       "stable_id": "doi:10.3390/su182211713",
@@ -341,7 +465,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-25T07:45:46.372043+00:00"
+      "discovered_at": "2026-11-26T07:36:05.916248+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.24681",
@@ -376,7 +500,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.376200+00:00"
+      "discovered_at": "2026-11-26T07:36:05.923445+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11337866/v1",
@@ -406,7 +530,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.382064+00:00"
+      "discovered_at": "2026-11-26T07:36:05.932721+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22903",
@@ -437,7 +561,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-25T07:45:46.373668+00:00"
+      "discovered_at": "2026-11-26T07:36:05.918532+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11735626/v1",
@@ -467,7 +591,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-25T07:45:46.391894+00:00"
+      "discovered_at": "2026-11-26T07:36:05.947241+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22563",
@@ -500,7 +624,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-25T07:45:46.375641+00:00"
+      "discovered_at": "2026-11-26T07:36:05.922539+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11493537/v1",
@@ -530,7 +654,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-25T07:45:46.373915+00:00"
+      "discovered_at": "2026-11-26T07:36:05.919226+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22565",
@@ -560,7 +684,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.463759+00:00"
+      "discovered_at": "2026-11-26T07:36:06.038693+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.20451",
@@ -595,7 +719,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-25T07:45:46.374126+00:00"
+      "discovered_at": "2026-11-26T07:36:05.919686+00:00"
     },
     {
       "stable_id": "doi:10.20998/2313-8890.2026.10.19",
@@ -623,7 +747,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.383109+00:00"
+      "discovered_at": "2026-11-26T07:36:05.934182+00:00"
     },
     {
       "stable_id": "doi:10.55942/jeht.v2i2.2375",
@@ -653,7 +777,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-25T07:45:46.371798+00:00"
+      "discovered_at": "2026-11-26T07:36:05.915883+00:00"
     },
     {
       "stable_id": "doi:10.1080/20464177.2026.2763301",
@@ -681,7 +805,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.393247+00:00"
+      "discovered_at": "2026-11-26T07:36:05.948984+00:00"
     },
     {
       "stable_id": "doi:10.1002/jomd.70006",
@@ -712,7 +836,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.373083+00:00"
+      "discovered_at": "2026-11-26T07:36:05.917894+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.11.11.26367872",
@@ -740,7 +864,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.385136+00:00"
+      "discovered_at": "2026-11-26T07:36:05.937721+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.16184",
@@ -772,7 +896,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.374589+00:00"
+      "discovered_at": "2026-11-26T07:36:05.920453+00:00"
     },
     {
       "stable_id": "doi:10.3390/wevj17110593",
@@ -799,7 +923,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.464523+00:00"
+      "discovered_at": "2026-11-26T07:36:06.039645+00:00"
     },
     {
       "stable_id": "doi:10.54448/mdnt26s402",
@@ -829,7 +953,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.447141+00:00"
+      "discovered_at": "2026-11-26T07:36:06.018349+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23994986",
@@ -860,7 +984,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.390885+00:00"
+      "discovered_at": "2026-11-26T07:36:05.945108+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.rineng.2026.114086",
@@ -888,7 +1012,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.376464+00:00"
+      "discovered_at": "2026-11-26T07:36:05.923863+00:00"
     },
     {
       "stable_id": "doi:10.14797/mdcvj.1917",
@@ -931,7 +1055,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.380305+00:00"
+      "discovered_at": "2026-11-26T07:36:05.929846+00:00"
     },
     {
       "stable_id": "openalex:w7225934142",
@@ -956,7 +1080,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-25T07:45:46.381243+00:00"
+      "discovered_at": "2026-11-26T07:36:05.931389+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3836073",
@@ -990,7 +1114,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-25T07:45:46.372557+00:00"
+      "discovered_at": "2026-11-26T07:36:05.917044+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835182",
@@ -1022,7 +1146,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-25T07:45:46.374790+00:00"
+      "discovered_at": "2026-11-26T07:36:05.920773+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835531",
@@ -1054,7 +1178,42 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-25T07:45:46.380605+00:00"
+      "discovered_at": "2026-11-26T07:36:05.930352+00:00"
+    },
+    {
+      "stable_id": "doi:10.66128/ijaiir202602.1",
+      "title": "Artificial Intelligence-Assisted CAD/CAM Restorations in Dentistry: Current Applications, Clinical Benefits, and Future Perspectives",
+      "authors": [
+        "Haiou Zhang",
+        "Qizhiang Liu",
+        "Tao Wen",
+        "Miaomiao Zhang",
+        "Mingwang Cui",
+        "Weiqi Xu",
+        "Qinwen Deng",
+        "Zhengrou Wang",
+        "Guo Zhuling"
+      ],
+      "abstract": "Computer-aided design and computer-aided manufacturing (CAD/CAM) technologies have become fundamental components of modern restorative dentistry by improving the precision, efficiency, and predictability of prosthetic rehabilitation. However, conventional CAD/CAM workflows remain highly dependent on clinician experience, particularly during digital impression acquisition, restoration design, occlusal adjustment, and quality evaluation. Recent advances in artificial intelligence (AI), including machine learning, deep learning, computer vision, and generative AI, have introduced intelligent automation into digital restorative workflows. AI methods have demonstrated potential for tooth segmentation, finish-line detection, crown morphology reconstruction, occlusal analysis, and manufacturing quality assessment, although the level of clinical validation varies considerably among these applications. This narrative review summarizes the current applications of AI in CAD/CAM restorative dentistry and discusses its influence on clinical accuracy, workflow efficiency, and patient-centered treatment. The article first introduces the evolution of CAD/CAM technology and the major AI methodologies used in digital dentistry. Subsequently, AI applications throughout the restorative workflow—including digital impression processing, automated restoration design, manufacturing optimization, and clinical evaluation—are reviewed. Clinical advantages and current limitations are critically analyzed, followed by an overview of future developments such as multimodal AI, digital twins, and intelligent manufacturing. Although AI is unlikely to replace prosthodontists, it is expected to become an indispensable decision-support technology that enhances restorative precision and clinical efficiency.",
+      "year": 2026,
+      "published_at": "2026-11-09",
+      "venue": "International Journal of Artificial Intelligence Interdisciplinary Research",
+      "doi": "10.66128/ijaiir202602.1",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7239422365",
+      "source_url": "https://doi.org/10.66128/ijaiir202602.1",
+      "pdf_url": "https://perennial.pub/journal/ijaiir/display/209/ijaiir-00006.pdf",
+      "oa_status": "hybrid",
+      "license": "cc-by",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [
+        "摘要命中 computer-aided design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 7,
+      "discovered_at": "2026-11-26T07:36:05.921136+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jestch.2026.102594",
@@ -1083,7 +1242,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.398824+00:00"
+      "discovered_at": "2026-11-26T07:36:05.959010+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842584",
@@ -1097,7 +1256,7 @@
         "Kai Xu",
         "Ruizhen Hu"
       ],
-      "abstract": "In this paper, we introduce TempFit , a novel approach for the problem of Panoptic Symbol Spotting on CAD drawings. Existing methods treat symbol spotting as a per-primitive classification or mask-prediction task, with no explicit constraint enforcing that the primitives assigned to one instance form a spatially connected group. As a result, predictions may erroneously merge primitives from distant symbols into a single instance or fragment a coherent symbol across multiple predictions. Motivated by the professional \"retrieve-and-transform\" CAD design workflow, we reformulate this task as a Template Fitting problem, where each foreground instance is detected by retrieving and aligning a canonical template from a library, enforcing structural completeness by construction. Building on this formulation, we present an autoregressive transformer that unifies template retrieval and pose prediction within a single end-to-end pipeline. The framework treats the template library as an explicit geometric memory, parsing background regions in parallel via learnable background tokens and synthesizing foreground instances autoregressively while attending to template-specific geometry at each step. Experiments on FloorplanCAD and our newly collected IndustryCAD dataset, a more challenging benchmark with complex industrial symbols, heavy occlusion, and wide scale variation, demonstrate state-of-the-art performance with particularly large gains on IndustryCAD. Project page: https://tempfit-project.github.io/.",
+      "abstract": "In this paper, we introduce TempFit, a novel approach for the problem of Panoptic Symbol Spotting on CAD drawings. Existing methods treat symbol spotting as a per-primitive classification or mask-prediction task, with no explicit constraint enforcing that the primitives assigned to one instance form a spatially connected group. As a result, predictions may erroneously merge primitives from distant symbols into a single instance or fragment a coherent symbol across multiple predictions. Motivated by the professional \"retrieve-and-transform\" CAD design workflow, we reformulate this task as a Template Fitting problem, where each foreground instance is detected by retrieving and aligning a canonical template from a library, enforcing structural completeness by construction. Building on this formulation, we present an autoregressive transformer that unifies template retrieval and pose prediction within a single end-to-end pipeline. The framework treats the template library as an explicit geometric memory, parsing background regions in parallel via learnable background tokens and synthesizing foreground instances autoregressively while attending to template-specific geometry at each step. Experiments on FloorplanCAD and our newly collected IndustryCAD dataset, a more challenging benchmark with complex industrial symbols, heavy occlusion, and wide scale variation, demonstrate state-of-the-art performance with particularly large gains on IndustryCAD. Project page: https://tempfit-project.github.io/.",
       "year": 2026,
       "published_at": "2026-11-09",
       "venue": "ACM Transactions on Graphics",
@@ -1114,7 +1273,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.474796+00:00"
+      "discovered_at": "2026-11-26T07:36:06.050312+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842505",
@@ -1129,7 +1288,7 @@
         "Guoping Wang",
         "Peng-Shuai Wang"
       ],
-      "abstract": "Centroidal Voronoi tessellation (CVT) is a fundamental primitive for high-quality surface sampling and isotropic remeshing in computer graphics. However, computing surface CVTs with classical solvers remains expensive: each optimization step repeatedly constructs restricted Voronoi diagrams (RVDs) and integrates quantities over their surface cells. We introduce Neural CVT , a learning-based surface-CVT solver that replaces these costly geometric computations with a recurrent neural optimizer, accelerating CVT optimization by one to two orders of magnitude in our benchmarks while preserving geometric fidelity. Given an input surface, we sample a dense point cloud and extract multi-scale geometric descriptors with a graph neural encoder. A lightweight recurrent optimizer then refines seed positions over a small number of iterations, aggregating interpolated surface features and optimization history to predict per-seed displacements. The framework is trained self-supervised using CVT objectives that promote uniform distributions and, when desired, feature alignment. Across diverse organic and CAD-like shapes, Neural CVT generalizes to unseen geometry, initialization strategies, and seed densities, producing isotropic, feature-preserving remeshes comparable to state-of-the-art offline optimization methods at a fraction of the computational cost. The code and trained models are available at https://github.com/sig-pku/NeuralCVT.",
+      "abstract": "Centroidal Voronoi tessellation (CVT) is a fundamental primitive for high-quality surface sampling and isotropic remeshing in computer graphics. However, computing surface CVTs with classical solvers remains expensive: each optimization step repeatedly constructs restricted Voronoi diagrams (RVDs) and integrates quantities over their surface cells. We introduce Neural CVT, a learning-based surface-CVT solver that replaces these costly geometric computations with a recurrent neural optimizer, accelerating CVT optimization by one to two orders of magnitude in our benchmarks while preserving geometric fidelity. Given an input surface, we sample a dense point cloud and extract multi-scale geometric descriptors with a graph neural encoder. A lightweight recurrent optimizer then refines seed positions over a small number of iterations, aggregating interpolated surface features and optimization history to predict per-seed displacements. The framework is trained self-supervised using CVT objectives that promote uniform distributions and, when desired, feature alignment. Across diverse organic and CAD-like shapes, Neural CVT generalizes to unseen geometry, initialization strategies, and seed densities, producing isotropic, feature-preserving remeshes comparable to state-of-the-art offline optimization methods at a fraction of the computational cost. The code and trained models are available at https://github.com/sig-pku/NeuralCVT.",
       "year": 2026,
       "published_at": "2026-11-09",
       "venue": "ACM Transactions on Graphics",
@@ -1146,7 +1305,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.393465+00:00"
+      "discovered_at": "2026-11-26T07:36:05.949699+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.13344",
@@ -1173,7 +1332,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-25T07:45:46.470541+00:00"
+      "discovered_at": "2026-11-26T07:36:06.046468+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.11470",
@@ -1206,7 +1365,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-25T07:45:46.374368+00:00"
+      "discovered_at": "2026-11-26T07:36:05.919972+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.10502",
@@ -1235,7 +1394,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.453430+00:00"
+      "discovered_at": "2026-11-26T07:36:06.024541+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.09401",
@@ -1270,7 +1429,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-25T07:45:46.378024+00:00"
+      "discovered_at": "2026-11-26T07:36:05.926594+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.10063",
@@ -1300,7 +1459,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-25T07:45:46.385431+00:00"
+      "discovered_at": "2026-11-26T07:36:05.938264+00:00"
     },
     {
       "stable_id": "doi:10.2186/jpr.jpr_d_25_00232",
@@ -1333,7 +1492,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.477602+00:00"
+      "discovered_at": "2026-11-26T07:36:06.053761+00:00"
     },
     {
       "stable_id": "doi:10.20517/2574-1209.2026.55",
@@ -1366,7 +1525,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.380802+00:00"
+      "discovered_at": "2026-11-26T07:36:05.930665+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23969385",
@@ -1393,7 +1552,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.451341+00:00"
+      "discovered_at": "2026-11-26T07:36:06.021828+00:00"
     },
     {
       "stable_id": "doi:10.3390/electronics15215130",
@@ -1421,7 +1580,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.393919+00:00"
+      "discovered_at": "2026-11-26T07:36:05.949324+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmapro.2026.10.071",
@@ -1450,7 +1609,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.392405+00:00"
+      "discovered_at": "2026-11-26T07:36:05.947921+00:00"
     },
     {
       "stable_id": "doi:10.1007/s11886-026-02443-8",
@@ -1477,7 +1636,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.429378+00:00"
+      "discovered_at": "2026-11-26T07:36:05.999516+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05449",
@@ -1506,7 +1665,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-25T07:45:46.375825+00:00"
+      "discovered_at": "2026-11-26T07:36:05.922828+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05758",
@@ -1538,7 +1697,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-25T07:45:46.471145+00:00"
+      "discovered_at": "2026-11-26T07:36:06.047060+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19471-x",
@@ -1569,7 +1728,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.478474+00:00"
+      "discovered_at": "2026-11-26T07:36:06.054909+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02659",
@@ -1600,7 +1759,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-25T07:45:46.454033+00:00"
+      "discovered_at": "2026-11-26T07:36:06.025639+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44275-026-00056-5",
@@ -1617,7 +1776,7 @@
         "Libin Liu",
         "Maguang Zhu"
       ],
-      "abstract": "Low-dimensional semiconductor devices, including carbon nanotube field-effect transistors (CNT-FETs), require efficient calibration methods to reconcile numerical simulations with experimentally measured electrical characteristics. Conventional manual calibration is time-consuming, while purely data-driven surrogate models may provide limited physical interpretability and reduced reliability when applied to device geometries outside the training domain. In this work, we propose a physics-aware calibration neural network (PACNN) for supervised technology computer-aided design (TCAD)-to-experiment calibration of CNT-FET transfer and output characteristics. PACNN uses current–voltage curves generated by a two-dimensional intrinsic silicon TCAD model as a stable numerical reference. The architecture combines an anchor-preserving physical-affine module, which accounts for global variations in voltage alignment, current amplitude, slope, and extracted electrical parameters, with family-specific bounded residual modules that correct the remaining local discrepancies. Transfer characteristics are processed in the signed logarithmic current domain, whereas output characteristics are calibrated in the normalized linear current domain using separate amplitude and low-rank shape corrections. Model training incorporates curve-fitting, curve-level R 2 , slope consistency, device parameter, residual, and regularization objectives. Channel-length generalization was evaluated through out-of-distribution (OOD) extrapolation to $${L}_\\mathrm{ch}$$ L ch = 4.5 μm and 5.0 μm. PACNN achieved macro-averaged curve-wise R 2 values of 0.947 4 and 0.876 0 for the transfer and output characteristics, respectively, with corresponding pooled pointwise R 2 values of 0.962 7 and 0.996 2. The predicted curves also preserved key electrical parameters, yielding a balanced physical consistency index of 0.918 3. These results indicate that PACNN provides an accurate and physically constrained framework for automated TCAD-to-experiment calibration of CNT-FET characteristics.",
+      "abstract": "Low-dimensional semiconductor devices, including carbon nanotube field-effect transistors (CNT-FETs), require efficient calibration methods to reconcile numerical simulations with experimentally measured electrical characteristics. Conventional manual calibration is time-consuming, while purely data-driven surrogate models may provide limited physical interpretability and reduced reliability when applied to device geometries outside the training domain. In this work, we propose a physics-aware calibration neural network (PACNN) for supervised technology computer-aided design (TCAD)-to-experiment calibration of CNT-FET transfer and output characteristics. PACNN uses current–voltage curves generated by a two-dimensional intrinsic silicon TCAD model as a stable numerical reference. The architecture combines an anchor-preserving physical-affine module, which accounts for global variations in voltage alignment, current amplitude, slope, and extracted electrical parameters, with family-specific bounded residual modules that correct the remaining local discrepancies. Transfer characteristics are processed in the signed logarithmic current domain, whereas output characteristics are calibrated in the normalized linear current domain using separate amplitude and low-rank shape corrections. Model training incorporates curve-fitting, curve-level R 2, slope consistency, device parameter, residual, and regularization objectives. Channel-length generalization was evaluated through out-of-distribution (OOD) extrapolation to $${L}_\\mathrm{ch}$$ L ch = 4.5 μm and 5.0 μm. PACNN achieved macro-averaged curve-wise R 2 values of 0.947 4 and 0.876 0 for the transfer and output characteristics, respectively, with corresponding pooled pointwise R 2 values of 0.962 7 and 0.996 2. The predicted curves also preserved key electrical parameters, yielding a balanced physical consistency index of 0.918 3. These results indicate that PACNN provides an accurate and physically constrained framework for automated TCAD-to-experiment calibration of CNT-FET characteristics.",
       "year": 2026,
       "published_at": "2026-11-02",
       "venue": "Moore and More",
@@ -1636,7 +1795,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.394566+00:00"
+      "discovered_at": "2026-11-26T07:36:05.951845+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02433",
@@ -1664,7 +1823,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.376740+00:00"
+      "discovered_at": "2026-11-26T07:36:05.924311+00:00"
     },
     {
       "stable_id": "doi:10.1161/circ.154.suppl_1.6313",
@@ -1692,7 +1851,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.375310+00:00"
+      "discovered_at": "2026-11-26T07:36:05.921973+00:00"
     },
     {
       "stable_id": "arxiv:2611.31661",
@@ -1717,7 +1876,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-25T07:45:46.530378+00:00"
+      "discovered_at": "2026-11-26T07:36:06.138107+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.dibe.2026.101120",
@@ -1745,7 +1904,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-25T07:45:46.468761+00:00"
+      "discovered_at": "2026-11-26T07:36:06.044617+00:00"
     },
     {
       "stable_id": "arxiv:2611.05449",
@@ -1770,7 +1929,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-25T07:45:46.530114+00:00"
+      "discovered_at": "2026-11-26T07:36:06.137665+00:00"
     },
     {
       "stable_id": "arxiv:2611.22903",
@@ -1795,7 +1954,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-25T07:45:46.530616+00:00"
+      "discovered_at": "2026-11-26T07:36:06.138514+00:00"
     },
     {
       "stable_id": "doi:10.29227/im-2026-02-01-085",
@@ -1824,37 +1983,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.463250+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2611.02300",
-      "title": "Trustworthy Execution of Industrial Agents",
-      "authors": [
-        "Zhongjie Wang",
-        "Mingyi Liu",
-        "Xiang He",
-        "Xiao Wang",
-        "Shuang Yu",
-        "Kai Wang"
-      ],
-      "abstract": "Industrial agents increasingly modify persistent engineering objects rather than merely generate answers. Authentication and successful calls cannot establish whether intended changes occurred, evidence supports a conclusion, or historical results remain applicable. We present a framework for trustworthy industrial-agent execution within a single enterprise governance domain. Eight control domains assign responsibilities across authority, planning, composition, tool execution, actual effects, evidence, baseline and use governance, and recovery and evolution. A four-plane architecture and three control chains connect these responsibilities through typed objects and version-bound interfaces. The specification separates tool returns from actual engineering effects, evidence coverage from engineering judgment, and historical lifecycle state from current applicability. Multi-agent handoffs are an architectural extension examined through deterministic interface tests. Distinct prototypes examine selected mechanisms using conformance tests, ablations, uncertainty stress, CAD/CAE execution, and local persistence. An OpenFOAM fixture produces COMPLETE coverage with FAIL judgment; an expired-job case requires readmission despite completed computation. CAD and recovery counterexamples expose omitted mandatory checks, discarded negative facts, and inconsistent producer-consumer mappings. Targeted repairs support local regression conclusions. The reported 0/29 hazardous commits measure closed-set specification conformance, not a safety probability. We distinguish the complete framework, implemented paths, and empirical evidence, identifying check-inventory completeness and cross-module fact preservation as prerequisites for extending these results.",
-      "year": 2026,
-      "published_at": "2026-11-01",
-      "venue": "arXiv",
-      "doi": "10.48550/arxiv.2611.02300",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7225155249",
-      "source_url": "https://arxiv.org/abs/2611.02300",
-      "pdf_url": "https://arxiv.org/pdf/2611.02300",
-      "oa_status": "green",
-      "license": "",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.479129+00:00"
+      "discovered_at": "2026-11-26T07:36:06.037629+00:00"
     },
     {
       "stable_id": "doi:10.1002/pat.70785",
@@ -1882,7 +2011,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.447720+00:00"
+      "discovered_at": "2026-11-26T07:36:06.018745+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44443-026-01444-5",
@@ -1907,7 +2036,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.384759+00:00"
+      "discovered_at": "2026-11-26T07:36:05.937139+00:00"
     },
     {
       "stable_id": "arxiv:2611.11470",
@@ -1932,7 +2061,32 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.529969+00:00"
+      "discovered_at": "2026-11-26T07:36:06.137212+00:00"
+    },
+    {
+      "stable_id": "arxiv:2611.33617",
+      "title": "Controllable CAD Generation and Interactive Editing of Fluid Rotors",
+      "authors": [],
+      "abstract": "",
+      "year": 2026,
+      "published_at": "2026-11-01",
+      "venue": "",
+      "doi": "",
+      "arxiv_id": "2611.33617",
+      "openalex_id": "",
+      "source_url": "https://arxiv.org/abs/2611.33617v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.33617",
+      "oa_status": "green",
+      "license": "arXiv",
+      "suggested_category": "CAD Editing, Constraints & Verification",
+      "matched_terms": [
+        "标题命中 CAD generation"
+      ],
+      "source_names": [
+        "awesome-AI4CAD-hub"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-26T07:36:06.137420+00:00"
     },
     {
       "stable_id": "arxiv:2611.22563",
@@ -1957,7 +2111,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.530261+00:00"
+      "discovered_at": "2026-11-26T07:36:06.137913+00:00"
     },
     {
       "stable_id": "doi:10.21037/qims-2026-1308",
@@ -1990,7 +2144,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.428860+00:00"
+      "discovered_at": "2026-11-26T07:36:05.998827+00:00"
     },
     {
       "stable_id": "arxiv:2611.32835",
@@ -2015,7 +2169,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.530498+00:00"
+      "discovered_at": "2026-11-26T07:36:06.138307+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.joes.2026.100783",
@@ -2042,7 +2196,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-25T07:45:46.477359+00:00"
+      "discovered_at": "2026-11-26T07:36:06.053194+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02127",
@@ -2071,7 +2225,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-25T07:45:46.395745+00:00"
+      "discovered_at": "2026-11-26T07:36:05.952555+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.01165",
@@ -2101,7 +2255,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-25T07:45:46.373256+00:00"
+      "discovered_at": "2026-11-26T07:36:05.918186+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -2132,7 +2286,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.372364+00:00"
+      "discovered_at": "2026-11-26T07:36:05.916732+00:00"
     },
     {
       "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
@@ -2163,7 +2317,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.375011+00:00"
+      "discovered_at": "2026-11-26T07:36:05.921509+00:00"
     },
     {
       "stable_id": "doi:10.2991/978-2-38476-628-4_9",
@@ -2189,7 +2343,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.444420+00:00"
+      "discovered_at": "2026-11-26T07:36:06.016072+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.39306",
@@ -2224,7 +2378,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-25T07:45:46.373462+00:00"
+      "discovered_at": "2026-11-26T07:36:05.918861+00:00"
     },
     {
       "stable_id": "doi:10.54097/ht37b711",
@@ -2253,7 +2407,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.460827+00:00"
+      "discovered_at": "2026-11-26T07:36:06.034199+00:00"
     },
     {
       "stable_id": "doi:10.59490/6ad294696ee698573e4dd65c",
@@ -2279,7 +2433,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.464005+00:00"
+      "discovered_at": "2026-11-26T07:36:06.039010+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23756809",
@@ -2306,7 +2460,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-25T07:45:46.402034+00:00"
+      "discovered_at": "2026-11-26T07:36:05.964040+00:00"
     },
     {
       "stable_id": "doi:10.1007/s10791-026-10699-5",
@@ -2333,34 +2487,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-25T07:45:46.450063+00:00"
-    },
-    {
-      "stable_id": "doi:10.3390/buildings16214279",
-      "title": "The Use of Artificial Neural Networks in Architecture: Generating Depth-Aware and Explainable Building Facades from Floor Plans",
-      "authors": [
-        "Minel Kurtuluş",
-        "Ece Cantemir",
-        "Volkan Cantemir"
-      ],
-      "abstract": "This study aims to position the use of artificial intelligence in architectural design, not merely as a tool for visual generation, but as an exploratory decision-support framework in which selected design relationships can be represented in an interpretable and transparent manner. To this end, the study developed ArchAI 2.0, a five-stage hierarchical system that models semantic and spatial relationships between two-dimensional floor plans and generated building facades. The objective was to conditionally generate exterior building image alternatives using floor plan-derived structural information. Following a pair-integrity screening, 657 valid floor plan–exterior photograph project pairs sourced from the ArchDaily platform were retained and partitioned at the project level into training (n = 459), validation (n = 99), and independent test (n = 99) sets. Plan-derived geometric information was extracted using a deterministic computer-vision parsing pipeline and subsequently processed into structural tokens and a depth-aware parametric facade skeleton. The resulting skeleton representation was used as conditioning guidance for a ControlNet integrated with Stable Diffusion 1.5. A Plan-Edge ControlNet trained and evaluated under the same protocol was used as the primary conditioned baseline, while an unconditional text-only Stable Diffusion 1.5 model provided a secondary reference. On the independent test set, the Skeleton and Plan-Edge models showed comparable performance, with no statistically significant differences in Chamfer Distance, Edge IoU, SSIM, or CLIP cosine similarity after Holm correction. Relative to the text-only baseline, Skeleton conditioning produced a modest but statistically significant improvement in Edge IoU (0.0611 vs. 0.0574; Holm-adjusted p = 0.031), whereas the text-only model achieved significantly higher CLIP similarity (0.2749 vs. 0.2647; Holm-adjusted p < 0.001). FID was treated as a descriptive dataset-level measure because of the limited test set size. A bounded human conditioning adherence evaluation further showed that 58 of 98 evaluable cases reproduced the requested two-story organization (59.18%; 58.59% across the full 99-case test set), with a mean absolute story error of 0.4184 stories. Opening-column correspondence was more limited: across 87 evaluable cases, bipartite matching at the primary threshold of τ = 0.08 normalized facade width yielded a micro F1-score of 0.2970. An independent second-rater assessment on a predefined 25-case subset demonstrated high human annotation reliability, with 96.00% exact agreement and linearly weighted Cohen’s κw = 0.9351 for story-count ratings and an inter-rater opening-column matching F1-score of 0.7692. Rather than demonstrating uniform superiority or guaranteed realization of user-specified constraints, the findings indicate that the proposed depth-aware representation provides an alternative structured conditioning mechanism with a performance comparable to direct plan-edge guidance, while human evaluation reveals a clear distinction between representational editability and actual conditioning adherence. The deterministic rule engine complements this generative pipeline as an interpretable rule-based decision-support layer by expressing selected architectural relationships through explicit and reusable rules.",
-      "year": 2026,
-      "published_at": "2026-10-27",
-      "venue": "Buildings",
-      "doi": "10.3390/buildings16214279",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7223880374",
-      "source_url": "https://doi.org/10.3390/buildings16214279",
-      "pdf_url": "",
-      "oa_status": "gold",
-      "license": "cc-by",
-      "suggested_category": "CAD Editing, Constraints & Verification",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 5,
-      "discovered_at": "2026-11-25T07:45:46.441217+00:00"
+      "discovered_at": "2026-11-26T07:36:06.020683+00:00"
     }
   ]
 }
