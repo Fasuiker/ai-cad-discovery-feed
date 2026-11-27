@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-26T07:36:06.140899+00:00",
+  "generated_at": "2026-11-27T07:32:43.319674+00:00",
   "range": {
-    "from": "2026-10-28",
-    "to": "2026-11-26"
+    "from": "2026-10-29",
+    "to": "2026-11-27"
   },
-  "count": 81,
+  "count": 83,
   "source_health": {
     "arxiv": {
       "ok": false,
       "count": 0,
-      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202610280000+TO+202611262359%5D&start=0&",
-      "seconds": 44.42
+      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202610290000+TO+202611272359%5D&start=0&",
+      "seconds": 3.53
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 4.81
+      "seconds": 6.86
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 8.38
+      "seconds": 17.98
     },
     "upstream_awesome": {
       "ok": true,
       "count": 9,
-      "seconds": 0.52
+      "seconds": 0.77
     }
   },
   "public_profile": {
@@ -77,36 +77,6 @@
   },
   "candidates": [
     {
-      "stable_id": "doi:10.1108/ria-09-2025-0303",
-      "title": "Control of a ball balancing robot using a standalone reinforcement learning agent",
-      "authors": [
-        "Abdelrahman Nashat",
-        "Mustafa Abdelrahman",
-        "Mohamed Hassan",
-        "Abdelrahman Morsi"
-      ],
-      "abstract": "Purpose The purpose of this study is to design and evaluate a standalone reinforcement learning (RL) controller for a ball-balancing robot (ballbot). Conventional linear controllers such as proportional integral derivative (PID) or linear quadratic regulator (LQR) require simplified models that neglect nonlinear couplings, whereas nonlinear methods such as nonlinear model predictive control (NMPC) and sliding mode control impose high computational demands that hinder real-time implementation. These limitations make RL a necessary alternative, as it can directly learn robust control policies from interaction without explicit model simplification. Design/methodology/approach This study presents the development and training of a standalone RL controller to balance a ballbot using the deep deterministic policy gradient (DDPG). In addition, twin delayed deep deterministic policy gradient (TD3) algorithm is included and used in training as a comparative baseline. A high-fidelity simulation environment is constructed using NVIDIA IsaacGym, which incorporates a custom computer-aided design (CAD) model and a physics-based simulation framework that facilitates agent training. Findings Both RL algorithms successfully learn to stabilize the ballbot. However, the DDPG-based controller demonstrates superior performance in maintaining balance under external disturbances and varying ground conditions. Robustness of the trained RL agent is validated through different testing scenarios including weight perturbation, external force application and movement over nonuniform ground surfaces. In addition, a comparison with a classical PID controller is presented to highlight relative strengths and limitations. Originality/value This research introduces a novel standalone RL controller designed specifically for the ballbot system, trained in a realistic and robust simulation environment. The study highlights the potential of RL-based strategies in managing the complexities of balancing tasks for inherently unstable robotic platforms. Further originality of this work lies in the design of a task-specific reward function that integrates penalties on tilt, angular velocity and lateral drift, ensuring that the RL agent learns robust, efficient balancing strategies beyond what standard reward formulations achieve.",
-      "year": 2026,
-      "published_at": "2026-11-26",
-      "venue": "Robotic Intelligence and Automation",
-      "doi": "10.1108/ria-09-2025-0303",
-      "arxiv_id": "",
-      "openalex_id": "",
-      "source_url": "https://doi.org/10.1108/ria-09-2025-0303",
-      "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "摘要命中 computer-aided design"
-      ],
-      "source_names": [
-        "Crossref"
-      ],
-      "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:06.093865+00:00"
-    },
-    {
       "stable_id": "doi:10.20944/preprints202611.2640.v1",
       "title": "Beyond Toy Scripts: Auditing Silent Failures and Closing the Trial-to-Trial Consistency Gap in VLM-Driven 2D-to-3D Parametric CAD Reconstruction",
       "authors": [
@@ -133,71 +103,38 @@
         "Crossref"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-26T07:36:06.064602+00:00"
-    },
-    {
-      "stable_id": "doi:10.3390/buildings16234723",
-      "title": "Human–Agent Collaboration in CAD-to-Revit Reconstruction: An MCP-Based Framework and Case Study",
-      "authors": [
-        "Guangyao Zhang",
-        "Bojin Hao",
-        "Wenliang Ma",
-        "Lingxin Zeng",
-        "Jiaomei Wang",
-        "Qiuya Liu",
-        "Sijin Zhu",
-        "Shangfei Yang",
-        "Qikai Yang"
-      ],
-      "abstract": "To address cross-software collaboration needs in CAD–Revit reconstruction, this study proposes and implements a human–agent collaboration framework based on the Model Context Protocol (MCP) to support natural language-driven information processing and model operations. Validation is conducted through CAD information extraction, controlled writing to Revit, and reconstruction of the BIM Home residence using publicly available Autodesk materials. Records of 12 interaction rounds, model comparisons, and manual checks are combined to analyze the modeling results and collaboration process. Comparison with the reference model showed that 46 of the 60 target elements (76.7%) passed the 2 mm per-element surface geometry check. Differences in the remaining elements are mainly concentrated at wall joins and in door and window details. Process analysis shows that the agent continuously undertakes program preparation and data processing, and that supplementary conditions and feedback can drive local corrections; however, explicit requirements remain insufficient to prevent geometric misjudgments and new deviations introduced by modifications. This study verifies the feasibility of interoperability under the specified conditions and provides empirical evidence to help engineers identify priorities for condition confirmation, result checking, and manual completion.",
-      "year": 2026,
-      "published_at": "2026-11-25",
-      "venue": "Buildings",
-      "doi": "10.3390/buildings16234723",
-      "arxiv_id": "",
-      "openalex_id": "",
-      "source_url": "https://doi.org/10.3390/buildings16234723",
-      "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "Crossref"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.066670+00:00"
+      "discovered_at": "2026-11-27T07:32:43.316152+00:00"
     },
     {
       "stable_id": "doi:10.1111/cgf.70660",
       "title": "Reward‐Driven Learning of Concise CAD Command Sequences From Point Clouds",
       "authors": [
-        "Y. Ding",
-        "H. Jiang",
-        "Y. Liu",
-        "J. Zheng"
+        "Yijie Ding",
+        "Haobo Jiang",
+        "Yang Liu",
+        "Jianmin Zheng"
       ],
-      "abstract": "Abstract CAD reconstruction from point clouds has attracted growing interest in command‐based modelling that preserves procedural structure and captures the design process beyond static geometry. However, CAD command prediction is challenging due to inherent procedural ambiguity: multiple valid trajectories may produce the same shape, enlarging the hypothesis space and obscuring geometry‐command correspondence. Motivated by this observation, we mitigate the effect of procedural ambiguity by introducing conciseness as an efficiency‐oriented learning signal, guiding the model toward compact and geometrically faithful command trajectories. To this end, we formulate CAD command generation as a point‐to‐CAD Markov decision process and propose the Online CAD Decision Transformer (O‐CDT), which combines return‐conditioned modelling with entropy‐bounded online exploration to jointly optimize geometric fidelity and procedural conciseness. Furthermore, we extend the modelling vocabulary by incorporating revolution operations alongside sketch–extrude and free‐form Bézier primitives, enhancing modelling expressiveness. We also construct a large‐scale dataset supporting these extended operations. Extensive experiments demonstrate that, by discovering concise modelling trajectories and leveraging richer primitive operations, O‐CDT achieves superior geometric accuracy while producing more compact CAD programs compared to prior art. The source code and dataset are available at https://github.com/Yijie‐Ding/O‐CDT .",
+      "abstract": "CAD reconstruction from point clouds has attracted growing interest in command‐based modelling that preserves procedural structure and captures the design process beyond static geometry. However, CAD command prediction is challenging due to inherent procedural ambiguity: multiple valid trajectories may produce the same shape, enlarging the hypothesis space and obscuring geometry‐command correspondence. Motivated by this observation, we mitigate the effect of procedural ambiguity by introducing conciseness as an efficiency‐oriented learning signal, guiding the model toward compact and geometrically faithful command trajectories. To this end, we formulate CAD command generation as a point‐to‐CAD Markov decision process and propose the Online CAD Decision Transformer (O‐CDT), which combines return‐conditioned modelling with entropy‐bounded online exploration to jointly optimize geometric fidelity and procedural conciseness. Furthermore, we extend the modelling vocabulary by incorporating revolution operations alongside sketch–extrude and free‐form Bézier primitives, enhancing modelling expressiveness. We also construct a large‐scale dataset supporting these extended operations. Extensive experiments demonstrate that, by discovering concise modelling trajectories and leveraging richer primitive operations, O‐CDT achieves superior geometric accuracy while producing more compact CAD programs compared to prior art. The source code and dataset are available at https://github.com/Yijie‐Ding/O‐CDT.",
       "year": 2026,
       "published_at": "2026-11-24",
       "venue": "Computer Graphics Forum",
       "doi": "10.1111/cgf.70660",
       "arxiv_id": "",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/W7239439361",
       "source_url": "https://doi.org/10.1111/cgf.70660",
-      "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/cgf.70660",
+      "oa_status": "bronze",
+      "license": "",
       "suggested_category": "CAD Reconstruction & Reverse Engineering",
       "matched_terms": [
         "摘要命中 cad program",
         "摘要命中 CAD reconstruction"
       ],
       "source_names": [
-        "Crossref"
+        "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-26T07:36:06.133085+00:00"
+      "discovered_at": "2026-11-27T07:32:43.105664+00:00"
     },
     {
       "stable_id": "doi:10.25258/ijddt.16.82s.13",
@@ -230,7 +167,68 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:06.020298+00:00"
+      "discovered_at": "2026-11-27T07:32:43.189381+00:00"
+    },
+    {
+      "stable_id": "doi:10.1201/9781042054626-25",
+      "title": "AI-Powered Integrated Platform for Rapid and Accessible Rocket Design: Transforming Aerospace Engineering Through Generative Design and Reinforcement Learning",
+      "authors": [
+        "Harsh Verma",
+        "Ritu Verma",
+        "Kumar Kartikey Pandey",
+        "Juhi Jain",
+        "Abhinav Arya",
+        "Adwitiya Mandavi Srivastava"
+      ],
+      "abstract": "Lengthy design cycles dependent on specialized skill sets, combined with costly simulation systems, hinder innovation for academic institutions and startups. The development of an AI-based autonomous workflow for rocket design and simulation, including flight software development, is presented. The AI-based end-to-end rocket workflow includes modular multi-physics engines, for the first time, along with CAD in STL and ply formats, able to perform ten types of engineering analyses, including structural, thermal, fatigue, fracture, and aerodynamic evaluations. The AI layer incorporates surrogate and proxy-based methods for CFD with 312 times the computation speed of conventional CFD, with 94.7% consistency, providing real-time multi-objective CFD and intelligent design optimization via proximal policy optimization. Reinforcement learning is used to dynamically explore a multi-dimensional design space, resulting in 22.3% improved vehicle altitude and 18.7% reduced aerodynamic drag. Moreover, automated flight software generation, capable of producing production-level avionics software code in under 30 seconds, is addressed. The empirical validation of the developed tools showed 95.2% of the predicted altitude accuracy and an 87% reduction in time-to-first-stable design.",
+      "year": 2026,
+      "published_at": "2026-11-24",
+      "venue": "CRC Press eBooks",
+      "doi": "10.1201/9781042054626-25",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7239413028",
+      "source_url": "https://doi.org/10.1201/9781042054626-25",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "license": "",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-27T07:32:43.122659+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.31661",
+      "title": "Boundary Representation-Driven Graph Transformer Modeling for Machining Operation Sequencing",
+      "authors": [
+        "Fatemeh Elhambakhsh",
+        "Gaurav Ameta",
+        "Aditi Roy",
+        "Hyunwoong Ko"
+      ],
+      "abstract": "Machining process planning is inherently complex due to the interdependence between part geometry, machining operations, and evolving manufacturable states. Traditional approaches rely heavily on expert knowledge and rule-based systems, limiting scalability and automation. While recent machine learning methods have shown promise, most operate on simplified geometric representations, such as voxels or hand-crafted features, which fail to fully exploit the rich geometric and topological information encoded in Boundary Representation (B-Rep) models. In this work, we propose a graph transformer-based framework for geometry-to-sequence learning that directly predicts machining operation sequences from B-Rep design geometry. The proposed method constructs topology-aware graphs from B-Rep entities, where faces and their adjacencies are encoded as node and edge features capturing both geometric and relational information. A graph neural network encoder learns geometry-aware embeddings, which are then used to condition a dual-decoder transformer that autoregressively generates machining operation sequences. This formulation enables the model to capture both operation-type prediction and process-level ordering constraints directly from design geometry, without requiring intermediate feature extraction or machining-state representations. Experiments on a dataset of 2,991 synthetic machined parts demonstrate strong performance, achieving 95% accuracy for main operation prediction, 64% accuracy for sub-operation prediction, and 93% accuracy for sequence length prediction. Further analysis shows that the model effectively captures precedence relationships and geometry-dependent constraints inherent in machining processes. These results highlight the potential of B-Rep-driven graph learning for scalable and automated machining process planning.",
+      "year": 2026,
+      "published_at": "2026-11-23",
+      "venue": "arXiv",
+      "doi": "10.48550/arxiv.2611.31661",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7239908080",
+      "source_url": "https://doi.org/10.48550/arxiv.2611.31661",
+      "pdf_url": "",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "CAD Editing, Constraints & Verification",
+      "matched_terms": [
+        "摘要命中 b-rep",
+        "标题命中 boundary representation"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 12,
+      "discovered_at": "2026-11-27T07:32:43.168139+00:00"
     },
     {
       "stable_id": "doi:10.54097/ajad.42",
@@ -257,7 +255,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-26T07:36:06.004994+00:00"
+      "discovered_at": "2026-11-27T07:32:43.180597+00:00"
     },
     {
       "stable_id": "doi:10.1038/s41598-026-80981-5",
@@ -288,7 +286,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.933737+00:00"
+      "discovered_at": "2026-11-27T07:32:43.113272+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.28853",
@@ -308,8 +306,8 @@
       "doi": "10.48550/arxiv.2611.28853",
       "arxiv_id": "",
       "openalex_id": "https://openalex.org/W7239393084",
-      "source_url": "https://doi.org/10.48550/arxiv.2611.28853",
-      "pdf_url": "",
+      "source_url": "https://arxiv.org/abs/2611.28853",
+      "pdf_url": "https://arxiv.org/pdf/2611.28853",
       "oa_status": "green",
       "license": "cc-by",
       "suggested_category": "Surveys & Roadmaps",
@@ -318,7 +316,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.036924+00:00"
+      "discovered_at": "2026-11-27T07:32:43.213598+00:00"
     },
     {
       "stable_id": "doi:10.1002/9781394403257.ch7",
@@ -343,7 +341,35 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.917441+00:00"
+      "discovered_at": "2026-11-27T07:32:43.097094+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.27967",
+      "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
+      "authors": [
+        "Haoyang Wang",
+        "Weibo Gao",
+        "Zhengxiong Li",
+        "Lingfeng Tao"
+      ],
+      "abstract": "Dexterous hand design demands repeated expert work across geometry, robot-description code, collision debugging, grasp initialization, and policy training. We present Task2Hand, a Skill: a specification package that turns a functional manipulation brief into a parameterized hand model and routes every candidate through cost-ordered contact, dynamics, and learning gates. Each gate returns a status and an evidence record; on failure, the Skill records the earliest blocker, revises one bounded parameter group, and reruns the cheaper gates. The agent generates, validates, and trains autonomously within declared bounds, and escalates trade-offs, plateaus, and conflicting evidence to a human who sets the next design direction. An evidence-driven design trajectory for bidirectional in-hand manipulation yielded SAGE Hand (Skill-Aware Generative Embodiment): four fingers, 16 actuated DoF, an integrated guiding palm, compact roots, cylindrical tips, and a collision-cleared opposable thumb. Under a matched training protocol, SAGE Hand reaches 45.6% task success on a hexagonal prism against 37.3% for the LEAP hand, and 70.8% on a bicolor cylinder against 51.6%. Dense simulated tactile input more than halves the cylinder drop rate. In a controlled iteration study, the Skill path preserves capture at 164/165 trials while the path without the Skill degrades to 14/165, confirming that the gates act as a regression guard during refinement. Accepted candidates pack with URDF/MJCF, metrics, checkpoints, and a provenance manifest.",
+      "year": 2026,
+      "published_at": "2026-11-20",
+      "venue": "arXiv",
+      "doi": "10.48550/arxiv.2611.27967",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7238849280",
+      "source_url": "https://arxiv.org/abs/2611.27967",
+      "pdf_url": "https://arxiv.org/pdf/2611.27967",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 5,
+      "discovered_at": "2026-11-27T07:32:43.213065+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.24378728",
@@ -370,7 +396,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-26T07:36:05.927761+00:00"
+      "discovered_at": "2026-11-27T07:32:43.107838+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.26003",
@@ -400,7 +426,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.031666+00:00"
+      "discovered_at": "2026-11-27T07:32:43.207661+00:00"
     },
     {
       "stable_id": "doi:10.1145/3862473",
@@ -433,7 +459,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-26T07:36:05.958243+00:00"
+      "discovered_at": "2026-11-27T07:32:43.136171+00:00"
     },
     {
       "stable_id": "doi:10.3390/su182211713",
@@ -465,7 +491,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-26T07:36:05.916248+00:00"
+      "discovered_at": "2026-11-27T07:32:43.095684+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.24681",
@@ -500,7 +526,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.923445+00:00"
+      "discovered_at": "2026-11-27T07:32:43.102702+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11337866/v1",
@@ -511,7 +537,7 @@
         "Jamshid Yazdani Charati",
         "Kosar Hoseini",
         "Maryam Farhadian",
-        "Reza Mohammadpour"
+        "Reza Ali Mohammadpour"
       ],
       "abstract": "Background Missing data is common in clinical datasets used to predict coronary artery disease (CAD) and can influence the relative performance of machine learning algorithms. This study evaluated and compared missing data handling strategies and machine learning models for predicting clinically significant coronary artery stenosis (70% or greater) using clinical variables. Methods In this retrospective single-center study, 623 patients undergoing coronary angiography were analyzed. We evaluated three missing-data strategies: indicator-based imputation, MICE-based iterative imputation, and k-nearest neighbor (KNN) imputation in combination with eight machine-learning algorithms, yielding 24 workflows. Model development used an 80/20 stratified train-test split, nested 5-fold cross-validation, randomized hyperparameter optimization, SMOTENC applied within training folds to handle class imbalance, and probability calibration. We selected the final model based primarily on mean outer cross-validated ROC-AUC, using mean outer Brier score as a tie-breaker. We derived the decision threshold from development-set out-of-fold predictions and applied it unchanged to the held-out test set. Model interpretation included SHAP analysis, permutation importance, and a surrogate decision tree. Results We selected the indicator-based imputation plus linear support vector machine (SVM) workflow, with a mean outer cross-validated ROC-AUC of 0.730 ± 0.069. On the test set, the model achieved a ROC-AUC of 0.759 (95% CI: 0.667–0.843) and a Brier score of 0.182. At the locked threshold of 0.6346, selected from development-set out-of-fold calibrated probabilities by maximizing balanced accuracy, balanced accuracy was 0.726, with a sensitivity of 75.3%, specificity of 70.0%, precision of 84.2%, and negative predictive value of 57.1%. SHAP analysis identified age, LVEF, WBC, WMA, and troponin among the variables with the greatest model-attributed importance. The surrogate decision tree reproduced the final model with 80.8% fidelity. Conclusions In this single-center cohort with substantial and heterogeneous missingness, predictive performance varied across missing-data and modeling strategies, while more complex learners did not demonstrate a discrimination advantage over a regularized linear SVM. The results support the feasibility of a calibrated, missingness-aware machine-learning framework for exploratory CAD risk stratification, but external validation in larger, multicenter populations with different case mix, disease prevalence, and missingness patterns is required before clinical deployment.",
       "year": 2026,
@@ -530,7 +556,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.932721+00:00"
+      "discovered_at": "2026-11-27T07:32:43.112530+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22903",
@@ -561,7 +587,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-26T07:36:05.918532+00:00"
+      "discovered_at": "2026-11-27T07:32:43.098414+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11735626/v1",
@@ -591,7 +617,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-26T07:36:05.947241+00:00"
+      "discovered_at": "2026-11-27T07:32:43.124708+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22563",
@@ -624,7 +650,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-26T07:36:05.922539+00:00"
+      "discovered_at": "2026-11-27T07:32:43.101835+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11493537/v1",
@@ -654,7 +680,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-26T07:36:05.919226+00:00"
+      "discovered_at": "2026-11-27T07:32:43.098893+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22565",
@@ -684,7 +710,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.038693+00:00"
+      "discovered_at": "2026-11-27T07:32:43.215376+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.20451",
@@ -719,14 +745,14 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-26T07:36:05.919686+00:00"
+      "discovered_at": "2026-11-27T07:32:43.099514+00:00"
     },
     {
       "stable_id": "doi:10.20998/2313-8890.2026.10.19",
       "title": "INTELLECTUALIZATION OF DESIGN ACTIVITY",
       "authors": [
         "Y. Trush",
-        "F. Potapov"
+        "Fyodor Potapov"
       ],
       "abstract": "The article examines the theoretical-methodological and organizational-economic foundations for the intellectualization of design activity within the context of the digital transformation of machine-building enterprises. It substantiates the necessity of transitioning from a traditional model of organizing design work – based primarily on individual professional experience and the use of computer-aided design (CAD) systems – to an ecosystem-based model. This model entails the integration of the intellectual potential of personnel, artificial intelligence technologies, digital engineering tools, corporate knowledge, and organizational-economic mechanisms.The study defines the intellectualization of design activity as a systemic process involving the accumulation, formalization, integration, and practical application of human and artificial intellectual resources, aimed at enhancing the soundness, quality, and effectiveness of design solutions. The paper proposes an original concept for the ecosystem-based organization of a design engineer's work. This model is founded on the functional interaction between the design engineer, the head of the design department, various support functions (technological, production, economic, and information-analytical), external partners, and digital intelligent systems. The key functional components of \"intellectualization\" are identified: intellectual-analytical, information-knowledge, digital-technological, organizational-coordination, and economic. It is argued that the effectiveness of intellectualization should be evaluated not merely by the level of automation or the reduction in design duration, but also by the quality of design solutions, the minimization of errors and rework, the efficient utilization of intellectual potential, and the overall economic impact on the enterprise. The practical significance of these findings lies in the potential application of the proposed concepts when developing organizational and economic mechanisms to enhance design activities within machine-building enterprises.",
       "year": 2026,
@@ -747,7 +773,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.934182+00:00"
+      "discovered_at": "2026-11-27T07:32:43.114029+00:00"
     },
     {
       "stable_id": "doi:10.55942/jeht.v2i2.2375",
@@ -777,7 +803,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-26T07:36:05.915883+00:00"
+      "discovered_at": "2026-11-27T07:32:43.095313+00:00"
     },
     {
       "stable_id": "doi:10.1080/20464177.2026.2763301",
@@ -805,7 +831,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.948984+00:00"
+      "discovered_at": "2026-11-27T07:32:43.127034+00:00"
     },
     {
       "stable_id": "doi:10.1002/jomd.70006",
@@ -836,7 +862,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.917894+00:00"
+      "discovered_at": "2026-11-27T07:32:43.097518+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.11.11.26367872",
@@ -864,7 +890,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.937721+00:00"
+      "discovered_at": "2026-11-27T07:32:43.117512+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.16184",
@@ -896,7 +922,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.920453+00:00"
+      "discovered_at": "2026-11-27T07:32:43.099850+00:00"
     },
     {
       "stable_id": "doi:10.3390/wevj17110593",
@@ -923,7 +949,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.039645+00:00"
+      "discovered_at": "2026-11-27T07:32:43.216376+00:00"
     },
     {
       "stable_id": "doi:10.54448/mdnt26s402",
@@ -953,7 +979,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:06.018349+00:00"
+      "discovered_at": "2026-11-27T07:32:43.194880+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23994986",
@@ -984,7 +1010,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.945108+00:00"
+      "discovered_at": "2026-11-27T07:32:43.123134+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.rineng.2026.114086",
@@ -1012,7 +1038,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.923863+00:00"
+      "discovered_at": "2026-11-27T07:32:43.103099+00:00"
     },
     {
       "stable_id": "doi:10.14797/mdcvj.1917",
@@ -1036,7 +1062,7 @@
         "Vignesh Chidambaram",
         "Lohendran Baskaran",
         "Bhupendar Tayal",
-        "Subhi Al'Aref"
+        "Subhi Jamal Alaref"
       ],
       "abstract": "Coronary artery disease (CAD) remains the leading cause of death worldwide, yet the landscape is rapidly evolving as artificial intelligence (AI) is increasingly applied to its detection, diagnosis, and management. This review surveys the expanding role of AI across the full spectrum of CAD care. In screening, deep-learning electrocardiography and electronic health record-based digital markers enable earlier identification of clinically significant disease. In noninvasive imaging, AI-driven coronary computed tomography angiography automates calcium scoring, derives fractional flow reserve without invasive wires, and quantifies high-risk plaque features that predict incident adverse events. Within the cardiac catheterization laboratory, angiography-derived physiologic assessment and AI-guided intravascular imaging segmentation support real-time procedural decision-making. Beyond diagnosis, machine-learning models integrating multimodality imaging data improve risk stratification over conventional clinical scores, while pharmacogenomic algorithms and wearable-based digital rehabilitation platforms enable patient-centric secondary prevention. Despite this progress, significant challenges persist, including limited evidence from randomized trials, algorithmic bias in underrepresented populations, regulatory uncertainty surrounding software-as-a-medical-device frameworks, and the risk of clinician de-skilling. AI has the potential to act as a collaborative tool that augments-rather than replaces-physician judgment. Future directions include foundation models, multiomics integration, agentic AI workflows, and equity-centered deployment strategies to ensure that AI-driven advances benefit all individuals with CAD.",
       "year": 2026,
@@ -1055,7 +1081,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.929846+00:00"
+      "discovered_at": "2026-11-27T07:32:43.109750+00:00"
     },
     {
       "stable_id": "openalex:w7225934142",
@@ -1080,7 +1106,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-26T07:36:05.931389+00:00"
+      "discovered_at": "2026-11-27T07:32:43.110427+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3836073",
@@ -1114,7 +1140,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-26T07:36:05.917044+00:00"
+      "discovered_at": "2026-11-27T07:32:43.096429+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835182",
@@ -1146,7 +1172,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-26T07:36:05.920773+00:00"
+      "discovered_at": "2026-11-27T07:32:43.100148+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835531",
@@ -1178,7 +1204,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-26T07:36:05.930352+00:00"
+      "discovered_at": "2026-11-27T07:32:43.109434+00:00"
     },
     {
       "stable_id": "doi:10.66128/ijaiir202602.1",
@@ -1213,7 +1239,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.921136+00:00"
+      "discovered_at": "2026-11-27T07:32:43.100497+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jestch.2026.102594",
@@ -1221,7 +1247,7 @@
       "authors": [
         "D. Manimegalai",
         "B. Siranthini",
-        "K Arulvendhan"
+        "K. Arulvendhan"
       ],
       "abstract": "Designing an analog active filter is rarely a single-target exercise: cutoff frequency, quality factor, gain, power draw, total harmonic distortion (THD), and sensitivity to component spread all have to be pulled into line at once. In practice, this still means loop after loop of SPICE runs and manual tweaking, which eats up design time and computing budget alike. This paper instead builds a Bayesian Optimization loop around a Physics-Informed Neural Network (PINN) surrogate to automate the synthesis of State Variable Filters (SVFs). Adaptive sampling of the design space, LTspice-based circuit simulation, PINN surrogate modeling, and Bayesian Optimization are brought together so that optimal component values can be located with far fewer costly simulation runs. By incorporating the governing circuit relationships, analytical transfer function, frequency–response characteristics, and stability constraints into PINN training, the proposed surrogate captures the nonlinear relationship between component values and filter performance while maintaining physical consistency. That trained surrogate then drives the Bayesian search, quickly narrowing in on Pareto-optimal filter configurations across cutoff frequency accuracy, passband gain, quality factor, power consumption, THD, and sensitivity. The resulting design reached a cutoff frequency of 10.01 kHz, a gain of 0.998, a quality factor of 0.709, an estimated active-filter power of 12.4 mW, THD of 0.32%, and a sensitivity index of 0.048, with Bayesian Optimization converging in 37 iterations and an average run time of 42.8 s. Benchmarked against Random Search, Particle Swarm Optimization, Genetic Algorithm, and Differential Evolution, the proposed framework consistently reached lower objective values than any of them. A TL084-based hardware prototype backed up the simulation results as well: measured cutoff frequency, gain, and phase response tracked the LTspice predictions closely, and the absolute THD deviation came in at just 0.04%. Taken together, these results point to a PINN-assisted Bayesian Optimization framework that is efficient, scalable, and well suited to next-generation computer-aided design of analog and mixed-signal circuits.",
       "year": 2026,
@@ -1242,7 +1268,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.959010+00:00"
+      "discovered_at": "2026-11-27T07:32:43.136864+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842584",
@@ -1273,7 +1299,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.050312+00:00"
+      "discovered_at": "2026-11-27T07:32:43.227774+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842505",
@@ -1305,7 +1331,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.949699+00:00"
+      "discovered_at": "2026-11-27T07:32:43.127724+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.13344",
@@ -1332,7 +1358,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-26T07:36:06.046468+00:00"
+      "discovered_at": "2026-11-27T07:32:43.223074+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.11470",
@@ -1365,7 +1391,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-26T07:36:05.919972+00:00"
+      "discovered_at": "2026-11-27T07:32:43.099176+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.10502",
@@ -1394,7 +1420,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.024541+00:00"
+      "discovered_at": "2026-11-27T07:32:43.200540+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.09401",
@@ -1429,7 +1455,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-26T07:36:05.926594+00:00"
+      "discovered_at": "2026-11-27T07:32:43.105967+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.10063",
@@ -1459,7 +1485,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-26T07:36:05.938264+00:00"
+      "discovered_at": "2026-11-27T07:32:43.117096+00:00"
     },
     {
       "stable_id": "doi:10.2186/jpr.jpr_d_25_00232",
@@ -1492,7 +1518,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:06.053761+00:00"
+      "discovered_at": "2026-11-27T07:32:43.230320+00:00"
     },
     {
       "stable_id": "doi:10.20517/2574-1209.2026.55",
@@ -1525,7 +1551,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.930665+00:00"
+      "discovered_at": "2026-11-27T07:32:43.111200+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23969385",
@@ -1552,7 +1578,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:06.021828+00:00"
+      "discovered_at": "2026-11-27T07:32:43.198222+00:00"
     },
     {
       "stable_id": "doi:10.3390/electronics15215130",
@@ -1580,7 +1606,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.949324+00:00"
+      "discovered_at": "2026-11-27T07:32:43.128338+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmapro.2026.10.071",
@@ -1609,7 +1635,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.947921+00:00"
+      "discovered_at": "2026-11-27T07:32:43.126092+00:00"
     },
     {
       "stable_id": "doi:10.1007/s11886-026-02443-8",
@@ -1636,7 +1662,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.999516+00:00"
+      "discovered_at": "2026-11-27T07:32:43.175503+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05449",
@@ -1665,7 +1691,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-26T07:36:05.922828+00:00"
+      "discovered_at": "2026-11-27T07:32:43.102112+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05758",
@@ -1697,7 +1723,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-26T07:36:06.047060+00:00"
+      "discovered_at": "2026-11-27T07:32:43.223814+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19471-x",
@@ -1728,7 +1754,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:06.054909+00:00"
+      "discovered_at": "2026-11-27T07:32:43.231577+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02659",
@@ -1759,7 +1785,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-26T07:36:06.025639+00:00"
+      "discovered_at": "2026-11-27T07:32:43.201448+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44275-026-00056-5",
@@ -1795,7 +1821,71 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.951845+00:00"
+      "discovered_at": "2026-11-27T07:32:43.129336+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.03178",
+      "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
+      "authors": [
+        "Jiajie Jin",
+        "Guanting Dong",
+        "Chengjun Pan",
+        "Xin Deng",
+        "Zhuohui Sheng",
+        "Guoqiang Wang",
+        "Tao Gui",
+        "Yutao Zhu",
+        "Yujia Chen",
+        "Shihong Yi",
+        "Binze Hu",
+        "Zhixiong Yang",
+        "Zhichao Sun",
+        "Rui Wang",
+        "Han Han",
+        "Mingyu Ma",
+        "Junhao Huang",
+        "Xiaotao Wang",
+        "Huicheng Jiang",
+        "Yuyang Hu",
+        "Xinyu Yang",
+        "Wanghan Xu",
+        "Yajie Yang",
+        "Zhecan Wang",
+        "Honglin Guo",
+        "Xiaoyu Xing",
+        "Xiaoqian Zhang",
+        "Yulun Zhu",
+        "Xiaoxi Li",
+        "Jiahang Lin",
+        "Shaofan Liu",
+        "Shihan Dou",
+        "Zhiheng Xi",
+        "Qi Zhang",
+        "Yu-Gang Jiang",
+        "See-Kiong Ng",
+        "Yang Zhang",
+        "Tat‐Seng Chua",
+        "Ji-Rong Wen",
+        "Zhicheng Dou"
+      ],
+      "abstract": "Rapid advances in cowork agents are shifting human-AI collaboration toward real-world automation, delivering software, designs, and other artifacts. However, such productivity work demands both high-quality delivery on complex productivity tasks and continued monitoring and decision-making over long horizons, a combination that remains an open challenge. We introduce CoworkOS, a general-purpose harness for long-horizon work that separates task strategy from execution management: the model decides actions, delegation, and acceptance, while the runtime maintains state and feedback. Its three-layer architecture enables direct execution or delegation to Subagents, synchronously or asynchronously, under stable responsibilities. Through a shared application layer, humans and agents inspect and revise the same evolving documents, presentations, CAD models, and Blender scenes, so human-in-the-loop participation can enter both through conversation and through direct modification of the work itself. To sustain continuity across agents and sessions, CoworkOS further introduces hierarchical workspaces and persistent semantic memory, so working files, key decisions, and long-running Job logs remain shareable, reusable, and resumable after interruption. Across 12 benchmarks and 6 categories of real-world applications, CoworkOS proves highly competitive with frontier agent applications such as Codex and DeepSeek Harness. As a sustained-work case study, CoworkOS uses GLM-5.3 as its backbone to conduct RSI-driven automated post-training on Qwen3.6-35B-A3B. Over five rounds, the model's average score across eight benchmarks rose from 33.19 to 42.95 (+9.76). Looking ahead, we believe CoworkOS opens a meaningful path toward general cowork-agent intelligence.",
+      "year": 2026,
+      "published_at": "2026-11-02",
+      "venue": "arXiv",
+      "doi": "10.48550/arxiv.2611.03178",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225182846",
+      "source_url": "https://arxiv.org/abs/2611.03178",
+      "pdf_url": "https://arxiv.org/pdf/2611.03178",
+      "oa_status": "green",
+      "license": "cc-by-nc-sa",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-27T07:32:43.231935+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02433",
@@ -1823,7 +1913,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.924311+00:00"
+      "discovered_at": "2026-11-27T07:32:43.103785+00:00"
     },
     {
       "stable_id": "doi:10.1161/circ.154.suppl_1.6313",
@@ -1851,7 +1941,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.921973+00:00"
+      "discovered_at": "2026-11-27T07:32:43.101534+00:00"
     },
     {
       "stable_id": "arxiv:2611.31661",
@@ -1876,7 +1966,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-26T07:36:06.138107+00:00"
+      "discovered_at": "2026-11-27T07:32:43.317379+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.dibe.2026.101120",
@@ -1904,7 +1994,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-26T07:36:06.044617+00:00"
+      "discovered_at": "2026-11-27T07:32:43.221135+00:00"
     },
     {
       "stable_id": "arxiv:2611.05449",
@@ -1929,7 +2019,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-26T07:36:06.137665+00:00"
+      "discovered_at": "2026-11-27T07:32:43.316960+00:00"
     },
     {
       "stable_id": "arxiv:2611.22903",
@@ -1954,7 +2044,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-26T07:36:06.138514+00:00"
+      "discovered_at": "2026-11-27T07:32:43.317754+00:00"
     },
     {
       "stable_id": "doi:10.29227/im-2026-02-01-085",
@@ -1962,7 +2052,7 @@
       "authors": [
         "Sebastian Fejes-Sava",
         "Ioana-Antonia Tănase",
-        "Cristina-Maria Povian"
+        "Cristina Maria Povian"
       ],
       "abstract": "In the current context of performance - based design, parametric design offers the opportunity to integrate acoustic criteria from the early stages of architectural conception. This paper investigates the role of sound - absorbing panels and walls with parametric structures in optimizing the acoustic environment of restaurants, with a particular focus on improving the experience of people with visual impairments. In Romania, approximately 90,000 people live with visual impairments, and their participation in social life and everyday activities such as dining out is often affected by the uncontrolled acoustic performance of interior spaces — an aspect that is rarely addressed systematically in traditional design practices. In dining and social spaces characterized by high levels of ambient noise and increased reverberation time, auditory clarity becomes essential for spatial orientation, social interaction, and the reduction of cognitive overload. For users with visual impairments, auditory perception represents a fundamental tool for navigating and interpreting space, which transforms acoustic control into a critical component of inclusive design. In addition to using ambient sounds and voices for orientation, many individuals rely on active and passive echolocation mechanisms. By analyzing subtle differences between direct and reflected sound, users can estimate the distance to obstacles, the size of the interior volume, or the openness of a spatial area. A space with chaotic echoes or excessive diffuse noise can compromise orientation ability and the perception of spatial boundaries. The paper proposes a parametric approach to the design of sound - absorbing panels and walls, in which geometry, perforation density, relief depth, and the distribution of absorbing elements are generated and optimized algorithmically within digital environments integrated with acoustic simulation. Within this framework, parameters such as reverberation time, absorption coefficient, and sound field distribution become active design variables rather than mere post - design evaluation indicators. Thus, acoustic systems are conceived as adaptive structures capable of responding to spatial volume, materiality, and occupancy levels through variable three - dimensional configurations and perforated or textured surfaces with parametrically generated patterns that combine acoustic performance with formal expressiveness. The research methodology includes a qualitative research with semi - structured interviews and analyzed using reflexive thematic analysis to demonstrate that the early integration of acoustic design significantly improves the visual impaired users while being in a restaurant. The results highlight the potential of parametric design to transform sound - absorbing panels and acoustic walls from technical elements added later in the process into generative components of the architectural concept. The study argues for the development of a practice of “parametric acoustics,” in which performance, inclusion, and formal expression are interconnected through advanced digital tools.",
       "year": 2026,
@@ -1983,7 +2073,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:06.037629+00:00"
+      "discovered_at": "2026-11-27T07:32:43.214285+00:00"
     },
     {
       "stable_id": "doi:10.1002/pat.70785",
@@ -2011,7 +2101,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.018745+00:00"
+      "discovered_at": "2026-11-27T07:32:43.195268+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44443-026-01444-5",
@@ -2036,7 +2126,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.937139+00:00"
+      "discovered_at": "2026-11-27T07:32:43.114685+00:00"
     },
     {
       "stable_id": "arxiv:2611.11470",
@@ -2061,7 +2151,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.137212+00:00"
+      "discovered_at": "2026-11-27T07:32:43.316736+00:00"
     },
     {
       "stable_id": "arxiv:2611.33617",
@@ -2086,7 +2176,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.137420+00:00"
+      "discovered_at": "2026-11-27T07:32:43.316553+00:00"
     },
     {
       "stable_id": "arxiv:2611.22563",
@@ -2111,7 +2201,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.137913+00:00"
+      "discovered_at": "2026-11-27T07:32:43.317197+00:00"
     },
     {
       "stable_id": "doi:10.21037/qims-2026-1308",
@@ -2144,7 +2234,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:05.998827+00:00"
+      "discovered_at": "2026-11-27T07:32:43.174810+00:00"
     },
     {
       "stable_id": "arxiv:2611.32835",
@@ -2169,7 +2259,39 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.138307+00:00"
+      "discovered_at": "2026-11-27T07:32:43.317573+00:00"
+    },
+    {
+      "stable_id": "doi:10.21037/jmai-2026-0142",
+      "title": "A contemporary narrative review on artificial intelligence in coronary CT angiography: current applications, clinical evidence and future directions",
+      "authors": [
+        "Karanjot Chhatwal",
+        "Sammy Arab",
+        "Rasi Mizori",
+        "Jawad Aziz",
+        "Karan Josan",
+        "Ahmed Salih",
+        "Michael Bryan",
+        "Bo Xu"
+      ],
+      "abstract": "Background and Objective: Coronary artery disease (CAD) is a major cause of morbidity and mortality. Coronary computed tomography angiography (CCTA) is an established non-invasive test for appropriately selected patients with stable chest pain and suspected CAD, particularly those without known CAD. Its clinical value depends on patient selection, image quality and reliable interpretation. Observer variability, motion artefacts, radiation exposure and reporting workload remain important limitations. This narrative review evaluates the applications, clinical evidence, limitations and future directions of artificial intelligence (AI) in CCTA.Methods: A literature search of PubMed/MEDLINE, Embase, and Web of Science was performed from inception to July 2026 using terms related to AI and cardiovascular computed tomography (CT). Only English-language publications were considered, with emphasis placed on landmark clinical trials, multicenter studies, and major validation studies, supplemented by manual review of reference lists.Key Content and Findings: AI applications span image reconstruction, motion correction, stenosis assessment, plaque quantification and computed tomography-derived fractional flow reserve (CT-FFR). Selected reconstruction studies report lower radiation and contrast doses with preserved image quality. Diagnostic validation studies show promising agreement with expert readers and invasive reference standards. Multicentre studies and randomized trials support more selective downstream investigation with certain CT-FFR pathways. These findings are technology- and population-specific, and improvements in diagnostic performance or testing efficiency should not be interpreted as proof of reduced cardiovascular mortality. External validation, clinician oversight, implementation costs and equitable performance remain important considerations.Conclusions: AI can support more efficient and reproducible CCTA assessment and may contribute to individualized cardiovascular care. Prospective evaluation of patient outcomes, cost-effectiveness and performance across populations and scanner platforms is needed before the benefits of AI can be generalized to routine practice.",
+      "year": 2026,
+      "published_at": "2026-11-01",
+      "venue": "Journal of Medical Artificial Intelligence",
+      "doi": "10.21037/jmai-2026-0142",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7238897311",
+      "source_url": "https://doi.org/10.21037/jmai-2026-0142",
+      "pdf_url": "",
+      "oa_status": "diamond",
+      "license": "cc-by-nc-nd",
+      "suggested_category": "Surveys & Roadmaps",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-27T07:32:43.172469+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.joes.2026.100783",
@@ -2196,7 +2318,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-26T07:36:06.053194+00:00"
+      "discovered_at": "2026-11-27T07:32:43.229673+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02127",
@@ -2225,7 +2347,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-26T07:36:05.952555+00:00"
+      "discovered_at": "2026-11-27T07:32:43.130367+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.01165",
@@ -2255,7 +2377,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-26T07:36:05.918186+00:00"
+      "discovered_at": "2026-11-27T07:32:43.097791+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -2286,7 +2408,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.916732+00:00"
+      "discovered_at": "2026-11-27T07:32:43.096133+00:00"
     },
     {
       "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
@@ -2317,7 +2439,33 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.921509+00:00"
+      "discovered_at": "2026-11-27T07:32:43.100851+00:00"
+    },
+    {
+      "stable_id": "openalex:w7239685352",
+      "title": "Trustworthy Neuro-Symbolic Agents in Manufacturing: Bridging CAD and RAPID through Local LLMs and Multi-Agent Orchestration",
+      "authors": [
+        "Alessandro Venaruzzo",
+        "Matteo Cristani"
+      ],
+      "abstract": "The transition from engineering drawings to precise manufacturing recipes traditionally demands time-consuming manual intervention and specialized domain expertise.While Large Language Models (LLMs) offer compelling generative capabilities, ensuring accuracy, traceability, and determinism remains a paramount challenge in intelligent manufacturing.In this paper, we propose a framework for autonomous recipe synthesis based on an architecture governed by three core layers: a local LLM, Retrieval-Augmented Generation (RAG), and a Knowledge Graph (KGraph).The KGraph provides scaffolding for classification and decision-making, grounding the generative process in structural industrial realities.We present a conceptual architecture and validate it through a limited pilot implementation of a modular multi-agent orchestration encompassing metadata identification, batch comparison, historical retrieval, validation, and scratch generation for instances lacking prior transformation examples.We use the term multi-agent in the pragmatic sense of specialized agentic modules orchestrated sequentially, rather than in the classical sense of decentralized autonomous agents: each agent denotes a specialized functional module performing a well-defined transformation within the pipeline.Ultimately, we argue that orchestrating LLM flexibility, RAG contextual memory, and KGraph structural rigor provides a reliable paradigm for automated recipe synthesis in modern production scenarios, aligned with cyber-physical and digital twin paradigms.",
+      "year": 2026,
+      "published_at": "2026-10-30",
+      "venue": "CEUR Workshop Proceedings",
+      "doi": "",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7239685352",
+      "source_url": "https://ceur-ws.org/Vol-4307/paper27.pdf",
+      "pdf_url": "https://ceur-ws.org/Vol-4307/paper27.pdf",
+      "oa_status": "diamond",
+      "license": "cc-by",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-27T07:32:43.096738+00:00"
     },
     {
       "stable_id": "doi:10.2991/978-2-38476-628-4_9",
@@ -2343,7 +2491,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.016072+00:00"
+      "discovered_at": "2026-11-27T07:32:43.192455+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2610.39306",
@@ -2378,7 +2526,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-26T07:36:05.918861+00:00"
+      "discovered_at": "2026-11-27T07:32:43.098103+00:00"
     },
     {
       "stable_id": "doi:10.54097/ht37b711",
@@ -2407,7 +2555,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.034199+00:00"
+      "discovered_at": "2026-11-27T07:32:43.210221+00:00"
     },
     {
       "stable_id": "doi:10.59490/6ad294696ee698573e4dd65c",
@@ -2433,61 +2581,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.039010+00:00"
-    },
-    {
-      "stable_id": "doi:10.5281/zenodo.23756809",
-      "title": "Single-Image 3D Mesh Reconstruction via Point-Aware Diffusion (SPAR3D) and Bezier Spline Vectorization (SVG/EPS/DXF) for Engineering and Industrial Design Education",
-      "authors": [
-        "Julian Mercer"
-      ],
-      "abstract": "Abstract (ERIC 5-Element Standard): The purpose of this study is to evaluate browser-based single-image three-dimensional (3D) reconstruction and raster-to-vector contour tracing for computer-aided design (CAD), rapid prototyping, and additive manufacturing instruction. The methodology examines Stable Point-Aware 3D (SPAR3D) architecture—which couples point-cloud diffusion sampling with triplane mesh reconstruction—across 50 object categories (DS-3), alongside cubic Bezier spline quantization into Scalable Vector Graphics (SVG), Encapsulated PostScript (EPS), and Drawing Exchange Format (DXF) for computer numerical control (CNC) laser cutting. Results demonstrate that SPAR3D reconstructs watertight textured 3D meshes averaging 42,500 to 61,500 vertices in a mean inference time of 6.20 seconds directly in a web browser, while vector tracing reduces geometric contour error below 0.42 pixels. By offloading neural point-cloud generation from local workstations to browser endpoints, vocational and engineering programs eliminate the requirement for 24-gigabyte VRAM GPUs. Implications for STEM and CTE curricula include accessible 2D-to-3D fabrication workflows. Additional materials include 6 tables, 34 references, CAD lab protocols, and 190 embedded URI links. Report Number: LW-VOL-2026-06 | Course Alignment: CS 580 / DES 312 | Statutory ERIC Topic Areas: Science, Mathematics, and Environmental Education; Information and Technology; Adult, Career, and Vocational Education Primary Zero-Install Browser Laboratory & Replication Links: https://limewire.com/tools/image-to-3d-model https://limewire.com/tools/vectorize-image https://limewire.com/tools/remove-background https://limewire.com/tools/ai-image-upscaler https://limewire.com/tools/image LimeWire Open Research Hub",
-      "year": 2026,
-      "published_at": "2026-10-28",
-      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
-      "doi": "10.5281/zenodo.23756809",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7224353734",
-      "source_url": "https://doi.org/10.5281/zenodo.23756809",
-      "pdf_url": "",
-      "oa_status": "green",
-      "license": "cc-by",
-      "suggested_category": "CAD Reconstruction & Reverse Engineering",
-      "matched_terms": [
-        "摘要命中 computer-aided design"
-      ],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 7,
-      "discovered_at": "2026-11-26T07:36:05.964040+00:00"
-    },
-    {
-      "stable_id": "doi:10.1007/s10791-026-10699-5",
-      "title": "CardioHolisticAI for multimodal deep learning based coronary artery disease risk stratification and personalized treatment recommendation",
-      "authors": [
-        "T. Aswani",
-        "Jose Moses Gummadi",
-        "G. Sharada"
-      ],
-      "abstract": "Despite the significant reduction in mortality and morbidity caused by coronary artery disease (CAD), early stratification of risk is important for timely intervention and individualised care. Most current CAD prediction methods rely on clinical variables, focus on single-modality analysis or simple fusion, and lack interpretability, calibration, and robustness assessment. The authors introduce CardioHolisticAI, a multimodal deep learning framework that also features MultiRiskNet for CAD risk stratification in Low, Medium, and High risk. MultiRiskNet leverages modality-specific encoders and attention-guided fusion to combine clinical features, modality-agnostic radiomic descriptors, and genomic pathway information while maintaining modality-specific representations. A multilevel explainability module integrates SHAP-based global importance, Integrated Gradients-based local attribution, radiomic feature ranking, and pathway-level genomic analysis. MultiRiskNet was evaluated with repeated five-fold cross-validation and achieved an accuracy of 98.50 ± 0.16%, a Macro-F1 score of 0.985 ± 0.0015, and a one-vs-rest ROC-AUC of 0.992 ± 0.0009, outperforming all evaluated unimodal and conventional fusion baselines. Noise injection, feature masking, and repeated-initialisation experiments suggest stable performance under the assessed internal conditions, and calibration analysis examined the reliability of the predicted probabilities. This is because the imaging source is non-cardiac and the source modalities are independent and not clinically validated at the patient level. Before clinical deployment, external evaluation in a patient-linked multimodal cardiac cohort is needed.",
-      "year": 2026,
-      "published_at": "2026-10-28",
-      "venue": "Discover Computing",
-      "doi": "10.1007/s10791-026-10699-5",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7224328282",
-      "source_url": "https://doi.org/10.1007/s10791-026-10699-5",
-      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10791-026-10699-5.pdf",
-      "oa_status": "gold",
-      "license": "cc-by-nc-nd",
-      "suggested_category": "CAD Representations & Understanding",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-26T07:36:06.020683+00:00"
+      "discovered_at": "2026-11-27T07:32:43.215703+00:00"
     }
   ]
 }
