@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
   "profile": "ai-cad",
-  "generated_at": "2026-11-27T07:32:43.319674+00:00",
+  "generated_at": "2026-11-28T07:00:44.102085+00:00",
   "range": {
-    "from": "2026-10-29",
-    "to": "2026-11-27"
+    "from": "2026-10-30",
+    "to": "2026-11-28"
   },
   "count": 83,
   "source_health": {
     "arxiv": {
       "ok": false,
       "count": 0,
-      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202610290000+TO+202611272359%5D&start=0&",
-      "seconds": 3.53
+      "error": "request failed: https://export.arxiv.org/api/query?search_query=%28all%3ACAD+OR+all%3A%22computer-aided+design%22+OR+all%3A%22B-Rep%22+OR+all%3A%22boundary+representation%22+OR+all%3A%22parametric+design%22%29+AND+%28all%3Aneural+OR+all%3A%22machine+learning%22+OR+all%3Agenerative+OR+all%3Adiffusion+OR+all%3Atransformer+OR+all%3A%22language+model%22+OR+all%3Aagent%29+AND+%28cat%3Acs.CV+OR+cat%3Acs.GR+OR+cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202610300000+TO+202611282359%5D&start=0&",
+      "seconds": 18.95
     },
     "openalex": {
       "ok": true,
       "count": 500,
-      "seconds": 6.86
+      "seconds": 7.11
     },
     "crossref": {
       "ok": true,
       "count": 500,
-      "seconds": 17.98
+      "seconds": 5.72
     },
     "upstream_awesome": {
       "ok": true,
       "count": 9,
-      "seconds": 0.77
+      "seconds": 0.71
     }
   },
   "public_profile": {
@@ -77,22 +77,88 @@
   },
   "candidates": [
     {
+      "stable_id": "doi:10.31234/osf.io/xca5j_v4",
+      "title": "Psychometric Validation of a Deep Learning-based Foreground Speech Detection Algorithm for Everyday Conversation Detection",
+      "authors": [
+        "Amanda Marie Bernal",
+        "Johannes Leonhard Klinz",
+        "Valeria Pfeifer",
+        "David Sbarra",
+        "Charles L Raison",
+        "Nicole Nugent",
+        "Rajat Hebbar",
+        "Shrikanth Narayanan",
+        "Matthias R. Mehl"
+      ],
+      "abstract": "Passive ambient audio sampling bears great potential for objectively measuring daily social activity and its association with wellbeing and health. However, detecting true conversations via human annotation is labor-intensive, and automatic labeling via audio signal processing has thus far only received proof-of-concept validation. Here, we conduct a comprehensive psychometric validation of a deep learning-based foreground speech detection algorithm for conversation activity detection (CAD) from ambient audio sampled with the Electronically Activated Recorder (EAR) method (Hebbar et al., 2021). We assess the CAD algorithm’s validity as an objective measure of conversation activity using four archival EAR datasets with human ground-truth conversation annotations (N = 566 participants, n = 167,539 audio recordings). Specifically, we evaluate, across the four samples, the degree to which the CAD algorithm converges with human-annotated conversation activity, yields temporal stability estimates of conversation activity, and replicates patterns of external correlates (with demographic, wellbeing, and personality measures) comparable to those derived from human ground-truth annotations. We further compare the distributional properties of conversation activity derived from the CAD algorithm and human ground-truth annotations and use this information for thresholding the algorithm’s continuous conversation activity estimates. Overall, the CAD algorithm evidences strong psychometric properties for estimating conversation activity across a range of participants and study characteristics, suggesting that it is suitable for at-scale deployment to objectively measure daily socializing from passively sampled ambient audio.",
+      "year": 2026,
+      "published_at": "2026-11-28",
+      "venue": "",
+      "doi": "10.31234/osf.io/xca5j_v4",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.31234/osf.io/xca5j_v4",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-28T07:00:44.054211+00:00"
+    },
+    {
+      "stable_id": "doi:10.31234/osf.io/xca5j",
+      "title": "Psychometric Validation of a Deep Learning-based Foreground Speech Detection Algorithm for Everyday Conversation Detection",
+      "authors": [
+        "Amanda Marie Bernal",
+        "Johannes Leonhard Klinz",
+        "Valeria Pfeifer",
+        "David Sbarra",
+        "Charles L Raison",
+        "Nicole Nugent",
+        "Rajat Hebbar",
+        "Shrikanth Narayanan",
+        "Matthias R. Mehl"
+      ],
+      "abstract": "Passive ambient audio sampling bears great potential for objectively measuring daily social activity and its association with wellbeing and health. However, detecting true conversations via human annotation is labor-intensive, and automatic labeling via audio signal processing has thus far only received proof-of-concept validation. Here, we conduct a comprehensive psychometric validation of a deep learning-based foreground speech detection algorithm for conversation activity detection (CAD) from ambient audio sampled with the Electronically Activated Recorder (EAR) method (Hebbar et al., 2021). We assess the CAD algorithm’s validity as an objective measure of conversation activity using four archival EAR datasets with human ground-truth conversation annotations (N = 566 participants, n = 167,539 audio recordings). Specifically, we evaluate, across the four samples, the degree to which the CAD algorithm converges with human-annotated conversation activity, yields temporal stability estimates of conversation activity, and replicates patterns of external correlates (with demographic, wellbeing, and personality measures) comparable to those derived from human ground-truth annotations. We further compare the distributional properties of conversation activity derived from the CAD algorithm and human ground-truth annotations and use this information for thresholding the algorithm’s continuous conversation activity estimates. Overall, the CAD algorithm evidences strong psychometric properties for estimating conversation activity across a range of participants and study characteristics, suggesting that it is suitable for at-scale deployment to objectively measure daily socializing from passively sampled ambient audio.",
+      "year": 2026,
+      "published_at": "2026-11-28",
+      "venue": "",
+      "doi": "10.31234/osf.io/xca5j",
+      "arxiv_id": "",
+      "openalex_id": "",
+      "source_url": "https://doi.org/10.31234/osf.io/xca5j",
+      "pdf_url": "",
+      "oa_status": "unknown",
+      "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "suggested_category": "Datasets, Benchmarks & Evaluation",
+      "matched_terms": [],
+      "source_names": [
+        "Crossref"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-28T07:00:44.055005+00:00"
+    },
+    {
       "stable_id": "doi:10.20944/preprints202611.2640.v1",
       "title": "Beyond Toy Scripts: Auditing Silent Failures and Closing the Trial-to-Trial Consistency Gap in VLM-Driven 2D-to-3D Parametric CAD Reconstruction",
       "authors": [
         "Jialiang Ying"
       ],
-      "abstract": "Translating multi-view 2D engineering drawings into editable 3D boundary-representation (B-Rep) models remains an unsolved bottleneck in mechanical manufacturing. Most vision-language model (VLM) CAD pipelines emit offline Python scripts (such as CadQuery) from synthetic projections and evaluate reconstructed solids with scale-normalized volumetric Intersection-over-Union (IoU) or Chamfer Distance (CD). In shop-floor machining, however, sub-millimeter errors or omitted holes cause assembly interference, scrap parts, and reduced fatigue life, while unconstrained scripting brings high latency, weak verifiability, and full rebuilds whenever a late feature fails. We present dsh-solidworks, a sandboxed Model Context Protocol (MCP) architecture over commercial SolidWorks 2025 built on the open-source SolidPilot compiler. The system restricts the VLM to 12 task-level CAD tools, runs static pre-build geometric checks on a declarative Feature Graph, speeds up cross-process COM face inspection by 97.7x to 150x, replaces inflated tessellation bounding boxes with exact six-direction extremum metrology, and gates delivery through a provenance-tracked dimension_ledger. Across 31 verified drawings and 134 curated high-reasoning unattended runs (drawn from 335 benchmark sessions), our diagnostic audit on National Vocational Skill Exam parts (4b7dc30) shows high single-part solvability (Pass@3 = 100%, 7/7) alongside low 3-of-3 repeatability (Pass^3 = 28.6%, 2/7). In three counterbalanced matched-pair A/B cohorts across five repeated development drawings (28 pairs, 56 runs), tested prompt and strategy edits produced no detectable large pass-rate gain (14/28 vs. 15/28 under pre-H24 scoring, exact McNemar p=1.000, drawing-cluster bootstrap 95% CI [-20.0, +33.3] pp; exact 16/28 vs. 16/28 tie under exact extremum scoring, 95% CI [-21.4, +30.8] pp). After resolving hole-face (H25) and coaxial-cylinder ledger (H26) ambiguities (37f5ac1-&gt;601ef29), LEDGER_INVALID errors drop from 33.3% (8/24) to 0.0% (0/20 on 601ef29). On a separate held-out CC-BY-4.0 machined-part blind benchmark, the updated system reaches an 86.7% (26/30) run pass rate (76.7% under uniform ±1% volume tolerance) and 80.0% (8/10) 3-of-3 consistency; because the diagnostic and blind cohorts differ in part sets and tolerances, we report 80.0% as a held-out benchmark result while characterizing the shared-perception ceiling of single-model self-verification. Code and evaluation artifacts are open-sourced at https://github.com/tian-yu200/dsh-solidworks.",
+      "abstract": "Translating multi-view 2D engineering drawings into editable 3D boundary-representation (B-Rep) models remains an unsolved bottleneck in mechanical manufacturing. Most vision-language model (VLM) CAD pipelines emit offline Python scripts (such as CadQuery) from synthetic projections and evaluate reconstructed solids with scale-normalized volumetric Intersection-over-Union (IoU) or Chamfer Distance (CD). In shop-floor machining, however, sub-millimeter errors or omitted holes cause assembly interference, scrap parts, and reduced fatigue life, while unconstrained scripting brings high latency, weak verifiability, and full rebuilds whenever a late feature fails. We present dsh-solidworks, a sandboxed Model Context Protocol (MCP) architecture over commercial SolidWorks 2025 built on the open-source SolidPilot compiler. The system restricts the VLM to 12 task-level CAD tools, runs static pre-build geometric checks on a declarative Feature Graph, speeds up cross-process COM face inspection by 97.7x to 150x, replaces inflated tessellation bounding boxes with exact six-direction extremum metrology, and gates delivery through a provenance-tracked dimension_ledger. Across 31 verified drawings and 134 curated high-reasoning unattended runs (drawn from 335 benchmark sessions), our diagnostic audit on National Vocational Skill Exam parts (4b7dc30) shows high single-part solvability (Pass@3 = 100%, 7/7) alongside low 3-of-3 repeatability (Pass^3 = 28.6%, 2/7). In three counterbalanced matched-pair A/B cohorts across five repeated development drawings (28 pairs, 56 runs), tested prompt and strategy edits produced no detectable large pass-rate gain (14/28 vs. 15/28 under pre-H24 scoring, exact McNemar p=1.000, drawing-cluster bootstrap 95% CI [-20.0, +33.3] pp; exact 16/28 vs. 16/28 tie under exact extremum scoring, 95% CI [-21.4, +30.8] pp). After resolving hole-face (H25) and coaxial-cylinder ledger (H26) ambiguities (37f5ac1->601ef29), LEDGER_INVALID errors drop from 33.3% (8/24) to 0.0% (0/20 on 601ef29). On a separate held-out CC-BY-4.0 machined-part blind benchmark, the updated system reaches an 86.7% (26/30) run pass rate (76.7% under uniform ±1% volume tolerance) and 80.0% (8/10) 3-of-3 consistency; because the diagnostic and blind cohorts differ in part sets and tolerances, we report 80.0% as a held-out benchmark result while characterizing the shared-perception ceiling of single-model self-verification. Code and evaluation artifacts are open-sourced at https://github.com/tian-yu200/dsh-solidworks.",
       "year": 2026,
       "published_at": "2026-11-25",
-      "venue": "",
+      "venue": "Preprints.org",
       "doi": "10.20944/preprints202611.2640.v1",
       "arxiv_id": "",
-      "openalex_id": "",
+      "openalex_id": "https://openalex.org/W7240098350",
       "source_url": "https://doi.org/10.20944/preprints202611.2640.v1",
       "pdf_url": "",
-      "oa_status": "unknown",
-      "license": "http://creativecommons.org/licenses/by/4.0",
+      "oa_status": "green",
+      "license": "cc-by",
       "suggested_category": "LLM, VLM & CAD Agents",
       "matched_terms": [
         "摘要命中 b-rep",
@@ -100,10 +166,10 @@
         "标题命中 CAD reconstruction"
       ],
       "source_names": [
-        "Crossref"
+        "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-27T07:32:43.316152+00:00"
+      "discovered_at": "2026-11-28T07:00:44.005744+00:00"
     },
     {
       "stable_id": "doi:10.1111/cgf.70660",
@@ -134,7 +200,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-27T07:32:43.105664+00:00"
+      "discovered_at": "2026-11-28T07:00:43.922511+00:00"
     },
     {
       "stable_id": "doi:10.25258/ijddt.16.82s.13",
@@ -167,37 +233,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.189381+00:00"
-    },
-    {
-      "stable_id": "doi:10.1201/9781042054626-25",
-      "title": "AI-Powered Integrated Platform for Rapid and Accessible Rocket Design: Transforming Aerospace Engineering Through Generative Design and Reinforcement Learning",
-      "authors": [
-        "Harsh Verma",
-        "Ritu Verma",
-        "Kumar Kartikey Pandey",
-        "Juhi Jain",
-        "Abhinav Arya",
-        "Adwitiya Mandavi Srivastava"
-      ],
-      "abstract": "Lengthy design cycles dependent on specialized skill sets, combined with costly simulation systems, hinder innovation for academic institutions and startups. The development of an AI-based autonomous workflow for rocket design and simulation, including flight software development, is presented. The AI-based end-to-end rocket workflow includes modular multi-physics engines, for the first time, along with CAD in STL and ply formats, able to perform ten types of engineering analyses, including structural, thermal, fatigue, fracture, and aerodynamic evaluations. The AI layer incorporates surrogate and proxy-based methods for CFD with 312 times the computation speed of conventional CFD, with 94.7% consistency, providing real-time multi-objective CFD and intelligent design optimization via proximal policy optimization. Reinforcement learning is used to dynamically explore a multi-dimensional design space, resulting in 22.3% improved vehicle altitude and 18.7% reduced aerodynamic drag. Moreover, automated flight software generation, capable of producing production-level avionics software code in under 30 seconds, is addressed. The empirical validation of the developed tools showed 95.2% of the predicted altitude accuracy and an 87% reduction in time-to-first-stable design.",
-      "year": 2026,
-      "published_at": "2026-11-24",
-      "venue": "CRC Press eBooks",
-      "doi": "10.1201/9781042054626-25",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7239413028",
-      "source_url": "https://doi.org/10.1201/9781042054626-25",
-      "pdf_url": "",
-      "oa_status": "closed",
-      "license": "",
-      "suggested_category": "Datasets, Benchmarks & Evaluation",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.122659+00:00"
+      "discovered_at": "2026-11-28T07:00:43.990901+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.31661",
@@ -215,8 +251,8 @@
       "doi": "10.48550/arxiv.2611.31661",
       "arxiv_id": "",
       "openalex_id": "https://openalex.org/W7239908080",
-      "source_url": "https://doi.org/10.48550/arxiv.2611.31661",
-      "pdf_url": "",
+      "source_url": "https://arxiv.org/abs/2611.31661",
+      "pdf_url": "https://arxiv.org/pdf/2611.31661",
       "oa_status": "green",
       "license": "",
       "suggested_category": "CAD Editing, Constraints & Verification",
@@ -228,7 +264,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-27T07:32:43.168139+00:00"
+      "discovered_at": "2026-11-28T07:00:43.975261+00:00"
     },
     {
       "stable_id": "doi:10.54097/ajad.42",
@@ -255,7 +291,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-27T07:32:43.180597+00:00"
+      "discovered_at": "2026-11-28T07:00:43.984346+00:00"
     },
     {
       "stable_id": "doi:10.1038/s41598-026-80981-5",
@@ -286,7 +322,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.113272+00:00"
+      "discovered_at": "2026-11-28T07:00:43.924887+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.28853",
@@ -316,7 +352,42 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.213598+00:00"
+      "discovered_at": "2026-11-28T07:00:44.009992+00:00"
+    },
+    {
+      "stable_id": "doi:10.1038/s44334-026-00123-7",
+      "title": "Deep learning enables 3D manufacturing inspection from a single image",
+      "authors": [
+        "Hossein Kabir",
+        "Miles V. Bimrose",
+        "Charles T. Whealton",
+        "Christopher H. Conway",
+        "Austin F. Martin",
+        "Adrian K. Jackson",
+        "Asif Rashid",
+        "Weixuan Zheng",
+        "William P. King"
+      ],
+      "abstract": "Manufacturing inspection requires accurate dimensional measurements of mechanical objects. Three-dimensional (3D) optical measurements have significant advantages over traditional tactile measurements; however, industrial use of 3D optical measurements is limited due to high cost, long measurement time, and computational effort. This paper reports a method for accurate 3D measurements from a single image. A deep learning model predicts the accuracy of 3D reconstruction from input images and uses this prediction to create physically accurate 3D mesh objects. The model is trained using synthetic image data rendered from 3700 computer-aided design (CAD) models and tested by measuring 50 unique physical objects. Measurement accuracy is 71 μm for small objects (~3 cm) photographed with a digital camera, and 164 μm for large objects (>10 cm) photographed or video-recorded with a smartphone. The method results in accurate, manufacturing-relevant 3D measurements within a few seconds.",
+      "year": 2026,
+      "published_at": "2026-11-20",
+      "venue": "npj Advanced Manufacturing",
+      "doi": "10.1038/s44334-026-00123-7",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7237016413",
+      "source_url": "https://doi.org/10.1038/s44334-026-00123-7",
+      "pdf_url": "https://www.nature.com/articles/s44334-026-00123-7_reference.pdf",
+      "oa_status": "hybrid",
+      "license": "cc-by-nc-nd",
+      "suggested_category": "CAD Reconstruction & Reverse Engineering",
+      "matched_terms": [
+        "摘要命中 computer-aided design"
+      ],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 7,
+      "discovered_at": "2026-11-28T07:00:43.996931+00:00"
     },
     {
       "stable_id": "doi:10.1002/9781394403257.ch7",
@@ -341,7 +412,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.097094+00:00"
+      "discovered_at": "2026-11-28T07:00:43.913992+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.27967",
@@ -369,7 +440,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-27T07:32:43.213065+00:00"
+      "discovered_at": "2026-11-28T07:00:44.009705+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.24378728",
@@ -396,7 +467,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-27T07:32:43.107838+00:00"
+      "discovered_at": "2026-11-28T07:00:43.920378+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.26003",
@@ -426,7 +497,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.207661+00:00"
+      "discovered_at": "2026-11-28T07:00:44.005199+00:00"
     },
     {
       "stable_id": "doi:10.1145/3862473",
@@ -459,7 +530,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-27T07:32:43.136171+00:00"
+      "discovered_at": "2026-11-28T07:00:43.947556+00:00"
     },
     {
       "stable_id": "doi:10.3390/su182211713",
@@ -491,7 +562,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-27T07:32:43.095684+00:00"
+      "discovered_at": "2026-11-28T07:00:43.912809+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.24681",
@@ -526,7 +597,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.102702+00:00"
+      "discovered_at": "2026-11-28T07:00:43.918663+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11337866/v1",
@@ -556,7 +627,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.112530+00:00"
+      "discovered_at": "2026-11-28T07:00:43.924173+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22903",
@@ -587,7 +658,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-27T07:32:43.098414+00:00"
+      "discovered_at": "2026-11-28T07:00:43.914847+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11735626/v1",
@@ -617,7 +688,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-27T07:32:43.124708+00:00"
+      "discovered_at": "2026-11-28T07:00:43.938320+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22563",
@@ -650,7 +721,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-27T07:32:43.101835+00:00"
+      "discovered_at": "2026-11-28T07:00:43.917390+00:00"
     },
     {
       "stable_id": "doi:10.21203/rs.3.rs-11493537/v1",
@@ -680,7 +751,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-27T07:32:43.098893+00:00"
+      "discovered_at": "2026-11-28T07:00:43.915147+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.22565",
@@ -710,7 +781,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.215376+00:00"
+      "discovered_at": "2026-11-28T07:00:44.011400+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.20451",
@@ -745,7 +816,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-27T07:32:43.099514+00:00"
+      "discovered_at": "2026-11-28T07:00:43.915509+00:00"
     },
     {
       "stable_id": "doi:10.20998/2313-8890.2026.10.19",
@@ -773,7 +844,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.114029+00:00"
+      "discovered_at": "2026-11-28T07:00:43.925244+00:00"
     },
     {
       "stable_id": "doi:10.55942/jeht.v2i2.2375",
@@ -803,7 +874,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-27T07:32:43.095313+00:00"
+      "discovered_at": "2026-11-28T07:00:43.912504+00:00"
     },
     {
       "stable_id": "doi:10.1080/20464177.2026.2763301",
@@ -831,7 +902,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.127034+00:00"
+      "discovered_at": "2026-11-28T07:00:43.939475+00:00"
     },
     {
       "stable_id": "doi:10.1002/jomd.70006",
@@ -862,7 +933,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.097518+00:00"
+      "discovered_at": "2026-11-28T07:00:43.914352+00:00"
     },
     {
       "stable_id": "doi:10.64898/2026.11.11.26367872",
@@ -890,7 +961,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.117512+00:00"
+      "discovered_at": "2026-11-28T07:00:43.928771+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.16184",
@@ -922,7 +993,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.099850+00:00"
+      "discovered_at": "2026-11-28T07:00:43.916009+00:00"
     },
     {
       "stable_id": "doi:10.3390/wevj17110593",
@@ -949,7 +1020,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.216376+00:00"
+      "discovered_at": "2026-11-28T07:00:44.011904+00:00"
     },
     {
       "stable_id": "doi:10.54448/mdnt26s402",
@@ -979,7 +1050,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.194880+00:00"
+      "discovered_at": "2026-11-28T07:00:43.995696+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23994986",
@@ -1010,7 +1081,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.123134+00:00"
+      "discovered_at": "2026-11-28T07:00:43.936602+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.rineng.2026.114086",
@@ -1038,7 +1109,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.103099+00:00"
+      "discovered_at": "2026-11-28T07:00:43.918217+00:00"
     },
     {
       "stable_id": "doi:10.14797/mdcvj.1917",
@@ -1081,7 +1152,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.109750+00:00"
+      "discovered_at": "2026-11-28T07:00:43.920637+00:00"
     },
     {
       "stable_id": "openalex:w7225934142",
@@ -1106,7 +1177,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-27T07:32:43.110427+00:00"
+      "discovered_at": "2026-11-28T07:00:43.926158+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3836073",
@@ -1140,7 +1211,7 @@
         "OpenAlex"
       ],
       "relevance_score": 13,
-      "discovered_at": "2026-11-27T07:32:43.096429+00:00"
+      "discovered_at": "2026-11-28T07:00:43.913682+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835182",
@@ -1172,7 +1243,7 @@
         "OpenAlex"
       ],
       "relevance_score": 11,
-      "discovered_at": "2026-11-27T07:32:43.100148+00:00"
+      "discovered_at": "2026-11-28T07:00:43.916248+00:00"
     },
     {
       "stable_id": "doi:10.1145/3767308.3835531",
@@ -1204,7 +1275,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-27T07:32:43.109434+00:00"
+      "discovered_at": "2026-11-28T07:00:43.924408+00:00"
     },
     {
       "stable_id": "doi:10.66128/ijaiir202602.1",
@@ -1239,7 +1310,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.100497+00:00"
+      "discovered_at": "2026-11-28T07:00:43.916533+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jestch.2026.102594",
@@ -1268,7 +1339,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.136864+00:00"
+      "discovered_at": "2026-11-28T07:00:43.948673+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842584",
@@ -1299,7 +1370,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.227774+00:00"
+      "discovered_at": "2026-11-28T07:00:44.020159+00:00"
     },
     {
       "stable_id": "doi:10.1145/3842505",
@@ -1331,7 +1402,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.127724+00:00"
+      "discovered_at": "2026-11-28T07:00:43.940402+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.13344",
@@ -1358,7 +1429,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-27T07:32:43.223074+00:00"
+      "discovered_at": "2026-11-28T07:00:44.017325+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.11470",
@@ -1391,7 +1462,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-27T07:32:43.099176+00:00"
+      "discovered_at": "2026-11-28T07:00:43.915735+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.10502",
@@ -1420,7 +1491,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.200540+00:00"
+      "discovered_at": "2026-11-28T07:00:44.000471+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.09401",
@@ -1455,7 +1526,7 @@
         "OpenAlex"
       ],
       "relevance_score": 14,
-      "discovered_at": "2026-11-27T07:32:43.105967+00:00"
+      "discovered_at": "2026-11-28T07:00:43.922967+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.10063",
@@ -1485,7 +1556,7 @@
         "OpenAlex"
       ],
       "relevance_score": 9,
-      "discovered_at": "2026-11-27T07:32:43.117096+00:00"
+      "discovered_at": "2026-11-28T07:00:43.935924+00:00"
     },
     {
       "stable_id": "doi:10.2186/jpr.jpr_d_25_00232",
@@ -1518,7 +1589,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.230320+00:00"
+      "discovered_at": "2026-11-28T07:00:44.022096+00:00"
     },
     {
       "stable_id": "doi:10.20517/2574-1209.2026.55",
@@ -1551,7 +1622,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.111200+00:00"
+      "discovered_at": "2026-11-28T07:00:43.921673+00:00"
     },
     {
       "stable_id": "doi:10.5281/zenodo.23969385",
@@ -1578,7 +1649,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.198222+00:00"
+      "discovered_at": "2026-11-28T07:00:43.997759+00:00"
     },
     {
       "stable_id": "doi:10.3390/electronics15215130",
@@ -1606,7 +1677,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.128338+00:00"
+      "discovered_at": "2026-11-28T07:00:43.940121+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.jmapro.2026.10.071",
@@ -1635,7 +1706,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.126092+00:00"
+      "discovered_at": "2026-11-28T07:00:43.938026+00:00"
     },
     {
       "stable_id": "doi:10.1007/s11886-026-02443-8",
@@ -1662,7 +1733,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.175503+00:00"
+      "discovered_at": "2026-11-28T07:00:43.979653+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05449",
@@ -1691,7 +1762,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-27T07:32:43.102112+00:00"
+      "discovered_at": "2026-11-28T07:00:43.917614+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.05758",
@@ -1723,7 +1794,7 @@
         "OpenAlex"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-27T07:32:43.223814+00:00"
+      "discovered_at": "2026-11-28T07:00:44.017788+00:00"
     },
     {
       "stable_id": "doi:10.1007/s00170-026-19471-x",
@@ -1754,7 +1825,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.231577+00:00"
+      "discovered_at": "2026-11-28T07:00:44.023259+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02659",
@@ -1785,7 +1856,7 @@
         "OpenAlex"
       ],
       "relevance_score": 12,
-      "discovered_at": "2026-11-27T07:32:43.201448+00:00"
+      "discovered_at": "2026-11-28T07:00:44.001102+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44275-026-00056-5",
@@ -1821,7 +1892,7 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.129336+00:00"
+      "discovered_at": "2026-11-28T07:00:43.940852+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.03178",
@@ -1885,7 +1956,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.231935+00:00"
+      "discovered_at": "2026-11-28T07:00:44.024200+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02433",
@@ -1913,7 +1984,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.103785+00:00"
+      "discovered_at": "2026-11-28T07:00:43.919782+00:00"
     },
     {
       "stable_id": "doi:10.1161/circ.154.suppl_1.6313",
@@ -1941,7 +2012,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.101534+00:00"
+      "discovered_at": "2026-11-28T07:00:43.916914+00:00"
     },
     {
       "stable_id": "arxiv:2611.31661",
@@ -1966,7 +2037,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-27T07:32:43.317379+00:00"
+      "discovered_at": "2026-11-28T07:00:44.099943+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.dibe.2026.101120",
@@ -1994,7 +2065,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-27T07:32:43.221135+00:00"
+      "discovered_at": "2026-11-28T07:00:44.016407+00:00"
     },
     {
       "stable_id": "arxiv:2611.05449",
@@ -2019,7 +2090,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-27T07:32:43.316960+00:00"
+      "discovered_at": "2026-11-28T07:00:44.099614+00:00"
     },
     {
       "stable_id": "arxiv:2611.22903",
@@ -2044,7 +2115,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 8,
-      "discovered_at": "2026-11-27T07:32:43.317754+00:00"
+      "discovered_at": "2026-11-28T07:00:44.100232+00:00"
     },
     {
       "stable_id": "doi:10.29227/im-2026-02-01-085",
@@ -2073,7 +2144,37 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.214285+00:00"
+      "discovered_at": "2026-11-28T07:00:44.010543+00:00"
+    },
+    {
+      "stable_id": "doi:10.48550/arxiv.2611.02300",
+      "title": "Trustworthy Execution of Industrial Agents",
+      "authors": [
+        "Zhongjie Wang",
+        "Mingyi Liu",
+        "Xiang He",
+        "Xiao Wang",
+        "Shuang Yu",
+        "Kai Wang"
+      ],
+      "abstract": "Industrial agents increasingly modify persistent engineering objects rather than merely generate answers. Authentication and successful calls cannot establish whether intended changes occurred, evidence supports a conclusion, or historical results remain applicable. We present a framework for trustworthy industrial-agent execution within a single enterprise governance domain. Eight control domains assign responsibilities across authority, planning, composition, tool execution, actual effects, evidence, baseline and use governance, and recovery and evolution. A four-plane architecture and three control chains connect these responsibilities through typed objects and version-bound interfaces. The specification separates tool returns from actual engineering effects, evidence coverage from engineering judgment, and historical lifecycle state from current applicability. Multi-agent handoffs are an architectural extension examined through deterministic interface tests. Distinct prototypes examine selected mechanisms using conformance tests, ablations, uncertainty stress, CAD/CAE execution, and local persistence. An OpenFOAM fixture produces COMPLETE coverage with FAIL judgment; an expired-job case requires readmission despite completed computation. CAD and recovery counterexamples expose omitted mandatory checks, discarded negative facts, and inconsistent producer-consumer mappings. Targeted repairs support local regression conclusions. The reported 0/29 hazardous commits measure closed-set specification conformance, not a safety probability. We distinguish the complete framework, implemented paths, and empirical evidence, identifying check-inventory completeness and cross-module fact preservation as prerequisites for extending these results.",
+      "year": 2026,
+      "published_at": "2026-11-01",
+      "venue": "arXiv",
+      "doi": "10.48550/arxiv.2611.02300",
+      "arxiv_id": "",
+      "openalex_id": "https://openalex.org/W7225155249",
+      "source_url": "https://arxiv.org/abs/2611.02300",
+      "pdf_url": "https://arxiv.org/pdf/2611.02300",
+      "oa_status": "green",
+      "license": "",
+      "suggested_category": "LLM, VLM & CAD Agents",
+      "matched_terms": [],
+      "source_names": [
+        "OpenAlex"
+      ],
+      "relevance_score": 6,
+      "discovered_at": "2026-11-28T07:00:44.023728+00:00"
     },
     {
       "stable_id": "doi:10.1002/pat.70785",
@@ -2101,7 +2202,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.195268+00:00"
+      "discovered_at": "2026-11-28T07:00:43.996014+00:00"
     },
     {
       "stable_id": "doi:10.1007/s44443-026-01444-5",
@@ -2126,7 +2227,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.114685+00:00"
+      "discovered_at": "2026-11-28T07:00:43.930416+00:00"
     },
     {
       "stable_id": "arxiv:2611.11470",
@@ -2151,7 +2252,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.316736+00:00"
+      "discovered_at": "2026-11-28T07:00:44.099441+00:00"
     },
     {
       "stable_id": "arxiv:2611.33617",
@@ -2176,7 +2277,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.316553+00:00"
+      "discovered_at": "2026-11-28T07:00:44.099298+00:00"
     },
     {
       "stable_id": "arxiv:2611.22563",
@@ -2201,7 +2302,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.317197+00:00"
+      "discovered_at": "2026-11-28T07:00:44.099802+00:00"
     },
     {
       "stable_id": "doi:10.21037/qims-2026-1308",
@@ -2234,7 +2335,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.174810+00:00"
+      "discovered_at": "2026-11-28T07:00:43.979393+00:00"
     },
     {
       "stable_id": "arxiv:2611.32835",
@@ -2259,7 +2360,7 @@
         "awesome-AI4CAD-hub"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.317573+00:00"
+      "discovered_at": "2026-11-28T07:00:44.100092+00:00"
     },
     {
       "stable_id": "doi:10.21037/jmai-2026-0142",
@@ -2291,7 +2392,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.172469+00:00"
+      "discovered_at": "2026-11-28T07:00:43.977731+00:00"
     },
     {
       "stable_id": "doi:10.1016/j.joes.2026.100783",
@@ -2310,7 +2411,7 @@
       "openalex_id": "https://openalex.org/W7226789644",
       "source_url": "https://doi.org/10.1016/j.joes.2026.100783",
       "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2468013326001944/pdf",
-      "oa_status": "diamond",
+      "oa_status": "gold",
       "license": "cc-by",
       "suggested_category": "LLM, VLM & CAD Agents",
       "matched_terms": [],
@@ -2318,7 +2419,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-27T07:32:43.229673+00:00"
+      "discovered_at": "2026-11-28T07:00:44.022490+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.02127",
@@ -2347,7 +2448,7 @@
         "OpenAlex"
       ],
       "relevance_score": 5,
-      "discovered_at": "2026-11-27T07:32:43.130367+00:00"
+      "discovered_at": "2026-11-28T07:00:43.942944+00:00"
     },
     {
       "stable_id": "doi:10.48550/arxiv.2611.01165",
@@ -2377,7 +2478,7 @@
         "OpenAlex"
       ],
       "relevance_score": 10,
-      "discovered_at": "2026-11-27T07:32:43.097791+00:00"
+      "discovered_at": "2026-11-28T07:00:43.914572+00:00"
     },
     {
       "stable_id": "doi:10.53022/oarjst.2026.18.1.0092",
@@ -2408,38 +2509,36 @@
         "OpenAlex"
       ],
       "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.096133+00:00"
+      "discovered_at": "2026-11-28T07:00:43.913188+00:00"
     },
     {
-      "stable_id": "doi:10.30574/wjaets.2026.21.1.0460",
-      "title": "INTELLIGENT CAD/CAM INTEGRATION FOR ADAPTIVE MANUFACTURING: A SYSTEMATIC REVIEW OF AI AND IOT FRAMEWORKS IN INDUSTRY 4.0",
+      "stable_id": "doi:10.21474/ijar01/24413",
+      "title": "EVIDENCE-BASED PROSTHODONTICS: AN INTEGRATED REVIEW OF CLINICAL EVIDENCE AND CONTEMPORARY ADVANCES",
       "authors": [
-        "MADIBA Krista Kundai",
-        "MADZIMURE Tatenda",
-        "MAFUKIDZE Liberty",
-        "MAFUKIDZE Trinity",
-        "MAKASI Farai"
+        "Annie Susan Thomas",
+        "Lijo Isaac",
+        "Maryam Shameema",
+        "Aizen John Varghese",
+        "Ashik Thomas"
       ],
-      "abstract": "The union of Artificial Intelligence and the Internet of Things (IoT) is transforming the way Computer-Aided Design (CAD) and Computer-Aided Manufacturing (CAM) systems are used in the Industry 4.0 production process. Based on the PRISMA 2020 reporting framework (Page et al., 2021), this report is a systematic literature review on the intelligent integration of CAD and CAM technologies in adaptive manufacturing. Based on a structured search of major scientific databases, a curated list of peer-reviewed studies was analysed thematically to address five research questions related to designing with AI, toolpath optimisation using AI, IoT/IIoT architectures for real-time adaptive control, interoperability standards and barriers to AI adoption in specific sectors. AI models, especially deep learning, graph neural networks and reinforcement learning, have led the way in recent research and development on automatic feature recognition and toolpath generation, while digital twins, edge computing and Industrial Internet of Things (IIoT) sensor networks are more and more being used to implement predictive maintenance and closed-loop adaptive control in the shop floor. The design phase is also starting to change with Generative AI to enable manufacturability constraints to be built in earlier in the CAD process. The literature, however, shows that there are still significant gaps that need to be addressed: AI models deployed outside of the simulation environment are not adaptable in real-time, training datasets are not standardized and openly shared, and there are interoperability protocols that are still quite disjointed, and resources for small and medium enterprises (SMEs) looking to use these technologies are still limited. To situate these gaps in a particular developing-economy context, this review is also supplemented by a series of recently published empirical studies. The review suggests that interoperability standards, Human Safety for Industry 5.0 design principles, cybersecurity, and sustainable practice are the key factors that need to be coordinated for the intelligent CAD/CAM-IoT integration to be fully realised, and it presents a roadmap of future research directions for adaptive and connected manufacturing ecosystems.",
+      "abstract": "Evidence based prosthodontics (EBP) integrates the best available scientific evidence with clinical expertise and patient values. Prosthodontics includes long-established procedures, interventions supported by varying levels of evidence and rapidly developing technologies. A critical evidence- based approach is needed to distinguish demonstrated clinical benefit from tradition, laboratory findings and technological enthusiasm.This narrative review presents a broad, clinically oriented synthesis of evidence across complete dentures, removable partial dentures, fixed prosthodontics, occlusion, temporomandibular disorders, implant prosthodontics, implant overdentures, full-arch rehabilitation, peri - implant health, bone augmentation, contemporary biomaterials, CAD/CAM, digital dentures, additive manufacturing, artificial intelligence, patient reported outcomes and maintenance. The McGill Consensus of 2002 and York Consensus of 2009 are discussed as important milestones within implant prosthodontics rather than as the central theme of EBP.3,4,5 Current evidence supports two-implant mandibular overdentures as a highly effective option for many edentulous patients, while treatment must remain individualized.",
       "year": 2026,
-      "published_at": "2026-10-30",
-      "venue": "World Journal of Advanced Engineering Technology and Sciences",
-      "doi": "10.30574/wjaets.2026.21.1.0460",
+      "published_at": "2026-10-31",
+      "venue": "International Journal of Advanced Research",
+      "doi": "10.21474/ijar01/24413",
       "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7218610108",
-      "source_url": "https://doi.org/10.30574/wjaets.2026.21.1.0460",
-      "pdf_url": "https://wjaets.com/sites/default/files/fulltext_pdf/WJAETS-2026-0460.pdf",
+      "openalex_id": "https://openalex.org/W7225001422",
+      "source_url": "https://doi.org/10.21474/ijar01/24413",
+      "pdf_url": "https://www.journalijar.com/uploads/2026/10/6ae574d3c3ac6_IJAR-59521.pdf",
       "oa_status": "hybrid",
       "license": "cc-by",
       "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [
-        "摘要命中 computer-aided design"
-      ],
+      "matched_terms": [],
       "source_names": [
         "OpenAlex"
       ],
-      "relevance_score": 7,
-      "discovered_at": "2026-11-27T07:32:43.100851+00:00"
+      "relevance_score": 6,
+      "discovered_at": "2026-11-28T07:00:43.990226+00:00"
     },
     {
       "stable_id": "openalex:w7239685352",
@@ -2465,7 +2564,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.096738+00:00"
+      "discovered_at": "2026-11-28T07:00:43.913436+00:00"
     },
     {
       "stable_id": "doi:10.2991/978-2-38476-628-4_9",
@@ -2491,97 +2590,7 @@
         "OpenAlex"
       ],
       "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.192455+00:00"
-    },
-    {
-      "stable_id": "doi:10.48550/arxiv.2610.39306",
-      "title": "CAD-WAM: Anticipating Geometry for Text-to-CAD Generation",
-      "authors": [
-        "Zhengyang Li",
-        "Weijie Zheng",
-        "Yuxin Cui",
-        "Sijie Wang",
-        "Wenjie Feng",
-        "Qiyu Kang"
-      ],
-      "abstract": "Generating editable computer-aided design (CAD) models from text requires selecting operations that produce the intended changes to the geometry constructed so far. An incorrect operation can compromise subsequent steps, making reliable multi-step generation challenging. Existing methods based on large language models (LLMs) primarily learn to predict commands, without explicit supervision of the geometric states those commands should produce. Inspired by world-action models, we introduce CAD-WAM, which couples geometry-conditioned action generation with next-state prediction. We define complete modeling operations as actions in a CAD domain-specific language (DSL) and encode surface point clouds of intermediate solids into compact latent states using a pretrained variational autoencoder. An LLM backbone generates the next action from the target description and current geometric state, while an auxiliary head on the same backbone predicts the next state to provide geometric supervision during training. We construct step-wise training trajectories from parametric CAD models in the DeepCAD dataset, pairing each trajectory with an expert-level textual description. At inference, each generated action is executed by a CAD kernel, and the resulting solid is re-encoded to inform the next decision. On the DeepCAD test set, CAD-WAM outperforms the task-specific baselines in geometric accuracy and output validity, with larger gains on models requiring more operations, and produces more accurate geometry than general-purpose LLMs prompted with the same DSL. Ablations further show that next-state supervision reduces mean Chamfer distance by 13.2\\% relative to an otherwise identical model trained only to predict actions. Code is available at https://github.com/Lzy-1037/CAD-WAM.",
-      "year": 2026,
-      "published_at": "2026-10-29",
-      "venue": "arXiv",
-      "doi": "10.48550/arxiv.2610.39306",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7224861286",
-      "source_url": "https://arxiv.org/abs/2610.39306",
-      "pdf_url": "https://arxiv.org/pdf/2610.39306",
-      "oa_status": "green",
-      "license": "",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [
-        "标题命中 text-to-cad",
-        "摘要命中 computer-aided design",
-        "摘要命中 parametric CAD",
-        "标题命中 CAD generation"
-      ],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 14,
-      "discovered_at": "2026-11-27T07:32:43.098103+00:00"
-    },
-    {
-      "stable_id": "doi:10.54097/ht37b711",
-      "title": "Co-Construction of Production-Line AAS Geometric Models and Knowledge Graphs Driven by a Vision-Language Model",
-      "authors": [
-        "Hui Li",
-        "Xiaoyi Zhao",
-        "Shasha Wang",
-        "Chenxi Yang",
-        "Wenxin Huang"
-      ],
-      "abstract": "Digital twin systems for a production line usually run on two models at once: an Asset Administration Shell (AAS) that holds asset information under IEC 63278, and a knowledge graph (KG) that records device topology and process semantics. On real projects, though, the two are built apart from each other. Engineers key the AAS geometric model in by hand from drawings and field measurements, while process engineers author the KG separately. The same data therefore gets entered twice, reuse is poor, and sooner or later the two models disagree. This paper presents a co-construction method that removes the duplication at its source. A fine-tuned vision-language model (VLM) reads the engineering sources a line already has, namely 2D/3D CAD drawings, on-site laser point clouds, and equipment technical manuals, and fills a standardized AAS; the KG is then derived from that AAS by fixed rules, so both models share one source. The method is arranged in four layers: multi-source data preprocessing with coarse-to-fine ICP spatial registration; LoRA-based domain adaptation of an open-source VLM supported by industrial prompt templates; automatic population of the AAS geometric, property, and connectivity submodels with conformance-checked .aasx generation on Eclipse BaSyx, plus QEM-based mesh simplification; and same-source KG derivation through fixed field-to-triple mapping rules, backed by a single-source constraint, automatic reconciliation, and incremental refresh with version traceability. We demonstrate the complete pipeline on a photovoltaic cell production line, and a parameterized Monte Carlo simulation of data consistency shows that, for manual single-entry error rates between 1% and 10%, conventional dual-entry modeling produces 4–39 times more data inconsistencies than the proposed single-source derivation, with the gap widening as the error rate grows. The method offers a reusable and extensible path toward production-line digital twin modeling; empirical validation on a physical line is planned as future work.",
-      "year": 2026,
-      "published_at": "2026-10-29",
-      "venue": "Frontiers in Computing and Intelligent Systems",
-      "doi": "10.54097/ht37b711",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7224856400",
-      "source_url": "https://doi.org/10.54097/ht37b711",
-      "pdf_url": "https://drpress.org/ojs/index.php/fcis/article/download/36303/35401",
-      "oa_status": "diamond",
-      "license": "cc-by-nc",
-      "suggested_category": "LLM, VLM & CAD Agents",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.210221+00:00"
-    },
-    {
-      "stable_id": "doi:10.59490/6ad294696ee698573e4dd65c",
-      "title": "Automation of Tunnel Support Detailing with AI-Assisted Programming",
-      "authors": [
-        "A. Mitelman",
-        "A. Urlainis"
-      ],
-      "abstract": "Drafting tasks in geological engineering are time-consuming and often highly repetitive, with tunnel support drawings being a representative example. Although such tasks may appear straightforward and intuitive to experienced engineers, translating drafting logic into executable code typically requires substantial software development effort. While modern CAD and BIM platforms provide programming and automation capabilities, their effective use has traditionally depended on skilled programmers rather than domain engineers. This paper presents a practical case study in which a geological engineer with only basic programming experience leveraged recent advances in artificial intelligence, specifically large language models, to develop a custom code for automating tunnel support drawings. The workflow generates detailed support layouts directly from the tunnel contour and a limited set of user-defined engineering parameters, such as bolt spacing, liner thickness, and support class. Crucially, the approach preserves engineering judgement by requiring the engineer to define all design parameters and to review the final outputs, while automating repetitive drafting operations. The results demonstrate a viable pathway for lowering the barrier to engineering automation. The proposed approach is readily extendable to similar repetitive drawing tasks across a broad range of geological engineering applications.",
-      "year": 2026,
-      "published_at": "2026-10-29",
-      "venue": "",
-      "doi": "10.59490/6ad294696ee698573e4dd65c",
-      "arxiv_id": "",
-      "openalex_id": "https://openalex.org/W7224186547",
-      "source_url": "https://doi.org/10.59490/6ad294696ee698573e4dd65c",
-      "pdf_url": "https://dapp.orvium.io/api/v1/deposits/6ad294696ee698573e4dd65c/pdf",
-      "oa_status": "gold",
-      "license": "cc-by",
-      "suggested_category": "Surveys & Roadmaps",
-      "matched_terms": [],
-      "source_names": [
-        "OpenAlex"
-      ],
-      "relevance_score": 6,
-      "discovered_at": "2026-11-27T07:32:43.215703+00:00"
+      "discovered_at": "2026-11-28T07:00:43.994871+00:00"
     }
   ]
 }
